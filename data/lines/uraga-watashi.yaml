@@ -4,13 +4,19 @@ color: "#5fd926"
 source:
   - https://ponponsen.jp/
   - https://www.cocoyoko.net/spot/uraga-watashi.html
+fare:
+  - adult::oneway::400円
+  - adult::oneway::200円（横須賀市民）
+  - child::oneway::200円（小中学生）
+  - child::oneway::100円（小中学生・横須賀市民）
+  - infant::oneway::無料（未就学児は大人1名につき1名まで。1歳未満は無料）
+  - bicycle::oneway::50円（自転車・大きな荷物）
+  - disabled::half::半額（本人と介助者1名）
+  - 1DayPass あり
 notes:
   - 運航時間：7:00〜17:00（年中無休、昼休みなし）
   - 時刻表なし・1隻運航・対岸からは呼出ブザーで来船
   - 所要約3分（西叶神社前〜東叶神社前）
-  - 運賃：大人400円（横須賀市民200円）、小中学生200円（市民100円）、未就学児は大人1名につき1名無料、1歳未満無料、自転車・大きな荷物50円
-  - 障がい者本人と介助者1名は半額
-  - 1DayPass あり
   - 荒天時（強風・高波）および船検時は運休
   - 運航：株式会社トライアングル TEL 046-825-7144（受付 9:00〜17:00）
 ships:

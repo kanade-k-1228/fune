@@ -4,9 +4,12 @@ color: "#d9b326"
 source:
   - https://onomichijp.com/shimanami/onomichi_tosen.html
 fare:
-  - 大人100円・小人50円
-  - 自転車・バイク10円追加
-  - 車両運賃：4m未満120円・5m未満130円（運転者1名含む）
+  - adult::oneway::100円
+  - child::oneway::50円
+  - bicycle::oneway::10円（追加）
+  - moto::oneway::10円（追加）
+  - car::oneway::120円（全長4m未満・運転者1名含む）
+  - car::oneway::130円（全長5m未満・運転者1名含む）
 notes:
   - 運航：おのみち渡し船株式会社（広島県尾道市土堂二丁目10番3号 / TEL 0848-38-7761）
   - 区間：尾道（土堂）～向島（兼吉）

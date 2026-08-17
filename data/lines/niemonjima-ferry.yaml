@@ -6,7 +6,9 @@ source:
   - https://niemon-jima.com/index.php/price/
   - https://maruchiba.jp/spot/detail_10385.html
 fare:
-  - 入島料（往復渡船料含む）：大人 1,350円 / 中学生 1,050円 / 5歳〜小学生 950円
+  - adult::round::1,350円（入島料・往復渡船料含む）
+  - student::round::1,050円（中学生・入島料・往復渡船料含む）
+  - child::round::950円（5歳〜小学生・入島料・往復渡船料含む）
 notes:
   - 千葉県鴨川市太海沖の仁右衛門島への渡し舟（手こぎ二丁櫓）
   - 営業時間：8:30〜16:30（渡船は随時運行、片道約5分）

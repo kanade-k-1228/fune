@@ -2,8 +2,8 @@ name: 櫃島渡船
 route: 出島町〜櫃島
 color: "#d9d426"
 source:
-  - https://ja.wikipedia.org/wiki/%E6%AB%83%E5%B3%B6
   - https://www.pref.yamaguchi.lg.jp/soshiki/30/14143.html
+  - https://hagikaiun.co.jp/
 ports:
   deshimachi-sambashi: [ 130.916773, 33.951343 ]
   hitsushima: [ 130.892884, 33.919718 ]
@@ -14,7 +14,8 @@ coords:
     - [ 130.895, 33.926 ]
 stops: [ deshimachi-sambashi, hitsushima ]
 notes:
-  - 櫃島（萩市）への定期船は就航していない。来訪する際は個人の船をチャーターし、島南岸の櫃島港へ向かう必要がある（Wikipedia / 山口県）。
+  - 櫃島（萩市）への定期船は就航していない。来訪する際は個人の船をチャーターし、島南岸の櫃島港へ向かう必要がある（山口県 / 萩海運公式）。
+  - 萩海運の定期航路は見島・大島・相島の3島のみで、櫃島は含まれない。
   - 島の人口は極めて少なく（島民は自家用船を利用）、公開された時刻表・運賃情報は確認できなかった。
   - 問い合わせ先目安：萩市産業政策課 0838-25-3638
 flags: [ local, suspend ]

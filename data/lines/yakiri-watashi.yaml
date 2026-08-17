@@ -5,8 +5,8 @@ source:
   - https://www.matsudo-kankou.jp/sightseeing/%E7%9F%A2%E5%88%87%E3%81%AE%E6%B8%A1%E3%81%97/
   - https://www.katsushika-kanko.com/guide/scene/96.html
 fare:
-  - 大人（中学生以上）片道300円
-  - 小人（4歳〜小学生）片道100円
+  - adult::oneway::300円（中学生以上）
+  - child::oneway::100円（4歳〜小学生）
 notes:
   - 江戸時代から続く農民渡船・東京都内唯一の渡し船
   - 運航事業者：矢切渡船（杉浦家により代々運営）
