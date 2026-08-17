@@ -1,0 +1,30 @@
+name: 津島渡船
+route: 津島〜今治
+color: "#d92633"
+source:
+  - https://www.city.imabari.ehime.jp/kanko/access/imabari-tsusima.pdf
+  - https://www.city.imabari.ehime.jp/kanko/access/imabari.html
+fare:
+  - 大人片道 510円
+  - 小人片道 260円
+notes:
+  - 車両不可（旅客のみ）
+  - 運航：津島渡船（有）
+  - TEL：0898-22-2123
+  - 1日1往復
+ports:
+  tsushima-2: [ 133.005962, 34.153994 ]
+  dai-3-sambashi: [ 133.006742, 34.068968 ]
+coords:
+  - - [ 133.005962, 34.153994 ]
+    - [ 133.006742, 34.068968 ]
+stops: [ tsushima-2, dai-3-sambashi ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 津島発 1便
+        stops: [ 08:00, 08:30 ]
+      - name: 今治発 1便
+        stops: [ 12:40, 12:10 ]
+flags: [ regional ]

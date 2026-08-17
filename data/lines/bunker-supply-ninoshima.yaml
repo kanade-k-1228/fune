@@ -1,0 +1,82 @@
+name: バンカー・サプライ 似島学園航路
+color: "#26c9d9"
+route: 宇品〜似島学園
+source:
+  - https://ninoshima-kkc.jp/wp-content/uploads/2024/04/20240409_hatyaku.pdf
+  - https://ninoshima-kkc.jp/%e4%ba%a4%e9%80%9a%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/
+fare:
+  - adult::oneway::600円
+  - child::oneway::300円
+  - bicycle::oneway::150円
+notes:
+  - 宇品発4便（17:50）・学園発3便（似島学園前桟橋発15:25）は土曜・日曜・祝祭日運休
+  - 運賃は令和6年4月改訂
+ships:
+  - なぎさ
+  - くれない5
+ports:
+  grand-prins-hiroshima: [ 132.484099, 34.341745 ]
+  ninoshima-gakuen: [ 132.446471, 34.313767 ]
+coords:
+  - - [ 132.484099, 34.341745 ]
+    - [ 132.446471, 34.313767 ]
+stops: [ grand-prins-hiroshima, ninoshima-gakuen ]
+timetables:
+  dia0:
+    name: 通常ダイヤ
+    voyages:
+      - name: 1便 宇品発
+        stops: [ "06:50", "07:05" ]
+      - name: 2便 宇品発
+        stops: [ "08:00", "08:40" ]
+      - name: 3便 宇品発
+        stops: [ "16:10", "17:00" ]
+      - name: 4便 宇品発（平日のみ）
+        stops: [ "17:50", "18:35" ]
+        schedule:
+          isHoliday: false
+          isWeekend: false
+          "*": true
+      - name: 1便 学園発
+        stops: [ "07:20", "07:05" ]
+      - name: 2便 学園発
+        stops: [ "08:55", "08:40" ]
+      - name: 3便 学園発（平日のみ）
+        stops: [ "15:50", "15:25" ]
+        schedule:
+          isHoliday: false
+          isWeekend: false
+          "*": true
+      - name: 4便 学園発
+        stops: [ "17:15", "17:00" ]
+  dia1:
+    name: 盆・年末年始ダイヤ
+    voyages:
+      - name: 1便 宇品発
+        stops: [ "06:50", "07:05" ]
+      - name: 2便 宇品発
+        stops: [ "08:00", "08:40" ]
+      - name: 3便 宇品発
+        stops: [ "16:10", "17:00" ]
+schedule:
+  nthMonth(8):
+    nthDay(13): dia1
+    nthDay(14): dia1
+    nthDay(15): dia1
+    nthDay(16): dia1
+    "*": dia0
+  nthMonth(12):
+    nthDay(27): dia1
+    nthDay(28): dia1
+    nthDay(29): dia1
+    nthDay(30): dia1
+    nthDay(31): dia1
+    "*": dia0
+  nthMonth(1):
+    nthDay(1): dia1
+    nthDay(2): dia1
+    nthDay(3): dia1
+    nthDay(4): dia1
+    "*": dia0
+  "*": dia0
+flags: [ regional ]

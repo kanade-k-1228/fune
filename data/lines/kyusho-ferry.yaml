@@ -1,0 +1,96 @@
+name: 九商フェリー
+route: 熊本〜島原
+color: "#d92691"
+source:
+  - https://www.kumamotoferry.co.jp/timefare/
+fare:
+  - 往復券購入で復路1割引（有効期限は購入日から7日間）、ただしGW・お盆・シルバーウィーク・年末年始は往復券販売停止
+  - 旅客運賃（大人片道）1,500円、（小人片道）750円
+notes:
+  - 所要時間は天候等により前後する場合あり
+  - 乗用車利用の場合は出航30分前までに乗船手続きを完了のこと
+  - 7便目は4月〜12月の土日祝のみ運航
+  - 島原発熊本行きは9月〜5月の間、熊本港周辺海面作業の安全確保のため減速し10分程遅延することがある
+ships:
+  - オーシャンアロー
+ports:
+  kumamoto: [ 130.590576, 32.762834 ]
+  shimabaragaiko: [ 130.373814, 32.766417 ]
+coords:
+  - - [ 130.590541, 32.762821 ]
+    - [ 130.59046, 32.76279 ]
+    - [ 130.5882, 32.76182 ]
+    - [ 130.56974, 32.75942 ]
+    - [ 130.39922, 32.75577 ]
+    - [ 130.37479, 32.76373 ]
+    - [ 130.37295, 32.76438 ]
+    - [ 130.37296, 32.76534 ]
+    - [ 130.3731, 32.76648 ]
+    - [ 130.372719, 32.767037 ]
+stops: [ kumamoto, shimabaragaiko ]
+timetables:
+  dia0:
+    name: 通常ダイヤ
+    voyages:
+      - name: 西行 1便
+        stops: [ 07:30, null ]
+      - name: 西行 2便
+        stops: [ 09:25, null ]
+      - name: 西行 3便
+        stops: [ 11:10, null ]
+      - name: 西行 4便
+        stops: [ 13:00, null ]
+      - name: 西行 5便
+        stops: [ 14:50, null ]
+      - name: 西行 6便
+        stops: [ 16:40, null ]
+      - name: 東行 1便
+        stops: [ null, 08:25 ]
+      - name: 東行 2便
+        stops: [ null, 10:15 ]
+      - name: 東行 3便
+        stops: [ null, 12:05 ]
+      - name: 東行 4便
+        stops: [ null, 13:50 ]
+      - name: 東行 5便
+        stops: [ null, 15:45 ]
+      - name: 東行 6便
+        stops: [ null, 17:30 ]
+  dia1:
+    name: 土日祝ダイヤ(4〜12月)
+    voyages:
+      - name: 西行 1便
+        stops: [ 07:30, null ]
+      - name: 西行 2便
+        stops: [ 09:25, null ]
+      - name: 西行 3便
+        stops: [ 11:10, null ]
+      - name: 西行 4便
+        stops: [ 13:00, null ]
+      - name: 西行 5便
+        stops: [ 14:50, null ]
+      - name: 西行 6便
+        stops: [ 16:40, null ]
+      - name: 西行 7便
+        stops: [ 18:30, null ]
+      - name: 東行 1便
+        stops: [ null, 08:25 ]
+      - name: 東行 2便
+        stops: [ null, 10:15 ]
+      - name: 東行 3便
+        stops: [ null, 12:05 ]
+      - name: 東行 4便
+        stops: [ null, 13:50 ]
+      - name: 東行 5便
+        stops: [ null, 15:45 ]
+      - name: 東行 6便
+        stops: [ null, 17:30 ]
+      - name: 東行 7便
+        stops: [ null, 19:20 ]
+schedule:
+  "2026-04-01..2026-12-31":
+    isHoliday: dia1
+    isWeekend: dia1
+    "*": dia0
+  "*": dia0
+flags: [ regional ]

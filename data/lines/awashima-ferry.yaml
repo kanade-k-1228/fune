@@ -1,0 +1,100 @@
+name: 粟島汽船
+route: 岩船〜粟島
+color: "#a526d9"
+source:
+  - https://awashimakisen.co.jp/schedule.html
+fare:
+  - 大人片道2,840円、小人1,420円（2026年7月1日改定）
+  - 自転車520円・折畳み180円
+notes:
+  - 季節・曜日によりダイヤが変動。目安は次の通り（詳細は公式サイトの月間時刻表を要確認）
+  - 7/17〜11/1：月2往復・火水木1往復（通常ダイヤ）、金・土・日は夏ダイヤ（便数・時刻が異なる）
+  - 11/2〜12/28：月・水・金2往復、火・木・土・日1往復
+  - 12/29〜2/28：毎日1往復
+  - 自動車・バイク不可、岩船港に無料駐車場
+  - 0254-55-2131
+ships:
+  - フェリーニューあわしま
+ports:
+  iwafune: [ 139.432195, 38.188133 ]
+  awashima-2: [ 139.254782, 38.467504 ]
+coords:
+  - - [ 139.432186, 38.188155 ]
+    - [ 139.43156, 38.18859 ]
+    - [ 139.42985, 38.19002 ]
+    - [ 139.42184, 38.18554 ]
+    - [ 139.41776, 38.18186 ]
+    - [ 139.41408, 38.18259 ]
+    - [ 139.25818, 38.46825 ]
+    - [ 139.25689, 38.4685 ]
+    - [ 139.2552, 38.46697 ]
+    - [ 139.255348, 38.467638 ]
+stops: [ iwafune, awashima-2 ]
+timetables:
+  dia0:
+    name: 通常ダイヤ（2往復）
+    voyages:
+      - name: 北行 1便
+        stops: [ 10:15, 11:50 ]
+      - name: 北行 2便
+        stops: [ 15:00, 16:35 ]
+      - name: 南行 1便
+        stops: [ 09:35, 08:00 ]
+      - name: 南行 2便
+        stops: [ 14:20, 12:45 ]
+  dia1:
+    name: 通常ダイヤ（1往復）
+    voyages:
+      - name: 北行 1便
+        stops: [ 15:00, 16:35 ]
+      - name: 南行 1便
+        stops: [ 09:35, 08:00 ]
+  dia2:
+    name: 夏ダイヤ（金曜）
+    voyages:
+      - name: 北行 1便
+        stops: [ 14:00, 15:35 ]
+      - name: 南行 1便
+        stops: [ 09:35, 08:00 ]
+      - name: 南行 2便
+        stops: [ 17:45, 16:10 ]
+  dia3:
+    name: 夏ダイヤ（土曜）
+    voyages:
+      - name: 北行 1便
+        stops: [ 08:00, 09:35 ]
+      - name: 南行 1便
+        stops: [ 12:05, 10:30 ]
+      - name: 北行 2便
+        stops: [ 12:45, 14:20 ]
+      - name: 南行 2便
+        stops: [ 16:35, 15:00 ]
+  dia4:
+    name: 夏ダイヤ（日曜）
+    voyages:
+      - name: 北行 1便
+        stops: [ 08:00, 09:35 ]
+      - name: 南行 1便
+        stops: [ 15:35, 14:00 ]
+      - name: 北行 2便
+        stops: [ 16:10, 17:45 ]
+schedule:
+  "2026-07-17..2026-11-01":
+    isMonday: dia0
+    isFriday: dia2
+    isSaturday: dia3
+    isSunday: dia4
+    "*": dia1
+  "2026-11-02..2026-12-28":
+    isTuesday: dia1
+    isThursday: dia1
+    isSaturday: dia1
+    isSunday: dia1
+    "*": dia0
+  "2026-12-29..2027-02-28": dia1
+  isTuesday: dia1
+  isWednesday: dia1
+  isThursday: dia1
+  "*": dia0
+flags:
+  - regional

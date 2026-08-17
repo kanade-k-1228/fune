@@ -1,0 +1,173 @@
+name: 富山県営
+route: 堀岡〜越ノ潟
+color: "#99d926"
+source:
+  - https://www.pref.toyama.jp/1545/kendodukuri/dourokouwan/toyamashinkou/kj00006354/kj00006354-001-01.html
+  - https://www.pref.toyama.jp/1545/kendodukuri/koukyou/koukyoukoutsuu/kj00020284.html
+fare:
+  - 無料（昭和61年4月から無料化）
+notes:
+  - 運航：富山県土木部富山新港管理局
+  - 電話：0766-84-8292
+  - FAX：0766-84-8294
+  - 越ノ潟〜堀岡間 770m、所要約5分
+  - 1日13時間45分（69便）体制
+  - 強風・波浪等で運航を休止する場合は代行車両（ジャンボタクシー）を運行
+  - 土日祝日は団体予約不可
+ships:
+  - こしのかた
+  - 海竜
+ports:
+  horioka-hatchaku-jo: [ 137.118344, 36.773144 ]
+  koshinokata: [ 137.111938, 36.774574 ]
+coords:
+  - - [ 137.112003, 36.774476 ]
+    - [ 137.11193, 36.77437 ]
+    - [ 137.11286, 36.77345 ]
+    - [ 137.11677, 36.7729 ]
+    - [ 137.11829, 36.77323 ]
+    - [ 137.118344, 36.773144 ]
+stops: [ horioka-hatchaku-jo, koshinokata ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 東行 1便
+        stops: [ 06:44, 06:49 ]
+      - name: 東行 2便
+        stops: [ 06:59, 07:04 ]
+      - name: 東行 3便
+        stops: [ 07:14, 07:19 ]
+      - name: 東行 4便
+        stops: [ 07:29, 07:34 ]
+      - name: 東行 5便
+        stops: [ 07:44, 07:49 ]
+      - name: 東行 6便
+        stops: [ 07:59, 08:04 ]
+      - name: 東行 7便
+        stops: [ 08:14, 08:19 ]
+      - name: 東行 8便
+        stops: [ 08:44, 08:49 ]
+      - name: 東行 9便
+        stops: [ 09:14, 09:19 ]
+      - name: 東行 10便
+        stops: [ 09:44, 09:49 ]
+      - name: 東行 11便
+        stops: [ 10:14, 10:19 ]
+      - name: 東行 12便
+        stops: [ 10:44, 10:49 ]
+      - name: 東行 13便
+        stops: [ 11:14, 11:19 ]
+      - name: 東行 14便
+        stops: [ 11:44, 11:49 ]
+      - name: 東行 15便
+        stops: [ 12:14, 12:19 ]
+      - name: 東行 16便
+        stops: [ 12:44, 12:49 ]
+      - name: 東行 17便
+        stops: [ 13:14, 13:19 ]
+      - name: 東行 18便
+        stops: [ 13:44, 13:49 ]
+      - name: 東行 19便
+        stops: [ 14:14, 14:19 ]
+      - name: 東行 20便
+        stops: [ 14:44, 14:49 ]
+      - name: 東行 21便
+        stops: [ 15:14, 15:19 ]
+      - name: 東行 22便
+        stops: [ 15:44, 15:49 ]
+      - name: 東行 23便
+        stops: [ 16:14, 16:19 ]
+      - name: 東行 24便
+        stops: [ 16:44, 16:49 ]
+      - name: 東行 25便
+        stops: [ 17:14, 17:19 ]
+      - name: 東行 26便
+        stops: [ 17:29, 17:34 ]
+      - name: 東行 27便
+        stops: [ 17:44, 17:49 ]
+      - name: 東行 28便
+        stops: [ 17:59, 18:04 ]
+      - name: 東行 29便
+        stops: [ 18:14, 18:19 ]
+      - name: 東行 30便
+        stops: [ 18:29, 18:34 ]
+      - name: 東行 31便
+        stops: [ 18:44, 18:49 ]
+      - name: 東行 32便
+        stops: [ 18:59, 19:04 ]
+      - name: 東行 33便
+        stops: [ 19:29, 19:34 ]
+      - name: 東行 34便
+        stops: [ 19:59, 20:04 ]
+      - name: 東行 35便
+        stops: [ 20:29, 20:34 ]
+      - name: 西行 1便
+        stops: [ 06:57, 06:52 ]
+      - name: 西行 2便
+        stops: [ 07:12, 07:07 ]
+      - name: 西行 3便
+        stops: [ 07:27, 07:22 ]
+      - name: 西行 4便
+        stops: [ 07:42, 07:37 ]
+      - name: 西行 5便
+        stops: [ 07:57, 07:52 ]
+      - name: 西行 6便
+        stops: [ 08:12, 08:07 ]
+      - name: 西行 7便
+        stops: [ 08:42, 08:37 ]
+      - name: 西行 8便
+        stops: [ 09:12, 09:07 ]
+      - name: 西行 9便
+        stops: [ 09:42, 09:37 ]
+      - name: 西行 10便
+        stops: [ 10:12, 10:07 ]
+      - name: 西行 11便
+        stops: [ 10:42, 10:37 ]
+      - name: 西行 12便
+        stops: [ 11:12, 11:07 ]
+      - name: 西行 13便
+        stops: [ 11:42, 11:37 ]
+      - name: 西行 14便
+        stops: [ 12:12, 12:07 ]
+      - name: 西行 15便
+        stops: [ 12:42, 12:37 ]
+      - name: 西行 16便
+        stops: [ 13:12, 13:07 ]
+      - name: 西行 17便
+        stops: [ 13:42, 13:37 ]
+      - name: 西行 18便
+        stops: [ 14:12, 14:07 ]
+      - name: 西行 19便
+        stops: [ 14:42, 14:37 ]
+      - name: 西行 20便
+        stops: [ 15:12, 15:07 ]
+      - name: 西行 21便
+        stops: [ 15:42, 15:37 ]
+      - name: 西行 22便
+        stops: [ 16:12, 16:07 ]
+      - name: 西行 23便
+        stops: [ 16:42, 16:37 ]
+      - name: 西行 24便
+        stops: [ 17:12, 17:07 ]
+      - name: 西行 25便
+        stops: [ 17:27, 17:22 ]
+      - name: 西行 26便
+        stops: [ 17:42, 17:37 ]
+      - name: 西行 27便
+        stops: [ 17:57, 17:52 ]
+      - name: 西行 28便
+        stops: [ 18:12, 18:07 ]
+      - name: 西行 29便
+        stops: [ 18:27, 18:22 ]
+      - name: 西行 30便
+        stops: [ 18:42, 18:37 ]
+      - name: 西行 31便
+        stops: [ 18:57, 18:52 ]
+      - name: 西行 32便
+        stops: [ 19:27, 19:22 ]
+      - name: 西行 33便
+        stops: [ 19:57, 19:52 ]
+      - name: 西行 34便
+        stops: [ 20:27, 20:22 ]
+flags: [ regional ]

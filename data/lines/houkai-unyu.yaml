@@ -1,0 +1,91 @@
+name: 豊海運「マリンスター常栄丸」
+route: 佐伯〜大入島
+color: "#3f26d9"
+source:
+  - http://www.oitasima.net/ohnyujima/access.html
+fare:
+  - "運賃: 守後150円、久保浦200円、堀切200円、片神200円（佐伯港から）"
+notes:
+  - 旅客船「マリンスター常栄丸」で佐伯港から守後・久保浦・堀切経由、片神まで約15分。1日10便（佐伯発）
+  - "問い合わせ: 豊海運 TEL.0972-22-2356"
+ships:
+  - マリンスター常栄丸
+ports:
+  saiki: [ 131.9031, 32.9788 ]
+  mori-go-minato: [ 131.91134, 32.98777 ]
+  kuboura: [ 131.91952, 32.99513 ]
+  horigiri: [ 131.92191, 32.9991 ]
+  kata-ko: [ 131.92481, 33.00521 ]
+coords:
+  - - [ 131.9031, 32.9788 ]
+    - [ 131.9031, 32.9788 ]
+    - [ 131.90366, 32.9792 ]
+    - [ 131.90762, 32.98031 ]
+    - [ 131.91008, 32.98537 ]
+    - [ 131.91074, 32.9869 ]
+    - [ 131.91134, 32.98777 ]
+    - [ 131.91134, 32.98777 ]
+    - [ 131.91134, 32.98777 ]
+    - [ 131.91059, 32.98695 ]
+    - [ 131.90972, 32.98517 ]
+    - [ 131.9081, 32.98539 ]
+    - [ 131.90803, 32.98683 ]
+    - [ 131.91232, 32.99756 ]
+    - [ 131.91577, 32.9985 ]
+    - [ 131.91772, 32.99739 ]
+    - [ 131.91812, 32.99594 ]
+    - [ 131.91952, 32.99513 ]
+    - [ 131.91952, 32.99513 ]
+    - [ 131.91952, 32.99513 ]
+    - [ 131.91857, 32.99614 ]
+    - [ 131.91911, 32.99773 ]
+    - [ 131.92141, 32.99907 ]
+    - [ 131.92191, 32.9991 ]
+    - [ 131.92191, 32.9991 ]
+    - [ 131.92191, 32.9991 ]
+    - [ 131.92327, 33.00485 ]
+    - [ 131.92418, 33.00534 ]
+    - [ 131.92481, 33.00521 ]
+    - [ 131.92481, 33.00521 ]
+stops: [ saiki, mori-go-minato, kuboura, horigiri, kata-ko ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 大入島発1
+        stops: [ null, null, null, 07:03, null ]
+      - name: 佐伯発1
+        stops: [ 07:25, null, null, null, null ]
+      - name: 大入島発2
+        stops: [ null, null, null, 07:37, null ]
+      - name: 佐伯発2
+        stops: [ 08:00, null, null, null, null ]
+      - name: 大入島発3
+        stops: [ null, null, null, 08:12, null ]
+      - name: 佐伯発3
+        stops: [ 09:30, null, null, null, null ]
+      - name: 大入島発4
+        stops: [ null, null, null, 09:42, null ]
+      - name: 佐伯発4
+        stops: [ 11:00, null, null, null, null ]
+      - name: 大入島発5
+        stops: [ null, null, null, 11:12, null ]
+      - name: 佐伯発5
+        stops: [ 12:30, null, null, null, null ]
+      - name: 大入島発6
+        stops: [ null, null, null, 12:42, null ]
+      - name: 佐伯発6
+        stops: [ 14:00, null, null, null, null ]
+      - name: 大入島発7
+        stops: [ null, null, null, 14:12, null ]
+      - name: 佐伯発7
+        stops: [ 16:00, null, null, null, null ]
+      - name: 大入島発8
+        stops: [ null, null, null, 16:12, null ]
+      - name: 佐伯発8
+        stops: [ 17:30, null, null, null, null ]
+      - name: 大入島発9
+        stops: [ null, null, null, 17:42, null ]
+      - name: 佐伯発9（守後まで）
+        stops: [ 18:30, null, null, null, null ]
+flags: [ regional ]

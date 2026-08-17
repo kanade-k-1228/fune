@@ -1,0 +1,161 @@
+name: 契島運輸
+route: 大崎上島（白水）〜契島
+color: "#d95426"
+source:
+  - https://www.toho-zinc.co.jp/chigirishimaunyu/ippanryokyaku.html
+  - https://www.toho-zinc.co.jp/chigirishimaunyu/gaiyo.html
+  - https://www.town.osakikamijima.hiroshima.jp/soshiki/kensetsu/1/2/1/1308.html
+fare:
+  - フェリー料金（車両・片道）：3m未満1,150円、3〜4m未満1,780円、4〜5m未満2,410円、5〜6m未満3,450円、6〜7m未満4,190円、7〜8m未満4,820円、8〜9m未満5,240円、9〜10m未満6,280円、10〜11m未満6,800円、11〜12m未満7,650円、12m以上は1m超えるごとに730円加算（往復は片道の2倍）
+  - 町営フェリー「さざなみ」（白水〜生野島〜契島）：大人片道 白水〜生野島120円・生野島〜契島180円、小人（1歳〜小学生）はそれぞれ60円・90円。回数券（11枚つづり）あり。
+  - 障害者割引：身体・知的・精神障害者および介護者は5割引（手帳またはミライロIDで確認）
+notes:
+  - 運航区間：竹原港（内港）〜契島港（東邦契島製錬株式会社）、所要時間約30分（4km）
+  - 契島港〜白水港（大崎上島）の特定旅客定期航路（客船）も運航。所要時間約30分（5km）。平日・休日とも同じ時刻に運航
+  - フェリーと客船の2種が運航。休日はフェリー便（竹原〜契島）は運休
+  - 便名に「（フェリー）」とあるものは※印のフェリー便（車両積載可）
+  - 北崎港発9:10便および契島港発11:50便は危険物車両積載のため旅客乗船不可の場合あり
+  - 危険物は5割増し
+  - 白水〜契島の※印は町営フェリー「さざなみ」便。1月1日〜3日は運休。毎月第1・第3水曜日は危険物運搬便のため旅客乗船不可
+  - 契島は東邦亜鉛の私有地のため、関係者以外の上陸はできません
+  - 連絡先：契島運輸 竹原営業所 TEL 0846-22-2628 / 大崎上島町建設課 TEL 0846-65-3124（町営フェリー「さざなみ」関連）
+ships:
+  - とうほう（フェリー、244t、旅客200人・トラック6台）
+  - けいよう（客船、35t、旅客122人）
+  - あさぎり（客船、FRP、16t、旅客70人）
+  - ちぎり（客船、アルミ、19t、旅客73人）
+  - さざなみ（町営フェリー、白水〜生野島〜契島）
+ports:
+  chikirishima: [ 132.91324, 34.26973 ]
+  takehara: [ 132.90382, 34.29818 ]
+coords:
+  - - [ 132.91324, 34.26973 ]
+    - [ 132.91324, 34.26973 ]
+    - [ 132.9127, 34.27097 ]
+    - [ 132.91321, 34.27637 ]
+    - [ 132.91089, 34.28053 ]
+    - [ 132.90367, 34.28287 ]
+    - [ 132.90237, 34.28788 ]
+    - [ 132.90466, 34.29429 ]
+    - [ 132.90448, 34.29778 ]
+    - [ 132.90382, 34.29818 ]
+    - [ 132.90382, 34.29818 ]
+stops: [ chikirishima, takehara ]
+timetables:
+  dia0:
+    name: 平日ダイヤ
+    voyages:
+      - name: 契島発1便
+        stops: [ 06:20, null ]
+      - name: 内港発1便（フェリー）
+        stops: [ null, 07:10 ]
+      - name: 内港発2便
+        stops: [ null, 07:20 ]
+      - name: 契島発2便
+        stops: [ 07:45, null ]
+      - name: 契島発3便（フェリー）
+        stops: [ 07:50, null ]
+      - name: 内港発3便
+        stops: [ null, 08:10 ]
+      - name: 契島発4便
+        stops: [ 08:30, null ]
+      - name: 契島発5便（フェリー）
+        stops: [ 08:45, null ]
+      - name: 内港発4便
+        stops: [ null, 09:00 ]
+      - name: 契島発6便（フェリー）
+        stops: [ 09:40, null ]
+      - name: 契島発7便（フェリー）
+        stops: [ 10:35, null ]
+      - name: 内港発5便（フェリー）
+        stops: [ null, 11:10 ]
+      - name: 契島発8便（フェリー）
+        stops: [ 11:50, null ]
+      - name: 内港発6便（フェリー）
+        stops: [ null, 12:30 ]
+      - name: 契島発9便
+        stops: [ 13:10, null ]
+      - name: 契島発10便（フェリー）
+        stops: [ 14:30, null ]
+      - name: 内港発7便（フェリー）
+        stops: [ null, 15:05 ]
+      - name: 内港発8便
+        stops: [ null, 15:50 ]
+      - name: 契島発11便
+        stops: [ 16:45, null ]
+      - name: 契島発12便（フェリー）
+        stops: [ 17:00, null ]
+      - name: 内港発9便
+        stops: [ null, 17:10 ]
+      - name: 契島発13便
+        stops: [ 17:40, null ]
+      - name: 内港発10便
+        stops: [ null, 18:20 ]
+      - name: 契島発14便
+        stops: [ 18:50, null ]
+      - name: 内港発11便
+        stops: [ null, 19:20 ]
+      - name: 契島発15便
+        stops: [ 20:30, null ]
+      - name: 内港発12便
+        stops: [ null, 21:30 ]
+      - name: 契島発16便
+        stops: [ 22:30, null ]
+      - name: 内港発13便
+        stops: [ null, 23:00 ]
+  dia1:
+    name: 休日ダイヤ
+    voyages:
+      - name: 契島発1便
+        stops: [ 06:20, null ]
+      - name: 内港発1便
+        stops: [ null, 07:20 ]
+      - name: 契島発2便
+        stops: [ 07:45, null ]
+      - name: 内港発2便
+        stops: [ null, 08:10 ]
+      - name: 契島発3便
+        stops: [ 08:30, null ]
+      - name: 内港発3便
+        stops: [ null, 09:00 ]
+      - name: 契島発4便
+        stops: [ 09:30, null ]
+      - name: 内港発4便
+        stops: [ null, 10:00 ]
+      - name: 契島発5便
+        stops: [ 10:30, null ]
+      - name: 内港発5便
+        stops: [ null, 11:20 ]
+      - name: 契島発6便
+        stops: [ 12:40, null ]
+      - name: 内港発6便
+        stops: [ null, 13:20 ]
+      - name: 契島発7便
+        stops: [ 14:40, null ]
+      - name: 内港発7便
+        stops: [ null, 15:50 ]
+      - name: 契島発8便
+        stops: [ 16:55, null ]
+      - name: 内港発8便
+        stops: [ null, 17:20 ]
+      - name: 契島発9便
+        stops: [ 17:45, null ]
+      - name: 内港発9便
+        stops: [ null, 18:10 ]
+      - name: 契島発10便
+        stops: [ 18:50, null ]
+      - name: 内港発10便
+        stops: [ null, 19:20 ]
+      - name: 契島発11便
+        stops: [ 20:30, null ]
+      - name: 内港発11便
+        stops: [ null, 21:30 ]
+      - name: 契島発12便
+        stops: [ 22:30, null ]
+      - name: 内港発12便
+        stops: [ null, 23:00 ]
+schedule:
+  isHoliday: dia1
+  isWeekend: dia1
+  "*": dia0
+flags: [ regional ]

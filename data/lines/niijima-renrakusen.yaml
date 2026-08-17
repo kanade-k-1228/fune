@@ -1,0 +1,73 @@
+name: 連絡船にしき
+route: 新島〜式根島
+color: "#d9c126"
+source:
+  - https://www.niijima.com/shoukai/access/nishiki/
+  - https://www.niijima.com/shoukai/access/nishiki/ryoukinhyou.html
+  - https://www.niijima.com/shoukai/access/nishiki/unkou.html
+fare:
+  - 大人 片道430円 / 往復840円
+  - 子ども 片道220円 / 往復430円
+  - 受託手荷物 1個420円（3辺の和200cm以下・30kg以下）
+  - 有料持込手荷物 1個210円（容積0.09㎥・20kg以下）
+  - 小荷物 10kg以下160円 / 10〜20kg 320円 / 20〜30kg 490円
+  - 障害者手帳保持者は無料、介護者1名 片道220円 / 往復430円
+notes:
+  - 新島村役場 式根島支所 TEL 04992-7-0004
+  - 所要時間 約20分
+  - 予約不要
+  - 自転車は積載不可（折り畳み自転車を折り畳んだ場合は可）
+  - 海況により全便運休または午後便の繰り上げ出航となる場合あり
+  - 運航状況は X (旧Twitter) @niijima_nishiki で告知
+ships:
+  - にしき
+ports:
+  nijima: [ 139.246439, 34.369167 ]
+  shikinejima-nobusikou: [ 139.215628, 34.333858 ]
+coords:
+  - - [ 139.246439, 34.369167 ]
+    - [ 139.24686, 34.37003 ]
+    - [ 139.24634, 34.37036 ]
+    - [ 139.2453, 34.36928 ]
+    - [ 139.24017, 34.37264 ]
+    - [ 139.23815, 34.3726 ]
+    - [ 139.21907, 34.3361 ]
+    - [ 139.21662, 34.33403 ]
+    - [ 139.21499, 34.33378 ]
+    - [ 139.215827, 34.335238 ]
+stops: [ nijima, shikinejima-nobusikou ]
+timetables:
+  dia0:
+    name: 標準
+    voyages:
+      - name: 下り 1便
+        stops: [ 08:00, 08:20 ]
+      - name: 下り 2便
+        stops: [ 11:20, 11:40 ]
+      - name: 下り 3便
+        stops: [ 16:20, 16:40 ]
+      - name: 上り 1便
+        stops: [ 08:00, 07:40 ]
+      - name: 上り 2便
+        stops: [ 11:20, 11:00 ]
+      - name: 上り 3便
+        stops: [ 16:20, 16:00 ]
+  dia1:
+    name: 夏期ダイヤ（7/19〜8/31）
+    voyages:
+      - name: 下り 1便
+        stops: [ 08:20, 08:40 ]
+      - name: 下り 2便
+        stops: [ 11:20, 11:40 ]
+      - name: 下り 3便
+        stops: [ 16:20, 16:40 ]
+      - name: 上り 1便
+        stops: [ 08:20, 08:00 ]
+      - name: 上り 2便
+        stops: [ 11:20, 11:00 ]
+      - name: 上り 3便
+        stops: [ 16:20, 16:00 ]
+schedule:
+  "2026-07-19..2026-08-31": dia1
+  "*": dia0
+flags: [ regional ]

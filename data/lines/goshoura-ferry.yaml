@@ -1,0 +1,117 @@
+name: 共同フェリー
+route: 御所浦〜棚底
+color: "#33d926"
+source:
+  - https://kyodoferry.com/schedule.html
+  - https://kyodoferry.com/
+fare:
+  - 旅客 大人 400円 / 小人 200円（片道）
+  - カーフェリー（運転手1名込み）4m未満 1,640円 / 5m未満 2,050円
+  - 乗船可能車両は9m未満まで
+notes:
+  - 共同フェリー株式会社 TEL 0969-67-3305（8:30〜17:00）
+  - 1月1日は運休
+  - ドック入りや悪天候時には欠航便あり
+  - 全船予約不可、先着順
+  - GW・お盆・年末年始は臨時便ダイヤとなる場合あり
+ships:
+  - フェリーごしょうら
+  - しいがる3
+  - 栄久丸
+  - 八りゅう丸
+ports:
+  tanasoko: [ 130.341716, 32.406576 ]
+  yoichigaura: [ 130.352265, 32.373283 ]
+  arashiguchi: [ 130.352, 32.353 ]
+  yokoura: [ 130.356528, 32.364093 ]
+  goshonoura: [ 130.337183, 32.33833 ]
+coords:
+  - - [ 130.341716, 32.406576 ]
+    - [ 130.34225, 32.40636 ]
+    - [ 130.34267, 32.40567 ]
+    - [ 130.34316, 32.40526 ]
+    - [ 130.34308, 32.40179 ]
+    - [ 130.34431, 32.39447 ]
+    - [ 130.34612, 32.39248 ]
+    - [ 130.35141, 32.37545 ]
+    - [ 130.35155, 32.37197 ]
+    - [ 130.35087, 32.37029 ]
+    - [ 130.35081, 32.36897 ]
+    - [ 130.352265, 32.373283 ]
+    - [ 130.35262, 32.36029 ]
+    - [ 130.35274, 32.35709 ]
+    - [ 130.35558, 32.3534 ]
+    - [ 130.352, 32.353 ]
+    - [ 130.35638, 32.35212 ]
+    - [ 130.35558, 32.3534 ]
+    - [ 130.35065, 32.35631 ]
+    - [ 130.34538, 32.3609 ]
+    - [ 130.34495, 32.36208 ]
+    - [ 130.34527, 32.36275 ]
+    - [ 130.356528, 32.364093 ]
+    - [ 130.34538, 32.3609 ]
+    - [ 130.34668, 32.35744 ]
+    - [ 130.3461, 32.35406 ]
+    - [ 130.337183, 32.33833 ]
+stops: [ tanasoko, yoichigaura, arashiguchi, yokoura, goshonoura ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 南行 1便
+        stops: [ 06:40, null, null, null, 07:10 ]
+      - name: 南行 2便
+        stops: [ 07:10, null, null, null, 07:30 ]
+      - name: 南行 3便
+        stops: [ 07:45, null, null, null, 08:20 ]
+      - name: 南行 4便
+        stops: [ 08:10, null, null, null, 08:55 ]
+      - name: 南行 5便
+        stops: [ 09:10, null, null, null, 09:40 ]
+      - name: 南行 6便
+        stops: [ 09:55, null, null, null, 10:40 ]
+      - name: 南行 7便
+        stops: [ 13:00, null, null, null, 13:30 ]
+      - name: 南行 8便
+        stops: [ 14:45, null, null, null, 15:10 ]
+      - name: 南行 9便
+        stops: [ 15:10, null, null, null, 15:55 ]
+      - name: 南行 10便
+        stops: [ 16:25, null, null, null, 16:55 ]
+      - name: 南行 11便
+        stops: [ 17:15, null, null, null, 17:45 ]
+      - name: 南行 12便
+        stops: [ 17:50, null, null, null, 18:35 ]
+      - name: 南行 13便
+        stops: [ 18:05, null, null, null, 18:25 ]
+      - name: 北行 1便
+        stops: [ 07:30, null, null, null, 07:05 ]
+      - name: 北行 2便
+        stops: [ 08:00, null, null, null, 07:15 ]
+      - name: 北行 3便
+        stops: [ 08:50, null, null, null, 08:15 ]
+      - name: 北行 4便
+        stops: [ 09:45, null, null, null, 09:00 ]
+      - name: 北行 5便
+        stops: [ 10:30, null, null, null, 10:15 ]
+      - name: 北行 6便
+        stops: [ 11:55, null, null, null, 11:25 ]
+      - name: 北行 7便
+        stops: [ 13:00, null, null, null, 12:35 ]
+      - name: 北行 8便
+        stops: [ 14:45, null, null, null, 14:05 ]
+      - name: 北行 9便
+        stops: [ 15:00, null, null, null, 14:15 ]
+      - name: 北行 10便
+        stops: [ 16:05, null, null, null, 15:30 ]
+      - name: 北行 11便
+        stops: [ 16:20, null, null, null, 15:50 ]
+      - name: 北行 12便
+        stops: [ 17:45, null, null, null, 17:00 ]
+      - name: 北行 13便
+        stops: [ 17:50, null, null, null, 17:30 ]
+      - name: 北行 14便
+        stops: [ 18:05, null, null, null, 17:45 ]
+      - name: 北行 15便
+        stops: [ 18:20, null, null, null, 17:50 ]
+flags: [ regional ]

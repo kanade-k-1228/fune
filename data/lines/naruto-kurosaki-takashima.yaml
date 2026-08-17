@@ -1,0 +1,85 @@
+name: 黒崎渡船（黒崎〜高島）
+color: "#d98526"
+route: 黒崎〜高島
+source:
+  - https://www.city.naruto.lg.jp/kurashi/sumai/kotsu/tosen/kurosaki.html
+fare:
+  - 無料
+notes:
+  - 鳴門市営渡船。市道高島渡船場線として運営。
+  - 運休日なし（天候により運航中止・出航時刻変動あり）。
+  - 土日祝日は8:10発の黒崎→高島便（8:13発の高島→黒崎便）は運航しない。
+  - 所要時間 約2分。定員 43名。
+  - "運航委託: 有限会社小鳴門渡船。"
+  - "問い合わせ: 鳴門市都市建設部土木課 TEL 088-684-1166"
+ships:
+  - なると丸
+ports:
+  kurosaki-naruto: [ 134.597205696, 34.1945683045 ]
+  takashima-naruto: [ 134.597642915, 34.1971615315 ]
+coords:
+  - - [ 134.597205696, 34.1945683045 ]
+    - [ 134.59717, 34.19481 ]
+    - [ 134.59737, 34.1949 ]
+    - [ 134.5977, 34.19729 ]
+    - [ 134.597642915, 34.1971615315 ]
+stops: [ kurosaki-naruto, takashima-naruto ]
+timetables:
+  normal:
+    name: 通常ダイヤ（黒崎発）
+    voyages:
+      - name: 1便
+        stops: [ "06:40", "06:43" ]
+      - name: 2便
+        stops: [ "07:00", "07:03" ]
+      - name: 3便
+        stops: [ "07:20", "07:23" ]
+      - name: 4便
+        stops: [ "07:40", "07:43" ]
+      - name: 5便
+        stops: [ "08:00", "08:03" ]
+      - name: 6便（平日のみ）
+        stops: [ "08:10", "08:13" ]
+        schedule:
+          isHoliday: false
+          isWeekend: false
+          "*": true
+      - name: 7便
+        stops: [ "08:20", "08:23" ]
+      - name: 8便
+        stops: [ "08:40", "08:43" ]
+      - name: 9便
+        stops: [ "09:00", "09:03" ]
+      - name: 10便
+        stops: [ "09:30", "09:33" ]
+      - name: 11便
+        stops: [ "10:00", "10:03" ]
+      - name: 12便
+        stops: [ "11:00", "11:03" ]
+      - name: 13便
+        stops: [ "12:30", "12:33" ]
+      - name: 14便
+        stops: [ "13:00", "13:03" ]
+      - name: 15便
+        stops: [ "14:30", "14:33" ]
+      - name: 16便
+        stops: [ "15:30", "15:33" ]
+      - name: 17便
+        stops: [ "16:00", "16:03" ]
+      - name: 18便
+        stops: [ "16:30", "16:33" ]
+      - name: 19便
+        stops: [ "17:00", "17:03" ]
+      - name: 20便
+        stops: [ "17:30", "17:33" ]
+      - name: 21便
+        stops: [ "18:00", "18:03" ]
+      - name: 22便
+        stops: [ "18:30", "18:33" ]
+      - name: 23便
+        stops: [ "19:00", "19:03" ]
+      - name: 24便
+        stops: [ "19:30", "19:33" ]
+      - name: 25便
+        stops: [ "19:50", "19:53" ]
+flags: [ regional ]

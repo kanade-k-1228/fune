@@ -1,0 +1,43 @@
+name: 小値賀町営渡船 大島航路
+color: "#d9d726"
+route: 小値賀〜大島
+source:
+  - https://www.town.ojika.lg.jp/soshiki/mirai/4/216.html
+fare:
+  - 大人280円・子供140円（片道）
+notes:
+  - 1便・7便は日曜運休
+  - 問合せ先：はまゆう 090-4984-8025、小値賀町役場 0959-56-3111
+ships:
+  - はまゆう
+ports:
+  ojika: [ 129.0631, 33.1869 ]
+  oshima-ojika: [ 129.023722, 33.173724 ]
+coords:
+  - - [ 129.0631, 33.1869 ]
+    - [ 129.023722, 33.173724 ]
+stops: [ ojika, oshima-ojika ]
+timetables:
+  dia0:
+    name: 通常ダイヤ
+    voyages:
+      - name: 1便（日曜運休）
+        stops: [ "06:45", "06:55" ]
+      - name: 3便
+        stops: [ "08:35", "08:45" ]
+      - name: 5便
+        stops: [ "11:50", "12:00" ]
+      - name: 7便（日曜運休）
+        stops: [ "17:40", "17:50" ]
+  dia1:
+    name: 冬季ダイヤ（11月〜2月）
+    voyages:
+      - name: 7便（日曜運休）
+        stops: [ "17:30", "17:40" ]
+schedule:
+  nthMonth(11): dia1
+  nthMonth(12): dia1
+  nthMonth(1): dia1
+  nthMonth(2): dia1
+  "*": dia0
+flags: [ regional ]

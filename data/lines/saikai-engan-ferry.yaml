@@ -1,0 +1,87 @@
+name: 西海沿岸商船フェリー（松島〜神浦航路）「フェリーかしま」
+color: "#26d961"
+route: 松島〜瀬戸〜池島〜神浦
+source:
+  - https://www.city.saikai.nagasaki.jp/kurashi/kotsu/2/3947.html
+  - https://www.city.saikai.nagasaki.jp/material/files/group/5/saikaienganferi-.pdf
+  - https://www.city.saikai.nagasaki.jp/material/files/group/5/ryokakuuntinhyo.pdf
+  - https://www.city.saikai.nagasaki.jp/material/files/group/5/kousouuntinhyo.pdf
+fare:
+  - 旅客運賃（フェリー・片道、大人 / 小人）
+  - 松島〜瀬戸：240円 / 120円
+  - 松島〜池島：800円 / 410円
+  - 松島〜神浦：960円 / 480円
+  - 瀬戸〜池島：650円 / 330円
+  - 瀬戸〜神浦：720円 / 360円
+  - 池島〜神浦：500円 / 250円
+  - 自動車航送運賃（瀬戸〜松島・3M未満〜12M未満：880〜8,490円、1M増す毎に1,840円加算）
+  - 自動車航送運賃（池島〜松島・3M未満〜12M未満：2,160〜14,370円、1M増す毎に2,300円加算）
+  - 自動車航送運賃（神浦〜松島・3M未満〜12M未満：3,380〜25,080円、1M増す毎に4,600円加算）
+  - 自転車240円、原付（125cc以下）480円、自動二輪（126〜750cc）730円、自動二輪（750cc超）960円
+  - 身障・知的・精神障害者・介護者は5割引き
+  - 運賃改定日：令和6年10月1日施行
+notes:
+  - 運航事業者：西海沿岸商船株式会社 瀬戸営業所（TEL 0959-22-0649）
+  - 「フェリーかしま」ドック時は代替ダイヤで高速船B（れぴーど または Rapid Lily）で運航。発着時刻が通常時と異なる
+  - 松島〜瀬戸間・瀬戸〜池島間・池島〜神浦間にそれぞれ月間15往復まで臨時運航あり
+  - 時刻表の（）内は到着時刻
+  - 通常ダイヤと復路ダイヤは同日に並行運航される（dia0=往路、dia1=復路）
+ships:
+  - フェリーかしま
+  - れぴーど
+  - Rapid Lily
+ports:
+  matsushima-saikai: [ 129.615156, 32.939997 ]
+  seto: [ 129.639147, 32.936607 ]
+  ikeshima: [ 129.647363, 33.054279 ]
+  konoura-saikai: [ 129.67959, 32.880336 ]
+coords:
+  - - [ 129.615156, 32.939997 ]
+    - [ 129.639147, 32.936607 ]
+    - [ 129.647363, 33.054279 ]
+    - [ 129.67959, 32.880336 ]
+stops: [ matsushima-saikai, seto, ikeshima, konoura-saikai ]
+timetables:
+  dia0:
+    name: 通常ダイヤ（往路）
+    voyages:
+      - name: 往路 1便
+        stops: [ null, "07:05", "07:33", null ]
+      - name: 往路 2便
+        stops: [ "08:40", null, null, "10:11" ]
+      - name: 往路 3便
+        stops: [ "09:10", "09:45", null, null ]
+      - name: 往路 4便
+        stops: [ null, "12:44", null, "13:43" ]
+      - name: 往路 5便
+        stops: [ "13:17", "14:17", null, null ]
+      - name: 往路 6便
+        stops: [ "15:00", null, "16:55", null ]
+      - name: 往路 7便
+        stops: [ "16:27", "17:40", null, null ]
+      - name: 往路 8便
+        stops: [ "17:55", null, "18:36", null ]
+      - name: 往路 9便
+        stops: [ "18:08", null, null, null ]
+  dia1:
+    name: 通常ダイヤ（復路）
+    voyages:
+      - name: 復路 1便
+        stops: [ "08:35", null, "07:35", null ]
+      - name: 復路 2便
+        stops: [ "11:28", null, null, "10:30" ]
+      - name: 復路 3便
+        stops: [ null, "11:00", null, null ]
+      - name: 復路 4便
+        stops: [ "14:57", null, null, "13:46" ]
+      - name: 復路 5便
+        stops: [ null, "14:47", "14:17", null ]
+      - name: 復路 6便
+        stops: [ "17:50", null, "17:00", null ]
+      - name: 復路 7便
+        stops: [ null, "17:40", "16:27", null ]
+      - name: 復路 8便
+        stops: [ null, null, "18:40", null ]
+      - name: 復路 9便
+        stops: [ null, null, null, "18:08" ]
+flags: [ regional ]

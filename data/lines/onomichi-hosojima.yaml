@@ -1,0 +1,105 @@
+name: 尾道市営渡船
+route: 重井西〜細島
+color: "#7e26d9"
+source:
+  - https://www.city.onomichi.hiroshima.jp/soshiki/39/69388.html
+  - https://www.city.onomichi.hiroshima.jp/uploaded/attachment/46298.pdf
+fare:
+  - 旅客 大人 150円 / 小人 80円
+  - 自転車付 大人 230円 / 小人 160円
+  - 原付自転車付 大人 320円 / 小人 250円
+  - 二輪自動車付 (750cc未満) 大人 410円 / 小人 340円
+  - 二輪自動車付 (750cc以上) 大人 500円 / 小人 430円
+  - 自動車 3m未満 590円 / 3-4m 810円 / 4-5m 1,010円 / 5-6m 1,260円 (運転者1名の旅客運賃含む)
+  - 回数乗船券 旅客11枚綴 1,500円
+  - 定期乗船券 (1か月) 普通 歩行者 4,500円 / 自転車付 6,900円
+  - 65歳以上・身体障害者手帳所持者は5割引
+notes:
+  - 所要約15分
+  - 平日8往復 / 日祝5往復 (正月3が日は日祝ダイヤ)
+  - 日祝は2便・5便・8便が運休
+  - 問合せ 尾道市因島総合支所 施設管理課 TEL 0845-26-6202
+  - 令和3年10月1日運賃改正
+ships:
+  - こまたき
+ports:
+  shigei-nishiminato: [ 133.139413, 34.341018 ]
+  hososhima: [ 133.137391, 34.360471 ]
+coords:
+  - - [ 133.139413, 34.341018 ]
+    - [ 133.13949, 34.34111 ]
+    - [ 133.13838, 34.34209 ]
+    - [ 133.1365, 34.34242 ]
+    - [ 133.13495, 34.34781 ]
+    - [ 133.13682, 34.35696 ]
+    - [ 133.13795, 34.35978 ]
+    - [ 133.13746, 34.3604 ]
+    - [ 133.137391, 34.360471 ]
+stops: [ shigei-nishiminato, hososhima ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 北行 1便
+        stops: [ 07:00, 07:15 ]
+      - name: 北行 2便
+        stops: [ 07:40, 07:55 ]
+        schedule:
+          "2026-01-01..2026-01-03": false
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 北行 3便
+        stops: [ 09:30, 09:45 ]
+      - name: 北行 4便
+        stops: [ 11:00, 11:15 ]
+      - name: 北行 5便
+        stops: [ 13:40, 13:55 ]
+        schedule:
+          "2026-01-01..2026-01-03": false
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 北行 6便
+        stops: [ 15:40, 15:55 ]
+      - name: 北行 7便
+        stops: [ 17:20, 17:35 ]
+      - name: 北行 8便
+        stops: [ 18:40, 18:55 ]
+        schedule:
+          "2026-01-01..2026-01-03": false
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 南行 1便
+        stops: [ 07:35, 07:20 ]
+      - name: 南行 2便
+        stops: [ 08:25, 08:10 ]
+        schedule:
+          "2026-01-01..2026-01-03": false
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 南行 3便
+        stops: [ 10:55, 10:40 ]
+      - name: 南行 4便
+        stops: [ 12:15, 12:00 ]
+      - name: 南行 5便
+        stops: [ 14:15, 14:00 ]
+        schedule:
+          "2026-01-01..2026-01-03": false
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 南行 6便
+        stops: [ 16:15, 16:00 ]
+      - name: 南行 7便
+        stops: [ 17:55, 17:40 ]
+      - name: 南行 8便
+        stops: [ 19:15, 19:00 ]
+        schedule:
+          "2026-01-01..2026-01-03": false
+          isSunday: false
+          isHoliday: false
+          "*": true
+flags: [ regional ]

@@ -1,0 +1,85 @@
+name: 坊勢渡船
+route: 家島〜坊勢
+color: "#26d9a8"
+source:
+  - https://www.heart-y.ne.jp/tosen/
+  - https://www.heart-y.ne.jp/tosen/adekouro.htm
+ships:
+  - おりおん
+  - あーす
+  - 第三坊勢渡船
+fare:
+  - 大人 400円
+  - 小人 200円
+  - バイク 400円
+notes:
+  - TEL 079-326-0559 / FAX 079-327-1121 / 携帯 090-2282-5143
+  - 所要時間約10分
+  - 平日はあーす、土日祝日は第三坊勢渡船が運航（乗り場が異なるので注意）
+  - 8便（14:50発）・10便（16:50発）は土曜・日曜・祝日減便
+ports:
+  ami-shu-minato: [ 134.52598, 34.66648 ]
+  naza: [ 134.510513, 34.652936 ]
+coords:
+  - - [ 134.52598, 34.66648 ]
+    - [ 134.52598, 34.66648 ]
+    - [ 134.52555, 34.66565 ]
+    - [ 134.52291, 34.66345 ]
+    - [ 134.51328, 34.66035 ]
+    - [ 134.51051, 34.658 ]
+    - [ 134.5103, 34.65483 ]
+    - [ 134.51038, 34.65322 ]
+    - [ 134.510513, 34.652936 ]
+stops: [ ami-shu-minato, naza ]
+timetables:
+  weekday:
+    name: 平日ダイヤ
+    voyages:
+      - name: 東行 1便
+        stops: [ 07:30, 07:40 ]
+      - name: 東行 2便
+        stops: [ 08:10, 08:20 ]
+      - name: 東行 3便
+        stops: [ 08:50, 09:00 ]
+      - name: 東行 4便
+        stops: [ 09:50, 10:00 ]
+      - name: 東行 5便
+        stops: [ 10:50, 11:00 ]
+      - name: 東行 6便
+        stops: [ 11:50, 12:00 ]
+      - name: 東行 7便
+        stops: [ 13:50, 14:00 ]
+      - name: 東行 8便
+        stops: [ 14:50, 15:00 ]
+      - name: 東行 9便
+        stops: [ 15:50, 16:00 ]
+      - name: 東行 10便
+        stops: [ 16:50, 17:00 ]
+      - name: 東行 11便
+        stops: [ 17:50, 18:00 ]
+  holiday:
+    name: 土日祝ダイヤ
+    voyages:
+      - name: 東行 1便
+        stops: [ 07:30, 07:40 ]
+      - name: 東行 2便
+        stops: [ 08:10, 08:20 ]
+      - name: 東行 3便
+        stops: [ 08:50, 09:00 ]
+      - name: 東行 4便
+        stops: [ 09:50, 10:00 ]
+      - name: 東行 5便
+        stops: [ 10:50, 11:00 ]
+      - name: 東行 6便
+        stops: [ 11:50, 12:00 ]
+      - name: 東行 7便
+        stops: [ 13:50, 14:00 ]
+      - name: 東行 9便
+        stops: [ 15:50, 16:00 ]
+      - name: 東行 11便
+        stops: [ 17:50, 18:00 ]
+schedule:
+  isHoliday: holiday
+  isWeekend: holiday
+  "*": weekday
+flags: [ regional ]

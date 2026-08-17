@@ -1,0 +1,126 @@
+name: 蓋井島航路
+route: 吉見〜蓋井島
+color: "#26d97a"
+source:
+  - https://www.shimonoseki-port.com/154838.html
+ships:
+  - 蓋井丸
+fare:
+  - adult::oneway::640円
+  - adult::round::1,220円（蓋井島居住者は1,030円）
+  - child::oneway::320円
+  - child::round::610円（蓋井島居住者は520円）
+  - 回数券（11回）6,400円
+  - 通勤定期券・普通定期券 19,200円/月
+  - 通学定期券（大人）9,600円/月
+notes:
+  - 所要時間 約 40 分
+  - 経営課渡船事務所 Tel:083-261-1010
+  - 休航日 1月1日
+  - 10月〜3月 平日・日曜・祭日は1日2往復、土曜のみ3往復
+  - 4月〜9月 毎日3往復（初便の吉見発は土日祝8:30・平日9:40）
+  - 6歳以下（未就学）は無料
+  - 気象条件により時間変更の可能性あり
+ports:
+  yoshimi: [ 130.900811, 34.068679 ]
+  futaoijima: [ 130.788298, 34.09977 ]
+coords:
+  - - [ 130.900811, 34.068679 ]
+    - [ 130.90076, 34.06799 ]
+    - [ 130.90102, 34.06736 ]
+    - [ 130.90058, 34.06663 ]
+    - [ 130.89409, 34.05835 ]
+    - [ 130.84175, 34.0687 ]
+    - [ 130.79478, 34.08862 ]
+    - [ 130.79201, 34.09251 ]
+    - [ 130.7912, 34.09903 ]
+    - [ 130.78984, 34.09991 ]
+    - [ 130.78885, 34.1001 ]
+    - [ 130.78853, 34.09993 ]
+    - [ 130.788298, 34.09977 ]
+stops: [ yoshimi, futaoijima ]
+timetables:
+  summer-weekend:
+    name: 4-9月 土日祝（3往復）
+    voyages:
+      - name: 東行 1便
+        stops: [ 08:30, 07:10 ]
+      - name: 西行 1便
+        stops: [ 08:30, 09:10 ]
+      - name: 東行 2便
+        stops: [ 13:30, 12:10 ]
+      - name: 西行 2便
+        stops: [ 13:30, 14:10 ]
+      - name: 東行 3便
+        stops: [ 17:00, 15:50 ]
+      - name: 西行 3便
+        stops: [ 17:00, 17:40 ]
+  summer-weekday:
+    name: 4-9月 平日（3往復）
+    voyages:
+      - name: 東行 1便
+        stops: [ 07:50, 07:10 ]
+      - name: 西行 1便
+        stops: [ 09:40, 10:20 ]
+      - name: 東行 2便
+        stops: [ 13:30, 12:10 ]
+      - name: 西行 2便
+        stops: [ 13:30, 14:10 ]
+      - name: 東行 3便
+        stops: [ 17:00, 15:50 ]
+      - name: 西行 3便
+        stops: [ 17:00, 17:40 ]
+  winter-saturday:
+    name: 10-3月 土曜（3往復）
+    voyages:
+      - name: 東行 1便
+        stops: [ 08:50, 07:40 ]
+      - name: 西行 1便
+        stops: [ 08:50, 09:30 ]
+      - name: 東行 2便
+        stops: [ 13:30, 12:10 ]
+      - name: 西行 2便
+        stops: [ 13:30, 14:10 ]
+      - name: 東行 3便
+        stops: [ 16:30, 15:20 ]
+      - name: 西行 3便
+        stops: [ 16:30, 17:10 ]
+  winter-weekday:
+    name: 10-3月 平日・日祝（2往復）
+    voyages:
+      - name: 東行 1便
+        stops: [ 08:20, 07:40 ]
+      - name: 西行 1便
+        stops: [ 09:40, 10:20 ]
+      - name: 東行 2便
+        stops: [ 16:00, 15:20 ]
+      - name: 西行 2便
+        stops: [ 16:30, 17:10 ]
+schedule:
+  nthMonth(4):
+    isWeekend: summer-weekend
+    isHoliday: summer-weekend
+    "*": summer-weekday
+  nthMonth(5):
+    isWeekend: summer-weekend
+    isHoliday: summer-weekend
+    "*": summer-weekday
+  nthMonth(6):
+    isWeekend: summer-weekend
+    isHoliday: summer-weekend
+    "*": summer-weekday
+  nthMonth(7):
+    isWeekend: summer-weekend
+    isHoliday: summer-weekend
+    "*": summer-weekday
+  nthMonth(8):
+    isWeekend: summer-weekend
+    isHoliday: summer-weekend
+    "*": summer-weekday
+  nthMonth(9):
+    isWeekend: summer-weekend
+    isHoliday: summer-weekend
+    "*": summer-weekday
+  isSaturday: winter-saturday
+  "*": winter-weekday
+flags: [ regional ]

@@ -1,0 +1,87 @@
+name: 多良間海運
+route: 平良〜多良間
+color: "#d326d9"
+source:
+  - http://www.taramakaiun.com/
+  - https://www.vill.tarama.okinawa.jp/about/access/ferry/
+fare:
+  - adult::oneway::2,510円
+  - adult::round::4,770円
+  - adult::round::2,310円（離島住民割引）
+  - disabled::round::680円（離島住民障がい者割引）
+  - student::round::2,310円（離島出身学生割引）
+  - adult::group::2,260円（団体割引・15名以上）
+  - 障がい者割引（大人）1,260円 ※第1種身体・知的障がい者、第1級精神障がい者および同行の介助者1名が対象
+  - child::oneway::1,260円
+  - child::round::2,390円
+  - child::round::1,160円（離島住民割引）
+  - bicycle::oneway::1,180円
+  - moto::oneway::2,370円（原付）
+  - moto::oneway::2,840円（二輪自動車）
+  - car::oneway::11,310円〜（車両長により変動）
+  - car::round::21,490円〜（車両長により変動）
+  - ※大人運賃は12歳以上、子ども運賃は6歳以上12歳未満
+  - ※往復運賃の有効期限は乗船日を含め14日以内
+notes:
+  - 電話 0980-72-9209（多良間海運）
+  - 所要時間 約2時間（約62km）
+  - 日曜運休、悪天候時は欠航
+  - 1月・2月・4月・6月・8月・10月の19日は牛セリのため平良発→多良間泊、20日 8:00 多良間発に変則
+  - 12月のみ9日は牛セリのため平良発→多良間泊、10日 8:00 多良間発に変則
+  - 多良間行き乗船券は平良港の乗船券売場のみ・現金のみ・予約不要
+  - 受付時間（平良港・通常運航日）8:00〜8:45 / 14:45〜15:50
+ships:
+  - フェリーたらまⅢ
+ports:
+  taira-2: [ 125.274467, 24.806593 ]
+  tarama: [ 124.721586, 24.644383 ]
+coords:
+  - - [ 125.274467, 24.806593 ]
+    - [ 125.27325, 24.80633 ]
+    - [ 125.26978, 24.81145 ]
+    - [ 125.26504, 24.81448 ]
+    - [ 125.19931, 24.7794 ]
+    - [ 124.73179, 24.6373 ]
+    - [ 124.72578, 24.64423 ]
+    - [ 124.72138, 24.6447 ]
+    - [ 124.721586, 24.644383 ]
+stops: [ taira-2, tarama ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 西行 1便
+        stops: [ 09:00, 11:00 ]
+      - name: 東行 1便
+        stops: [ 15:00, 13:00 ]
+  closed:
+    name: 日曜運休
+    voyages: []
+  aug-dance:
+    name: 八月踊り特別ダイヤ
+    voyages:
+      - name: 西行
+        note: 乗船券は当日販売のみ（予約不可）
+        stops: [ 08:00, 10:00 ]
+      - name: 東行
+        note: 乗船券は当日販売のみ（予約不可）
+        stops: [ 18:00, 16:00 ]
+  marathon-outbound:
+    name: たらま島一周マラソン特別ダイヤ（往路のみ）
+    voyages:
+      - name: 西行
+        note: 到着時刻は目安
+        stops: [ 08:00, 10:00 ]
+  marathon-return:
+    name: たらま島一周マラソン特別ダイヤ（復路のみ）
+    voyages:
+      - name: 東行
+        note: 到着時刻は目安
+        stops: [ 12:00, 10:00 ]
+schedule:
+  "2026-09-18..2026-09-20": aug-dance
+  "2026-11-21": marathon-outbound
+  "2026-11-22": marathon-return
+  isSunday: closed
+  "*": normal
+flags: [ regional ]

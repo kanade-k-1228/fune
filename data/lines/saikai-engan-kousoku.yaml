@@ -1,0 +1,88 @@
+name: 西海沿岸商船高速船（佐世保〜池島航路）
+color: "#9526d9"
+route: 佐世保〜大島〜松島〜池島
+source:
+  - https://www.city.saikai.nagasaki.jp/kurashi/kotsu/2/3947.html
+  - https://www.city.saikai.nagasaki.jp/material/files/group/5/saikaiengankousokusen.pdf
+  - https://www.city.saikai.nagasaki.jp/material/files/group/5/ryokakuuntinhyo.pdf
+fare:
+  - 佐世保〜大島：大人 1,200円／小児 600円
+  - 佐世保〜松島：大人 1,610円／小児 810円
+  - 佐世保〜池島：大人 2,090円／小児 1,050円
+  - 大島〜松島：大人 970円／小児 490円
+  - 大島〜池島：大人 1,470円／小児 740円
+  - 松島〜池島：大人 800円／小児 410円
+  - 定期券（佐世保〜大島）：一般 43,200円／学生 32,400円
+  - 身体・知的・精神障がい者および介護者は5割引（手帳提示）
+notes:
+  - 運航事業者：西海沿岸商船株式会社（TEL 0956-24-1004）
+  - 佐世保旅客船協会：0956-22-6575（平日 9:00〜17:00）
+  - 「高速船A」＝「Rapid Lily」、「高速船B」＝「れぴーど」にて運航
+  - 平日（火曜日・金曜日以外）・火金ダイヤ・大島造船所休業日ダイヤの3パターンで運航
+  - 火曜日・金曜日は3便と6便が松島・池島まで延長運航（大島造船所関連）
+  - 大島造船所休業日は全便「高速船B（れぴーど）」で運航
+  - 佐世保〜大島間は月間15往復まで臨時運航あり
+  - 運賃は令和6年10月1日改定
+  - 時刻表の（）内は到着時刻
+ships:
+  - Rapid Lily
+  - れぴーど
+ports:
+  sasebo: [ 129.72364, 33.16293 ]
+  oshima-saikai: [ 129.623989, 33.042157 ]
+  matsushima-saikai: [ 129.615156, 32.939997 ]
+  ikeshima: [ 129.647363, 33.054279 ]
+coords:
+  - - [ 129.72364, 33.16293 ]
+    - [ 129.623989, 33.042157 ]
+    - [ 129.615156, 32.939997 ]
+    - [ 129.647363, 33.054279 ]
+stops: [ sasebo, oshima-saikai, matsushima-saikai, ikeshima ]
+timetables:
+  dia0:
+    name: 平日ダイヤ（火曜日・金曜日以外）往路
+    voyages:
+      - name: 1便（高速船A）
+        stops: [ "06:20", "06:46", null, null ]
+      - name: 2便（高速船A）
+        stops: [ "07:22", "07:48", null, null ]
+      - name: 3便（高速船A）
+        stops: [ "08:24", "08:50", null, null ]
+      - name: 4便（高速船A）
+        stops: [ "09:27", "09:53", null, null ]
+      - name: 5便（高速船B）
+        stops: [ "12:25", "12:55", null, null ]
+      - name: 6便（高速船B）
+        stops: [ "13:35", "14:05", null, null ]
+      - name: 7便（高速船A）
+        stops: [ "16:25", "16:51", null, null ]
+      - name: 8便（高速船A）
+        stops: [ "17:27", "17:53", null, null ]
+      - name: 9便（高速船A）
+        stops: [ "18:31", "18:57", null, null ]
+      - name: 10便（高速船A）
+        stops: [ "19:33", "19:59", null, null ]
+  dia1:
+    name: 平日ダイヤ（火曜日・金曜日以外）復路
+    voyages:
+      - name: 1便（高速船A）
+        stops: [ null, "07:17", null, "06:51" ]
+      - name: 2便（高速船A）
+        stops: [ null, "08:19", null, "07:53" ]
+      - name: 3便（高速船A）
+        stops: [ null, "09:21", null, "08:55" ]
+      - name: 4便（高速船A）
+        stops: [ null, "10:24", null, "09:58" ]
+      - name: 5便（高速船B）
+        stops: [ null, "13:30", null, "13:00" ]
+      - name: 6便（高速船B）
+        stops: [ null, "14:40", null, "14:10" ]
+      - name: 7便（高速船A）
+        stops: [ null, "17:22", null, "16:56" ]
+      - name: 8便（高速船A）
+        stops: [ null, "18:26", null, "18:00" ]
+      - name: 9便（高速船A）
+        stops: [ null, "19:28", null, "19:02" ]
+      - name: 10便（高速船A）
+        stops: [ null, "20:30", null, "20:04" ]
+flags: [ regional ]

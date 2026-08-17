@@ -1,0 +1,62 @@
+name: 千代田町営
+route: 赤岩〜葛和田
+color: "#d9c326"
+source:
+  - https://www.town.chiyoda.gunma.jp/kankyo/doboku/doboku002.html
+fare:
+  - 無料（県道熊谷・館林線のため）
+ships:
+  - 千代田丸
+  - 新千代田丸
+notes:
+  - 千代田町運営（群馬県からの受託事業）、無料の県道熊谷・館林線渡船
+  - 時刻表なし（随時運航・群馬側は小屋の船頭に声かけ、埼玉側は黄色旗）
+  - 増水・強風等で運航が危険な場合は運休（群馬側に赤旗）
+  - 原付バイク・自動二輪車は乗船不可
+  - 団体利用は事前申込必須
+  - 千代田町 建設下水道課 土木管理室 0276-86-7004
+ports:
+  akaiwa: [ 139.434565, 36.20612 ]
+  kuzuwada: [ 139.429225, 36.204953 ]
+coords:
+  - - [ 139.434565, 36.20612 ]
+    - [ 139.43453, 36.20611 ]
+    - [ 139.42923, 36.205 ]
+    - [ 139.429225, 36.204953 ]
+stops: [ akaiwa, kuzuwada ]
+timetables:
+  spring-autumn:
+    name: 4/1〜9/30 8:45〜16:45 運航
+    voyages: []
+  winter:
+    name: 10/1〜3/31 8:45〜16:30 運航
+    voyages: []
+  dec28-29:
+    name: 12/28〜29 8:30〜16:30 運航
+    voyages: []
+  short:
+    name: 12/30・1/3 9:00〜14:00 運航
+    voyages: []
+  nye:
+    name: 12/31〜1/2 9:00〜12:00 運航
+    voyages: []
+schedule:
+  nthMonth(12):
+    nthDay(31): nye
+    nthDay(30): short
+    nthDay(29): dec28-29
+    nthDay(28): dec28-29
+    "*": winter
+  nthMonth(1):
+    nthDay(1): nye
+    nthDay(2): nye
+    nthDay(3): short
+    "*": winter
+  nthMonth(4): spring-autumn
+  nthMonth(5): spring-autumn
+  nthMonth(6): spring-autumn
+  nthMonth(7): spring-autumn
+  nthMonth(8): spring-autumn
+  nthMonth(9): spring-autumn
+  "*": winter
+flags: [ regional ]

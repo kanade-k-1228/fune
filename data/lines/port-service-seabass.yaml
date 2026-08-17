@@ -1,0 +1,275 @@
+name: 横浜シーバス
+color: "#d9265b"
+route: 横浜駅東口〜ハンマーヘッド〜ピア赤レンガ〜山下公園
+source:
+  - https://www.yokohama-cruising.jp/contents/seabass.html
+  - https://yokohama-cruising.jp/seabass/
+fare:
+  - 横浜駅東口⇔ハンマーヘッド 大人 1,300円 / 小児 650円
+  - 横浜駅東口⇔ピア赤レンガ 大人 1,300円 / 小児 650円
+  - 横浜駅東口⇔山下公園 大人 1,500円 / 小児 750円
+  - ハンマーヘッド⇔ピア赤レンガ 大人 1,000円 / 小児 500円
+  - ハンマーヘッド⇔山下公園 大人 1,300円 / 小児 650円
+  - ピア赤レンガ⇔山下公園 大人 1,300円 / 小児 650円
+  - 小児は3歳〜小学生。2歳以下は大人1名につき1名まで無料
+notes:
+  - 横浜港の水上バス（横浜駅東口は横浜ベイクォーター発着）
+  - 便によりハンマーヘッド寄港なし（HH無）またはピア赤レンガ寄港なし（赤無）あり
+  - 一部便は直行（横浜駅東口〜山下公園）
+  - 所要時間 横浜駅東口〜ハンマーヘッド 約10分、〜ピア赤レンガ 約15分、〜山下公園 約25分
+  - 運航 Y Cruise 株式会社 代表 TEL 045-662-6125
+  - 横浜駅東口乗り場 TEL 045-453-7047
+  - ハンマーヘッド乗り場 TEL 045-307-4815
+  - 赤レンガ倉庫乗り場 TEL 090-4911-6151
+  - 山下公園乗り場 TEL 045-264-6855
+  - 荒天・視界不良・潮位・メンテナンス等で欠航・運休となる場合あり
+ships:
+  - シーバスZERO
+  - シーバス5号
+  - シーバスACE
+ports:
+  yokohama-bayquarter: [ 139.6321, 35.4699 ]
+  hammerhead-pier: [ 139.6453, 35.4572 ]
+  pier-akarenga: [ 139.6476, 35.4564 ]
+  yamashita-koen: [ 139.6538, 35.4481 ]
+coords:
+  - - [ 139.6321, 35.4699 ]
+    - [ 139.62713, 35.46592 ]
+    - [ 139.62805, 35.46556 ]
+    - [ 139.63066, 35.46694 ]
+    - [ 139.6319, 35.4673 ]
+    - [ 139.63274, 35.46678 ]
+    - [ 139.63359, 35.46488 ]
+    - [ 139.63495, 35.46447 ]
+    - [ 139.63912, 35.46447 ]
+    - [ 139.64313, 35.46197 ]
+    - [ 139.64431, 35.45788 ]
+    - [ 139.64229, 35.45529 ]
+    - [ 139.6453, 35.4572 ]
+  - - [ 139.6453, 35.4572 ]
+    - [ 139.64504, 35.45214 ]
+    - [ 139.648, 35.45583 ]
+    - [ 139.64747, 35.45764 ]
+    - [ 139.64586, 35.45873 ]
+    - [ 139.64431, 35.45788 ]
+    - [ 139.64229, 35.45529 ]
+    - [ 139.6476, 35.4564 ]
+  - - [ 139.6476, 35.4564 ]
+    - [ 139.64504, 35.45214 ]
+    - [ 139.648, 35.45583 ]
+    - [ 139.65043, 35.45595 ]
+    - [ 139.65254, 35.4534 ]
+    - [ 139.65265, 35.4479 ]
+    - [ 139.65122, 35.44612 ]
+    - [ 139.6538, 35.4481 ]
+stops: [ yokohama-bayquarter, hammerhead-pier, pier-akarenga, yamashita-koen ]
+timetables:
+  dia0:
+    name: 平日ダイヤ
+    voyages:
+      - name: 横浜駅東口発 1便 (赤無)
+        stops: [ "10:30", null, null, null ]
+      - name: 横浜駅東口発 2便 (HH無)
+        stops: [ "11:20", null, null, null ]
+      - name: 横浜駅東口発 3便 (赤無)
+        stops: [ "11:50", null, null, null ]
+      - name: 横浜駅東口発 4便
+        stops: [ "13:10", null, null, null ]
+      - name: 横浜駅東口発 5便 (赤無)
+        stops: [ "14:10", null, null, null ]
+      - name: 横浜駅東口発 6便 (赤無)
+        stops: [ "14:45", null, null, null ]
+      - name: 横浜駅東口発 7便 (赤無)
+        stops: [ "15:40", null, null, null ]
+      - name: 横浜駅東口発 8便 (HH無)
+        stops: [ "16:10", null, null, null ]
+      - name: 横浜駅東口発 9便
+        stops: [ "17:00", null, null, null ]
+      - name: 横浜駅東口発 10便 (赤無)
+        stops: [ "18:00", null, null, null ]
+      - name: ハンマーヘッド発 1便 (赤無・山下行)
+        stops: [ null, "10:50", null, null ]
+      - name: ハンマーヘッド発 2便 (赤無・山下行)
+        stops: [ null, "12:10", null, null ]
+      - name: ハンマーヘッド発 3便 (山下行)
+        stops: [ null, "13:30", null, null ]
+      - name: ハンマーヘッド発 4便 (赤無・山下行)
+        stops: [ null, "14:30", null, null ]
+      - name: ハンマーヘッド発 5便 (赤無・山下行)
+        stops: [ null, "15:05", null, null ]
+      - name: ハンマーヘッド発 6便 (赤無・山下行)
+        stops: [ null, "16:00", null, null ]
+      - name: ハンマーヘッド発 7便 (山下行)
+        stops: [ null, "17:20", null, null ]
+      - name: ハンマーヘッド発 8便 (赤無・山下行)
+        stops: [ null, "18:20", null, null ]
+      - name: ハンマーヘッド発 横浜駅行 1便
+        stops: [ null, "11:25", null, null ]
+      - name: ハンマーヘッド発 横浜駅行 2便
+        stops: [ null, "13:40", null, null ]
+      - name: ハンマーヘッド発 横浜駅行 3便
+        stops: [ null, "14:20", null, null ]
+      - name: ハンマーヘッド発 横浜駅行 4便
+        stops: [ null, "15:15", null, null ]
+      - name: ハンマーヘッド発 横浜駅行 5便
+        stops: [ null, "16:35", null, null ]
+      - name: ハンマーヘッド発 横浜駅行 6便
+        stops: [ null, "17:30", null, null ]
+      - name: ピア赤レンガ発 横浜駅行 1便 (HH無)
+        stops: [ null, null, "10:55", null ]
+      - name: ピア赤レンガ発 横浜駅行 2便
+        stops: [ null, null, "13:25", null ]
+      - name: ピア赤レンガ発 横浜駅行 3便 (HH無)
+        stops: [ null, null, "15:45", null ]
+      - name: ピア赤レンガ発 横浜駅行 4便
+        stops: [ null, null, "17:15", null ]
+      - name: ピア赤レンガ発 横浜駅行 5便 (HH無)
+        stops: [ null, null, "18:15", null ]
+      - name: ピア赤レンガ発 山下行 1便
+        stops: [ null, null, "11:40", null ]
+      - name: ピア赤レンガ発 山下行 2便
+        stops: [ null, null, "13:45", null ]
+      - name: ピア赤レンガ発 山下行 3便
+        stops: [ null, null, "16:30", null ]
+      - name: ピア赤レンガ発 山下行 4便
+        stops: [ null, null, "17:35", null ]
+      - name: 山下公園発 1便 (HH無)
+        stops: [ null, null, null, "10:40" ]
+      - name: 山下公園発 2便 (赤無)
+        stops: [ null, null, null, "11:10" ]
+      - name: 山下公園発 3便 (直行)
+        stops: [ null, null, null, "12:00" ]
+      - name: 山下公園発 4便
+        stops: [ null, null, null, "13:10" ]
+      - name: 山下公園発 5便 (赤無)
+        stops: [ null, null, null, "14:05" ]
+      - name: 山下公園発 6便 (赤無)
+        stops: [ null, null, null, "15:00" ]
+      - name: 山下公園発 7便 (HH無)
+        stops: [ null, null, null, "15:30" ]
+      - name: 山下公園発 8便 (赤無)
+        stops: [ null, null, null, "16:20" ]
+      - name: 山下公園発 9便
+        stops: [ null, null, null, "17:00" ]
+      - name: 山下公園発 10便 (HH無)
+        stops: [ null, null, null, "18:00" ]
+  dia1:
+    name: 土日祝ダイヤ
+    voyages:
+      - name: 横浜駅東口発 1便 (直行)
+        stops: [ "10:10", null, null, null ]
+      - name: 横浜駅東口発 2便 (赤無)
+        stops: [ "10:30", null, null, null ]
+      - name: 横浜駅東口発 3便 (直行)
+        stops: [ "11:00", null, null, null ]
+      - name: 横浜駅東口発 4便 (HH無)
+        stops: [ "11:20", null, null, null ]
+      - name: 横浜駅東口発 5便 (赤無)
+        stops: [ "11:50", null, null, null ]
+      - name: 横浜駅東口発 6便 (直行)
+        stops: [ "12:00", null, null, null ]
+      - name: 横浜駅東口発 7便
+        stops: [ "13:10", null, null, null ]
+      - name: 横浜駅東口発 8便 (直行)
+        stops: [ "13:55", null, null, null ]
+      - name: 横浜駅東口発 9便 (赤無)
+        stops: [ "14:10", null, null, null ]
+      - name: 横浜駅東口発 10便 (赤無)
+        stops: [ "14:45", null, null, null ]
+      - name: 横浜駅東口発 11便 (直行)
+        stops: [ "15:10", null, null, null ]
+      - name: 横浜駅東口発 12便 (赤無)
+        stops: [ "15:40", null, null, null ]
+      - name: 横浜駅東口発 13便 (HH無)
+        stops: [ "16:10", null, null, null ]
+      - name: 横浜駅東口発 14便 (直行)
+        stops: [ "16:30", null, null, null ]
+      - name: 横浜駅東口発 15便
+        stops: [ "17:00", null, null, null ]
+      - name: 横浜駅東口発 16便 (直行)
+        stops: [ "17:40", null, null, null ]
+      - name: 横浜駅東口発 17便 (赤無)
+        stops: [ "18:00", null, null, null ]
+      - name: ハンマーヘッド発 1便 (赤無・山下行)
+        stops: [ null, "10:50", null, null ]
+      - name: ハンマーヘッド発 2便 (赤無・山下行)
+        stops: [ null, "12:10", null, null ]
+      - name: ハンマーヘッド発 3便 (山下行)
+        stops: [ null, "13:30", null, null ]
+      - name: ハンマーヘッド発 4便 (赤無・山下行)
+        stops: [ null, "14:30", null, null ]
+      - name: ハンマーヘッド発 5便 (赤無・山下行)
+        stops: [ null, "15:05", null, null ]
+      - name: ハンマーヘッド発 6便 (赤無・山下行)
+        stops: [ null, "16:00", null, null ]
+      - name: ハンマーヘッド発 7便 (山下行)
+        stops: [ null, "17:20", null, null ]
+      - name: ハンマーヘッド発 8便 (赤無・山下行)
+        stops: [ null, "18:20", null, null ]
+      - name: ハンマーヘッド発 横浜駅行 1便
+        stops: [ null, "11:25", null, null ]
+      - name: ハンマーヘッド発 横浜駅行 2便
+        stops: [ null, "13:40", null, null ]
+      - name: ハンマーヘッド発 横浜駅行 3便
+        stops: [ null, "14:20", null, null ]
+      - name: ハンマーヘッド発 横浜駅行 4便
+        stops: [ null, "15:15", null, null ]
+      - name: ハンマーヘッド発 横浜駅行 5便
+        stops: [ null, "16:35", null, null ]
+      - name: ハンマーヘッド発 横浜駅行 6便
+        stops: [ null, "17:30", null, null ]
+      - name: ピア赤レンガ発 横浜駅行 1便 (HH無)
+        stops: [ null, null, "10:55", null ]
+      - name: ピア赤レンガ発 横浜駅行 2便
+        stops: [ null, null, "13:25", null ]
+      - name: ピア赤レンガ発 横浜駅行 3便 (HH無)
+        stops: [ null, null, "15:45", null ]
+      - name: ピア赤レンガ発 横浜駅行 4便
+        stops: [ null, null, "17:15", null ]
+      - name: ピア赤レンガ発 横浜駅行 5便 (HH無)
+        stops: [ null, null, "18:15", null ]
+      - name: ピア赤レンガ発 山下行 1便
+        stops: [ null, null, "11:40", null ]
+      - name: ピア赤レンガ発 山下行 2便
+        stops: [ null, null, "13:45", null ]
+      - name: ピア赤レンガ発 山下行 3便
+        stops: [ null, null, "16:30", null ]
+      - name: ピア赤レンガ発 山下行 4便
+        stops: [ null, null, "17:35", null ]
+      - name: 山下公園発 1便 (HH無)
+        stops: [ null, null, null, "10:40" ]
+      - name: 山下公園発 2便 (赤無)
+        stops: [ null, null, null, "11:10" ]
+      - name: 山下公園発 3便 (直行)
+        stops: [ null, null, null, "11:30" ]
+      - name: 山下公園発 4便 (直行)
+        stops: [ null, null, null, "12:00" ]
+      - name: 山下公園発 5便
+        stops: [ null, null, null, "13:10" ]
+      - name: 山下公園発 6便 (直行)
+        stops: [ null, null, null, "13:25" ]
+      - name: 山下公園発 7便 (赤無)
+        stops: [ null, null, null, "14:05" ]
+      - name: 山下公園発 8便 (直行)
+        stops: [ null, null, null, "14:30" ]
+      - name: 山下公園発 9便 (赤無)
+        stops: [ null, null, null, "15:00" ]
+      - name: 山下公園発 10便 (HH無)
+        stops: [ null, null, null, "15:30" ]
+      - name: 山下公園発 11便 (直行)
+        stops: [ null, null, null, "15:50" ]
+      - name: 山下公園発 12便 (赤無)
+        stops: [ null, null, null, "16:20" ]
+      - name: 山下公園発 13便
+        stops: [ null, null, null, "17:00" ]
+      - name: 山下公園発 14便 (直行)
+        stops: [ null, null, null, "17:10" ]
+      - name: 山下公園発 15便 (HH無)
+        stops: [ null, null, null, "18:00" ]
+      - name: 山下公園発 16便 (直行)
+        stops: [ null, null, null, "18:40" ]
+schedule:
+  isHoliday: dia1
+  isWeekend: dia1
+  "*": dia0
+flags: [ regional ]

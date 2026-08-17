@@ -1,0 +1,63 @@
+name: 平戸市営
+route: 的山大島〜田平〜平戸
+color: "#d926b1"
+source:
+  - https://www.city.hirado.nagasaki.jp/kurashi/life/sumai/koutu/ferry/2019-0225-1640-88.html
+fare:
+  - 旅客運賃（片道）：大人660円、小人330円、島民割引あり
+notes:
+  - 旅客定員150人（272トン、13.3ノット）
+  - 荒天のため、大島～薄香で運航することがあります
+  - 車両・二輪車の乗船は事前予約が必要（乗船日10日前から）。切符販売所：0950-23-2094（受付：午前8時～午後5時30分）
+  - お問い合わせ：大島支所 0950-55-2511
+ships:
+  - フェリー大島
+ports:
+  ikuwa-san-minato: [ 129.528, 33.483 ]
+  tahira: [ 129.577, 33.362 ]
+  hirado: [ 129.554, 33.37 ]
+coords:
+  - - [ 129.528847, 33.483217 ]
+    - [ 129.55708, 33.37162 ]
+    - [ 129.56767, 33.36783 ]
+    - [ 129.57411, 33.36392 ]
+    - [ 129.57686, 33.36227 ]
+    - [ 129.5658, 33.37803 ]
+    - [ 129.56723, 33.37031 ]
+    - [ 129.57414, 33.36405 ]
+    - [ 129.57686, 33.36227 ]
+    - [ 129.555925, 33.371852 ]
+stops: [ ikuwa-san-minato, tahira, hirado ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 下り 1便
+        stops: [ 07:00, [ 07:45, 07:48 ], 08:00 ]
+      - name: 下り 2便
+        stops: [ 09:20, null, 10:00 ]
+      - name: 下り 3便
+        stops: [ 11:20, null, 12:00 ]
+      - name: 下り 4便
+        stops: [ 14:00, null, 14:40 ]
+      - name: 下り 5便
+        stops: [ 16:30, null, 17:10 ]
+      - name: 上り 1便
+        stops: [ 09:05, null, 08:25 ]
+      - name: 上り 2便
+        stops: [ 11:00, null, 10:20 ]
+      - name: 上り 3便
+        stops: [ 13:40, null, 13:00 ]
+      - name: 上り 4便
+        stops: [ 16:10, null, 15:30 ]
+      - name: 上り 5便
+        stops: [ 18:25, null, 17:45 ]
+  closed:
+    name: 1/1 全便休航
+    voyages: []
+schedule:
+  nthMonth(1):
+    nthDay(1): closed
+    "*": normal
+  "*": normal
+flags: [ regional ]

@@ -1,0 +1,68 @@
+name: トライアングル
+route: 三笠桟橋〜猿島
+color: "#26d9d9"
+source:
+  - https://sarushima.jp/information/
+  - https://sarushima.jp/
+  - https://www.tryangle-web.com/contact/
+  - https://www.city.yokosuka.kanagawa.jp/faq/shisei/gaiyo/shisetsu/0756.html
+ships:
+  - NEW KUROFUNE
+  - Sea Friend 8
+  - Sea Friend ZERO
+fare:
+  - 往復乗船料 大人(市外) 1,600〜2,000円
+  - 往復乗船料 大人(横須賀市民) 1,050〜1,250円
+  - 往復乗船料 中学生 800〜1,000円
+  - 往復乗船料 小学生(市外) 400〜500円
+  - 往復乗船料 小学生(市民) 100〜500円
+  - 小学生未満は大人1名につき1名無料
+  - 別途 猿島公園入園料(大人500円/市民250円、小中学生250円/市民130円)
+notes:
+  - 運航 株式会社トライアングル TEL 046-825-7144 (受付 9:00〜17:00)
+  - 所要時間 片道約10分
+  - 毎日運航(天候により欠航あり)
+  - 夏期ダイヤ(3/1〜10/31) 三笠桟橋発 9:30〜16:30 毎時30分発
+  - 冬期ダイヤ(11/1〜2/末) 三笠桟橋発 9:30〜15:30 毎時30分発
+  - 乗船料は乗船日により変動
+ports:
+  mikasa-sambashi: [ 139.674449, 35.284465 ]
+  sashima-sambashi: [ 139.692651, 35.285259 ]
+coords:
+  - - [ 139.674449, 35.284465 ]
+    - [ 139.67458, 35.28449 ]
+    - [ 139.67541, 35.28466 ]
+    - [ 139.67796, 35.28594 ]
+    - [ 139.69167, 35.28522 ]
+    - [ 139.69244, 35.2853 ]
+    - [ 139.692651, 35.285259 ]
+stops: [ mikasa-sambashi, sashima-sambashi ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 東行 1便
+        stops: [ 09:30, 09:40 ]
+      - name: 東行 2便
+        stops: [ 10:30, 10:40 ]
+      - name: 東行 3便
+        stops: [ 11:30, 11:40 ]
+      - name: 東行 4便
+        stops: [ 12:30, 12:40 ]
+      - name: 東行 5便
+        stops: [ 13:30, 13:40 ]
+      - name: 東行 6便
+        stops: [ 14:30, 14:40 ]
+      - name: 西行 1便
+        stops: [ 10:10, 10:00 ]
+      - name: 西行 2便
+        stops: [ 11:10, 11:00 ]
+      - name: 西行 3便
+        stops: [ 12:10, 12:00 ]
+      - name: 西行 4便
+        stops: [ 13:10, 13:00 ]
+      - name: 西行 5便
+        stops: [ 14:10, 14:00 ]
+      - name: 西行 6便
+        stops: [ 15:10, 15:00 ]
+flags: [ regional ]

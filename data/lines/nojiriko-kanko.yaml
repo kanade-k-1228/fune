@@ -1,0 +1,41 @@
+name: 野尻湖観光船
+color: "#c826d9"
+route: 野尻湖遊覧（琵琶島経由）
+source:
+  - https://www.nojiriko.co.jp/service.html
+  - https://www.nojiriko.co.jp/
+fare:
+  - 大人（中学生以上）1,800円
+  - 小人（小学生以下）900円
+  - 未就学児：大人1名につき1名まで無料
+  - 障害者手帳保持者は50%割引
+  - ペット乗船料金 300円
+notes:
+  - 運航期間：4月下旬〜11月中旬（季節運航、冬期休業）
+  - 乗船場から出発し、琵琶島（宇賀神社）に停泊後に乗船場へ戻る周遊コース（所要約50分）
+  - 欠航条件：風速12m/s以上、波高0.5m以上、視程300m以下、水位1.5m以下
+  - 連絡先：026-258-2505（野尻湖定期船会社）
+ships:
+  - 雅
+  - ツウィンビー
+ports:
+  nojiriko-futo: [ 138.2088, 36.8331 ]
+  nojiriko-biwajima: [ 138.2160, 36.8326 ]
+coords:
+  - - [ 138.2088, 36.8331 ]
+    - [ 138.216, 36.8326 ]
+    - [ 138.2088, 36.8331 ]
+stops: [ nojiriko-futo, nojiriko-biwajima, nojiriko-futo ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 1便
+        stops: [ "10:00", null, null ]
+      - name: 2便
+        stops: [ "11:30", null, null ]
+      - name: 3便
+        stops: [ "13:00", null, null ]
+      - name: 4便
+        stops: [ "14:30", null, null ]
+flags: [ regional ]

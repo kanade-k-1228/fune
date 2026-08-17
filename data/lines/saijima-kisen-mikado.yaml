@@ -1,0 +1,50 @@
+name: 斎島汽船
+route: 大崎下島（久比）〜三角島
+color: "#d92d26"
+source:
+  - https://www.city.kure.lg.jp/soshiki/28/kouro-mikado.html
+fare:
+  - 運賃は三角航路運賃表参照（PDF）
+notes:
+  - 荒天時は運休の場合あり
+  - "問い合わせ: 斎島汽船 0823-68-2215"
+ships:
+  - 第八同栄丸
+ports:
+  sankakujima: [ 132.819, 34.19063 ]
+  kubi: [ 132.83164, 34.18796 ]
+coords:
+  - - [ 132.819, 34.19063 ]
+    - [ 132.819, 34.19063 ]
+    - [ 132.81958, 34.19021 ]
+    - [ 132.82845, 34.18784 ]
+    - [ 132.83164, 34.18796 ]
+    - [ 132.83164, 34.18796 ]
+stops: [ sankakujima, kubi ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 三角発1便
+        stops: [ 07:00, 07:10 ]
+      - name: 三角発2便
+        stops: [ 08:00, 08:10 ]
+      - name: 三角発3便
+        stops: [ 12:00, 12:10 ]
+      - name: 三角発4便
+        stops: [ 15:45, 15:55 ]
+      - name: 久比発1便
+        stops: [ 07:45, 07:35 ]
+      - name: 久比発2便
+        stops: [ 09:40, 09:30 ]
+      - name: 久比発3便
+        stops: [ 13:40, 13:30 ]
+      - name: 久比発4便
+        stops: [ 16:25, 16:15 ]
+  closed:
+    name: 1月1日運休
+    voyages: []
+schedule:
+  "2026-01-01": closed
+  "*": normal
+flags: [ regional ]

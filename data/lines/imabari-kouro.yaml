@@ -1,0 +1,20 @@
+name: 今治市営
+route: 今治港内
+color: "#26ced9"
+source:
+  - https://www.city.imabari.ehime.jp/kouwan/imabari/imabari.html
+notes:
+  - 今治港内の桟橋間接続航路
+  - 各離島航路の発着桟橋
+ports:
+  imabari: [ 133.00588, 34.07076 ]
+  dai-3-sambashi: [ 133.006742, 34.068968 ]
+coords:
+  - - [ 133.005048, 34.070485 ]
+    - [ 133.005768, 34.072705 ]
+    - [ 133.005048, 34.070485 ]
+    - [ 133.006101, 34.07204 ]
+    - [ 133.006742, 34.068968 ]
+    - [ 133.006742, 34.068968 ]
+stops: [ imabari, dai-3-sambashi ]
+flags: [ regional ]

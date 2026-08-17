@@ -1,0 +1,23 @@
+name: 高島航路
+route: 宮の浦〜高島
+color: "#2cd926"
+source:
+  - https://www.city.hirado.nagasaki.jp/kurashi/life/sumai/koutu/ferry/fe03.html
+  - https://www.marugin.jp/page_pricelist.html
+notes:
+  - 定期ダイヤなし（瀬渡し船・要事前連絡・チャーター便扱い）
+  - 丸銀釣センター（柴山久幸）TEL 0950-29-1006 / FAX 0950-29-1533（Eメール予約不可）
+  - 丸宮釣センター（宮川義文）TEL 0950-29-1511
+  - 平戸市公共交通政策課 0950-22-9101
+  - 丸銀釣センター料金（平戸宮ノ浦瀬渡し協定料金）：高島は地磯扱いで 5,000 円
+  - 令和8年（2026年）4月1日以降、燃料サーチャージとして一律 500 円が追加
+ports:
+  miya-no-ura: [ 129.356459, 33.193464 ]
+  takashima-hirado-pt: [ 129.339605, 33.186758 ]
+coords:
+  - - [ 129.356459, 33.193464 ]
+    - [ 129.356459, 33.193464 ]
+    - [ 129.339605, 33.186758 ]
+    - [ 129.339605, 33.186758 ]
+stops: [ miya-no-ura, takashima-hirado-pt ]
+flags: [ regional ]

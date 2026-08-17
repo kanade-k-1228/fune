@@ -1,0 +1,31 @@
+name: 横浜 水上バス（シーバス）
+color: "#d9a126"
+route: 大さん橋〜象の鼻〜日本丸〜運河パーク
+source:
+  - https://www.keihinferry.co.jp/teiki/seabus/
+  - https://www.keihinferry.co.jp/company/
+notes:
+  - 現在運航休止中（再開時期未定）。運賃も未定
+  - 再開時は土日祝のみ運航（1日1往復）。天候・潮位・船舶都合により運休の場合あり
+  - 所要時間 片道約35分
+  - 運航：京浜フェリーボート株式会社 TEL 045-201-0821
+ports:
+  pier-osanbashi: [ 139.6481, 35.4474 ]
+  pier-zounohana: [ 139.6440, 35.4494 ]
+  pier-nihonmaru: [ 139.6335, 35.4540 ]
+  pier-ungapark: [ 139.6368, 35.4572 ]
+coords:
+  - - [ 139.6481, 35.4474 ]
+    - [ 139.644, 35.4494 ]
+    - [ 139.6335, 35.454 ]
+    - [ 139.6368, 35.4572 ]
+stops: [ pier-osanbashi, pier-zounohana, pier-nihonmaru, pier-ungapark ]
+timetables:
+  normal:
+    name: 土日祝ダイヤ
+    voyages:
+      - name: 往路
+        stops: [ "11:00", "11:15", "11:30", "11:35" ]
+      - name: 復路
+        stops: [ "12:15", "12:00", "11:45", "11:40" ]
+flags: [ regional, suspend ]

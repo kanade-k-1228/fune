@@ -1,0 +1,85 @@
+name: 小田急箱根
+route: 桃源台〜箱根町〜元箱根
+color: "#58d926"
+source:
+  - https://www.hakonenavi.jp/hakone-kankosen/
+  - https://www.hakonenavi.jp/transportation/ticket/ship/
+  - https://www.hakonenavi.jp/faq/
+fare:
+  - "片道 桃源台〜箱根町: 大人 600円 / 小児 300円"
+  - "片道 桃源台〜元箱根 / 元箱根〜箱根町: 大人 1,700円 / 小児 850円"
+  - "往復 (3港共通): 大人 3,000円 / 小児 1,300円"
+  - 特別船室は別途追加料金
+notes:
+  - "運航: 小田急箱根 (TEL 0460-83-6325 / 9:00〜17:00)"
+  - 所要時間 約 25〜40 分
+  - 濃霧・強風など荒天時は出港時刻や行先変更・運航中止の場合あり
+  - 2025年10月1日に運賃改定 (片道 元箱根/桃源台間は 1,200円 → 1,700円)
+ships:
+  - ロワイヤルII
+  - ビクトリー
+  - クイーン芦ノ湖
+ports:
+  mizuumi-shiri-minato: [ 138.994387, 35.23685 ]
+  hakone-sekisho-ato: [ 139.024349, 35.190356 ]
+  motohakone: [ 139.029982, 35.200753 ]
+coords:
+  - - [ 138.994387, 35.23685 ]
+    - [ 139.024349, 35.190356 ]
+    - [ 139.029982, 35.200753 ]
+stops: [ mizuumi-shiri-minato, hakone-sekisho-ato, motohakone ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 下り 1便
+        stops: [ 09:30, null, 10:10 ]
+      - name: 下り 2便
+        stops: [ 10:10, 10:40, 10:50 ]
+      - name: 下り 3便
+        stops: [ 10:45, 11:15, 11:25 ]
+      - name: 下り 4便
+        stops: [ 11:25, 11:55, 12:05 ]
+      - name: 下り 5便
+        stops: [ 12:00, 12:30, 12:40 ]
+      - name: 下り 6便
+        stops: [ 12:40, 13:10, 13:20 ]
+      - name: 下り 7便
+        stops: [ 13:15, 13:45, 13:55 ]
+      - name: 下り 8便
+        stops: [ 13:55, 14:25, 14:35 ]
+      - name: 下り 9便
+        stops: [ 14:30, 15:00, 15:10 ]
+      - name: 下り 10便
+        stops: [ 15:10, 15:40, 15:50 ]
+      - name: 下り 11便
+        stops: [ 15:50, 16:20, 16:30 ]
+      - name: 下り 12便
+        stops: [ 16:25, 16:55, null ]
+      - name: 上り 1便
+        stops: [ null, 09:30, null ]
+      - name: 上り 2便
+        stops: [ 10:20, 10:00, 09:40 ]
+      - name: 上り 3便
+        stops: [ null, 10:40, 10:15 ]
+      - name: 上り 4便
+        stops: [ null, 11:15, 10:55 ]
+      - name: 上り 5便
+        stops: [ null, 11:55, 11:30 ]
+      - name: 上り 6便
+        stops: [ null, 12:30, 12:10 ]
+      - name: 上り 7便
+        stops: [ null, 13:10, 12:45 ]
+      - name: 上り 8便
+        stops: [ null, 13:45, 13:25 ]
+      - name: 上り 9便
+        stops: [ null, 14:25, 14:00 ]
+      - name: 上り 10便
+        stops: [ null, 15:00, 14:40 ]
+      - name: 上り 11便
+        stops: [ null, 15:40, 15:15 ]
+      - name: 上り 12便
+        stops: [ null, 16:20, 15:55 ]
+      - name: 上り 13便
+        stops: [ null, null, 16:30 ]
+flags: [ regional ]

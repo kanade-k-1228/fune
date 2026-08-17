@@ -1,0 +1,309 @@
+name: ごごしまフェリー「しとらす・ミソラ」
+route: 高浜〜泊〜由良
+color: "#d92667"
+source:
+  - https://gogoshima-ferry.com/timetable_faretable/
+  - https://gogoshima-ferry.com/
+  - https://gogoshima-ferry.com/ferry/
+  - https://gogoshima-ferry.com/obon_daiya/
+  - https://gogoshima-ferry.com/wp-content/uploads/obon_daiya.pdf
+  - https://gogoshima-ferry.com/%e8%88%b9%e8%b6%8a%e5%af%84%e6%b8%af%e4%be%bf%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/
+fare:
+  - 旅客（片道）：大人300円、小人150円
+  - 自転車：160円、単車（125cc以下）：310円、自動車二輪車：460円
+  - 車両（片道・運転者1名込）：3m未満1,280円／3〜4m1,580円／4〜5m1,890円／5〜6m2,460円／6〜7m2,980円／7〜8m3,500円／8〜9m4,030円／9〜10m4,550円／10〜11m5,080円／11〜12m5,600円
+notes:
+  - 株式会社ごごしま運航
+  - TEL：089-961-2034 / FAX：089-961-2088
+  - 泊航路：フェリーしとらす・所要約10分・1日14便
+  - 由良航路：フェリーミソラ・所要約13分・1日14便
+  - 12月31日〜1月3日は運休
+  - 2026年7月19日〜8月12日は「高浜発由良行9:55」「高浜発泊行15:25」の2便が船越港に寄港（乗下船希望者は船員へ要申出）
+  - 2026年8月13日〜16日はお盆期間臨時ダイヤで運航（増便）
+ships:
+  - フェリーしとらす
+  - フェリーミソラ
+ports:
+  takahama: [ 132.70072, 33.88332 ]
+  gogoshima-tomari: [ 132.69106, 33.88282 ]
+  yura: [ 132.6814, 33.88234 ]
+coords:
+  - - [ 132.70072, 33.88332 ]
+    - [ 132.6814, 33.88234 ]
+    - [ 132.69106, 33.88282 ]
+    - [ 132.70072, 33.88332 ]
+    - [ 132.70072, 33.88332 ]
+    - [ 132.69106, 33.88282 ]
+    - [ 132.6814, 33.88234 ]
+    - [ 132.6814, 33.88234 ]
+stops: [ takahama, gogoshima-tomari, yura ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 泊発1
+        stops: [ 06:35, 06:25, null ]
+      - name: 泊発2
+        stops: [ 07:10, 07:00, null ]
+      - name: 泊発3
+        stops: [ 07:45, 07:35, null ]
+      - name: 泊発4
+        stops: [ 09:05, 08:55, null ]
+      - name: 泊発5
+        stops: [ 10:15, 10:05, null ]
+      - name: 泊発6
+        stops: [ 11:15, 11:05, null ]
+      - name: 泊発7
+        stops: [ 12:20, 12:10, null ]
+      - name: 泊発8
+        stops: [ 13:45, 13:35, null ]
+      - name: 泊発9
+        stops: [ 15:10, 15:00, null ]
+      - name: 泊発10
+        stops: [ 16:20, 16:10, null ]
+      - name: 泊発11
+        stops: [ 17:30, 17:20, null ]
+      - name: 泊発12
+        stops: [ 18:30, 18:20, null ]
+      - name: 泊発13
+        stops: [ 19:30, 19:20, null ]
+      - name: 泊発14
+        stops: [ 20:20, 20:10, null ]
+      - name: 高浜発泊行1
+        stops: [ 06:45, 06:55, null ]
+      - name: 高浜発泊行2
+        stops: [ 07:17, 07:27, null ]
+      - name: 高浜発泊行3
+        stops: [ 07:52, 08:02, null ]
+      - name: 高浜発泊行4
+        stops: [ 09:25, 09:35, null ]
+      - name: 高浜発泊行5
+        stops: [ 10:25, 10:35, null ]
+      - name: 高浜発泊行6
+        stops: [ 11:25, 11:35, null ]
+      - name: 高浜発泊行7
+        stops: [ 12:25, 12:35, null ]
+      - name: 高浜発泊行8
+        stops: [ 13:55, 14:05, null ]
+      - name: 高浜発泊行9
+        stops: [ 15:25, 15:35, null ]
+      - name: 高浜発泊行10
+        stops: [ 16:40, 16:50, null ]
+      - name: 高浜発泊行11
+        stops: [ 17:40, 17:50, null ]
+      - name: 高浜発泊行12
+        stops: [ 18:40, 18:50, null ]
+      - name: 高浜発泊行13
+        stops: [ 19:40, 19:50, null ]
+      - name: 高浜発泊行14
+        stops: [ 20:25, 20:35, null ]
+      - name: 由良発1
+        stops: [ 06:08, null, 05:55 ]
+      - name: 由良発2
+        stops: [ 07:21, null, 07:08 ]
+      - name: 由良発3
+        stops: [ 07:57, null, 07:44 ]
+      - name: 由良発4
+        stops: [ 08:48, null, 08:35 ]
+      - name: 由良発5
+        stops: [ 09:48, null, 09:35 ]
+      - name: 由良発6
+        stops: [ 10:48, null, 10:35 ]
+      - name: 由良発7
+        stops: [ 11:48, null, 11:35 ]
+      - name: 由良発8
+        stops: [ 13:08, null, 12:55 ]
+      - name: 由良発9
+        stops: [ 14:33, null, 14:20 ]
+      - name: 由良発10
+        stops: [ 15:48, null, 15:35 ]
+      - name: 由良発11
+        stops: [ 16:53, null, 16:40 ]
+      - name: 由良発12
+        stops: [ 18:03, null, 17:50 ]
+      - name: 由良発13
+        stops: [ 19:03, null, 18:50 ]
+      - name: 由良発14
+        stops: [ 20:03, null, 19:50 ]
+      - name: 高浜発由良行1
+        stops: [ 06:15, null, 06:28 ]
+      - name: 高浜発由良行2
+        stops: [ 07:25, null, 07:38 ]
+      - name: 高浜発由良行3
+        stops: [ 08:08, null, 08:21 ]
+      - name: 高浜発由良行4
+        stops: [ 08:55, null, 09:08 ]
+      - name: 高浜発由良行5
+        stops: [ 09:55, null, 10:08 ]
+      - name: 高浜発由良行6
+        stops: [ 10:55, null, 11:08 ]
+      - name: 高浜発由良行7
+        stops: [ 11:55, null, 12:08 ]
+      - name: 高浜発由良行8
+        stops: [ 13:15, null, 13:28 ]
+      - name: 高浜発由良行9
+        stops: [ 14:40, null, 14:53 ]
+      - name: 高浜発由良行10
+        stops: [ 16:00, null, 16:13 ]
+      - name: 高浜発由良行11
+        stops: [ 17:10, null, 17:23 ]
+      - name: 高浜発由良行12
+        stops: [ 18:10, null, 18:23 ]
+      - name: 高浜発由良行13
+        stops: [ 19:10, null, 19:23 ]
+      - name: 高浜発由良行14
+        stops: [ 20:10, null, 20:23 ]
+  closed:
+    name: 12/31〜1/3 運休
+    voyages: []
+  obon:
+    name: お盆期間臨時ダイヤ（増便）
+    voyages:
+      - name: 泊発1
+        stops: [ 06:35, 06:25, null ]
+      - name: 泊発2
+        stops: [ 07:10, 07:00, null ]
+      - name: 泊発3
+        stops: [ 07:45, 07:35, null ]
+      - name: 泊発4
+        stops: [ 08:30, 08:20, null ]
+      - name: 泊発5
+        stops: [ 09:10, 09:00, null ]
+      - name: 泊発6
+        stops: [ 09:50, 09:40, null ]
+      - name: 泊発7
+        stops: [ 10:30, 10:20, null ]
+      - name: 泊発8
+        stops: [ 11:20, 11:10, null ]
+      - name: 泊発9
+        stops: [ 12:20, 12:10, null ]
+      - name: 泊発10
+        stops: [ 13:45, 13:35, null ]
+      - name: 泊発11
+        stops: [ 15:20, 15:10, null ]
+      - name: 泊発12
+        stops: [ 16:00, 15:50, null ]
+      - name: 泊発13
+        stops: [ 16:40, 16:30, null ]
+      - name: 泊発14
+        stops: [ 17:30, 17:20, null ]
+      - name: 泊発15
+        stops: [ 18:30, 18:20, null ]
+      - name: 泊発16
+        stops: [ 19:30, 19:20, null ]
+      - name: 泊発17
+        stops: [ 20:20, 20:10, null ]
+      - name: 高浜発泊行1
+        stops: [ 06:45, 06:55, null ]
+      - name: 高浜発泊行2
+        stops: [ 07:17, 07:27, null ]
+      - name: 高浜発泊行3
+        stops: [ 07:52, 08:02, null ]
+      - name: 高浜発泊行4
+        stops: [ 08:40, 08:50, null ]
+      - name: 高浜発泊行5
+        stops: [ 09:20, 09:30, null ]
+      - name: 高浜発泊行6
+        stops: [ 10:00, 10:10, null ]
+      - name: 高浜発泊行7
+        stops: [ 10:40, 10:50, null ]
+      - name: 高浜発泊行8
+        stops: [ 11:30, 11:40, null ]
+      - name: 高浜発泊行9
+        stops: [ 12:25, 12:35, null ]
+      - name: 高浜発泊行10
+        stops: [ 13:55, 14:05, null ]
+      - name: 高浜発泊行11
+        stops: [ 15:30, 15:40, null ]
+      - name: 高浜発泊行12
+        stops: [ 16:10, 16:20, null ]
+      - name: 高浜発泊行13
+        stops: [ 16:50, 17:00, null ]
+      - name: 高浜発泊行14
+        stops: [ 17:40, 17:50, null ]
+      - name: 高浜発泊行15
+        stops: [ 18:40, 18:50, null ]
+      - name: 高浜発泊行16
+        stops: [ 19:40, 19:50, null ]
+      - name: 高浜発泊行17
+        stops: [ 20:25, 20:35, null ]
+      - name: 由良発1
+        stops: [ 06:08, null, 05:55 ]
+      - name: 由良発2
+        stops: [ 07:21, null, 07:08 ]
+      - name: 由良発3
+        stops: [ 07:57, null, 07:44 ]
+      - name: 由良発4
+        stops: [ 08:48, null, 08:35 ]
+      - name: 由良発5
+        stops: [ 09:33, null, 09:20 ]
+      - name: 由良発6
+        stops: [ 10:13, null, 10:00 ]
+      - name: 由良発7
+        stops: [ 10:53, null, 10:40 ]
+      - name: 由良発8
+        stops: [ 11:48, null, 11:35 ]
+      - name: 由良発9
+        stops: [ 13:08, null, 12:55 ]
+      - name: 由良発10
+        stops: [ 14:23, null, 14:10 ]
+      - name: 由良発11
+        stops: [ 15:03, null, 14:50 ]
+      - name: 由良発12
+        stops: [ 15:43, null, 15:30 ]
+      - name: 由良発13
+        stops: [ 16:23, null, 16:10 ]
+      - name: 由良発14
+        stops: [ 17:13, null, 17:00 ]
+      - name: 由良発15
+        stops: [ 18:03, null, 17:50 ]
+      - name: 由良発16
+        stops: [ 19:03, null, 18:50 ]
+      - name: 由良発17
+        stops: [ 20:03, null, 19:50 ]
+      - name: 高浜発由良行1
+        stops: [ 06:15, null, 06:28 ]
+      - name: 高浜発由良行2
+        stops: [ 07:25, null, 07:38 ]
+      - name: 高浜発由良行3
+        stops: [ 08:08, null, 08:21 ]
+      - name: 高浜発由良行4
+        stops: [ 09:00, null, 09:13 ]
+      - name: 高浜発由良行5
+        stops: [ 09:40, null, 09:53 ]
+      - name: 高浜発由良行6
+        stops: [ 10:20, null, 10:33 ]
+      - name: 高浜発由良行7
+        stops: [ 11:00, null, 11:13 ]
+      - name: 高浜発由良行8
+        stops: [ 11:55, null, 12:08 ]
+      - name: 高浜発由良行9
+        stops: [ 13:15, null, 13:28 ]
+      - name: 高浜発由良行10
+        stops: [ 14:30, null, 14:43 ]
+      - name: 高浜発由良行11
+        stops: [ 15:10, null, 15:23 ]
+      - name: 高浜発由良行12
+        stops: [ 15:50, null, 16:03 ]
+      - name: 高浜発由良行13
+        stops: [ 16:30, null, 16:43 ]
+      - name: 高浜発由良行14
+        stops: [ 17:20, null, 17:33 ]
+      - name: 高浜発由良行15
+        stops: [ 18:10, null, 18:23 ]
+      - name: 高浜発由良行16
+        stops: [ 19:10, null, 19:23 ]
+      - name: 高浜発由良行17
+        stops: [ 20:10, null, 20:23 ]
+schedule:
+  "2026-08-13..2026-08-16": obon
+  nthMonth(12):
+    nthDay(31): closed
+    "*": normal
+  nthMonth(1):
+    nthDay(1): closed
+    nthDay(2): closed
+    nthDay(3): closed
+    "*": normal
+  "*": normal
+flags: [ regional ]

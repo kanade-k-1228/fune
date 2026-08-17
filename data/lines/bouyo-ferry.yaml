@@ -1,0 +1,135 @@
+name: 防予フェリー
+route: 柳井〜伊保田〜三津浜
+color: "#26d94c"
+source:
+  - https://www.boyoferry.co.jp/c_timetable.html
+  - https://www.boyoferry.co.jp/c_time_extra.html
+  - https://www.boyoferry.co.jp/c_fare.html
+  - https://www.boyoferry.co.jp/c_fare2.html
+fare:
+  - 柳井⇔三津浜 adult::oneway::5,000円 / round::9,500円
+  - 柳井⇔三津浜 child::oneway::2,500円 / round::4,750円
+  - 柳井⇔伊保田 adult::oneway::1,640円 / round::3,120円
+  - 柳井⇔伊保田 child::oneway::820円 / round::1,560円
+  - 伊保田⇔三津浜 adult::oneway::2,570円 / round::4,890円
+  - 伊保田⇔三津浜 child::oneway::1,290円 / round::2,460円
+  - 往復運賃は出発日を含めて7日間有効。
+  - 乳幼児（1〜6歳未満）は無賃。中学生以上が大人。
+  - 車両運賃は別途設定（運転手1名分の旅客運賃込み）。
+notes:
+  - 所要時間 柳井〜三津浜 約2時間30分（伊保田寄港便は約2時間50分）。
+  - 予約・運航情報は防予フェリー予約センター（柳井 0820-22-3311 / 松山 089-951-3509 / 伊保田 0820-75-1575）。
+  - 荒天時は当日欠航判断となる場合あり。最新の運航状況は予約センターまで。
+  - 網掛け便（伊保田寄港便）は周防大島松山フェリーが運航。
+  - 柳井 1:00・2:00 発および三津浜 3:35・4:50 発の深夜便は日曜・月曜運休。
+  - 柳井 22:10 発および三津浜 23:10 発の夜行便は土曜・日曜運休。
+ships:
+  - おれんじぐれいす
+  - おれんじじゅぴたー
+  - しらきさん
+ports:
+  yanai: [ 132.133426, 33.956931 ]
+  ihota: [ 132.441413, 33.943861 ]
+  mitsuzu-hama: [ 132.709487, 33.865753 ]
+coords:
+  - - [ 132.133426, 33.956931 ]
+    - [ 132.13269, 33.95662 ]
+    - [ 132.13239, 33.95523 ]
+    - [ 132.13367, 33.95368 ]
+    - [ 132.13877, 33.95278 ]
+    - [ 132.15151, 33.95154 ]
+    - [ 132.18597, 33.95794 ]
+    - [ 132.22605, 33.97603 ]
+    - [ 132.35019, 33.98137 ]
+    - [ 132.43484, 33.96042 ]
+    - [ 132.4424, 33.95208 ]
+    - [ 132.44101, 33.94466 ]
+    - [ 132.43974, 33.94453 ]
+    - [ 132.43931, 33.94429 ]
+    - [ 132.441413, 33.943861 ]
+    - [ 132.43931, 33.94429 ]
+    - [ 132.43978, 33.94444 ]
+    - [ 132.44127, 33.94443 ]
+    - [ 132.45733, 33.95061 ]
+    - [ 132.46778, 33.9526 ]
+    - [ 132.47273, 33.95145 ]
+    - [ 132.5287, 33.90339 ]
+    - [ 132.66745, 33.86475 ]
+    - [ 132.70479, 33.86943 ]
+    - [ 132.70744, 33.86852 ]
+    - [ 132.7092, 33.86573 ]
+    - [ 132.709487, 33.865753 ]
+stops: [ yanai, ihota, mitsuzu-hama ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 東行 1便
+        stops: [ 01:00, null, 03:25 ]
+        schedule:
+          isSunday: false
+          isMonday: false
+          "*": true
+      - name: 東行 2便
+        stops: [ 02:00, null, 04:35 ]
+        schedule:
+          isSunday: false
+          isMonday: false
+          "*": true
+      - name: 東行 3便
+        stops: [ 07:00, [ 08:10, 08:15 ], 09:30 ]
+      - name: 東行 4便
+        stops: [ 09:00, null, 11:35 ]
+      - name: 東行 5便
+        stops: [ 10:50, null, 13:25 ]
+      - name: 東行 6便
+        stops: [ 12:25, [ 13:40, 13:45 ], 14:55 ]
+      - name: 東行 7便
+        stops: [ 14:45, null, 17:20 ]
+      - name: 東行 8便
+        stops: [ 16:15, null, 18:40 ]
+      - name: 東行 9便
+        stops: [ 17:50, [ 19:05, 19:10 ], 20:20 ]
+      - name: 東行 10便
+        stops: [ 20:25, null, 23:00 ]
+      - name: 東行 11便
+        stops: [ 22:10, null, 1:00:45 ]
+        schedule:
+          isSaturday: false
+          isSunday: false
+          "*": true
+      - name: 西行 1便
+        stops: [ 06:00, null, 03:35 ]
+        schedule:
+          isSunday: false
+          isMonday: false
+          "*": true
+      - name: 西行 2便
+        stops: [ 07:25, null, 04:50 ]
+        schedule:
+          isSunday: false
+          isMonday: false
+          "*": true
+      - name: 西行 3便
+        stops: [ 10:05, null, 07:30 ]
+      - name: 西行 4便
+        stops: [ 12:15, [ 10:47, 10:52 ], 09:40 ]
+      - name: 西行 5便
+        stops: [ 14:25, null, 11:50 ]
+      - name: 西行 6便
+        stops: [ 16:05, null, 13:35 ]
+      - name: 西行 7便
+        stops: [ 17:40, [ 16:12, 16:17 ], 15:05 ]
+      - name: 西行 8便
+        stops: [ 20:10, null, 17:35 ]
+      - name: 西行 9便
+        stops: [ 21:55, null, 19:20 ]
+      - name: 西行 10便
+        stops: [ 23:05, [ 21:37, 21:42 ], 20:30 ]
+      - name: 西行 11便
+        stops: [ 1:01:45, null, 23:10 ]
+        schedule:
+          isSaturday: false
+          isSunday: false
+          "*": true
+flags: [ regional ]

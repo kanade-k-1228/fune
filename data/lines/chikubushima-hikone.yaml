@@ -1,0 +1,144 @@
+name: 竹生島航路
+route: 彦根港〜竹生島
+color: "#bc26d9"
+source:
+  - https://www.ohmitetudo.co.jp/marine/time-price/chikubushima/
+fare:
+  - 乗船料（往復）：おとな（中学生以上）3,700円、こども（小学生）1,850円
+  - 竹生島では入島料が別途必要：おとな600円、こども300円
+  - 未就学児はおとな1名につき1名無料（2人目からはこども料金）
+  - 西武プリンスクラブカード提示で乗船運賃1割引
+notes:
+  - インターネット予約可。空席があれば予約なしでも乗船可能（満席時は乗船不可の場合あり）
+  - 彦根駅西口から無料シャトルバス運行（土・日・祝のみ）、所要約8分
+  - 問い合わせ：オーミマリン彦根港支店 TEL 0749-22-0619（受付8:30〜12:00・13:00〜17:00）
+  - 2026年7月13日〜9月3日は夏季特別ダイヤ。1便・3便は月〜木曜運休（8月12日・13日を除く）
+ships:
+  - 直政
+  - きらら
+ports:
+  hikone: [ 136.247236, 35.285535 ]
+  chikubushima: [ 136.143451, 35.420056 ]
+coords:
+  - - [ 136.247236, 35.285535 ]
+    - [ 136.14367, 35.41981 ]
+    - [ 136.14506, 35.41635 ]
+    - [ 136.20498, 35.31286 ]
+    - [ 136.23916, 35.28331 ]
+    - [ 136.24296, 35.28341 ]
+    - [ 136.2461, 35.28545 ]
+    - [ 136.24711, 35.28547 ]
+    - [ 136.143451, 35.420056 ]
+stops: [ hikone, chikubushima ]
+timetables:
+  dia0:
+    name: 通常ダイヤ
+    voyages:
+      - name: 1便
+        stops: [ 11:40, [ 09:40, 11:00 ] ]
+      - name: 2便
+        stops: [ 12:40, [ 10:40, 12:00 ] ]
+      - name: 3便
+        stops: [ 14:40, [ 12:40, 14:00 ] ]
+      - name: 4便
+        stops: [ 16:30, [ 14:40, 15:50 ] ]
+  dia1:
+    name: 冬季ダイヤ
+    voyages:
+      - name: 1便
+        stops: [ 12:40, [ 10:40, 12:00 ] ]
+      - name: 2便
+        stops: [ 15:40, [ 13:45, 15:00 ] ]
+  dia2:
+    name: お正月ダイヤ
+    voyages:
+      - name: 1便
+        stops: [ 11:40, [ 09:40, 11:00 ] ]
+      - name: 2便
+        stops: [ 12:40, [ 10:40, 12:00 ] ]
+      - name: 3便
+        stops: [ 14:40, [ 12:40, 14:00 ] ]
+      - name: 4便
+        stops: [ 16:30, [ 14:40, 15:50 ] ]
+  dia3:
+    name: 特別ダイヤ（海津大崎桜花見船期間）
+    voyages:
+      - name: 1便
+        stops: [ 11:40, [ 09:40, 11:00 ] ]
+      - name: 2便
+        stops: [ 14:40, [ 12:40, 14:00 ] ]
+  dia4:
+    name: 夏季特別ダイヤ
+    voyages:
+      - name: 1便
+        stops: [ 11:40, [ 09:40, 11:00 ] ]
+        schedule:
+          "2026-08-12..2026-08-13": true
+          isMonday: false
+          isTuesday: false
+          isWednesday: false
+          isThursday: false
+          "*": true
+      - name: 2便
+        stops: [ 12:40, [ 10:40, 12:00 ] ]
+      - name: 3便
+        stops: [ 14:40, [ 12:40, 14:00 ] ]
+        schedule:
+          "2026-08-12..2026-08-13": true
+          isMonday: false
+          isTuesday: false
+          isWednesday: false
+          isThursday: false
+          "*": true
+      - name: 4便
+        stops: [ 16:30, [ 14:40, 15:50 ] ]
+schedule:
+  "2026-07-13..2026-09-03": dia4
+  nthMonth(1):
+    nthDay(1): dia2
+    nthDay(2): dia2
+    nthDay(3): dia2
+    nthDay(4): dia2
+    nthDay(5): dia2
+    nthDay(6): dia2
+    nthDay(7): dia2
+    nthDay(8): dia2
+    nthDay(9): dia2
+    nthDay(10): dia2
+    nthDay(11): dia2
+    nthDay(12): dia2
+    "*": dia1
+  nthMonth(2): dia1
+  nthMonth(3):
+    nthDay(28): dia3
+    nthDay(29): dia3
+    nthDay(30): dia3
+    nthDay(31): dia3
+    "*": dia0
+  nthMonth(4):
+    nthDay(1): dia3
+    nthDay(2): dia3
+    nthDay(3): dia3
+    nthDay(4): dia3
+    nthDay(5): dia3
+    nthDay(6): dia3
+    nthDay(7): dia3
+    nthDay(8): dia3
+    nthDay(9): dia3
+    nthDay(10): dia3
+    nthDay(11): dia3
+    nthDay(12): dia3
+    nthDay(13): dia3
+    nthDay(14): dia3
+    nthDay(15): dia3
+    "*": dia0
+  nthMonth(5): dia0
+  nthMonth(6): dia0
+  nthMonth(7): dia0
+  nthMonth(8): dia0
+  nthMonth(9): dia0
+  nthMonth(10): dia0
+  nthMonth(11): dia0
+  nthMonth(12): dia1
+  "*": dia0
+flags: [ regional ]

@@ -1,0 +1,46 @@
+name: あわしまマリンパーク
+route: 淡島船乗場〜淡島
+color: "#26a4d9"
+source:
+  - https://www.marinepark.jp/enjoy/information/
+fare:
+  - 入園料に乗船料含む（年中無休、天候により変動あり）
+notes:
+  - 約15分間隔で運航・所要約3分
+ships:
+  - アワシマ16号
+  - アワシマ13号
+ports:
+  awashima-funanori-jo: [ 138.893159, 35.03311 ]
+  awashima: [ 138.89083, 35.034043 ]
+coords:
+  - - [ 138.892927, 35.032818 ]
+    - [ 138.89295, 35.03276 ]
+    - [ 138.89259, 35.03278 ]
+    - [ 138.89201, 35.03308 ]
+    - [ 138.89132, 35.0342 ]
+    - [ 138.89093, 35.03455 ]
+    - [ 138.89046, 35.03455 ]
+    - [ 138.89015, 35.03432 ]
+    - [ 138.89012, 35.03414 ]
+    - [ 138.89018, 35.03402 ]
+    - [ 138.887612, 35.03518 ]
+stops: [ awashima-funanori-jo, awashima ]
+timetables:
+  summer:
+    name: 夏時間（3〜10月） 9:30〜15:45（最終便16:50） 約15分間隔
+    voyages: []
+  winter:
+    name: 冬時間（11〜2月） 10:00〜15:15（最終便16:20） 約15分間隔
+    voyages: []
+schedule:
+  nthMonth(3): summer
+  nthMonth(4): summer
+  nthMonth(5): summer
+  nthMonth(6): summer
+  nthMonth(7): summer
+  nthMonth(8): summer
+  nthMonth(9): summer
+  nthMonth(10): summer
+  "*": winter
+flags: [ regional ]

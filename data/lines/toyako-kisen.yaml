@@ -1,0 +1,99 @@
+name: 洞爺湖汽船
+route: 洞爺湖遊覧船（中島めぐり）
+color: "#26a3d9"
+source:
+  - https://www.toyakokisen.com/price/
+  - https://www.toyakokisen.com/access/
+notes:
+  - 駅前桟橋（ホテルグランドトーヤ裏手）発着
+  - 夏季（4月下旬〜10月末）は30分ごと運航、中島（大島）への下船可能（所要約80分）
+  - 冬季（11月〜4月初旬）は60分ごと運航、中島下船不可（所要約45分）
+  - 所要時間（中島下船なし）：約50分
+  - 連絡先 0142-75-2137（洞爺湖汽船株式会社）
+  - 所在地 〒049-5721 北海道虻田郡洞爺湖町洞爺湖温泉36-4（駅前桟橋）
+fare:
+  - 大人 1,800円（団体15名以上 1,620円、障害者 900円、修学旅行 1,260円）
+  - 小児 900円（団体15名以上 810円、障害者 450円、修学旅行 810円）
+ships:
+  - エスポアール
+  - 羊蹄
+ports:
+  toyako-sambashi: [ 140.831, 42.535 ]
+  toyako-nakajima: [ 140.854, 42.556 ]
+coords:
+  - - [ 140.831, 42.535 ]
+    - [ 140.81805, 42.56643 ]
+    - [ 140.81806, 42.56702 ]
+    - [ 140.8302, 42.58914 ]
+    - [ 140.83622, 42.59417 ]
+    - [ 140.84019, 42.59432 ]
+    - [ 140.84458, 42.59215 ]
+    - [ 140.84599, 42.59284 ]
+    - [ 140.84576, 42.5951 ]
+    - [ 140.8468, 42.58968 ]
+    - [ 140.84178, 42.58322 ]
+    - [ 140.81829, 42.56702 ]
+    - [ 140.81829, 42.56642 ]
+    - [ 140.854, 42.556 ]
+stops: [ toyako-sambashi, toyako-nakajima ]
+timetables:
+  dia0:
+    name: 夏季ダイヤ（4月下旬〜10月末・30分毎）
+    voyages:
+      - name: 1便
+        stops: [ "08:30", null ]
+      - name: 2便
+        stops: [ "09:00", null ]
+      - name: 3便
+        stops: [ "09:30", null ]
+      - name: 4便
+        stops: [ "10:00", null ]
+      - name: 5便
+        stops: [ "10:30", null ]
+      - name: 6便
+        stops: [ "11:00", null ]
+      - name: 7便
+        stops: [ "11:30", null ]
+      - name: 8便
+        stops: [ "12:00", null ]
+      - name: 9便
+        stops: [ "12:30", null ]
+      - name: 10便
+        stops: [ "13:00", null ]
+      - name: 11便
+        stops: [ "13:30", null ]
+      - name: 12便
+        stops: [ "14:00", null ]
+      - name: 13便
+        stops: [ "14:30", null ]
+      - name: 14便
+        stops: [ "15:00", null ]
+      - name: 15便
+        stops: [ "15:30", null ]
+      - name: 16便
+        stops: [ "16:00", null ]
+      - name: 17便
+        stops: [ "16:30", null ]
+  dia1:
+    name: 冬季ダイヤ（11月〜4月初旬・60分毎）
+    voyages:
+      - name: 1便
+        stops: [ "09:00", null ]
+      - name: 2便
+        stops: [ "10:00", null ]
+      - name: 3便
+        stops: [ "11:00", null ]
+      - name: 4便
+        stops: [ "12:00", null ]
+      - name: 5便
+        stops: [ "13:00", null ]
+      - name: 6便
+        stops: [ "14:00", null ]
+      - name: 7便
+        stops: [ "15:00", null ]
+      - name: 8便
+        stops: [ "16:00", null ]
+schedule:
+  "2026-04-20..2026-10-31": dia0
+  "*": dia1
+flags: [ regional ]

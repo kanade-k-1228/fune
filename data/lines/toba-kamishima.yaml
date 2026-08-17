@@ -1,0 +1,89 @@
+name: 鳥羽市営定期船
+route: 鳥羽〜神島
+color: "#d9c426"
+source:
+  - https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/3151.html
+  - https://www.city.toba.mie.jp/material/files/group/45/teikisendaiya.pdf
+  - https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/3163.html
+  - https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/3164.html
+fare:
+  - 大人 740円 / 小人 370円（鳥羽〜神島・片道）
+  - 大人 510円 / 小人 260円（答志(和具)〜神島・片道）
+  - 大人 510円 / 小人 260円（菅島〜神島・片道）
+  - 回数券 大人 7,400円 / 小人 3,700円
+  - 1日フリー乗船券 大人 1,480円 / 子ども 740円（全航路有効・佐田浜窓口で販売）
+  - 1歳未満無料、1歳以上は大人1名につき幼児1名無料、小学生は小人運賃
+  - 団体割引 15人以上で普通運賃の1割引
+notes:
+  - 鳥羽市定期船課 電話 0599-25-4776
+  - 令和8年4月1日より深刻な船員不足に伴い5隻から4隻に減船し全航路のダイヤを改正
+  - 冬期ダイヤ 10月16日〜2月末日、夏期ダイヤ 3月1日〜10月15日
+  - 各港の時刻は出港時間。各港行きの最終到達港については到着時間
+  - 荒天および船舶検査等により運航船舶やダイヤを変更する場合あり
+  - 時刻表記載の時間以外にも臨時便（または増便）を運航することがある
+  - 各経由地の寄港地出港時間は遅れることがあり、各到着時間は前後する場合あり
+  - 予備船運航期間や小型チャーター船運航便以外はバリアフリーに対応
+  - かもめバスへの乗継割引あり（乗船券・回数券で往復各100円引き、定期券で200円引き）
+ships:
+  - はばたき
+  - しおさい
+  - かがやき
+  - きらめき
+  - 第27鳥羽丸（予備船）
+ports:
+  toba-satahama: [ 136.84501, 34.490258 ]
+  toba-wagu: [ 136.89828, 34.522545 ]
+  sugashima: [ 136.89895, 34.499074 ]
+  kamishima: [ 136.980288, 34.550494 ]
+coords:
+  - - [ 136.84501, 34.490258 ]
+    - [ 136.89828, 34.522545 ]
+    - [ 136.89895, 34.499074 ]
+    - [ 136.980288, 34.550494 ]
+stops: [ toba-satahama, toba-wagu, sugashima, kamishima ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 神島行 1便
+        stops: [ 07:40, [ 08:00, 08:00 ], null, 08:20 ]
+      - name: 神島行 2便
+        stops: [ 10:40, [ 11:00, 11:00 ], null, 11:20 ]
+      - name: 神島行 3便
+        stops: [ 14:30, null, null, 15:00 ]
+      - name: 神島行 4便（冬期10/16〜2月末）
+        stops: [ 17:00, null, null, 17:30 ]
+        schedule:
+          "2025-10-16..2026-02-28": true
+          "2026-10-16..2027-02-28": true
+          "*": false
+      - name: 神島行 4便（夏期3/1〜10/15）
+        stops: [ 17:30, null, null, 18:00 ]
+        schedule:
+          "2026-03-01..2026-10-15": true
+          "2027-03-01..2027-10-15": true
+          "*": false
+      - name: 鳥羽行 1便
+        stops: [ 07:28, null, [ 07:15, 07:15 ], 06:50 ]
+      - name: 鳥羽行 2便
+        stops: [ 09:13, null, [ 09:00, 09:00 ], 08:35 ]
+      - name: 鳥羽行 3便
+        stops: [ 12:00, null, null, 11:35 ]
+      - name: 鳥羽行 4便
+        stops: [ 15:40, null, null, 15:10 ]
+      - name: 鳥羽行 5便（冬期10/16〜2月末）
+        stops: [ 18:05, null, null, 17:35 ]
+        schedule:
+          "2025-10-16..2026-02-28": true
+          "2026-10-16..2027-02-28": true
+          "*": false
+      - name: 鳥羽行 5便（夏期3/1〜10/15）
+        stops: [ 18:35, null, null, 18:05 ]
+        schedule:
+          "2026-03-01..2026-10-15": true
+          "2027-03-01..2027-10-15": true
+          "*": false
+schedule:
+  "*": normal
+flags:
+  - local

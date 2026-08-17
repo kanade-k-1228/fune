@@ -1,0 +1,34 @@
+name: みなとみらい～羽田
+color: "#a926d9"
+route: みなとみらいぷかりさん橋〜羽田空港船着場
+source:
+  - https://reservedcruise.com/yokohama-cruise/teikibin/
+  - https://www.gotokyo.org/shuun/jp/course/015.html
+fare:
+  - 大人 3,500円
+  - 小学生 2,000円
+  - 未就学児 大人1名につき1名無料（2名以上は小学生料金）
+notes:
+  - ケーエムシーコーポレーション運航（MM⇔羽田ジェットライン）
+  - 月2回程度・日曜日のみ運航（要予約）
+  - 所要約90分
+  - TEL 045-290-8377
+  - 運休判断は昼便が前日18時まで、夕便が当日12時までに決定
+ships:
+  - ジェットセイラー
+ports:
+  minatomirai-pukarisan: [ 139.638458, 35.458347 ]
+  haneda-funatsukiba: [ 139.761663, 35.54468 ]
+coords:
+  - - [ 139.638458, 35.458347 ]
+    - [ 139.761663, 35.54468 ]
+stops: [ minatomirai-pukarisan, haneda-funatsukiba ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: みなとみらい発
+        stops: [ "10:30", "12:00" ]
+      - name: 羽田発
+        stops: [ "16:45", "18:15" ]
+flags: [ regional ]

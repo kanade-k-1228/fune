@@ -1,0 +1,35 @@
+name: 佐世保市営
+route: 佐世保港内接続航路
+color: "#71d926"
+source:
+  - https://www.city.sasebo.lg.jp/kouwan/koukanri/koro.html
+  - https://www.city.sasebo.lg.jp/kouwan/koukanri/terminal-info.html
+  - https://www.city.sasebo.lg.jp/benrimap/shisetsu/chosha/220.html
+  - https://www.city.sasebo.lg.jp/keizai/kankou/ainouraaccess.html
+notes:
+  - 港内航路の桟橋接続案内（独立した定期航路ではない）
+  - 各離島航路（九州商船・崎戸商船など）への接続地
+  - 新みなとターミナル（新港町8-1）— 大島・松島・池島・横瀬・津吉行き近海航路
+  - 鯨瀬ターミナル（新港町8-23）— 上五島（有川・小値賀・宇久平）航路
+  - 市営相浦桟橋待合所（相浦町2754-1）— 高島・黒島・津吉行き、1階待合ロビー 7:30〜18:30 年中無休
+  - 港湾部みなと振興・管理課 TEL 0956-22-6127
+ports:
+  sasebo: [ 129.72364, 33.16293 ]
+  sasebo-sambashi: [ 129.790509, 33.088349 ]
+  aiura-sambashi-minami: [ 129.724896, 33.161225 ]
+  aiura-sambashi-kita: [ 129.722717, 33.163564 ]
+coords:
+  - - [ 129.785421, 33.084593 ]
+    - [ 129.7853, 33.084508 ]
+    - [ 129.790614, 33.08827 ]
+    - [ 129.790509, 33.088349 ]
+    - [ 129.790509, 33.088349 ]
+    - [ 129.785421, 33.084593 ]
+    - [ 129.722717, 33.163564 ]
+    - [ 129.722717, 33.163564 ]
+    - [ 129.724896, 33.161225 ]
+    - [ 129.723305, 33.162286 ]
+    - [ 129.724153, 33.162023 ]
+    - [ 129.723305, 33.162286 ]
+stops: [ sasebo, sasebo-sambashi, aiura-sambashi-minami, aiura-sambashi-kita ]
+flags: [ regional ]

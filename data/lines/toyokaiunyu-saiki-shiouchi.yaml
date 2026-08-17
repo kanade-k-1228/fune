@@ -1,0 +1,48 @@
+name: 豊海運「常栄丸」
+color: "#d9266e"
+route: 佐伯〜高松〜日向泊〜塩内
+source:
+  - https://www.city.saiki.oita.jp/kiji0033261/index.html
+  - http://www.oitasima.net/ohnyujima/access.html
+notes:
+  - "TEL: 0972-22-2356（豊海運）"
+  - "所要時間: 佐伯〜塩内 約50分（直行便は約30分）"
+  - "1日4便（朝便は葛港→塩内へ直行後、塩内→日向泊→高松→葛港の順に戻る。昼便・午後便は葛港→高松→日向泊→塩内へ向かい、塩内→葛港は直行で戻る）"
+  - "最終便は塩内止まりで翌朝塩内発（実質的に塩内で停泊）"
+  - "運営者は同じ豊海運だが、片神方面行きの「マリンスター常栄丸」とは別船・別系統（マリンバス2系統）"
+fare:
+  - "高松: 250円"
+  - "日向泊: 300円"
+  - "塩内: 250円"
+ships:
+  - 常栄丸
+ports:
+  kazuraminato: [ 131.903227, 32.978108 ]
+  onyujima-takamatsu: [ 131.926321389, 33.0113761471 ]
+  onyujima-hinataberi: [ 131.937961919, 33.0125252904 ]
+  onyujima-shiouchi: [ 131.934588722, 32.9979232317 ]
+coords:
+  - - [ 131.903227, 32.978108 ]
+    - [ 131.926321389, 33.0113761471 ]
+    - [ 131.937961919, 33.0125252904 ]
+    - [ 131.934588722, 32.9979232317 ]
+stops: [ kazuraminato, onyujima-takamatsu, onyujima-hinataberi, onyujima-shiouchi ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 朝便（葛港発・塩内行・直行）
+        stops: [ 07:25, null, null, 07:50 ]
+      - name: 朝便（塩内発・葛港行）
+        stops: [ 08:30, 08:15, 08:00, 07:50 ]
+      - name: 昼便（葛港発・塩内行）
+        stops: [ 12:00, 12:15, 12:30, 12:40 ]
+      - name: 昼便（塩内発・葛港行・直行）
+        stops: [ 13:05, null, null, 12:40 ]
+      - name: 午後便（葛港発・塩内行）
+        stops: [ 15:30, 15:45, 16:00, 16:10 ]
+      - name: 午後便（塩内発・葛港行・直行）
+        stops: [ 16:35, null, null, 16:10 ]
+      - name: 終便（葛港発・塩内行・塩内止まり）
+        stops: [ 17:30, 17:45, 18:00, 18:10 ]
+flags: [ regional ]

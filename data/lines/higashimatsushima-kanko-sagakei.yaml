@@ -1,0 +1,39 @@
+name: 東松島観光物産公社
+route: 松島〜奥松島
+color: "#d99826"
+source:
+  - https://higashimatsushima-kanko.com/pleasure_boat/
+fare:
+  - 大人（中学生以上）片道 750 円
+  - 小児（小学生）片道 400 円
+notes:
+  - 松島〜奥松島定期便は毎週日曜日のみ運航（往復1便）
+  - 平日は前日までの完全予約制（大人3名以上で運航）
+  - 嵯峨渓外海コースは乗合遊覧（定期時刻表なし、大人2,000円/小児1,500円）
+  - 奥松島遊覧船案内所 TEL 0225-88-3997（8:30〜17:00 年中無休）
+ships:
+  - 第二嵯峨
+  - 第五嵯峨
+  - 嵯峨みらい
+ports:
+  matsushima-senzuihama: [ 141.0651, 38.3683 ]
+  okumatsushima-kawahara: [ 141.0363, 38.3879 ]
+coords:
+  - - [ 141.0651, 38.3683 ]
+    - [ 141.0363, 38.3879 ]
+stops: [ matsushima-senzuihama, okumatsushima-kawahara ]
+timetables:
+  normal:
+    name: 日曜ダイヤ
+    voyages:
+      - name: 松島発
+        stops: [ "10:30", "10:55" ]
+      - name: 奥松島発
+        stops: [ "12:30", "12:55" ]
+  closed:
+    name: 平日（予約制のみ）
+    voyages: []
+schedule:
+  isSunday: normal
+  "*": closed
+flags: [ regional ]

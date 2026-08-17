@@ -1,0 +1,61 @@
+name: 福岡市営渡船
+route: 小呂島
+color: "#26d7d9"
+source:
+  - https://www.city.fukuoka.lg.jp/kowan/kyakusen/hakata-port/hyo.html
+  - https://www.city.fukuoka.lg.jp/kowan/kyakusen/sennpakusyoukai.html
+fare:
+  - 大人 1,790円（片道）
+  - 小児 900円（片道）
+  - 自転車・リヤカー 990円
+notes:
+  - 1日2往復（火・木・土・日）／1往復（月・水・金）・所要約65分
+  - 姪浜旅客待合所 092-881-8709
+  - 港湾空港局総務部客船事務所 092-291-1085
+  - 最新の運航状況は九州のりものinfo.comで要確認
+ships:
+  - ニューおろしま
+ports:
+  meinohama: [ 130.326902, 33.597573 ]
+  oronoshima: [ 130.034972, 33.86327 ]
+coords:
+  - - [ 130.326902, 33.597573 ]
+    - [ 130.32682, 33.59741 ]
+    - [ 130.3263, 33.59755 ]
+    - [ 130.32517, 33.59865 ]
+    - [ 130.3234, 33.59973 ]
+    - [ 130.29687, 33.60413 ]
+    - [ 130.22039, 33.68767 ]
+    - [ 130.03858, 33.85671 ]
+    - [ 130.03611, 33.86057 ]
+    - [ 130.03611, 33.86121 ]
+    - [ 130.03493, 33.86197 ]
+    - [ 130.03476, 33.86264 ]
+    - [ 130.03511, 33.8631 ]
+    - [ 130.034972, 33.86327 ]
+stops: [ meinohama, oronoshima ]
+timetables:
+  normal:
+    name: 火・木・土・日ダイヤ（2往復）
+    voyages:
+      - name: 西行 1便
+        stops: [ 09:00, 10:05 ]
+      - name: 西行 2便
+        stops: [ 15:00, 16:05 ]
+      - name: 東行 1便
+        stops: [ 07:50, 06:45 ]
+      - name: 東行 2便
+        stops: [ 14:25, 13:20 ]
+  mwf:
+    name: 月・水・金ダイヤ（1往復）
+    voyages:
+      - name: 西行 1便
+        stops: [ 15:00, 16:05 ]
+      - name: 東行 1便
+        stops: [ 07:50, 06:45 ]
+schedule:
+  isMonday: mwf
+  isWednesday: mwf
+  isFriday: mwf
+  "*": normal
+flags: [ regional ]

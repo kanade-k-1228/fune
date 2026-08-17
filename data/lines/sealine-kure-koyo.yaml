@@ -1,0 +1,302 @@
+name: 瀬戸内シーライン
+route: 呉〜小用
+color: "#26d978"
+source:
+  - https://setonaikaikisen.co.jp/kouro/highspeedship3/
+  - https://setonaikaikisen.co.jp/highspeedship3/wp-content/uploads/sites/7/2022/08/20260901_kure-koyou_unchin.pdf
+  - https://setonaikaikisen.co.jp/highspeedship3/wp-content/uploads/sites/7/2022/08/202609_kurekoyoudock.pdf
+fare:
+  - 旅客運賃（片道・税込）：フェリー大人450円・小人230円、高速船大人650円・小人330円
+  - 回数券（11枚綴り）：フェリー4,500円、高速船6,500円
+  - 車両運賃（運転者1名の旅客運賃込み）：軽自動車・4m未満1,000円、6m未満1,500円、9m未満3,800円、12m未満5,800円
+notes:
+  - フ＝カーフェリー（車両乗船可）、高＝高速船（旅客のみ）
+  - 呉港9:25・11:30〜16:50発便（10:15発便不可）／小用港10:40〜16:25発便のみ小荷物取扱（フェリー便のみ、高速船不可）
+  - 営業距離：呉港〜小用港 6.1km
+  - 2026年9月1日運賃改定予定（フェリー旅客運賃 大人450円→490円・小人230円→250円、高速船大人650円→690円・小人330円→350円、車両運賃・回数券・定期券も改定）
+  - フェリー「古鷹」は船舶エプロン（車両乗降口）調整のため2026年9月16日まで7m以上の車両は乗船不可
+  - 2026年9月5日〜9月16日はフェリードック期間のため高速船代船「はやしお」による全便運航（車両航送不可）
+ships:
+  - 古鷹
+  - 入船
+  - 瀬戸
+  - 和加
+ports:
+  kure: [ 132.555022, 34.239808 ]
+  koyo: [ 132.493009, 34.247698 ]
+coords:
+  - - [ 132.555022, 34.239808 ]
+    - [ 132.55518, 34.24037 ]
+    - [ 132.55423, 34.23964 ]
+    - [ 132.52818, 34.23714 ]
+    - [ 132.51806, 34.23972 ]
+    - [ 132.49309, 34.24768 ]
+    - [ 132.493009, 34.247698 ]
+stops: [ kure, koyo ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 東行 1便
+        stops: [ 06:00, 05:50 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 西行 1便
+        stops: [ 06:03, 06:13 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 東行 2便
+        stops: [ 06:43, 06:25 ]
+      - name: 西行 2便
+        stops: [ 06:47, 07:07 ]
+      - name: 東行 3便
+        stops: [ 06:53, 06:43 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 西行 3便
+        stops: [ 06:56, 07:07 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 東行 4便
+        stops: [ 07:20, 07:09 ]
+      - name: 西行 4便
+        stops: [ 07:23, 07:34 ]
+      - name: 東行 5便
+        stops: [ 07:35, 07:15 ]
+      - name: 西行 5便
+        stops: [ 07:40, 08:00 ]
+      - name: 東行 6便
+        stops: [ 07:47, 07:37 ]
+      - name: 西行 6便
+        stops: [ 07:50, 08:00 ]
+      - name: 東行 7便
+        stops: [ 08:15, 08:05 ]
+      - name: 西行 7便
+        stops: [ 08:18, 08:28 ]
+      - name: 東行 8便
+        stops: [ 08:30, 08:10 ]
+      - name: 西行 8便
+        stops: [ 08:35, 08:55 ]
+      - name: 東行 9便
+        stops: [ 08:43, 08:33 ]
+      - name: 西行 9便
+        stops: [ 08:46, 08:56 ]
+      - name: 東行 10便
+        stops: [ 09:20, 09:00 ]
+      - name: 西行 10便
+        stops: [ 09:25, 09:45 ]
+      - name: 東行 11便
+        stops: [ 10:10, 09:50 ]
+      - name: 西行 11便
+        stops: [ 10:15, 10:35 ]
+      - name: 東行 12便
+        stops: [ 11:00, 10:40 ]
+      - name: 西行 12便
+        stops: [ 11:30, 11:50 ]
+      - name: 東行 13便
+        stops: [ 12:15, 11:55 ]
+      - name: 西行 13便
+        stops: [ 12:20, 12:40 ]
+      - name: 東行 14便
+        stops: [ 13:05, 12:45 ]
+      - name: 西行 14便
+        stops: [ 13:50, 14:00 ]
+      - name: 東行 15便
+        stops: [ 13:47, 13:37 ]
+      - name: 西行 15便
+        stops: [ 14:22, 14:42 ]
+      - name: 東行 16便
+        stops: [ 15:07, 14:47 ]
+      - name: 西行 16便
+        stops: [ 15:12, 15:32 ]
+      - name: 東行 17便
+        stops: [ 15:55, 15:35 ]
+      - name: 西行 17便
+        stops: [ 16:00, 16:20 ]
+      - name: 東行 18便
+        stops: [ 16:45, 16:25 ]
+      - name: 西行 18便
+        stops: [ 16:50, 17:10 ]
+      - name: 東行 19便
+        stops: [ 17:25, 17:14 ]
+      - name: 西行 19便
+        stops: [ 17:30, 17:40 ]
+      - name: 東行 20便
+        stops: [ 18:05, 17:45 ]
+      - name: 西行 20便
+        stops: [ 18:10, 18:30 ]
+      - name: 東行 21便
+        stops: [ 18:17, 18:07 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 西行 21便
+        stops: [ 18:20, 18:30 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 東行 22便
+        stops: [ 18:55, 18:35 ]
+      - name: 西行 22便
+        stops: [ 19:00, 19:20 ]
+      - name: 東行 23便
+        stops: [ 19:32, 19:22 ]
+      - name: 西行 23便
+        stops: [ 19:35, 19:45 ]
+      - name: 東行 24便
+        stops: [ 20:00, 19:50 ]
+      - name: 西行 24便
+        stops: [ 20:30, 20:40 ]
+      - name: 東行 25便
+        stops: [ 21:00, 20:50 ]
+      - name: 西行 25便
+        stops: [ 21:37, 21:47 ]
+      - name: 東行 26便
+        stops: [ 22:01, 21:50 ]
+      - name: 西行 26便
+        stops: [ 22:42, 22:52 ]
+  dock:
+    name: ドックダイヤ（高速船代船）
+    voyages:
+      - name: 東行 1便
+        stops: [ 06:00, 05:50 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 西行 1便
+        stops: [ 06:03, 06:13 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 東行 2便
+        stops: [ 06:40, 06:25 ]
+      - name: 西行 2便
+        stops: [ 06:47, 07:02 ]
+      - name: 東行 3便
+        stops: [ 06:53, 06:43 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 西行 3便
+        stops: [ 06:56, 07:07 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 東行 4便
+        stops: [ 07:20, 07:09 ]
+      - name: 西行 4便
+        stops: [ 07:23, 07:34 ]
+      - name: 東行 5便
+        stops: [ 07:30, 07:15 ]
+      - name: 西行 5便
+        stops: [ 07:40, 07:55 ]
+      - name: 東行 6便
+        stops: [ 07:47, 07:37 ]
+      - name: 西行 6便
+        stops: [ 07:50, 08:00 ]
+      - name: 東行 7便
+        stops: [ 08:15, 08:05 ]
+      - name: 西行 7便
+        stops: [ 08:18, 08:28 ]
+      - name: 東行 8便
+        stops: [ 08:25, 08:10 ]
+      - name: 西行 8便
+        stops: [ 08:35, 08:50 ]
+      - name: 東行 9便
+        stops: [ 08:43, 08:33 ]
+      - name: 西行 9便
+        stops: [ 08:46, 08:56 ]
+      - name: 東行 10便
+        stops: [ 09:15, 09:00 ]
+      - name: 西行 10便
+        stops: [ 09:25, 09:40 ]
+      - name: 東行 11便
+        stops: [ 10:05, 09:50 ]
+      - name: 西行 11便
+        stops: [ 10:15, 10:30 ]
+      - name: 東行 12便
+        stops: [ 10:55, 10:40 ]
+      - name: 西行 12便
+        stops: [ 11:30, 11:45 ]
+      - name: 東行 13便
+        stops: [ 12:10, 11:55 ]
+      - name: 西行 13便
+        stops: [ 12:20, 12:35 ]
+      - name: 東行 14便
+        stops: [ 13:00, 12:45 ]
+      - name: 西行 14便
+        stops: [ 13:50, 14:00 ]
+      - name: 東行 15便
+        stops: [ 13:47, 13:37 ]
+      - name: 西行 15便
+        stops: [ 14:22, 14:37 ]
+      - name: 東行 16便
+        stops: [ 15:02, 14:47 ]
+      - name: 西行 16便
+        stops: [ 15:12, 15:27 ]
+      - name: 東行 17便
+        stops: [ 15:50, 15:35 ]
+      - name: 西行 17便
+        stops: [ 16:00, 16:15 ]
+      - name: 東行 18便
+        stops: [ 16:40, 16:25 ]
+      - name: 西行 18便
+        stops: [ 16:50, 17:05 ]
+      - name: 東行 19便
+        stops: [ 17:25, 17:14 ]
+      - name: 西行 19便
+        stops: [ 17:30, 17:40 ]
+      - name: 東行 20便
+        stops: [ 18:00, 17:45 ]
+      - name: 西行 20便
+        stops: [ 18:10, 18:25 ]
+      - name: 東行 21便
+        stops: [ 18:17, 18:07 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 西行 21便
+        stops: [ 18:20, 18:30 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 東行 22便
+        stops: [ 18:50, 18:35 ]
+      - name: 西行 22便
+        stops: [ 19:00, 19:15 ]
+      - name: 東行 23便
+        stops: [ 19:32, 19:22 ]
+      - name: 西行 23便
+        stops: [ 19:35, 19:45 ]
+      - name: 東行 24便
+        stops: [ 20:00, 19:50 ]
+      - name: 西行 24便
+        stops: [ 20:30, 20:40 ]
+      - name: 東行 25便
+        stops: [ 21:00, 20:50 ]
+      - name: 西行 25便
+        stops: [ 21:37, 21:47 ]
+      - name: 東行 26便
+        stops: [ 22:01, 21:50 ]
+      - name: 西行 26便
+        stops: [ 22:42, 22:52 ]
+schedule:
+  "2026-09-05..2026-09-16": dock
+  "*": normal
+flags: [ regional ]

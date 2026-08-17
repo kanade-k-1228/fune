@@ -1,0 +1,59 @@
+name: 仏ヶ浦海上観光
+route: 佐井〜仏ヶ浦
+color: "#41d926"
+source:
+  - https://hotokegaura.jp/
+  - https://www.t-ryokyakusen.jp/gr/aomori/
+fare:
+  - 片道 大人1,400円 / 小人700円
+  - 往復 大人2,700円 / 小人1,350円
+  - 障がい者手帳持参で本人と同伴者1名半額
+  - 団体割引あり（15名以上）
+notes:
+  - TEL 0175-38-2244（受付 8:00〜17:00）
+  - 多客時は臨時便を随時運航
+  - 気象・海象により欠航・上陸中止の場合あり
+  - 所要時間 片道約30分（上陸30分含め往復約1時間30分）
+ships:
+  - ニューしもきた号
+ports:
+  sai: [ 141.13, 41.42 ]
+  hotokegaura: [ 140.985, 41.33 ]
+coords:
+  - - [ 141.13, 41.42 ]
+    - [ 140.86123, 41.43375 ]
+    - [ 140.86059, 41.43462 ]
+    - [ 140.86135, 41.43698 ]
+    - [ 140.85984, 41.43786 ]
+    - [ 140.82876, 41.42968 ]
+    - [ 140.79505, 41.32692 ]
+    - [ 140.7965, 41.31776 ]
+    - [ 140.80244, 41.31295 ]
+    - [ 140.803, 41.31137 ]
+    - [ 140.80354, 41.31152 ]
+    - [ 140.985, 41.33 ]
+stops: [ sai, hotokegaura ]
+timetables:
+  normal:
+    name: 通常ダイヤ（5月〜10月）
+    voyages:
+      - name: 1便 往路
+        stops: [ "10:30", "11:00" ]
+      - name: 1便 復路
+        stops: [ "11:30", "12:00" ]
+      - name: 2便 往路
+        stops: [ "13:00", "13:30" ]
+      - name: 2便 復路
+        stops: [ "14:10", "14:40" ]
+  closed:
+    name: 冬期運休（11月〜4月）
+    voyages: []
+schedule:
+  nthMonth(5): normal
+  nthMonth(6): normal
+  nthMonth(7): normal
+  nthMonth(8): normal
+  nthMonth(9): normal
+  nthMonth(10): normal
+  "*": closed
+flags: [ regional ]

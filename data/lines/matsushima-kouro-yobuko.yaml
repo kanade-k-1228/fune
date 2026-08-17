@@ -1,0 +1,63 @@
+name: 新栄
+route: 呼子〜松島
+color: "#d926b6"
+source:
+  - https://www.city.karatsu.lg.jp/page/1539.html
+  - https://www.city.karatsu.lg.jp/koutsuu/machi/kotsu/koro/jikokuhyo.html
+  - http://web.people-i.ne.jp/~koujin-maru/7tou_jikoku.pdf
+fare:
+  - "運賃: 大人片道460円、小児片道230円"
+  - 障がい者手帳（身体障害者手帳第1種・療育手帳第1種A・精神障害者保健福祉手帳1級）の交付を受けている方とその介護者1名は5割引
+notes:
+  - 運航会社：株式会社新栄
+  - 電話：090-7165-0909
+  - 所要時間：約15分
+  - 年始（1月1日・1月2日）は運休
+ships:
+  - 新栄
+ports:
+  yobuko: [ 129.893367, 33.541591 ]
+  matsushima-karatsu: [ 129.840396, 33.585048 ]
+coords:
+  - - [ 129.894538, 33.539757 ]
+    - [ 129.84035, 33.58506 ]
+    - [ 129.84082, 33.58496 ]
+    - [ 129.8409, 33.58461 ]
+    - [ 129.84178, 33.58416 ]
+    - [ 129.8427, 33.5827 ]
+    - [ 129.85705, 33.56958 ]
+    - [ 129.86846, 33.55061 ]
+    - [ 129.86756, 33.5464 ]
+    - [ 129.87274, 33.54226 ]
+    - [ 129.88582, 33.54358 ]
+    - [ 129.89207, 33.54191 ]
+    - [ 129.89438, 33.5397 ]
+    - [ 129.89461, 33.5397 ]
+    - [ 129.840396, 33.585048 ]
+stops: [ yobuko, matsushima-karatsu ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 北行 1便
+        stops: [ 09:50, 10:05 ]
+      - name: 北行 2便
+        stops: [ 14:30, 14:45 ]
+      - name: 北行 3便
+        stops: [ 17:00, 17:15 ]
+      - name: 南行 1便
+        stops: [ 07:55, 07:40 ]
+      - name: 南行 2便
+        stops: [ 13:25, 13:10 ]
+      - name: 南行 3便
+        stops: [ 16:15, 16:00 ]
+  closed:
+    name: 年始休航（1/1・1/2）
+    voyages: []
+schedule:
+  nthMonth(1):
+    nthDay(1): closed
+    nthDay(2): closed
+    "*": normal
+  "*": normal
+flags: [ regional ]

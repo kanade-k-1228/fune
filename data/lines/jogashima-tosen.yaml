@@ -1,0 +1,94 @@
+name: スバル興業
+route: 三崎〜城ヶ島〜白秋
+color: "#2ad926"
+source:
+  - https://www.umigyo.co.jp/hakushu.html
+  - https://misaki-uminoeki.com/facilities/sanshiro/
+  - https://miura-info.ne.jp/sightseeing/move-2/
+fare:
+  - 大人(中学生以上) 片道 500円
+  - 小人(小学生) 片道 300円
+  - 大人 一日乗り放題フリーパス 1,000円
+  - 小人 一日乗り放題フリーパス 600円
+notes:
+  - "運営: スバル興業株式会社 三崎マリンセンター"
+  - TEL 046-881-0533
+  - 所要時間 片道約5分
+  - 定員 45名
+  - 運航ルート うらり岸壁 → 城ヶ島(J's Fishing前) → 白秋碑苑
+  - 季節の日照時間により運航時間が前後する
+  - 荒天時やトラブル等やむを得ない場合は運休
+ships:
+  - さんしろ
+ports:
+  misaki-urari: [ 139.616696, 35.140906 ]
+  misaki-jogashima: [ 139.612983, 35.137536 ]
+  misaki-hakushu: [ 139.621087, 35.134817 ]
+coords:
+  - - [ 139.616696, 35.140906 ]
+    - [ 139.61681, 35.14087 ]
+    - [ 139.61634, 35.13989 ]
+    - [ 139.61501, 35.13851 ]
+    - [ 139.61308, 35.13807 ]
+    - [ 139.61296, 35.13752 ]
+    - [ 139.612983, 35.137536 ]
+    - [ 139.61296, 35.13752 ]
+    - [ 139.61308, 35.13807 ]
+    - [ 139.61698, 35.13756 ]
+    - [ 139.6201, 35.13698 ]
+    - [ 139.62089, 35.13668 ]
+    - [ 139.621087, 35.134817 ]
+stops: [ misaki-urari, misaki-jogashima, misaki-hakushu ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 1便
+        stops: [ 10:00, 10:05, null ]
+      - name: 2便
+        stops: [ 10:20, 10:15, null ]
+      - name: 3便
+        stops: [ 10:30, 10:35, null ]
+      - name: 4便
+        stops: [ null, 10:45, 10:50 ]
+      - name: 5便
+        stops: [ 11:05, null, 11:00 ]
+      - name: 6便
+        stops: [ 11:15, 11:20, null ]
+      - name: 7便
+        stops: [ 12:00, 12:05, null ]
+      - name: 8便
+        stops: [ 12:20, 12:15, null ]
+      - name: 9便
+        stops: [ 12:30, 12:35, null ]
+      - name: 10便
+        stops: [ null, 12:45, 12:50 ]
+      - name: 11便
+        stops: [ 13:05, null, 13:00 ]
+      - name: 12便
+        stops: [ 13:15, 13:20, null ]
+      - name: 13便
+        stops: [ 13:35, 13:30, null ]
+      - name: 14便
+        stops: [ 13:45, 13:50, null ]
+      - name: 15便
+        stops: [ null, 14:00, 14:05 ]
+      - name: 16便
+        stops: [ 14:20, null, 14:15 ]
+      - name: 17便
+        stops: [ 14:30, 14:35, null ]
+      - name: 18便
+        stops: [ 14:50, 14:45, null ]
+      - name: 19便
+        stops: [ 15:00, 15:05, null ]
+      - name: 20便
+        stops: [ null, 15:15, 15:20 ]
+      - name: 21便
+        stops: [ 15:35, null, 15:30 ]
+      - name: 22便
+        stops: [ 15:45, 15:50, null ]
+      - name: 23便
+        stops: [ 16:05, 16:00, null ]
+      - name: 24便
+        stops: [ 16:15, 16:20, null ]
+flags: [ regional ]

@@ -1,0 +1,57 @@
+{
+  "name": "fune-data",
+  "version": "0.0.0",
+  "description": "船旅データ (航路・港) と TypeScript 型/zod スキーマ",
+  "type": "module",
+  "main": "./dist/types/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.js"
+    },
+    "./schema": {
+      "types": "./dist/types/schema.d.ts",
+      "import": "./dist/types/schema.js"
+    },
+    "./ports": "./dist/data/ports.json",
+    "./lines": "./dist/data/lines.json",
+    "./data/lines/*.yaml": "./data/lines/*.yaml",
+    "./data/ports/*.yaml": "./data/ports/*.yaml"
+  },
+  "files": [
+    "dist",
+    "types",
+    "scripts",
+    "data",
+    "tsconfig.build.json"
+  ],
+  "scripts": {
+    "dev": "tsx scripts/server.ts",
+    "build": "tsx scripts/build.ts",
+    "validate": "tsx scripts/validate.ts",
+    "update": "tsx --env-file=.env scripts/update.ts",
+    "check": "biome check .",
+    "fix": "biome check --write ."
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.142",
+    "@hono/node-server": "^2.0.5",
+    "hono": "^4.12.25",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.15",
+    "@types/node": "^25.7.0",
+    "ts-to-zod": "^5.1.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.2",
+    "yaml": "^2.9.0"
+  },
+  "packageManager": "pnpm@11.1.1",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

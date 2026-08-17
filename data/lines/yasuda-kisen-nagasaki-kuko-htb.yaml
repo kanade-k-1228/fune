@@ -1,0 +1,46 @@
+name: 長崎空港～ハウステンボス
+color: "#2650d9"
+route: 大村湾航路
+source:
+  - https://yasuda-gp.net/omura/htb
+  - https://nagasaki-airport.jp/access/ferry/
+ports:
+  nagasaki-kuko: [ 129.924896, 32.911923 ]
+  hautenbosu: [ 129.786150735, 33.080884305 ]
+coords:
+  - - [ 129.924896, 32.911923 ]
+    - [ 129.786150735, 33.080884305 ]
+stops: [ nagasaki-kuko, hautenbosu ]
+fare:
+  - 大人 片道 2,500円 / 往復 5,000円 (復路割引券利用時 4,500円)
+  - 小児 片道 1,250円 / 往復 2,500円 (復路割引券利用時 2,250円)
+notes:
+  - 所要時間 約50分
+  - 土日祝のみ運航 (平日全便運休)
+  - 2026年5月11日〜7月17日は全便運休
+  - 大村予約センター 0957-54-4740 (9:00〜18:00)
+  - 長崎空港マリンターミナル 0957-52-4131
+  - ハウステンボス発当日予約 0956-27-0163
+ships:
+  - オーシャンライナー7
+timetables:
+  normal:
+    name: 通常ダイヤ (土日祝のみ)
+    voyages:
+      - name: 南行 1便
+        stops: [ 10:30, 11:20 ]
+      - name: 南行 2便
+        stops: [ 15:20, 16:10 ]
+      - name: 北行 1便
+        stops: [ 11:30, 12:20 ]
+      - name: 北行 2便
+        stops: [ 16:30, 17:20 ]
+  closed:
+    name: 全便運休
+    voyages: []
+schedule:
+  "2026-05-11..2026-07-17": closed
+  isHoliday: normal
+  isWeekend: normal
+  "*": closed
+flags: [ regional ]

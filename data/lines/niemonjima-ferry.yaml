@@ -1,0 +1,25 @@
+name: 仁右衛門島
+route: 浜波太〜仁右衛門島
+color: "#26d958"
+source:
+  - https://niemon-jima.com/
+  - https://niemon-jima.com/index.php/price/
+  - https://maruchiba.jp/spot/detail_10385.html
+fare:
+  - 入島料（往復渡船料含む）：大人 1,350円 / 中学生 1,050円 / 5歳〜小学生 950円
+notes:
+  - 千葉県鴨川市太海沖の仁右衛門島への渡し舟（手こぎ二丁櫓）
+  - 営業時間：8:30〜16:30（渡船は随時運行、片道約5分）
+  - 無休。荒天時は休業（運航状況は毎日8時頃に公式サイトで更新）
+  - ペット持ち込み不可、島内でのバーベキュー不可
+  - 所在地：千葉県鴨川市太海浜445
+  - 連絡先：04-7092-3456
+ports:
+  futomi-gyoko: [ 140.101529, 35.077221 ]
+  niemonjima: [ 140.104722, 35.076649 ]
+coords:
+  - - [ 140.101529, 35.077221 ]
+    - [ 140.104722, 35.076649 ]
+stops: [ futomi-gyoko, niemonjima ]
+flags:
+  - regional

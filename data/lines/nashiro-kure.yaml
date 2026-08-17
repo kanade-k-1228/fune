@@ -1,0 +1,63 @@
+name: 情島通船
+route: 阿賀〜情島
+color: "#265cd9"
+source:
+  - https://www.city.kure.lg.jp/soshiki/28/kouro-nasake.html
+fare:
+  - "運賃（片道）: 大人210円、小人110円"
+  - "運賃（往復）: 大人410円、小人210円"
+notes:
+  - 天候・潮位の影響で運航できない場合があるため、事前確認が必要
+  - "問い合わせ: 一真海運株式会社 090-1686-4092"
+ships:
+  - 第二たか丸
+ports:
+  aga: [ 132.595859, 34.230267 ]
+  nasakejima-kure: [ 132.57001, 34.159033 ]
+coords:
+  - - [ 132.595859, 34.230267 ]
+    - [ 132.56992, 34.15896 ]
+    - [ 132.56831, 34.15951 ]
+    - [ 132.56767, 34.16197 ]
+    - [ 132.57376, 34.17441 ]
+    - [ 132.5904, 34.19775 ]
+    - [ 132.5989, 34.22148 ]
+    - [ 132.5978, 34.22727 ]
+    - [ 132.59694, 34.22948 ]
+    - [ 132.59595, 34.23028 ]
+    - [ 132.57001, 34.159033 ]
+stops: [ aga, nasakejima-kure ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 南行 1便
+        stops: [ 12:30, 12:55 ]
+      - name: 南行 2便
+        stops: [ 15:30, 15:55 ]
+      - name: 北行 1便
+        stops: [ 07:55, 07:30 ]
+      - name: 北行 2便
+        stops: [ 14:55, 14:30 ]
+  closed:
+    name: 運休（日曜・祝祭日・盆8/14〜16・年末年始12/31〜1/4）
+    voyages: []
+schedule:
+  isSunday: closed
+  isHoliday: closed
+  nthMonth(8):
+    nthDay(14): closed
+    nthDay(15): closed
+    nthDay(16): closed
+    "*": normal
+  nthMonth(12):
+    nthDay(31): closed
+    "*": normal
+  nthMonth(1):
+    nthDay(1): closed
+    nthDay(2): closed
+    nthDay(3): closed
+    nthDay(4): closed
+    "*": normal
+  "*": normal
+flags: [ regional ]

@@ -1,0 +1,183 @@
+name: 三光汽船
+route: 因島（金山）〜生口島（赤崎）
+color: "#2678d9"
+source:
+  - https://sankohkisen.jp/fare_times/innoshima/
+fare:
+  - 大人運賃80円、小人40円
+  - 自転車（同乗）大人130円・小人90円
+  - 車両（3〜5m）200円、6m以上850〜2,630円（車長により異なる）
+  - 定期券・回数券（11枚綴・30枚綴）あり
+notes:
+  - 所要時間約4分
+ships:
+  - 第三いんのしま
+ports:
+  akasaki: [ 133.14984, 34.29886 ]
+  kanayama: [ 133.15539, 34.29924 ]
+coords:
+  - - [ 133.14984, 34.29886 ]
+    - [ 133.14984, 34.29886 ]
+    - [ 133.15539, 34.29924 ]
+    - [ 133.15539, 34.29924 ]
+stops: [ akasaki, kanayama ]
+timetables:
+  normal:
+    name: 通常ダイヤ（平日のみ）
+    voyages:
+      - name: "1"
+        stops: [ 06:50, null ]
+      - name: "2"
+        stops: [ null, 07:00 ]
+      - name: "3"
+        stops: [ 07:10, null ]
+      - name: "4"
+        stops: [ null, 07:20 ]
+      - name: "5"
+        stops: [ 07:30, null ]
+      - name: "6"
+        stops: [ null, 07:40 ]
+      - name: "7"
+        stops: [ 07:50, null ]
+      - name: "8"
+        stops: [ null, 08:00 ]
+      - name: "9"
+        stops: [ 08:10, null ]
+      - name: "10"
+        stops: [ null, 08:20 ]
+      - name: "11"
+        stops: [ 08:30, null ]
+      - name: "12"
+        stops: [ null, 08:40 ]
+      - name: "13"
+        stops: [ 08:50, null ]
+      - name: "14"
+        stops: [ null, 09:00 ]
+      - name: "15"
+        stops: [ 09:10, null ]
+      - name: "16"
+        stops: [ null, 09:20 ]
+      - name: "17"
+        stops: [ 09:30, null ]
+      - name: "18"
+        stops: [ null, 09:40 ]
+      - name: "19"
+        stops: [ 09:50, null ]
+      - name: "20"
+        stops: [ null, 10:00 ]
+      - name: "21"
+        stops: [ 10:10, null ]
+      - name: "22"
+        stops: [ null, 10:20 ]
+      - name: "23"
+        stops: [ 10:30, null ]
+      - name: "24"
+        stops: [ null, 10:40 ]
+      - name: "25"
+        stops: [ 10:50, null ]
+      - name: "26"
+        stops: [ null, 11:00 ]
+      - name: "27"
+        stops: [ 11:10, null ]
+      - name: "28"
+        stops: [ null, 11:20 ]
+      - name: "29"
+        stops: [ 11:30, null ]
+      - name: "30"
+        stops: [ null, 11:40 ]
+      - name: "31"
+        stops: [ 11:50, null ]
+      - name: "32"
+        stops: [ null, 12:00 ]
+      - name: "33"
+        stops: [ 13:10, null ]
+      - name: "34"
+        stops: [ null, 13:20 ]
+      - name: "35"
+        stops: [ 13:30, null ]
+      - name: "36"
+        stops: [ null, 13:40 ]
+      - name: "37"
+        stops: [ 13:50, null ]
+      - name: "38"
+        stops: [ null, 14:00 ]
+      - name: "39"
+        stops: [ 14:10, null ]
+      - name: "40"
+        stops: [ null, 14:20 ]
+      - name: "41"
+        stops: [ 14:30, null ]
+      - name: "42"
+        stops: [ null, 14:40 ]
+      - name: "43"
+        stops: [ 14:50, null ]
+      - name: "44"
+        stops: [ null, 15:00 ]
+      - name: "45"
+        stops: [ 15:10, null ]
+      - name: "46"
+        stops: [ null, 15:20 ]
+      - name: "47"
+        stops: [ 15:30, null ]
+      - name: "48"
+        stops: [ null, 15:40 ]
+      - name: "49"
+        stops: [ 15:50, null ]
+      - name: "50"
+        stops: [ null, 16:00 ]
+      - name: "51"
+        stops: [ 16:10, null ]
+      - name: "52"
+        stops: [ null, 16:20 ]
+      - name: "53"
+        stops: [ 16:30, null ]
+      - name: "54"
+        stops: [ null, 16:40 ]
+      - name: "55"
+        stops: [ 16:50, null ]
+      - name: "56"
+        stops: [ null, 17:00 ]
+      - name: "57"
+        stops: [ 17:10, null ]
+      - name: "58"
+        stops: [ null, 17:20 ]
+      - name: "59"
+        stops: [ 17:30, null ]
+      - name: "60"
+        stops: [ null, 17:40 ]
+      - name: "61"
+        stops: [ 17:50, null ]
+      - name: "62"
+        stops: [ null, 18:00 ]
+      - name: "63"
+        stops: [ 18:10, null ]
+      - name: "64"
+        stops: [ null, 18:20 ]
+      - name: "65"
+        stops: [ 18:30, null ]
+      - name: "66"
+        stops: [ null, 18:40 ]
+      - name: "67"
+        stops: [ 18:50, null ]
+      - name: "68"
+        stops: [ null, 19:00 ]
+  closed:
+    name: 全便運休
+    voyages: []
+schedule:
+  nthMonth(12):
+    nthDay(31): closed
+    isWeekend: closed
+    isHoliday: closed
+    "*": normal
+  nthMonth(1):
+    nthDay(1): closed
+    nthDay(2): closed
+    nthDay(3): closed
+    isWeekend: closed
+    isHoliday: closed
+    "*": normal
+  isWeekend: closed
+  isHoliday: closed
+  "*": normal
+flags: [ regional ]

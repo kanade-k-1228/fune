@@ -1,0 +1,76 @@
+name: 観光汽船興業
+route: 日本橋〜豊洲
+color: "#26b7d9"
+source:
+  - https://www.suitown.jp/cruise/234/
+  - https://www.urbanlaunch.net/
+fare:
+  - 大人 (中学生以上) 500円
+  - 小人 (小学生) 250円
+ships:
+  - アーバンランチ
+  - リムジンボート
+notes:
+  - 観光汽船興業による舟旅通勤 (片道約20分)
+  - 現在運航休止 (2026年3月20日〜当面)
+  - 通常運航日は火・水・木・金の夕方〜夜
+  - "運休日: 祝日、毎月第2水曜、年末年始 (12/26〜1/3)"
+ports:
+  nihonbashi-pier: [ 139.777348, 35.684068 ]
+  toyosu: [ 139.793443, 35.654337 ]
+coords:
+  - - [ 139.777348, 35.684068 ]
+    - [ 139.7748, 35.68384 ]
+    - [ 139.77524, 35.68407 ]
+    - [ 139.77798, 35.68439 ]
+    - [ 139.77957, 35.68343 ]
+    - [ 139.78017, 35.68188 ]
+    - [ 139.78085, 35.68108 ]
+    - [ 139.78221, 35.67995 ]
+    - [ 139.78429, 35.67862 ]
+    - [ 139.7875, 35.677 ]
+    - [ 139.78722, 35.67462 ]
+    - [ 139.78848, 35.6664 ]
+    - [ 139.79001, 35.65546 ]
+    - [ 139.79092, 35.65481 ]
+    - [ 139.79129, 35.65497 ]
+    - [ 139.793443, 35.654337 ]
+stops: [ nihonbashi-pier, toyosu ]
+timetables:
+  normal:
+    name: 通常ダイヤ (火水木金)
+    voyages:
+      - name: 豊洲発 1便
+        stops: [ null, 16:00 ]
+      - name: 日本橋発 1便
+        stops: [ 16:30, null ]
+      - name: 豊洲発 2便
+        stops: [ null, 17:00 ]
+      - name: 日本橋発 2便
+        stops: [ 17:30, null ]
+      - name: 豊洲発 3便
+        stops: [ null, 18:00 ]
+      - name: 日本橋発 3便
+        stops: [ 18:30, null ]
+      - name: 豊洲発 4便
+        stops: [ null, 19:00 ]
+      - name: 日本橋発 4便
+        stops: [ 19:30, null ]
+      - name: 豊洲発 5便
+        stops: [ null, 20:00 ]
+      - name: 日本橋発 5便
+        stops: [ 20:30, null ]
+  closed:
+    name: 月・土・日運休
+    voyages: []
+schedule:
+  isHoliday: closed
+  "2026-12-26..2027-01-03": closed
+  isTuesday: normal
+  isWednesday:
+    nthWeek(2): closed
+    "*": normal
+  isThursday: normal
+  isFriday: normal
+  "*": closed
+flags: [ regional, suspend ]

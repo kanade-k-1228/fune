@@ -1,0 +1,58 @@
+name: 小堀の渡し
+color: "#d9266d"
+route: 小堀～取手緑地運動公園駐車場前～取手ふれあい桟橋
+source:
+  - https://www.city.toride.ibaraki.jp/mizutomidori/bunkakatsudo/kanko/kankomesho/ohorinowatashi.html
+fare:
+  - 料金：大人200円（一周400円）・小学生100円（一周200円）・自転車1台目無料
+notes:
+  - 取手市営の渡し船。利根川を挟み市内中心部と小堀（おおほり）地区を結ぶ
+  - 河川増水・強風時は欠航
+  - 小堀地区居住者・未就学児・介護が必要な者と介護者は無料
+  - 定員12名、予約不可
+ships:
+  - とりで号
+ports:
+  kobori: [ 140.07554, 35.882835 ]
+  toride-ryokuchi: [ 140.065781, 35.886811 ]
+  toride-fureai: [ 140.060015, 35.889686 ]
+coords:
+  - - [ 140.07554, 35.882835 ]
+    - [ 140.065781, 35.886811 ]
+    - [ 140.060015, 35.889686 ]
+stops: [ kobori, toride-ryokuchi, toride-fureai ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 1便
+        stops: [ "09:00", "09:20", "09:35" ]
+      - name: 2便
+        stops: [ "10:00", "10:20", "10:35" ]
+      - name: 3便
+        stops: [ "11:00", "11:20", "11:35" ]
+      - name: 4便
+        stops: [ "13:00", "13:20", "13:35" ]
+      - name: 5便
+        stops: [ "14:00", "14:20", "14:35" ]
+      - name: 6便
+        stops: [ "15:00", "15:20", "15:35" ]
+      - name: 7便
+        stops: [ "16:00", "16:20", "16:35" ]
+  closed:
+    name: 運休（水曜・12/29〜1/3）
+    voyages: []
+schedule:
+  isWednesday: closed
+  nthMonth(12):
+    nthDay(29): closed
+    nthDay(30): closed
+    nthDay(31): closed
+    "*": normal
+  nthMonth(1):
+    nthDay(1): closed
+    nthDay(2): closed
+    nthDay(3): closed
+    "*": normal
+  "*": normal
+flags: [ regional ]

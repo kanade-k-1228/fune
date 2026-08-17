@@ -1,0 +1,50 @@
+name: 岐阜市（小紅渡船船頭組合）
+route: 小紅の渡し
+color: "#26a1d9"
+source:
+  - https://www.gifucvb.or.jp/sightseeing/detail_kankou.php?eid=00026
+  - https://ja.wikipedia.org/wiki/%E5%B0%8F%E7%B4%85%E3%81%AE%E6%B8%A1%E3%81%97
+fare:
+  - 料金：無料
+notes:
+  - 岐阜市が運営する長良川の渡し船（岐阜県道173号の一部）
+  - 小紅渡船船頭組合が運営（船頭は曜日ごとの担当制・3人体制）
+  - 時刻表なし・随時出発（呼べばすぐ出航）
+  - 月曜が祝日または21日の場合は翌日休航
+  - 悪天候・増水時は欠航（渡船小屋に赤旗が上がる）
+  - 問い合わせ：岐阜市土木管理課 058-214-4719
+ports:
+  kobeni-ichinichibazaar: [ 136.715128, 35.418049 ]
+  kobeni-kagashima: [ 136.715100, 35.416900 ]
+coords:
+  - - [ 136.715128, 35.418049 ]
+    - [ 136.7151, 35.4169 ]
+stops: [ kobeni-ichinichibazaar, kobeni-kagashima ]
+timetables:
+  spring-autumn:
+    name: 春夏ダイヤ（4/1〜9/30 8:00〜17:00 運航）
+    voyages: []
+  winter:
+    name: 冬ダイヤ（10/1〜3/31 8:00〜16:30 運航）
+    voyages: []
+  closed:
+    name: 運休（毎週月曜・12/29〜31）
+    voyages: []
+schedule:
+  isMonday: closed
+  nthMonth(12):
+    nthDay(29): closed
+    nthDay(30): closed
+    nthDay(31): closed
+    "*": winter
+  nthMonth(1): winter
+  nthMonth(2): winter
+  nthMonth(3): winter
+  nthMonth(4): spring-autumn
+  nthMonth(5): spring-autumn
+  nthMonth(6): spring-autumn
+  nthMonth(7): spring-autumn
+  nthMonth(8): spring-autumn
+  nthMonth(9): spring-autumn
+  "*": winter
+flags: [ regional ]

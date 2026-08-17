@@ -1,0 +1,82 @@
+name: 富士山清水港クルーズ
+color: "#6226d9"
+route: 塚間航路
+source:
+  - https://www.shimizu-cruise.co.jp/fare/
+  - https://www.shimizu-cruise.co.jp/
+fare:
+  - 大人 400円
+  - 小学生 200円
+notes:
+  - "運航: 富士山清水港クルーズ株式会社（静岡市清水区日の出町10-80 マリンターミナル3階）"
+  - 電話 054-353-2222（受付 9:00〜17:00）
+  - 所要時間 江尻〜日の出 約10分 / 日の出〜塚間 約10分 / 塚間〜江尻 約15分
+  - 日曜は全便運休
+  - 土曜・祝日は第4便・第5便を運休
+  - 年末年始（12月29日〜1月3日）は全便運休
+  - 2026年5月2日(土)〜5月6日(水・祝)は期間運休
+  - 2026年4月1日改正ダイヤ
+ships:
+  - ベイプロムナード
+ports:
+  eziri: [ 138.495228, 35.009698 ]
+  hinode-shimizu: [ 138.503647, 35.006812 ]
+  tsukama: [ 138.506585, 35.003817 ]
+coords:
+  - - [ 138.495228, 35.009698 ]
+    - [ 138.503647, 35.006812 ]
+    - [ 138.506585, 35.003817 ]
+stops: [ eziri, hinode-shimizu, tsukama ]
+timetables:
+  normal:
+    name: 平日ダイヤ
+    voyages:
+      - name: 下り 1便
+        stops: [ "07:00", "07:10", "07:20" ]
+      - name: 下り 2便
+        stops: [ "07:35", "07:45", "07:52" ]
+      - name: 下り 3便
+        stops: [ "17:10", "17:30", "17:37" ]
+      - name: 下り 4便
+        stops: [ "17:55", "18:15", "18:22" ]
+        schedule:
+          isSunday: false
+          isSaturday: false
+          isHoliday: false
+          "*": true
+      - name: 下り 5便
+        stops: [ "18:35", "18:50", "18:56" ]
+        schedule:
+          isSunday: false
+          isSaturday: false
+          isHoliday: false
+          "*": true
+      - name: 上り 1便
+        stops: [ "07:20", "07:35", "07:45" ]
+      - name: 上り 2便
+        stops: [ "07:52", null, null ]
+      - name: 上り 3便
+        stops: [ "17:30", "17:37", "17:55" ]
+      - name: 上り 4便
+        stops: [ "18:15", "18:22", "18:35" ]
+        schedule:
+          isSunday: false
+          isSaturday: false
+          isHoliday: false
+          "*": true
+      - name: 上り 5便
+        stops: [ "18:50", "18:56", null ]
+        schedule:
+          isSunday: false
+          isSaturday: false
+          isHoliday: false
+          "*": true
+  closed:
+    name: 日曜運休
+    voyages: []
+schedule:
+  isSunday: closed
+  "2026-05-02..2026-05-06": closed
+  "2025-12-29..2026-01-03": closed
+  "*": normal
+flags: [ regional ]

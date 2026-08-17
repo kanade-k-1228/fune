@@ -1,0 +1,191 @@
+name: 大阪市営渡船
+route: 天保山（築港）〜桜島
+color: "#d92826"
+source:
+  - https://www.city.osaka.lg.jp/kensetsu/page/0000011249.html
+  - https://www.city.osaka.lg.jp/kensetsu/page/0000011278.html
+  - https://www.city.osaka.lg.jp/kensetsu/page/0000011242.html
+fare:
+  - 無料（大阪市の渡船はすべて無料）
+notes:
+  - 天保山渡船場 06-6571-5919
+  - 大阪市建設局 河川・渡船管理事務所 06-6536-5295
+  - 所要時間は約3分（岸壁間約400m）
+  - 1月1日は休航
+  - 台風・大雨などの荒天時は運休する場合あり
+  - 自転車・125cc以下の二輪車も乗船可
+ports:
+  tempozan-sakurajima: [ 135.429109, 34.659465 ]
+  tempozan-chikko: [ 135.433214, 34.658396 ]
+coords:
+  - - [ 135.429109, 34.659465 ]
+    - [ 135.42917, 34.65934 ]
+    - [ 135.4331, 34.65851 ]
+    - [ 135.433214, 34.658396 ]
+stops: [ tempozan-sakurajima, tempozan-chikko ]
+timetables:
+  dia0:
+    name: 平日ダイヤ
+    voyages:
+      - name: 6:15発
+        stops: [ 06:15, 06:20 ]
+      - name: 6:30発
+        stops: [ 06:30, 06:35 ]
+      - name: 6:45発
+        stops: [ 06:45, 06:50 ]
+      - name: 7:00発
+        stops: [ 07:00, 07:05 ]
+      - name: 7:15発
+        stops: [ 07:15, 07:20 ]
+      - name: 7:30発
+        stops: [ 07:30, 07:35 ]
+      - name: 7:45発
+        stops: [ 07:45, 07:50 ]
+      - name: 8:00発
+        stops: [ 08:00, 08:05 ]
+      - name: 8:20発
+        stops: [ 08:20, 08:25 ]
+      - name: 8:40発
+        stops: [ 08:40, 08:45 ]
+      - name: 9:00発
+        stops: [ 09:00, 09:05 ]
+      - name: 9:30発
+        stops: [ 09:30, 09:35 ]
+      - name: 10:00発
+        stops: [ 10:00, 10:05 ]
+      - name: 10:30発
+        stops: [ 10:30, 10:35 ]
+      - name: 11:00発
+        stops: [ 11:00, 11:05 ]
+      - name: 11:30発
+        stops: [ 11:30, 11:35 ]
+      - name: 12:00発
+        stops: [ 12:00, 12:05 ]
+      - name: 12:30発
+        stops: [ 12:30, 12:35 ]
+      - name: 13:00発
+        stops: [ 13:00, 13:05 ]
+      - name: 13:30発
+        stops: [ 13:30, 13:35 ]
+      - name: 14:00発
+        stops: [ 14:00, 14:05 ]
+      - name: 14:30発
+        stops: [ 14:30, 14:35 ]
+      - name: 15:00発
+        stops: [ 15:00, 15:05 ]
+      - name: 15:30発
+        stops: [ 15:30, 15:35 ]
+      - name: 16:00発
+        stops: [ 16:00, 16:05 ]
+      - name: 16:20発
+        stops: [ 16:20, 16:25 ]
+      - name: 16:40発
+        stops: [ 16:40, 16:45 ]
+      - name: 17:00発
+        stops: [ 17:00, 17:05 ]
+      - name: 17:15発
+        stops: [ 17:15, 17:20 ]
+      - name: 17:30発
+        stops: [ 17:30, 17:35 ]
+      - name: 17:45発
+        stops: [ 17:45, 17:50 ]
+      - name: 18:00発
+        stops: [ 18:00, 18:05 ]
+      - name: 18:30発
+        stops: [ 18:30, 18:35 ]
+      - name: 19:00発
+        stops: [ 19:00, 19:05 ]
+      - name: 19:30発
+        stops: [ 19:30, 19:35 ]
+      - name: 20:00発
+        stops: [ 20:00, 20:05 ]
+      - name: 20:30発
+        stops: [ 20:30, 20:35 ]
+  dia1:
+    name: 土日祝ダイヤ
+    voyages:
+      - name: 6:30発
+        stops: [ 06:30, 06:35 ]
+      - name: 6:45発
+        stops: [ 06:45, 06:50 ]
+      - name: 7:00発
+        stops: [ 07:00, 07:05 ]
+      - name: 7:15発
+        stops: [ 07:15, 07:20 ]
+      - name: 7:30発
+        stops: [ 07:30, 07:35 ]
+      - name: 7:45発
+        stops: [ 07:45, 07:50 ]
+      - name: 8:00発
+        stops: [ 08:00, 08:05 ]
+      - name: 8:20発
+        stops: [ 08:20, 08:25 ]
+      - name: 8:40発
+        stops: [ 08:40, 08:45 ]
+      - name: 9:00発
+        stops: [ 09:00, 09:05 ]
+      - name: 9:30発
+        stops: [ 09:30, 09:35 ]
+      - name: 10:00発
+        stops: [ 10:00, 10:05 ]
+      - name: 10:30発
+        stops: [ 10:30, 10:35 ]
+      - name: 11:00発
+        stops: [ 11:00, 11:05 ]
+      - name: 11:30発
+        stops: [ 11:30, 11:35 ]
+      - name: 12:00発
+        stops: [ 12:00, 12:05 ]
+      - name: 12:30発
+        stops: [ 12:30, 12:35 ]
+      - name: 13:00発
+        stops: [ 13:00, 13:05 ]
+      - name: 13:30発
+        stops: [ 13:30, 13:35 ]
+      - name: 14:00発
+        stops: [ 14:00, 14:05 ]
+      - name: 14:30発
+        stops: [ 14:30, 14:35 ]
+      - name: 15:00発
+        stops: [ 15:00, 15:05 ]
+      - name: 15:30発
+        stops: [ 15:30, 15:35 ]
+      - name: 16:00発
+        stops: [ 16:00, 16:05 ]
+      - name: 16:20発
+        stops: [ 16:20, 16:25 ]
+      - name: 16:40発
+        stops: [ 16:40, 16:45 ]
+      - name: 17:00発
+        stops: [ 17:00, 17:05 ]
+      - name: 17:15発
+        stops: [ 17:15, 17:20 ]
+      - name: 17:30発
+        stops: [ 17:30, 17:35 ]
+      - name: 17:45発
+        stops: [ 17:45, 17:50 ]
+      - name: 18:00発
+        stops: [ 18:00, 18:05 ]
+      - name: 18:30発
+        stops: [ 18:30, 18:35 ]
+      - name: 19:00発
+        stops: [ 19:00, 19:05 ]
+      - name: 19:30発
+        stops: [ 19:30, 19:35 ]
+      - name: 20:00発
+        stops: [ 20:00, 20:05 ]
+      - name: 20:30発
+        stops: [ 20:30, 20:35 ]
+  closed:
+    name: 1月1日 休航
+    voyages: []
+schedule:
+  nthMonth(1):
+    nthDay(1): closed
+    isHoliday: dia1
+    isWeekend: dia1
+    "*": dia0
+  isHoliday: dia1
+  isWeekend: dia1
+  "*": dia0
+flags: [ regional ]

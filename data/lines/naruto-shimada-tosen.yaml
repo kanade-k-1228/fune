@@ -1,0 +1,70 @@
+name: 島田渡船（堂浦〜島田）
+color: "#d926c4"
+route: 堂浦〜島田
+source:
+  - https://www.city.naruto.lg.jp/kurashi/sumai/kotsu/tosen/shimada.html
+  - https://ja.wikipedia.org/wiki/%E9%B3%B4%E9%96%80%E5%B8%82%E5%96%B6%E6%B8%A1%E8%88%B9
+fare:
+  - 無料
+notes:
+  - "鳴門市営渡船（運航委託: 有限会社島田渡船）。利用客がいない場合は運航しない不定期航路（定時に来ない場合は船着場のボタンで呼び出し）。"
+  - 所要時間 約4分。定員12名。
+  - 運休日なし（天候により運航中止や出航時刻の変動あり）。
+  - "問い合わせ: 鳴門市都市建設部土木課 TEL 088-684-1166"
+ships:
+  - 第二小鳴門丸
+ports:
+  donoura-shimada: [ 134.590276, 34.224103 ]
+  shimada-tosen: [ 134.593058, 34.225416 ]
+coords:
+  - - [ 134.590276, 34.224103 ]
+    - [ 134.593058, 34.225416 ]
+stops: [ donoura-shimada, shimada-tosen ]
+timetables:
+  dia0:
+    name: 通常ダイヤ（島田発）
+    voyages:
+      - name: 1便
+        stops: [ "07:50", "07:54" ]
+      - name: 2便
+        stops: [ "08:10", "08:14" ]
+      - name: 3便
+        stops: [ "08:30", "08:34" ]
+      - name: 4便
+        stops: [ "09:10", "09:14" ]
+      - name: 5便
+        stops: [ "10:10", "10:14" ]
+      - name: 6便
+        stops: [ "11:20", "11:24" ]
+      - name: 7便
+        stops: [ "12:30", "12:34" ]
+      - name: 8便
+        stops: [ "14:00", "14:04" ]
+      - name: 9便
+        stops: [ "15:00", "15:04" ]
+      - name: 10便
+        stops: [ "15:20", "15:24" ]
+  dia1:
+    name: 通常ダイヤ（堂浦発）
+    voyages:
+      - name: 1便
+        stops: [ "07:55", "08:00" ]
+      - name: 2便
+        stops: [ "08:15", "08:20" ]
+      - name: 3便
+        stops: [ "08:35", "08:40" ]
+      - name: 4便
+        stops: [ "09:15", "09:20" ]
+      - name: 5便
+        stops: [ "10:15", "10:20" ]
+      - name: 6便
+        stops: [ "11:25", "11:30" ]
+      - name: 7便
+        stops: [ "12:35", "12:40" ]
+      - name: 8便
+        stops: [ "14:05", "14:10" ]
+      - name: 9便
+        stops: [ "15:05", "15:10" ]
+      - name: 10便
+        stops: [ "15:25", "15:30" ]
+flags: [ regional ]

@@ -1,0 +1,170 @@
+name: 関門汽船
+route: 唐戸〜巌流島〜門司港
+color: "#ae26d9"
+source:
+  - https://www.kanmon-kisen.co.jp/route/ganryujima.html
+  - https://www.kanmon-kisen.co.jp/profitable_plan/
+fare:
+  - 往復 大人900円 / 小児450円
+  - 15名以上の団体は10%割引
+  - 障害者割引50%引（適用区分あり）
+  - トライアングルフリーパス（関門連絡船＋巌流島航路1日乗り放題）大人1,000円 / 小児500円
+notes:
+  - 平日は門司港発着便運休
+  - 12月～2月は一部便運休
+  - 所要約10分
+  - 改札後の払い戻し不可
+  - 下関支店 TEL 083-222-1488
+  - 門司営業所 TEL 093-331-0222
+  - 【期間限定】門司港発着便の増便：2026年7月24日・31日、8月7日・10日・12日・21日（通常運休の平日に臨時運航）
+ships:
+  - がんりう
+  - かんもん
+  - ふくまる
+  - しいがる
+  - アルタイル
+  - SANTA
+ports:
+  shimonoseki-karato: [ 130.943582, 33.955509 ]
+  ganryujima: [ 130.928399, 33.935731 ]
+  moji-ko-sambashi: [ 130.961, 33.943 ]
+coords:
+  - - [ 130.946, 33.957 ]
+    - [ 130.9432, 33.95577 ]
+    - [ 130.94481, 33.9553 ]
+    - [ 130.95402, 33.95169 ]
+    - [ 130.95969, 33.9476 ]
+    - [ 130.96025, 33.94658 ]
+    - [ 130.954, 33.949 ]
+    - [ 130.9432, 33.95577 ]
+    - [ 130.94481, 33.9553 ]
+    - [ 130.95402, 33.95169 ]
+    - [ 130.95969, 33.9476 ]
+    - [ 130.96025, 33.94658 ]
+    - [ 130.961, 33.943 ]
+stops: [ shimonoseki-karato, ganryujima, moji-ko-sambashi ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 平日 唐戸発1
+        stops: [ 09:05, 09:15, null ]
+      - name: 平日 唐戸発2
+        stops: [ 09:45, 09:55, null ]
+      - name: 平日 唐戸発3
+        stops: [ 10:25, 10:35, null ]
+      - name: 平日 唐戸発4
+        stops: [ 11:05, 11:15, null ]
+      - name: 平日 唐戸発5
+        stops: [ 11:45, 11:55, null ]
+      - name: 平日 唐戸発6
+        stops: [ 12:25, 12:35, null ]
+      - name: 平日 唐戸発7
+        stops: [ 13:05, 13:15, null ]
+      - name: 平日 唐戸発8
+        stops: [ 13:45, 13:55, null ]
+      - name: 平日 唐戸発9
+        stops: [ 14:25, 14:35, null ]
+      - name: 平日 唐戸発10
+        stops: [ 15:05, 15:15, null ]
+      - name: 平日 唐戸発11
+        stops: [ 15:45, 15:55, null ]
+      - name: 平日 唐戸発12
+        stops: [ 16:25, 16:35, null ]
+      - name: 平日 巌流島発1
+        stops: [ 09:40, 09:30, null ]
+      - name: 平日 巌流島発2
+        stops: [ 10:20, 10:10, null ]
+      - name: 平日 巌流島発3
+        stops: [ 11:00, 10:50, null ]
+      - name: 平日 巌流島発4
+        stops: [ 11:40, 11:30, null ]
+      - name: 平日 巌流島発5
+        stops: [ 12:20, 12:10, null ]
+      - name: 平日 巌流島発6
+        stops: [ 13:00, 12:50, null ]
+      - name: 平日 巌流島発7
+        stops: [ 13:40, 13:30, null ]
+      - name: 平日 巌流島発8
+        stops: [ 14:20, 14:10, null ]
+      - name: 平日 巌流島発9
+        stops: [ 15:00, 14:50, null ]
+      - name: 平日 巌流島発10
+        stops: [ 15:40, 15:30, null ]
+      - name: 平日 巌流島発11
+        stops: [ 16:20, 16:10, null ]
+      - name: 平日 巌流島発12
+        stops: [ 17:00, 16:50, null ]
+      - name: 土日祝 唐戸発1
+        stops: [ 09:05, 09:15, null ]
+      - name: 土日祝 唐戸発2
+        stops: [ 09:45, 09:55, null ]
+      - name: 土日祝 唐戸発3
+        stops: [ 10:25, 10:35, null ]
+      - name: 土日祝 唐戸発4
+        stops: [ 11:05, 11:15, null ]
+      - name: 土日祝 唐戸発5
+        stops: [ 11:45, 11:55, null ]
+      - name: 土日祝 唐戸発6
+        stops: [ 12:25, 12:35, null ]
+      - name: 土日祝 唐戸発7
+        stops: [ 13:05, 13:15, null ]
+      - name: 土日祝 唐戸発8
+        stops: [ 13:45, 13:55, null ]
+      - name: 土日祝 唐戸発9
+        stops: [ 14:25, 14:35, null ]
+      - name: 土日祝 唐戸発10
+        stops: [ 15:05, 15:15, null ]
+      - name: 土日祝 唐戸発11
+        stops: [ 15:45, 15:55, null ]
+      - name: 土日祝 唐戸発12
+        stops: [ 16:25, 16:35, null ]
+      - name: 土日祝 巌流島発1
+        stops: [ 09:45, 09:35, null ]
+      - name: 土日祝 巌流島発2
+        stops: [ 10:25, 10:15, null ]
+      - name: 土日祝 巌流島発3
+        stops: [ 11:05, 10:55, null ]
+      - name: 土日祝 巌流島発4
+        stops: [ 11:45, 11:35, null ]
+      - name: 土日祝 巌流島発5
+        stops: [ 12:25, 12:15, null ]
+      - name: 土日祝 巌流島発6
+        stops: [ 13:05, 12:55, null ]
+      - name: 土日祝 巌流島発7
+        stops: [ 13:45, 13:35, null ]
+      - name: 土日祝 巌流島発8
+        stops: [ 14:25, 14:15, null ]
+      - name: 土日祝 巌流島発9
+        stops: [ 15:05, 14:55, null ]
+      - name: 土日祝 巌流島発10
+        stops: [ 15:45, 15:35, null ]
+      - name: 土日祝 巌流島発11
+        stops: [ 16:25, 16:15, null ]
+      - name: 土日祝 巌流島発12
+        stops: [ 17:05, 16:55, null ]
+      - name: 土日祝 門司港発1
+        stops: [ null, 09:30, 09:20 ]
+      - name: 土日祝 門司港発2
+        stops: [ null, 10:10, 10:00 ]
+      - name: 土日祝 門司港発3
+        stops: [ null, 10:50, 10:40 ]
+      - name: 土日祝 門司港発4
+        stops: [ null, 11:30, 11:20 ]
+      - name: 土日祝 門司港発5
+        stops: [ null, 12:10, 12:00 ]
+      - name: 土日祝 門司港発6
+        stops: [ null, 12:50, 12:40 ]
+      - name: 土日祝 門司港発7
+        stops: [ null, 13:30, 13:20 ]
+      - name: 土日祝 門司港発8
+        stops: [ null, 14:10, 14:00 ]
+      - name: 土日祝 門司港発9
+        stops: [ null, 14:50, 14:40 ]
+      - name: 土日祝 門司港発10
+        stops: [ null, 15:30, 15:20 ]
+      - name: 土日祝 門司港発11
+        stops: [ null, 16:10, 16:00 ]
+      - name: 土日祝 門司港発12
+        stops: [ null, 16:50, 16:40 ]
+flags: [ regional ]

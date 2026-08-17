@@ -1,0 +1,82 @@
+name: 瀬戸内クルージング 尾道〜鞆の浦
+color: "#8726d9"
+route: 尾道〜鞆の浦
+source:
+  - https://s-cruise.jp/cruise/tomonoura/
+  - https://s-cruise.jp/timetable/
+  - https://s-cruise.jp/ship/
+  - https://s-cruise.jp/platform/
+fare:
+  - 大人 3,000円（片道）
+  - 小児 1,500円（片道）
+  - 千光寺下桟橋（中間地点）利用時 大人 500円 / 小児 250円
+notes:
+  - 株式会社 瀬戸内クルージング TEL 0848-36-6113
+  - 運航期間 2026年3月14日（土）〜11月15日（日）
+  - 土日祝のみ運航
+  - 所要時間 約55分
+  - 乗船時に船内で運賃を購入
+  - 2026年10月25日（日）は運休予定
+  - 5月5日（こどもの日）は終日子ども運賃無料
+  - 千光寺下桟橋（十四日元町）は現在乗降不可
+ships:
+  - ジュゴン
+  - 藤馬
+ports:
+  onomichi: [ 133.193246, 34.403109 ]
+  tomonoura: [ 133.38178, 34.38136 ]
+coords:
+  - - [ 133.193246, 34.403109 ]
+    - [ 133.38178, 34.38136 ]
+stops: [ onomichi, tomonoura ]
+timetables:
+  normal:
+    name: 通常ダイヤ（土日祝・3月〜11月）
+    voyages:
+      - name: 尾道発 1便
+        stops: [ 10:00, 10:55 ]
+      - name: 尾道発 2便
+        stops: [ 13:00, 13:55 ]
+  closed:
+    name: 運休
+    voyages: []
+schedule:
+  "2026-10-25": closed
+  nthMonth(3):
+    isHoliday: normal
+    isWeekend: normal
+    "*": closed
+  nthMonth(4):
+    isHoliday: normal
+    isWeekend: normal
+    "*": closed
+  nthMonth(5):
+    isHoliday: normal
+    isWeekend: normal
+    "*": closed
+  nthMonth(6):
+    isHoliday: normal
+    isWeekend: normal
+    "*": closed
+  nthMonth(7):
+    isHoliday: normal
+    isWeekend: normal
+    "*": closed
+  nthMonth(8):
+    isHoliday: normal
+    isWeekend: normal
+    "*": closed
+  nthMonth(9):
+    isHoliday: normal
+    isWeekend: normal
+    "*": closed
+  nthMonth(10):
+    isHoliday: normal
+    isWeekend: normal
+    "*": closed
+  nthMonth(11):
+    isHoliday: normal
+    isWeekend: normal
+    "*": closed
+  "*": closed
+flags: [ regional ]

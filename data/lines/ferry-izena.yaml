@@ -1,0 +1,87 @@
+name: 伊是名村営「フェリーいぜな尚円」
+route: 運天〜仲田
+color: "#26d963"
+source:
+  - https://www.vill.izena.okinawa.jp/about/access/
+notes:
+  - 1日2往復・所要約55分
+  - 出港10分前までに乗船
+  - 車両航送の場合は出港30分前までに待機
+  - 車両は事前予約必須（運天0980-56-5084 / 仲田0980-45-2002）
+  - 車両航送運賃は運転手1名分を含む
+  - 環境協力税100円が別途加算
+  - 往復券の復路は14日以内有効
+  - 障がい者割引は障がい者手帳またはミライロID提示者（介護者含む）が対象
+  - 気象状況により欠航・時刻変更の場合あり
+fare:
+  - adult::oneway::1,840円
+  - adult::round::3,500円
+  - child::oneway::920円
+  - child::round::1,750円
+  - disabled::adult::oneway::920円
+  - disabled::adult::round::1,840円
+  - disabled::child::oneway::460円
+  - disabled::child::round::920円
+  - group::adult::oneway::1,660円（一般団体15人以上）
+  - group::adult::round::3,320円（一般団体15人以上）
+  - group::student::oneway::1,290円（学生団体15人以上）
+  - group::student::round::2,580円（学生団体15人以上）
+  - group::child::oneway::830円（小人団体15人以上）
+  - group::child::round::1,660円（小人団体15人以上）
+  - bicycle::oneway::710円
+  - moto::oneway::1,400円（原付）
+  - moto::oneway::2,250円（自動二輪）
+  - car::oneway::5,380円（3m未満）
+  - car::round::10,230円（3m未満）
+  - car::oneway::6,850円（3m以上4m未満）
+  - car::round::13,020円（3m以上4m未満）
+  - car::oneway::8,480円（4m以上5m未満）
+  - car::round::16,120円（4m以上5m未満）
+  - car::oneway::11,020円（5m以上6m未満）
+  - car::round::20,940円（5m以上6m未満）
+  - car::oneway::13,880円（6m以上7m未満）
+  - car::round::26,380円（6m以上7m未満）
+  - car::oneway::16,620円（7m以上8m未満）
+  - car::round::31,580円（7m以上8m未満）
+  - car::oneway::18,510円（8m以上9m未満）
+  - car::round::35,170円（8m以上9m未満）
+  - car::oneway::20,520円（9m以上10m未満）
+  - car::round::38,990円（9m以上10m未満）
+  - car::oneway::22,250円（10m以上11m未満）
+  - car::round::42,280円（10m以上11m未満）
+  - car::oneway::23,990円（11m以上12m未満）
+  - car::round::45,590円（11m以上12m未満）
+  - car::oneway::3,580円（12m以上・1m増す毎に加算）
+  - car::round::6,810円（12m以上・1m増す毎に加算）
+ships:
+  - フェリーいぜな尚円
+ports:
+  unten: [ 127.997613, 26.677467 ]
+  nakata-2: [ 127.952232, 26.928697 ]
+coords:
+  - - [ 127.997613, 26.677467 ]
+    - [ 127.99711, 26.67673 ]
+    - [ 127.9997, 26.67615 ]
+    - [ 128.01085, 26.68213 ]
+    - [ 128.01234, 26.68548 ]
+    - [ 128.01112, 26.69465 ]
+    - [ 128.00327, 26.70604 ]
+    - [ 127.97209, 26.9062 ]
+    - [ 127.96091, 26.92087 ]
+    - [ 127.9533, 26.92471 ]
+    - [ 127.95249, 26.92864 ]
+    - [ 127.952232, 26.928697 ]
+stops: [ unten, nakata-2 ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 北行 1便
+        stops: [ 10:30, 11:25 ]
+      - name: 北行 2便
+        stops: [ 15:30, 16:25 ]
+      - name: 南行 1便
+        stops: [ 09:55, 09:00 ]
+      - name: 南行 2便
+        stops: [ 14:25, 13:30 ]
+flags: [ regional ]

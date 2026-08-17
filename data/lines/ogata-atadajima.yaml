@@ -1,0 +1,59 @@
+name: 阿多田島航路
+route: 小方〜阿多田島
+color: "#7ad926"
+source:
+  - https://atatajimakisen.sakura.ne.jp/
+  - https://atatajimakisen.sakura.ne.jp/timetable/
+  - https://atatajimakisen.sakura.ne.jp/about/
+ships:
+  - 悠風
+  - てるひな21
+fare:
+  - 大人 (中学生以上) 片道 710 円
+  - 小人 (小学生) 片道 360 円
+  - 回数券 11 枚綴り 大人 7,100 円 / 小人 3,600 円
+  - 自動車航送 (片道) 3m 未満 2,890 円〜（1m 増毎 +1,050 円、9m 以上 8,560 円）
+  - 自転車 220 円 / 原付 410 円 / 小荷物 200〜520 円
+notes:
+  - 運航 (有)阿多田島汽船
+  - 事務所 TEL 0827-57-8123 (平日 8:10〜17:00、土日祝休)
+  - 船舶 (悠風) TEL 090-3371-8123
+  - 所要時間 約 35 分 (約 9.65 km)
+  - 自動車航送は事前予約必須
+  - 悠風入渠中は予備船「てるひな21」で運航 (車両航送不可)
+  - 運賃は 2019 年 10 月 1 日改定
+ports:
+  ogata: [ 132.222, 34.206 ]
+  atatajima: [ 132.199, 34.176 ]
+coords:
+  - - [ 132.222, 34.206 ]
+    - [ 132.222, 34.206 ]
+    - [ 132.211, 34.191 ]
+    - [ 132.199, 34.176 ]
+    - [ 132.199, 34.176 ]
+stops: [ ogata, atatajima ]
+timetables:
+  normal:
+    name: 標準
+    voyages:
+      - name: 下り 1便
+        stops: [ 06:45, 07:20 ]
+      - name: 下り 2便
+        stops: [ 09:30, 10:05 ]
+      - name: 下り 3便
+        stops: [ 14:40, 15:15 ]
+      - name: 下り 4便
+        stops: [ 17:15, 17:50 ]
+      - name: 下り 5便
+        stops: [ 18:45, 19:20 ]
+      - name: 上り 1便
+        stops: [ 06:35, 06:00 ]
+      - name: 上り 2便
+        stops: [ 08:05, 07:30 ]
+      - name: 上り 3便
+        stops: [ 13:05, 12:30 ]
+      - name: 上り 4便
+        stops: [ 16:25, 15:50 ]
+      - name: 上り 5便
+        stops: [ 18:35, 18:00 ]
+flags: [ regional ]

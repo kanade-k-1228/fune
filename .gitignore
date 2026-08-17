@@ -1,0 +1,19 @@
+node_modules
+/.pnpm-store
+*.log
+
+dist/
+
+# Editor
+.idea
+.DS_Store
+*.sw?
+
+# .claude はローカル設定なので無視するが、.agents/skills へのリンクは追跡する
+.claude/*
+!.claude/skills
+.env
+
+# Agent runtime artifacts (update-line バッチランナー)
+.agents/skills/update-line/state.json
+.agents/skills/update-line/logs/

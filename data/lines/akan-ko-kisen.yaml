@@ -1,0 +1,74 @@
+name: 阿寒観光汽船
+route: 阿寒湖まりも桟橋〜チュウルイ島
+color: "#26bbd9"
+source:
+  - https://www.akankisen.com/exBoat1.html
+notes:
+  - 運航期間：4月15日〜11月30日（4月15日〜30日は不定期運行、要問合せ）
+  - まりもの里桟橋発着、幸運の森桟橋（5分後出発）経由で湖を一周（約18km・約85分）
+  - チュウルイ島のマリモ展示観察センターに約15分停泊
+  - TEL：0154-67-2511（阿寒観光汽船株式会社）
+  - 所在地：〒085-0467 北海道釧路市阿寒町阿寒湖温泉1丁目5番20号
+fare:
+  - 大人 2,700円（団体 2,370円）
+  - 小児 1,390円（団体 1,230円）
+ports:
+  akan-ko-marimo-sambashi: [ 144.107, 43.447 ]
+  akan-ko-churui-to: [ 144.097, 43.46 ]
+coords:
+  - - [ 144.107, 43.447 ]
+    - [ 144.097, 43.46 ]
+stops: [ akan-ko-marimo-sambashi, akan-ko-churui-to ]
+timetables:
+  dia0:
+    name: 通常ダイヤ（5月〜10月20日）
+    voyages:
+      - name: 1便
+        stops: [ "08:00", null ]
+      - name: 2便
+        stops: [ "09:00", null ]
+      - name: 3便
+        stops: [ "10:00", null ]
+      - name: 4便
+        stops: [ "11:00", null ]
+      - name: 5便
+        stops: [ "13:00", null ]
+      - name: 6便
+        stops: [ "14:00", null ]
+      - name: 7便
+        stops: [ "15:00", null ]
+      - name: 8便
+        stops: [ "16:00", null ]
+  dia1:
+    name: 秋季ダイヤ（10月21日〜11月10日）
+    voyages:
+      - name: 1便
+        stops: [ "08:00", null ]
+      - name: 2便
+        stops: [ "09:00", null ]
+      - name: 3便
+        stops: [ "10:00", null ]
+      - name: 4便
+        stops: [ "11:00", null ]
+      - name: 5便
+        stops: [ "13:00", null ]
+      - name: 6便
+        stops: [ "14:00", null ]
+      - name: 7便
+        stops: [ "15:00", null ]
+  dia2:
+    name: 晩秋ダイヤ（11月11日〜30日）
+    voyages:
+      - name: 1便
+        stops: [ "09:00", null ]
+      - name: 2便
+        stops: [ "11:00", null ]
+      - name: 3便
+        stops: [ "13:00", null ]
+      - name: 4便
+        stops: [ "15:00", null ]
+schedule:
+  "2026-10-21..2026-11-10": dia1
+  "2026-11-11..2026-11-30": dia2
+  "*": dia0
+flags: [ regional ]

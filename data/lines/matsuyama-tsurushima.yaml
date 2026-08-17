@@ -1,0 +1,49 @@
+name: 釣島渡船
+route: 中島汽船西線
+color: "#264ed9"
+source:
+  - http://www.nakajimakisen.co.jp/contents/time-table.html
+  - http://www.nakajimakisen.co.jp/contents/price.html
+  - http://www.nakajimakisen.co.jp/contents/ship.html
+fare:
+  - 大人 520円
+  - 小児 260円
+ships:
+  - ななしま
+  - じんわ
+  - なかじま
+notes:
+  - 中島汽船 中島支店 TEL 089-997-1221
+  - 営業時間 8:00～18:30
+  - 高浜〜釣島間の所要時間は約25分
+  - フェリーは通常通り運航（2025年2月1日以降、高速船は船員不足のため一部運休中だが釣島寄港便はフェリーのみ）
+ports:
+  takahama: [ 132.70072, 33.88332 ]
+  tsurishima: [ 132.64004, 33.89435 ]
+coords:
+  - - [ 132.700852, 33.883378 ]
+    - [ 132.70072, 33.88336 ]
+    - [ 132.69779, 33.88385 ]
+    - [ 132.6944, 33.87908 ]
+    - [ 132.69287, 33.87384 ]
+    - [ 132.68505, 33.87004 ]
+    - [ 132.66767, 33.86748 ]
+    - [ 132.65856, 33.871 ]
+    - [ 132.64782, 33.89312 ]
+    - [ 132.64252, 33.89442 ]
+    - [ 132.64004, 33.89435 ]
+    - [ 132.64004, 33.89435 ]
+stops: [ takahama, tsurishima ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 北行 1便
+        stops: [ null, 09:35 ]
+      - name: 北行 2便
+        stops: [ 16:55, 17:20 ]
+      - name: 南行 1便
+        stops: [ 08:38, 08:08 ]
+      - name: 南行 2便
+        stops: [ null, 16:02 ]
+flags: [ regional ]

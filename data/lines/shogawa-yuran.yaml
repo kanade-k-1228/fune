@@ -1,0 +1,92 @@
+name: 庄川峡遊覧船（小牧〜大牧温泉）
+color: "#3d26d9"
+route: 小牧港〜大牧温泉
+source:
+  - https://shogawa-yuran.co.jp/wp/timetable/
+  - https://shogawa-yuran.co.jp/
+notes:
+  - 庄川峡の小牧ダム湖を遡る遊覧船。大牧温泉へは船でしか行けない
+  - 長崎橋周遊コース（小牧港発着）も運航（4月〜11月、約25分）
+  - 電話 0763-82-0220
+  - 個人利用は予約不要、団体利用（15名以上）は事前問い合わせ
+  - 所要時間 片道約30分、往復約60分
+  - 年中無休（悪天候時は運休あり）
+fare:
+  - 大牧温泉コース 往復 大人 3,400円 / 小人 1,700円
+ships:
+  - やまぶき
+  - クルーズ庄川
+ports:
+  shogawa-komaki: [ 137.0088, 36.5537 ]
+  shogawa-omaki: [ 136.9940, 36.5009 ]
+coords:
+  - - [ 137.0088, 36.5537 ]
+    - [ 136.994, 36.5009 ]
+stops: [ shogawa-komaki, shogawa-omaki ]
+timetables:
+  dia0:
+    name: 通常ダイヤ（4月1日〜11月30日）
+    voyages:
+      - name: 1便
+        stops: [ "08:30", "09:00" ]
+      - name: 1便折返し
+        stops: [ "09:10", "09:40" ]
+      - name: 2便
+        stops: [ "10:30", "11:00" ]
+      - name: 2便折返し
+        stops: [ "11:05", "11:35" ]
+      - name: 3便
+        stops: [ "14:30", "15:00" ]
+      - name: 3便折返し
+        stops: [ "15:10", "15:40" ]
+      - name: 4便
+        stops: [ "16:00", "16:30" ]
+      - name: 4便折返し
+        stops: [ "16:35", "17:05" ]
+  dia1:
+    name: 冬ダイヤ（12月1日〜1月31日）
+    voyages:
+      - name: 1便
+        stops: [ "09:00", "09:30" ]
+      - name: 1便折返し
+        stops: [ "09:40", "10:10" ]
+      - name: 2便
+        stops: [ "11:30", "12:00" ]
+      - name: 2便折返し
+        stops: [ "12:20", "12:50" ]
+      - name: 3便
+        stops: [ "15:20", "15:50" ]
+      - name: 3便折返し
+        stops: [ "16:00", "16:30" ]
+  dia2:
+    name: 春ダイヤ（2月1日〜3月31日）
+    voyages:
+      - name: 1便
+        stops: [ "09:00", "09:30" ]
+      - name: 1便折返し
+        stops: [ "09:40", "10:10" ]
+      - name: 2便
+        stops: [ "11:30", "12:00" ]
+      - name: 2便折返し
+        stops: [ "12:20", "12:50" ]
+      - name: 3便
+        stops: [ "14:30", "15:00" ]
+      - name: 3便折返し
+        stops: [ "15:10", "15:40" ]
+      - name: 4便
+        stops: [ "16:00", "16:30" ]
+      - name: 4便折返し
+        stops: [ "16:35", "17:05" ]
+schedule:
+  nthMonth(2): dia2
+  nthMonth(3): dia2
+  nthMonth(4): dia0
+  nthMonth(5): dia0
+  nthMonth(6): dia0
+  nthMonth(7): dia0
+  nthMonth(8): dia0
+  nthMonth(9): dia0
+  nthMonth(10): dia0
+  nthMonth(11): dia0
+  "*": dia1
+flags: [ regional ]

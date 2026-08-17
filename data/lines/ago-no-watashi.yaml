@@ -1,0 +1,56 @@
+name: 安居の渡し保存会
+route: 安居〜仏坂
+color: "#d92626"
+source:
+  - https://www.town.shirahama.wakayama.jp/kanko/taiken/1452760025050.html
+  - https://ja.wikipedia.org/wiki/%E5%AE%89%E5%B1%85%E3%81%AE%E6%B8%A1%E3%81%97
+fare:
+  - 大人1,000円（令和7年1月改定）
+notes:
+  - 土曜・日曜・祝日のみ運航（年末年始・お盆期間は休止）
+  - 完全予約制（運航希望日の2日前午後5時までにショートメール予約必須）
+  - "予約専用携帯: 080-2500-3223（安居の渡し保存会）"
+  - "行政担当: 白浜町日置川事務所 0739-52-2300"
+  - "運航時間帯: 午前 9:00〜10:00 / 午後 13:30〜14:30"
+  - 悪天候・増水時は運休
+ports:
+  ago:
+    - 135.484544
+    - 33.605094
+  hotokezaka:
+    - 135.484844
+    - 33.605094
+coords:
+  - - - 135.4847
+      - 33.60423
+    - - 135.48499
+      - 33.60389
+stops:
+  - ago
+  - hotokezaka
+timetables:
+  normal:
+    name: 通常ダイヤ（予約制・土日祝）
+    voyages:
+      - name: 午前便（安居発）
+        stops:
+          - 09:00
+          - 09:05
+        schedule:
+          2025-12-29..2026-01-03: false
+          2026-08-13..2026-08-16: false
+          isHoliday: true
+          isWeekend: true
+          "*": false
+      - name: 午後便（安居発）
+        stops:
+          - 13:30
+          - 13:35
+        schedule:
+          2025-12-29..2026-01-03: false
+          2026-08-13..2026-08-16: false
+          isHoliday: true
+          isWeekend: true
+          "*": false
+flags:
+  - regional

@@ -1,0 +1,57 @@
+name: 坊勢輝汽船
+route: 家島〜男鹿島
+color: "#266ed9"
+source:
+  - http://www.nakamurasou.shop/detail/liner.html
+  - https://h-ieshima.jp/taxi.html
+  - https://hyogo.ie-t.net/ship-ieshima-council-to-tanga/
+fare:
+  - 大人 片道 1,000円
+notes:
+  - 暫定連絡船（家島本島と男鹿島の間の交通手段として暫定的に運航）
+  - 家島発着場：家島町支所前、男鹿発着場：坊勢輝汽船桟橋（タテノ浜）
+  - 運航問い合わせ：坊勢輝汽船（株）079-234-1138
+  - 時刻表に変更がある場合があるため事前に出航確認を推奨
+ports:
+  ieshima: [ 134.532203, 34.6758 ]
+  tangashima: [ 134.567632, 34.673808 ]
+coords:
+  - - [ 134.532203, 34.6758 ]
+    - [ 134.567632, 34.673808 ]
+stops: [ ieshima, tangashima ]
+timetables:
+  dia0:
+    name: 平日ダイヤ(月〜金)
+    voyages:
+      - name: 1便往路
+        stops: [ "08:00", "08:10" ]
+      - name: 1便復路
+        stops: [ "08:20", "08:10" ]
+      - name: 2便往路
+        stops: [ "11:30", "11:40" ]
+      - name: 2便復路
+        stops: [ "11:50", "11:40" ]
+      - name: 3便往路
+        stops: [ "16:00", "16:10" ]
+      - name: 3便復路
+        stops: [ "16:20", "16:10" ]
+  dia1:
+    name: 土曜ダイヤ
+    voyages:
+      - name: 1便往路
+        stops: [ "08:00", "08:10" ]
+      - name: 1便復路
+        stops: [ "08:20", "08:10" ]
+      - name: 2便往路
+        stops: [ "11:30", "11:40" ]
+      - name: 2便復路
+        stops: [ "11:50", "11:40" ]
+  closed:
+    name: 日曜・祝日運休
+    voyages: []
+schedule:
+  isHoliday: closed
+  isSunday: closed
+  isSaturday: dia1
+  "*": dia0
+flags: [ regional ]

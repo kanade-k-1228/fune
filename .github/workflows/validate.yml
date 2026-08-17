@@ -1,0 +1,35 @@
+name: validate
+
+on:
+  pull_request:
+    paths:
+      - "data/**"
+      - "types/**"
+      - "scripts/**"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - ".github/workflows/validate.yml"
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.1.1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+        # prepare スクリプトで tsc が走るので型チェックも兼ねる
+
+      - name: Validate data
+        run: pnpm validate

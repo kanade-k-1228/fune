@@ -1,0 +1,47 @@
+name: 沼津我入道漁業協同組合
+route: あゆみ橋〜沼津港〜我入道
+color: "#cfd926"
+source:
+  - https://numazukanko.jp/spot/10027
+  - https://www.city.numazu.shizuoka.jp/kurashi/shisetsu/ganyudo.htm
+fare:
+  - 中学生以上 100円
+  - 小学生 50円
+notes:
+  - 定員12名（ライフジャケット着用必須、幼児は保護者同伴）
+  - 季節運航（春季3月下旬〜5月下旬、夏季7月中旬〜下旬、秋季9月中旬〜11月下旬）土日祝のみ
+  - 6月・8月・12月・1月・2月および運航月の平日は運休
+  - 沼津港〜我入道間は9:00〜17:00（11月は16:00まで）随時運航（旗を振って呼ぶ）
+  - 荒天時欠航あり
+  - 沼津我入道漁業協同組合 TEL 055-931-1395
+  - 沼津観光協会 TEL 055-964-1300
+ports:
+  ayumi-bashi: [ 138.859939, 35.098047 ]
+  numazu-ko-watashi: [ 138.860343, 35.081424 ]
+  ganyudo-noriba: [ 138.861310, 35.079970 ]
+coords:
+  - - [ 138.859939, 35.098047 ]
+    - [ 138.860343, 35.081424 ]
+    - [ 138.86131, 35.07997 ]
+stops: [ ayumi-bashi, numazu-ko-watashi, ganyudo-noriba ]
+timetables:
+  normal:
+    name: 定時ダイヤ
+    voyages:
+      - name: 我入道行き 1便
+        stops: [ "09:00", null, "09:20" ]
+      - name: あゆみ橋行き 1便
+        stops: [ "09:25", null, "09:50" ]
+      - name: 我入道行き 2便
+        stops: [ "10:30", null, "10:50" ]
+      - name: あゆみ橋行き 2便
+        stops: [ "10:55", null, "11:20" ]
+      - name: 我入道行き 3便
+        stops: [ "13:30", null, "13:50" ]
+      - name: あゆみ橋行き 3便
+        stops: [ "13:55", null, "14:20" ]
+      - name: 我入道行き 4便
+        stops: [ "15:00", null, "15:20" ]
+      - name: あゆみ橋行き 4便
+        stops: [ "15:25", null, "15:50" ]
+flags: [ regional, seasonal ]

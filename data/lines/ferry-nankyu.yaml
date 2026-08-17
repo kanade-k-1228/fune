@@ -1,0 +1,147 @@
+name: なんきゅうドック
+route: 山川〜根占
+color: "#3726d9"
+source:
+  - http://nankyu-ferry.com/time/
+  - http://nankyu-ferry.com/freighttable/
+fare:
+  - "大人（中学生以上）: 1,000円"
+  - "小人（小学生以下）: 500円"
+  - "小学生未満: 大人1人につき1人まで無料"
+  - "車輌（3m未満）: 2,800円（運転手込み）"
+  - "車輌（3〜4m未満）: 3,100円"
+  - "車輌（4〜5m未満）: 3,600円"
+  - "車輌（5〜6m未満）: 4,600円"
+  - "車輌（6〜7m未満）: 5,600円"
+  - "車輌（7〜8m未満）: 6,800円"
+  - "車輌（8〜9m未満）: 8,100円"
+  - "車輌（9〜10m未満）: 9,500円"
+  - "車輌（10〜11m未満）: 10,600円"
+  - "車輌（11〜12m未満）: 11,600円"
+  - "自転車: 700円 / 125cc未満: 1,000円 / 125cc以上750cc未満: 1,200円 / 750cc以上: 1,500円"
+  - "荷物（10kg未満）: 300円 / （20kg未満）: 600円 / （30kg未満）: 900円（受取人・電話番号を明記）"
+  - 障害者割引（5割引）、15名以上の団体割引あり
+  - 2026年5月20日に運賃改定
+notes:
+  - 所要時間 約50分
+  - 夏期（3〜10月）と冬期（11〜2月）でダイヤが異なる
+  - 夏期は平日と土日祝でダイヤが異なる（土日祝は5便、平日は4便）
+  - 山川営業所 0993-34-0012（07:30〜17:00）
+  - 根占営業所 0994-24-2531（08:00〜17:00）
+  - 事前予約を除き先着順乗船。15名以上の団体は乗船日の3ヵ月前から予約可
+ships:
+  - フェリーなんきゅう
+ports:
+  yamakawa: [ 130.634638, 31.204897 ]
+  nejime: [ 130.763073, 31.215866 ]
+coords:
+  - - [ 130.634638, 31.204897 ]
+    - [ 130.63448, 31.20502 ]
+    - [ 130.63412, 31.20532 ]
+    - [ 130.63362, 31.20746 ]
+    - [ 130.63601, 31.21112 ]
+    - [ 130.64764, 31.21005 ]
+    - [ 130.74458, 31.21973 ]
+    - [ 130.75575, 31.21887 ]
+    - [ 130.75877, 31.21791 ]
+    - [ 130.76096, 31.21674 ]
+    - [ 130.76275, 31.21598 ]
+    - [ 130.763073, 31.215866 ]
+stops: [ yamakawa, nejime ]
+timetables:
+  summer-weekday:
+    name: 夏期ダイヤ（3〜10月の平日）
+    voyages:
+      - name: 東行 1便
+        stops: [ 08:00, 08:50 ]
+      - name: 東行 2便
+        stops: [ 10:00, 10:50 ]
+      - name: 東行 3便
+        stops: [ 13:00, 13:50 ]
+      - name: 東行 4便
+        stops: [ 16:00, 16:50 ]
+      - name: 西行 1便
+        stops: [ 09:50, 09:00 ]
+      - name: 西行 2便
+        stops: [ 11:50, 11:00 ]
+      - name: 西行 3便
+        stops: [ 15:50, 15:00 ]
+      - name: 西行 4便
+        stops: [ 17:50, 17:00 ]
+  summer-holiday:
+    name: 夏期ダイヤ（3〜10月の土日祝）
+    voyages:
+      - name: 東行 1便
+        stops: [ 08:00, 08:50 ]
+      - name: 東行 2便
+        stops: [ 10:00, 10:50 ]
+      - name: 東行 3便
+        stops: [ 12:00, 12:50 ]
+      - name: 東行 4便
+        stops: [ 14:00, 14:50 ]
+      - name: 東行 5便
+        stops: [ 16:00, 16:50 ]
+      - name: 西行 1便
+        stops: [ 09:50, 09:00 ]
+      - name: 西行 2便
+        stops: [ 11:50, 11:00 ]
+      - name: 西行 3便
+        stops: [ 13:50, 13:00 ]
+      - name: 西行 4便
+        stops: [ 15:50, 15:00 ]
+      - name: 西行 5便
+        stops: [ 17:50, 17:00 ]
+  winter:
+    name: 冬期ダイヤ（11〜2月）
+    voyages:
+      - name: 東行 1便
+        stops: [ 08:00, 08:50 ]
+      - name: 東行 2便
+        stops: [ 10:00, 10:50 ]
+      - name: 東行 3便
+        stops: [ 13:00, 13:50 ]
+      - name: 東行 4便
+        stops: [ 15:30, 16:20 ]
+      - name: 西行 1便
+        stops: [ 09:50, 09:00 ]
+      - name: 西行 2便
+        stops: [ 11:50, 11:00 ]
+      - name: 西行 3便
+        stops: [ 15:20, 14:30 ]
+      - name: 西行 4便
+        stops: [ 17:20, 16:30 ]
+schedule:
+  nthMonth(3):
+    isHoliday: summer-holiday
+    isWeekend: summer-holiday
+    "*": summer-weekday
+  nthMonth(4):
+    isHoliday: summer-holiday
+    isWeekend: summer-holiday
+    "*": summer-weekday
+  nthMonth(5):
+    isHoliday: summer-holiday
+    isWeekend: summer-holiday
+    "*": summer-weekday
+  nthMonth(6):
+    isHoliday: summer-holiday
+    isWeekend: summer-holiday
+    "*": summer-weekday
+  nthMonth(7):
+    isHoliday: summer-holiday
+    isWeekend: summer-holiday
+    "*": summer-weekday
+  nthMonth(8):
+    isHoliday: summer-holiday
+    isWeekend: summer-holiday
+    "*": summer-weekday
+  nthMonth(9):
+    isHoliday: summer-holiday
+    isWeekend: summer-holiday
+    "*": summer-weekday
+  nthMonth(10):
+    isHoliday: summer-holiday
+    isWeekend: summer-holiday
+    "*": summer-weekday
+  "*": winter
+flags: [ regional ]

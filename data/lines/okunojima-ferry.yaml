@@ -1,0 +1,108 @@
+name: 休暇村客船
+route: 忠海〜大久野島
+color: "#d926d2"
+source:
+  - https://www.qkamura.or.jp/ohkuno/access/
+  - https://www.qkamura.or.jp/ohkuno/access/index.asp
+ships:
+  - ラピーナ
+  - マリンラビット2
+fare:
+  - 大人 片道 360円 / 往復 720円
+  - 小学生 片道 180円 / 往復 360円
+notes:
+  - 所要時間 約15分
+  - 休暇村大久野島 0846-26-0321
+  - 同区間の大三島フェリーと同一切符で乗船可
+  - 混雑状況により大久野島の発着桟橋が変更となる場合あり
+ports:
+  tadanoumi: [ 132.993658, 34.337376 ]
+  okunoshima: [ 132.999162, 34.30853 ]
+coords:
+  - - [ 132.993658, 34.337376 ]
+    - [ 132.99359, 34.33683 ]
+    - [ 132.99431, 34.33589 ]
+    - [ 132.99929, 34.31214 ]
+    - [ 132.99937, 34.30905 ]
+    - [ 132.999, 34.30866 ]
+    - [ 132.999162, 34.30853 ]
+stops: [ tadanoumi, okunoshima ]
+timetables:
+  weekday:
+    name: 平日ダイヤ
+    voyages:
+      - name: 南行 1便
+        stops: [ 07:40, 07:55 ]
+      - name: 南行 2便
+        stops: [ 08:40, 08:55 ]
+      - name: 南行 3便
+        stops: [ 10:25, 10:35 ]
+      - name: 南行 4便
+        stops: [ 11:20, 11:30 ]
+      - name: 南行 5便
+        stops: [ 15:00, 15:10 ]
+      - name: 南行 6便
+        stops: [ 16:00, 16:10 ]
+      - name: 南行 7便
+        stops: [ 17:55, 18:10 ]
+      - name: 南行 8便
+        stops: [ 18:40, 18:55 ]
+      - name: 北行 1便
+        stops: [ 08:25, 08:10 ]
+      - name: 北行 2便
+        stops: [ 09:25, 09:10 ]
+      - name: 北行 3便
+        stops: [ 11:00, 10:50 ]
+      - name: 北行 4便
+        stops: [ 12:40, 12:30 ]
+      - name: 北行 5便
+        stops: [ 15:45, 15:35 ]
+      - name: 北行 6便
+        stops: [ 16:45, 16:35 ]
+      - name: 北行 7便
+        stops: [ 18:35, 18:20 ]
+      - name: 北行 8便
+        stops: [ 19:30, 19:15 ]
+  holiday:
+    name: 土日祝ダイヤ
+    voyages:
+      - name: 南行 1便
+        stops: [ 07:40, 07:55 ]
+      - name: 南行 2便
+        stops: [ 08:40, 08:55 ]
+      - name: 南行 3便
+        stops: [ 10:25, 10:35 ]
+      - name: 南行 4便
+        stops: [ 11:20, 11:30 ]
+      - name: 南行 5便
+        stops: [ 13:00, 13:10 ]
+      - name: 南行 6便
+        stops: [ 15:00, 15:10 ]
+      - name: 南行 7便
+        stops: [ 16:00, 16:10 ]
+      - name: 南行 8便
+        stops: [ 17:55, 18:10 ]
+      - name: 南行 9便
+        stops: [ 18:40, 18:55 ]
+      - name: 北行 1便
+        stops: [ 08:25, 08:10 ]
+      - name: 北行 2便
+        stops: [ 09:25, 09:10 ]
+      - name: 北行 3便
+        stops: [ 11:00, 10:50 ]
+      - name: 北行 4便
+        stops: [ 12:40, 12:30 ]
+      - name: 北行 5便
+        stops: [ 15:45, 15:35 ]
+      - name: 北行 6便
+        stops: [ 16:45, 16:35 ]
+      - name: 北行 7便
+        stops: [ 18:35, 18:20 ]
+      - name: 北行 8便
+        stops: [ 19:30, 19:15 ]
+schedule:
+  "2026-12-30..2027-01-02": holiday
+  isWeekend: holiday
+  isHoliday: holiday
+  "*": weekday
+flags: [ regional ]

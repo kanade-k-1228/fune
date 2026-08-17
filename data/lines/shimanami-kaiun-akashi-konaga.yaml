@@ -1,0 +1,128 @@
+name: しまなみ海運
+route: 明石〜小長
+color: "#d92652"
+source:
+  - https://habushosen.jp/timetable/timetable04
+  - https://habushosen.jp/inquiry
+fare:
+  - 旅客 大人 370円 / 小児 190円
+  - 自動車航送 (運転手1名の2等運賃込) 3m未満 1,560円 〜 12m以上 7,650円 (1m加算ごとに 1,290円)
+notes:
+  - 所要約15分
+  - 平日12便 / 土日祝10便 (土日祝運休便あり)
+  - 小長港連絡先 0823-66-3755
+  - 本社 (土生商船) 0845-22-1337
+  - 令和7年4月1日 時刻改定
+ships:
+  - 第五かんおん
+ports:
+  osakikamijima-akashi: [ 132.876357707, 34.2063131186 ]
+  osakishimoshima-konaga: [ 132.85393242, 34.1887155335 ]
+coords:
+  - - [ 132.876357707, 34.2063131186 ]
+    - [ 132.85393242, 34.1887155335 ]
+stops: [ osakikamijima-akashi, osakishimoshima-konaga ]
+timetables:
+  dia0:
+    name: 平日ダイヤ
+    voyages:
+      - name: 明石発1
+        stops: [ 06:37, 06:52 ]
+      - name: 明石発2
+        stops: [ 07:12, 07:27 ]
+      - name: 明石発3
+        stops: [ 07:47, 08:02 ]
+      - name: 明石発4
+        stops: [ 09:02, 09:17 ]
+      - name: 明石発5
+        stops: [ 10:17, 10:32 ]
+      - name: 明石発6
+        stops: [ 11:47, 12:02 ]
+      - name: 明石発7
+        stops: [ 13:17, 13:32 ]
+      - name: 明石発8
+        stops: [ 14:47, 15:02 ]
+      - name: 明石発9
+        stops: [ 16:17, 16:32 ]
+      - name: 明石発10
+        stops: [ 17:47, 18:02 ]
+      - name: 明石発11
+        stops: [ 18:47, 19:02 ]
+      - name: 明石発12
+        stops: [ 19:47, 20:02 ]
+      - name: 小長発1
+        stops: [ 06:20, 06:35 ]
+      - name: 小長発2
+        stops: [ 06:55, 07:10 ]
+      - name: 小長発3
+        stops: [ 07:30, 07:45 ]
+      - name: 小長発4
+        stops: [ 08:45, 09:00 ]
+      - name: 小長発5
+        stops: [ 10:00, 10:15 ]
+      - name: 小長発6
+        stops: [ 11:30, 11:45 ]
+      - name: 小長発7
+        stops: [ 13:00, 13:15 ]
+      - name: 小長発8
+        stops: [ 14:30, 14:45 ]
+      - name: 小長発9
+        stops: [ 16:00, 16:15 ]
+      - name: 小長発10
+        stops: [ 17:30, 17:45 ]
+      - name: 小長発11
+        stops: [ 18:30, 18:45 ]
+      - name: 小長発12
+        stops: [ 19:30, 19:45 ]
+  dia1:
+    name: 土日祝ダイヤ
+    voyages:
+      - name: 明石発1
+        stops: [ 07:12, 07:27 ]
+      - name: 明石発2
+        stops: [ 07:47, 08:02 ]
+      - name: 明石発3
+        stops: [ 09:02, 09:17 ]
+      - name: 明石発4
+        stops: [ 10:17, 10:32 ]
+      - name: 明石発5
+        stops: [ 11:47, 12:02 ]
+      - name: 明石発6
+        stops: [ 13:17, 13:32 ]
+      - name: 明石発7
+        stops: [ 14:47, 15:02 ]
+      - name: 明石発8
+        stops: [ 16:17, 16:32 ]
+      - name: 明石発9
+        stops: [ 17:47, 18:02 ]
+      - name: 明石発10
+        stops: [ 18:47, 19:02 ]
+      - name: 明石発11
+        stops: [ 19:47, 20:02 ]
+      - name: 小長発1
+        stops: [ 06:55, 07:10 ]
+      - name: 小長発2
+        stops: [ 07:30, 07:45 ]
+      - name: 小長発3
+        stops: [ 08:45, 09:00 ]
+      - name: 小長発4
+        stops: [ 10:00, 10:15 ]
+      - name: 小長発5
+        stops: [ 11:30, 11:45 ]
+      - name: 小長発6
+        stops: [ 13:00, 13:15 ]
+      - name: 小長発7
+        stops: [ 14:30, 14:45 ]
+      - name: 小長発8
+        stops: [ 16:00, 16:15 ]
+      - name: 小長発9
+        stops: [ 17:30, 17:45 ]
+      - name: 小長発10
+        stops: [ 18:30, 18:45 ]
+      - name: 小長発11
+        stops: [ 19:30, 19:45 ]
+schedule:
+  isHoliday: dia1
+  isWeekend: dia1
+  "*": dia0
+flags: [ regional ]

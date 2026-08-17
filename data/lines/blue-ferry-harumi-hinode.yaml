@@ -1,0 +1,62 @@
+name: 舟旅通勤 BLUE FERRY
+route: 晴海〜日の出
+color: "#26d9ad"
+source:
+  - https://blue-ferry.mobi/
+fare:
+  - 大人（12歳以上）500円
+  - 小人（6歳以上12歳未満）250円
+  - 幼児（1歳以上の未就学児）100円
+  - 乳児（1歳未満）無料
+  - 事前予約で大人運賃半額
+notes:
+  - 東京湾クルージング運航の通勤向け舟運サービス
+  - 野村不動産との共同事業（晴海フラッグ発着）
+  - 火・水・木曜のみ運航
+  - 計画運休の場合は公式サイトで案内（運航当日朝7:30〜8:00頃に運航情報を掲載）
+  - 片道約5分・1.1km
+  - 自転車の持込は不可
+  - 問い合わせ：03-5679-7311
+ships:
+  - エスエス 3世
+  - エスエス NANO2
+ports:
+  harumi: [ 139.771615, 35.649353 ]
+  hinode: [ 139.760711, 35.651631 ]
+coords:
+  - - [ 139.771615, 35.649353 ]
+    - [ 139.760711, 35.651631 ]
+stops: [ harumi, hinode ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 晴海発 1便
+        stops: [ 08:30, 08:37 ]
+      - name: 晴海発 2便
+        stops: [ 09:00, 09:07 ]
+      - name: 晴海発 3便
+        stops: [ 09:30, 09:37 ]
+      - name: 晴海発 4便
+        stops: [ 10:00, 10:07 ]
+      - name: 日の出発 1便
+        stops: [ 08:52, 08:45 ]
+      - name: 日の出発 2便
+        stops: [ 09:22, 09:15 ]
+      - name: 日の出発 3便
+        stops: [ 09:52, 09:45 ]
+      - name: 日の出発 4便
+        stops: [ 10:22, 10:15 ]
+  closed:
+    name: 運休（火・水・木曜日のみ運航）
+    voyages: []
+  suspended:
+    name: 臨時運休
+    voyages: []
+schedule:
+  "2026-08-11..2026-08-20": suspended
+  isTuesday: normal
+  isWednesday: normal
+  isThursday: normal
+  "*": closed
+flags: [ regional ]

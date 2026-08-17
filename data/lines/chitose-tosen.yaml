@@ -1,0 +1,214 @@
+name: 大阪市（建設局）
+route: 鶴町〜北恩加島
+color: "#c1d926"
+source:
+  - https://www.city.osaka.lg.jp/kensetsu/page/0000011253.html
+  - https://www.city.osaka.lg.jp/kensetsu/page/0000011278.html
+fare:
+  - 無料
+notes:
+  - 大阪市営渡船（全便無料）
+  - 鶴町4丁目〜北恩加島2丁目（岸壁間 約371m）
+  - 対岸まで約1〜5分・乗船次第出航
+  - 1日平均利用者 約485人（令和6年度）
+  - 時刻は公表されている北恩加島側発時刻を基準に記載（鶴町側発着は概算）
+  - 問合せ：大阪市建設局 河川・渡船管理事務所 06-6536-5295
+ships:
+  - はまかぜ
+ports:
+  tsurumachi: [ 135.457944, 34.644842 ]
+  kitaokajima-gawa: [ 135.45926, 34.647776 ]
+coords:
+  - - [ 135.457944, 34.644842 ]
+    - [ 135.45804, 34.64495 ]
+    - [ 135.45915, 34.64777 ]
+    - [ 135.45926, 34.647776 ]
+stops: [ tsurumachi, kitaokajima-gawa ]
+timetables:
+  dia0:
+    name: 平日ダイヤ
+    voyages:
+      - name: 7:00発
+        stops: [ 07:00, 07:04 ]
+      - name: 7:20発
+        stops: [ 07:20, 07:24 ]
+      - name: 7:30発
+        stops: [ 07:30, 07:34 ]
+      - name: 7:40発
+        stops: [ 07:40, 07:44 ]
+      - name: 7:50発
+        stops: [ 07:50, 07:54 ]
+      - name: 8:00発
+        stops: [ 08:00, 08:04 ]
+      - name: 8:10発
+        stops: [ 08:10, 08:14 ]
+      - name: 8:20発
+        stops: [ 08:20, 08:24 ]
+      - name: 8:30発
+        stops: [ 08:30, 08:34 ]
+      - name: 8:40発
+        stops: [ 08:40, 08:44 ]
+      - name: 9:00発
+        stops: [ 09:00, 09:04 ]
+      - name: 9:20発
+        stops: [ 09:20, 09:24 ]
+      - name: 9:40発
+        stops: [ 09:40, 09:44 ]
+      - name: 10:00発
+        stops: [ 10:00, 10:04 ]
+      - name: 10:20発
+        stops: [ 10:20, 10:24 ]
+      - name: 10:40発
+        stops: [ 10:40, 10:44 ]
+      - name: 11:00発
+        stops: [ 11:00, 11:04 ]
+      - name: 11:20発
+        stops: [ 11:20, 11:24 ]
+      - name: 11:40発
+        stops: [ 11:40, 11:44 ]
+      - name: 12:00発
+        stops: [ 12:00, 12:04 ]
+      - name: 12:20発
+        stops: [ 12:20, 12:24 ]
+      - name: 12:40発
+        stops: [ 12:40, 12:44 ]
+      - name: 13:00発
+        stops: [ 13:00, 13:04 ]
+      - name: 13:20発
+        stops: [ 13:20, 13:24 ]
+      - name: 13:40発
+        stops: [ 13:40, 13:44 ]
+      - name: 14:00発
+        stops: [ 14:00, 14:04 ]
+      - name: 14:20発
+        stops: [ 14:20, 14:24 ]
+      - name: 14:40発
+        stops: [ 14:40, 14:44 ]
+      - name: 15:00発
+        stops: [ 15:00, 15:04 ]
+      - name: 15:20発
+        stops: [ 15:20, 15:24 ]
+      - name: 15:40発
+        stops: [ 15:40, 15:44 ]
+      - name: 16:00発
+        stops: [ 16:00, 16:04 ]
+      - name: 16:20発
+        stops: [ 16:20, 16:24 ]
+      - name: 16:40発
+        stops: [ 16:40, 16:44 ]
+      - name: 17:00発
+        stops: [ 17:00, 17:04 ]
+      - name: 17:10発
+        stops: [ 17:10, 17:14 ]
+      - name: 17:20発
+        stops: [ 17:20, 17:24 ]
+      - name: 17:30発
+        stops: [ 17:30, 17:34 ]
+      - name: 17:40発
+        stops: [ 17:40, 17:44 ]
+      - name: 17:50発
+        stops: [ 17:50, 17:54 ]
+      - name: 18:00発
+        stops: [ 18:00, 18:04 ]
+      - name: 18:20発
+        stops: [ 18:20, 18:24 ]
+      - name: 18:40発
+        stops: [ 18:40, 18:44 ]
+      - name: 19:00発
+        stops: [ 19:00, 19:04 ]
+      - name: 19:20発
+        stops: [ 19:20, 19:24 ]
+      - name: 19:50発
+        stops: [ 19:50, 19:54 ]
+  dia1:
+    name: 土日祝ダイヤ
+    voyages:
+      - name: 7:00発
+        stops: [ 07:00, 07:04 ]
+      - name: 7:15発
+        stops: [ 07:15, 07:19 ]
+      - name: 7:30発
+        stops: [ 07:30, 07:34 ]
+      - name: 7:45発
+        stops: [ 07:45, 07:49 ]
+      - name: 9:00発
+        stops: [ 09:00, 09:04 ]
+      - name: 9:20発
+        stops: [ 09:20, 09:24 ]
+      - name: 9:40発
+        stops: [ 09:40, 09:44 ]
+      - name: 10:00発
+        stops: [ 10:00, 10:04 ]
+      - name: 10:20発
+        stops: [ 10:20, 10:24 ]
+      - name: 10:40発
+        stops: [ 10:40, 10:44 ]
+      - name: 11:00発
+        stops: [ 11:00, 11:04 ]
+      - name: 11:20発
+        stops: [ 11:20, 11:24 ]
+      - name: 11:40発
+        stops: [ 11:40, 11:44 ]
+      - name: 12:00発
+        stops: [ 12:00, 12:04 ]
+      - name: 12:20発
+        stops: [ 12:20, 12:24 ]
+      - name: 12:40発
+        stops: [ 12:40, 12:44 ]
+      - name: 13:00発
+        stops: [ 13:00, 13:04 ]
+      - name: 13:20発
+        stops: [ 13:20, 13:24 ]
+      - name: 13:40発
+        stops: [ 13:40, 13:44 ]
+      - name: 14:00発
+        stops: [ 14:00, 14:04 ]
+      - name: 14:20発
+        stops: [ 14:20, 14:24 ]
+      - name: 14:40発
+        stops: [ 14:40, 14:44 ]
+      - name: 15:00発
+        stops: [ 15:00, 15:04 ]
+      - name: 15:20発
+        stops: [ 15:20, 15:24 ]
+      - name: 15:40発
+        stops: [ 15:40, 15:44 ]
+      - name: 16:00発
+        stops: [ 16:00, 16:04 ]
+      - name: 16:20発
+        stops: [ 16:20, 16:24 ]
+      - name: 16:40発
+        stops: [ 16:40, 16:44 ]
+      - name: 17:00発
+        stops: [ 17:00, 17:04 ]
+      - name: 17:15発
+        stops: [ 17:15, 17:19 ]
+      - name: 17:30発
+        stops: [ 17:30, 17:34 ]
+      - name: 17:45発
+        stops: [ 17:45, 17:49 ]
+      - name: 18:00発
+        stops: [ 18:00, 18:04 ]
+      - name: 18:20発
+        stops: [ 18:20, 18:24 ]
+      - name: 18:40発
+        stops: [ 18:40, 18:44 ]
+      - name: 19:00発
+        stops: [ 19:00, 19:04 ]
+      - name: 19:20発
+        stops: [ 19:20, 19:24 ]
+      - name: 19:50発
+        stops: [ 19:50, 19:54 ]
+  closed:
+    name: 1月1日休航
+    voyages: []
+schedule:
+  nthMonth(1):
+    nthDay(1): closed
+    isHoliday: dia1
+    isWeekend: dia1
+    "*": dia0
+  isHoliday: dia1
+  isWeekend: dia1
+  "*": dia0
+flags: [ regional ]

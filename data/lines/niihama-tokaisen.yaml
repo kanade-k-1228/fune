@@ -1,0 +1,98 @@
+name: 新居浜市営渡海船
+route: 大島〜黒島
+color: "#8d26d9"
+source:
+  - https://www.city.niihama.lg.jp/soshiki/koutsu/tokaisenjikokuhyo.html
+  - https://www.city.niihama.lg.jp/soshiki/koutsu/tokaisenshiyouryo.html
+  - https://www.city.niihama.lg.jp/soshiki/koutsu/tokaisennsyoukai.html
+  - https://www.city.niihama.lg.jp/soshiki/koutsu/tokaisenunkoujoukyou.html
+fare:
+  - 大人（12歳以上）片道 60円
+  - 小人（6〜11歳）片道 30円
+  - 幼児（1〜5歳）大人1名につき1名まで無料
+  - 乳児（1歳未満）無料
+  - 手荷物 40円 / 小荷物 80円
+  - 自転車 60円 / 原動機付自転車 120円
+  - 自動二輪車 0.750L未満 150円 / 0.750L以上 200円
+  - 自動車 3m未満 400円〜（車体長別、11m以上 2,200円）
+  - 定期券（一般・学生、1〜12ヶ月）・回数券（12枚綴）・障がい者割引あり
+notes:
+  - 所要時間 約15分
+  - 新居浜市役所 地域交通課 TEL 0897-66-7010 / FAX 0897-65-1305
+  - 令和5年10月1日改正ダイヤ
+  - 運賃は片道料金
+ships:
+  - くろしま
+  - おおしま7
+ports:
+  niihama-oshima: [ 133.36509, 33.993707 ]
+  niihama-kuroshima: [ 133.346578, 33.983865 ]
+coords:
+  - - [ 133.36509, 33.993707 ]
+    - [ 133.36519, 33.99369 ]
+    - [ 133.36753, 33.99316 ]
+    - [ 133.3675, 33.99258 ]
+    - [ 133.36602, 33.98958 ]
+    - [ 133.36375, 33.98741 ]
+    - [ 133.35084, 33.98406 ]
+    - [ 133.34804, 33.98307 ]
+    - [ 133.34686, 33.98374 ]
+    - [ 133.346578, 33.983865 ]
+stops: [ niihama-oshima, niihama-kuroshima ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 南行 1便
+        stops: [ 06:20, 06:35 ]
+      - name: 南行 2便
+        stops: [ 07:10, 07:25 ]
+      - name: 南行 3便
+        stops: [ 08:15, 08:30 ]
+      - name: 南行 4便
+        stops: [ 09:15, 09:30 ]
+      - name: 南行 5便
+        stops: [ 10:15, 10:30 ]
+      - name: 南行 6便
+        stops: [ 11:15, 11:30 ]
+      - name: 南行 7便
+        stops: [ 13:05, 13:20 ]
+      - name: 南行 8便
+        stops: [ 14:05, 14:20 ]
+      - name: 南行 9便
+        stops: [ 15:15, 15:30 ]
+      - name: 南行 10便
+        stops: [ 16:15, 16:30 ]
+      - name: 南行 11便
+        stops: [ 17:15, 17:30 ]
+      - name: 南行 12便
+        stops: [ 19:15, 19:30 ]
+      - name: 南行 13便
+        stops: [ 21:00, 21:15 ]
+      - name: 北行 1便
+        stops: [ 07:00, 06:45 ]
+      - name: 北行 2便
+        stops: [ 07:55, 07:40 ]
+      - name: 北行 3便
+        stops: [ 08:55, 08:40 ]
+      - name: 北行 4便
+        stops: [ 09:55, 09:40 ]
+      - name: 北行 5便
+        stops: [ 10:55, 10:40 ]
+      - name: 北行 6便
+        stops: [ 11:55, 11:40 ]
+      - name: 北行 7便
+        stops: [ 13:45, 13:30 ]
+      - name: 北行 8便
+        stops: [ 14:45, 14:30 ]
+      - name: 北行 9便
+        stops: [ 15:55, 15:40 ]
+      - name: 北行 10便
+        stops: [ 16:55, 16:40 ]
+      - name: 北行 11便
+        stops: [ 17:55, 17:40 ]
+      - name: 北行 12便
+        stops: [ 19:55, 19:40 ]
+      - name: 北行 13便
+        stops: [ 21:40, 21:25 ]
+flags: [ regional ]

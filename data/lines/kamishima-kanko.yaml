@@ -1,0 +1,159 @@
+name: 神島観光汽船
+color: "#d92a26"
+route: 伊良湖〜神島
+source:
+  - https://irago.main.jp/kamishima.html
+ships:
+  - かみしま
+fare:
+  - 大人 片道 1,800円 / 往復 3,500円
+  - 子供 片道 900円 / 往復 1,700円
+notes:
+  - 電話 090-1989-7423 (池田)
+  - 1人で運営しているため電話に出られないことが多い
+  - 悪天候時は欠航することが多い
+  - 伊良湖港・神島港に乗船客がいない場合や悪天候時は運航しない
+  - 所要時間 約15分
+ports:
+  irako: [ 137.020237, 34.583873 ]
+  kamishima: [ 136.980288, 34.550494 ]
+coords:
+  - - [ 137.020237, 34.583873 ]
+    - [ 137.02119, 34.58447 ]
+    - [ 137.02064, 34.58938 ]
+    - [ 137.01995, 34.58961 ]
+    - [ 136.98805, 34.56275 ]
+    - [ 136.97577, 34.55014 ]
+    - [ 136.97577, 34.5494 ]
+    - [ 136.97974, 34.55073 ]
+    - [ 136.98019, 34.55065 ]
+    - [ 136.980288, 34.550494 ]
+stops: [ irako, kamishima ]
+timetables:
+  summer:
+    name: 4/16〜8/31 ダイヤ
+    voyages:
+      - name: 伊良湖発 1便
+        stops: [ 06:00, 06:15 ]
+      - name: 伊良湖発 2便 (土日祝)
+        stops: [ 10:00, 10:15 ]
+        schedule:
+          isWeekend: true
+          isHoliday: true
+          "*": false
+      - name: 伊良湖発 3便
+        stops: [ 13:00, 13:15 ]
+      - name: 伊良湖発 4便 (土日祝)
+        stops: [ 16:00, 16:15 ]
+        schedule:
+          isWeekend: true
+          isHoliday: true
+          "*": false
+      - name: 神島発 1便
+        stops: [ 07:15, 07:00 ]
+      - name: 神島発 2便 (土日祝)
+        stops: [ 11:15, 11:00 ]
+        schedule:
+          isWeekend: true
+          isHoliday: true
+          "*": false
+      - name: 神島発 3便
+        stops: [ 14:15, 14:00 ]
+      - name: 神島発 4便 (土日祝)
+        stops: [ 16:45, 16:30 ]
+        schedule:
+          isWeekend: true
+          isHoliday: true
+          "*": false
+  spring-autumn:
+    name: 3/1〜4/15・9/1〜10/31 ダイヤ
+    voyages:
+      - name: 伊良湖発 1便
+        stops: [ 06:30, 06:45 ]
+      - name: 伊良湖発 2便 (土日祝)
+        stops: [ 10:00, 10:15 ]
+        schedule:
+          isWeekend: true
+          isHoliday: true
+          "*": false
+      - name: 伊良湖発 3便
+        stops: [ 13:00, 13:15 ]
+      - name: 伊良湖発 4便 (土日祝)
+        stops: [ 16:00, 16:15 ]
+        schedule:
+          isWeekend: true
+          isHoliday: true
+          "*": false
+      - name: 神島発 1便
+        stops: [ 07:45, 07:30 ]
+      - name: 神島発 2便 (土日祝)
+        stops: [ 11:15, 11:00 ]
+        schedule:
+          isWeekend: true
+          isHoliday: true
+          "*": false
+      - name: 神島発 3便
+        stops: [ 14:15, 14:00 ]
+      - name: 神島発 4便 (土日祝)
+        stops: [ 16:45, 16:30 ]
+        schedule:
+          isWeekend: true
+          isHoliday: true
+          "*": false
+  november:
+    name: 11/1〜11/30 ダイヤ
+    voyages:
+      - name: 伊良湖発 1便
+        stops: [ 07:00, 07:15 ]
+      - name: 伊良湖発 2便 (土日祝)
+        stops: [ 10:00, 10:15 ]
+        schedule:
+          isWeekend: true
+          isHoliday: true
+          "*": false
+      - name: 伊良湖発 3便
+        stops: [ 13:00, 13:15 ]
+      - name: 神島発 1便
+        stops: [ 08:15, 08:00 ]
+      - name: 神島発 2便 (土日祝)
+        stops: [ 11:15, 11:00 ]
+        schedule:
+          isWeekend: true
+          isHoliday: true
+          "*": false
+      - name: 神島発 3便
+        stops: [ 14:15, 14:00 ]
+  winter-mid:
+    name: 12/1〜1/5 ダイヤ
+    voyages:
+      - name: 伊良湖発 1便
+        stops: [ 07:30, 07:45 ]
+      - name: 伊良湖発 2便
+        stops: [ 13:00, 13:15 ]
+      - name: 神島発 1便
+        stops: [ 08:15, 08:00 ]
+      - name: 神島発 2便
+        stops: [ 14:15, 14:00 ]
+  winter-late:
+    name: 1/6〜2/末 ダイヤ (金土日祝のみ)
+    voyages:
+      - name: 伊良湖発 1便
+        stops: [ 07:30, 07:45 ]
+      - name: 伊良湖発 2便
+        stops: [ 13:00, 13:15 ]
+      - name: 神島発 1便
+        stops: [ 08:15, 08:00 ]
+      - name: 神島発 2便
+        stops: [ 14:15, 14:00 ]
+schedule:
+  "2026-04-16..2026-08-31": summer
+  "2026-09-01..2026-10-31": spring-autumn
+  "2026-11-01..2026-11-30": november
+  "2026-12-01..2027-01-05": winter-mid
+  "2026-01-06..2026-02-28":
+    isFriday: winter-late
+    isWeekend: winter-late
+    isHoliday: winter-late
+  "2026-03-01..2026-04-15": spring-autumn
+  "*": summer
+flags: [ regional ]

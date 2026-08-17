@@ -1,0 +1,86 @@
+name: 安栄観光
+route: 石垣〜波照間
+color: "#b3d926"
+source:
+  - https://aneikankou.co.jp/timetable
+  - https://aneikankou.co.jp/timetable/detail/6
+  - https://aneikankou.co.jp/timetable/carferry
+fare:
+  - 大人 片道 4,990円 / 往復 9,670円
+  - 小児 片道 2,500円 / 往復 4,850円
+  - フェリーはてるま2 大人 片道 3,410円 / 往復 6,660円
+  - フェリーはてるま2 小児 片道 1,710円 / 往復 3,340円
+notes:
+  - 高速船 所要約80〜90分（大型）／約60〜70分（小型）
+  - 冬季ダイヤ（1〜3月）1日2往復
+  - 夏季（4〜9月）は1日3往復
+  - フェリーはてるま2は貨客船（旅客・車両輸送）。海象状況により波照間発の出航時刻を早める場合あり。ドックにより運休の場合あり
+  - TEL 0980-83-0055（6:00〜19:00）
+  - 燃料油価格変動調整金を含む
+ships:
+  - ぱいじま
+  - ぱいじま2
+  - フェリーはてるま2
+ports:
+  ishigaki: [ 124.15551, 24.336476 ]
+  hateruma: [ 123.76577, 24.06731 ]
+coords:
+  - - [ 124.15551, 24.336476 ]
+    - [ 124.15534, 24.33641 ]
+    - [ 124.15544, 24.33566 ]
+    - [ 124.13227, 24.33308 ]
+    - [ 124.11126, 24.31594 ]
+    - [ 124.07756, 24.29837 ]
+    - [ 124.00664, 24.27739 ]
+    - [ 123.94663, 24.26742 ]
+    - [ 123.872, 24.22264 ]
+    - [ 123.76761, 24.07405 ]
+    - [ 123.76835, 24.07047 ]
+    - [ 123.766, 24.06841 ]
+    - [ 123.7655, 24.06774 ]
+    - [ 123.76583, 24.06707 ]
+    - [ 123.76577, 24.06731 ]
+stops: [ ishigaki, hateruma ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 南行 1便
+        stops: [ 08:00, 09:50 ]
+      - name: 南行 2便
+        stops: [ 11:45, 13:00 ]
+      - name: 南行 3便
+        stops: [ 15:00, 16:50 ]
+      - name: 北行 1便
+        stops: [ null, 09:50 ]
+      - name: 北行 2便
+        stops: [ null, 13:00 ]
+      - name: 北行 3便
+        stops: [ null, 16:50 ]
+      - name: 南行 フェリーはてるま2
+        note: 貨客船・火木土運航
+        stops: [ 09:00, 11:00 ]
+        schedule:
+          isTuesday: true
+          isThursday: true
+          isSaturday: true
+          "*": false
+      - name: 北行 フェリーはてるま2（4〜9月）
+        note: 貨客船・火木土運航
+        stops: [ 16:00, 14:00 ]
+        schedule:
+          "2026-10-01..2027-03-31": false
+          isTuesday: true
+          isThursday: true
+          isSaturday: true
+          "*": false
+      - name: 北行 フェリーはてるま2（10〜3月）
+        note: 貨客船・火木土運航
+        stops: [ 15:30, 13:30 ]
+        schedule:
+          "2026-04-01..2026-09-30": false
+          isTuesday: true
+          isThursday: true
+          isSaturday: true
+          "*": false
+flags: [ regional ]

@@ -1,0 +1,63 @@
+name: 志摩市運航船
+route: 渡鹿野島和田〜三ケ所〜的矢
+color: "#bbd926"
+source:
+  - https://www.city.shima.mie.jp/kakuka/kensetsubu/kensetsuseibika/shiunkosen.html
+fare:
+  - 無料
+notes:
+  - 月・水・金曜のみ運航
+  - 12月31日〜1月3日は運休
+  - 所要時間 約15分（渡鹿野・和田〜的矢）
+  - 問い合わせ 志摩市建設整備課 0599-44-0304
+ships:
+  - まとや丸
+ports:
+  watakanojima: [ 136.875797, 34.360256 ]
+  san-kasho: [ 136.864502, 34.363917 ]
+  matoya: [ 136.866258, 34.367689 ]
+coords:
+  - - [ 136.875797, 34.360256 ]
+    - [ 136.87583, 34.36016 ]
+    - [ 136.87933, 34.35593 ]
+    - [ 136.870625, 34.357319 ]
+    - [ 136.86481, 34.36404 ]
+    - [ 136.86602, 34.36709 ]
+    - [ 136.86596, 34.368 ]
+    - [ 136.866138, 34.367944 ]
+stops: [ watakanojima, san-kasho, matoya ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 1便
+        stops: [ 08:45, 08:55, 09:00 ]
+      - name: 1便 復路
+        stops: [ 09:15, 09:05, 09:00 ]
+      - name: 2便
+        stops: [ 09:15, 09:25, 09:30 ]
+      - name: 2便 復路
+        stops: [ 09:45, 09:35, 09:30 ]
+  closed:
+    name: 運休
+    voyages: []
+schedule:
+  nthMonth(12):
+    nthDay(31): closed
+    isMonday: normal
+    isWednesday: normal
+    isFriday: normal
+    "*": closed
+  nthMonth(1):
+    nthDay(1): closed
+    nthDay(2): closed
+    nthDay(3): closed
+    isMonday: normal
+    isWednesday: normal
+    isFriday: normal
+    "*": closed
+  isMonday: normal
+  isWednesday: normal
+  isFriday: normal
+  "*": closed
+flags: [ regional ]

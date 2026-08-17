@@ -1,0 +1,56 @@
+name: やまさ海運
+route: 三池〜島原
+color: "#d9267b"
+source:
+  - https://www.yamasa-kaiun.net/miike-shimabara-line
+  - https://www.yamasa-kaiun.net/news/msline-kyushi
+  - https://one-plate.city.omuta.lg.jp/yamasakaiun.html
+fare:
+  - 大人片道 2,300円（休止前）
+  - 小児片道 1,150円（休止前）
+  - 自転車 500円（休止前）
+  - 原動機付自転車 600円（休止前）
+ships:
+  - しまばら丸
+  - みいけ丸
+notes:
+  - 2025年7月1日より運航休止中（再開時期未定）
+  - 電話 095-822-5002（やまさ海運 旅客船事業部）
+  - 所要時間 約50分
+ports:
+  miike: [ 130.414913, 33.012184 ]
+  shimabaragaiko: [ 130.373814, 32.766417 ]
+coords:
+  - - [ 130.416284, 33.013634 ]
+    - [ 130.41627, 33.01351 ]
+    - [ 130.41518, 33.01205 ]
+    - [ 130.39232, 33.00385 ]
+    - [ 130.3827, 32.98886 ]
+    - [ 130.39823, 32.7708 ]
+    - [ 130.38852, 32.76479 ]
+    - [ 130.37497, 32.76412 ]
+    - [ 130.37262, 32.7651 ]
+    - [ 130.37265, 32.76643 ]
+    - [ 130.372708, 32.76645 ]
+stops: [ miike, shimabaragaiko ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 南行 1便
+        stops: [ 07:40, 08:30 ]
+      - name: 南行 2便
+        stops: [ 10:05, 10:55 ]
+      - name: 南行 3便
+        stops: [ 14:05, 14:55 ]
+      - name: 南行 4便
+        stops: [ 17:05, 17:55 ]
+      - name: 北行 1便
+        stops: [ 09:45, 08:55 ]
+      - name: 北行 2便
+        stops: [ 12:20, 11:30 ]
+      - name: 北行 3便
+        stops: [ 16:10, 15:20 ]
+      - name: 北行 4便
+        stops: [ 19:10, 18:20 ]
+flags: [ regional, suspend ]

@@ -1,0 +1,43 @@
+name: 牛川の渡船
+color: "#be26d9"
+route: 牛川町～大村町
+source:
+  - https://www.city.toyohashi.lg.jp/2923.htm
+  - https://www.city.toyohashi.lg.jp/37153.htm
+fare:
+  - 無料
+ships:
+  - ちぎり丸（三代目・強化プラスチック製、定員11名、令和6年就航）
+notes:
+  - 航路延長約70m
+  - 手漕ぎ（竹竿操船）の渡し船。自転車乗船可
+  - 舟呼び板を叩いて船頭を呼ぶ方式（予約不可）
+  - 大雨・洪水・大雪・暴風警報発表時は運休
+  - 豊川石田水位観測所の水位が1.0mを超える場合は運休
+  - 日没後は運航なし
+  - 豊橋市建設部土木管理課 0532-51-2506
+  - "運航状況確認: https://ssl.isl-system.com/usr/kanzai/demo/"
+ports:
+  ushikawa: [ 137.4095, 34.7789 ]
+  omura-town: [ 137.4131, 34.7789 ]
+coords:
+  - - [ 137.4095, 34.7789 ]
+    - [ 137.4131, 34.7789 ]
+stops: [ ushikawa, omura-town ]
+timetables:
+  summer:
+    name: 3〜9月 8:00〜12:00・13:00〜17:00 運航
+    voyages: []
+  winter:
+    name: 10〜2月 8:00〜12:00・13:00〜16:00 運航
+    voyages: []
+schedule:
+  nthMonth(3): summer
+  nthMonth(4): summer
+  nthMonth(5): summer
+  nthMonth(6): summer
+  nthMonth(7): summer
+  nthMonth(8): summer
+  nthMonth(9): summer
+  "*": winter
+flags: [ regional ]

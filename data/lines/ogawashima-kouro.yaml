@@ -1,0 +1,92 @@
+name: 川口汽船
+route: 呼子〜小川島
+color: "#2645d9"
+source:
+  - https://www.city.karatsu.lg.jp/page/1542.html
+fare:
+  - 旅客運賃（片道）：大人520円、子ども260円
+  - 障がい者割引（5割引）：身体障害者手帳・療育手帳・精神障害者保健福祉手帳所持者
+notes:
+  - 所要時間：約20分
+  - 運休日：1月1日
+  - 夏期ダイヤ（3月15日～10月31日）：毎日5便運航
+  - 冬期ダイヤ（11月1日～3月14日）：平日4便、土日祝5便運航
+  - お問い合わせ：川口汽船有限会社 0955-82-8025
+ships:
+  - そよかぜ
+ports:
+  yobuko: [ 129.893367, 33.541591 ]
+  ogawashima: [ 129.896867, 33.594164 ]
+coords:
+  - - [ 129.894611, 33.539298 ]
+    - [ 129.8946, 33.53929 ]
+    - [ 129.89226, 33.54156 ]
+    - [ 129.88899, 33.54448 ]
+    - [ 129.88961, 33.54884 ]
+    - [ 129.89488, 33.55182 ]
+    - [ 129.89897, 33.55291 ]
+    - [ 129.90079, 33.56179 ]
+    - [ 129.89917, 33.59276 ]
+    - [ 129.89811, 33.59307 ]
+    - [ 129.8973, 33.59416 ]
+    - [ 129.896867, 33.594164 ]
+stops: [ yobuko, ogawashima ]
+timetables:
+  summer-holiday:
+    name: 夏期・土休日ダイヤ（5便）
+    voyages:
+      - name: 北行 1便
+        stops: [ 08:00, 08:20 ]
+      - name: 北行 2便
+        stops: [ 10:50, 11:10 ]
+      - name: 北行 3便
+        stops: [ 14:20, 14:40 ]
+      - name: 北行 4便
+        stops: [ 16:10, 16:30 ]
+      - name: 北行 5便
+        stops: [ 18:00, 18:20 ]
+      - name: 南行 1便
+        stops: [ 07:20, 07:00 ]
+      - name: 南行 2便
+        stops: [ 09:10, 08:50 ]
+      - name: 南行 3便
+        stops: [ 13:20, 13:00 ]
+      - name: 南行 4便
+        stops: [ 15:40, 15:20 ]
+      - name: 南行 5便
+        stops: [ 17:20, 17:00 ]
+  winter-weekday:
+    name: 冬期平日ダイヤ（4便）
+    voyages:
+      - name: 北行 1便
+        stops: [ 08:00, 08:20 ]
+      - name: 北行 2便
+        stops: [ 10:50, 11:10 ]
+      - name: 北行 3便
+        stops: [ 15:00, 15:20 ]
+      - name: 北行 4便
+        stops: [ 18:00, 18:20 ]
+      - name: 南行 1便
+        stops: [ 07:20, 07:00 ]
+      - name: 南行 2便
+        stops: [ 09:10, 08:50 ]
+      - name: 南行 3便
+        stops: [ 13:20, 13:00 ]
+      - name: 南行 4便
+        stops: [ 17:20, 17:00 ]
+  closed:
+    name: 1/1 全便休航
+    voyages: []
+schedule:
+  nthMonth(1):
+    nthDay(1): closed
+  "2025-11-01..2026-03-14":
+    isHoliday: summer-holiday
+    isWeekend: summer-holiday
+    "*": winter-weekday
+  "2026-11-01..2027-03-14":
+    isHoliday: summer-holiday
+    isWeekend: summer-holiday
+    "*": winter-weekday
+  "*": summer-holiday
+flags: [ regional ]

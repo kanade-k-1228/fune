@@ -1,0 +1,155 @@
+name: 福岡市営渡船
+route: 能古島
+color: "#d9a626"
+source:
+  - https://www.city.fukuoka.lg.jp/kowan/kyakusen/hakata-port/hyo.html
+  - https://www.city.fukuoka.lg.jp/kowan/kyakusen/sennpakusyoukai.html
+fare:
+  - 大人 230円
+  - 小児 120円
+  - 定期 1ヶ月 大人 8,280円 / 学生 4,140円 / 学生(小児) 2,160円
+  - 定期 3ヶ月 大人 23,600円 / 学生 12,010円 / 学生(小児) 6,270円
+  - 定期 6ヶ月 大人 44,720円 / 学生 23,190円 / 学生(小児) 12,100円
+  - 自転車 120円
+  - 原動機付自転車（0.125L以下） 240円
+  - 二輪自動車（0.125L超0.75L未満） 370円
+  - 二輪自動車（0.75L以上） 490円
+  - 自動車航送 3m未満 1,360円 / 3m以上4m未満 1,570円 / 4m以上5m以下 2,520円（5mを超える場合は超過1mごとに750円加算）
+  - 貨物 0.05立方メートルまたは10kgまでごと 110円
+notes:
+  - 姪浜旅客待合所 092-881-8709
+  - 所要時間 約10分
+  - 1日23往復（日祝日は21往復、1便・23便が運休）
+ships:
+  - フラワーのこ
+  - レインボーのこ
+ports:
+  meinohama: [ 130.326902, 33.597573 ]
+  nokoto-tosemba: [ 130.310697, 33.611985 ]
+coords:
+  - - [ 130.326902, 33.597573 ]
+    - [ 130.32687, 33.59759 ]
+    - [ 130.32638, 33.59773 ]
+    - [ 130.3253, 33.59867 ]
+    - [ 130.31089, 33.61098 ]
+    - [ 130.31063, 33.61149 ]
+    - [ 130.31069, 33.61193 ]
+    - [ 130.310697, 33.611985 ]
+stops: [ meinohama, nokoto-tosemba ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 北行 1便
+        stops: [ 05:15, 05:25 ]
+        schedule:
+          isHoliday: false
+          isSunday: false
+          "*": true
+        note: 日曜・祝日運休
+      - name: 北行 2便
+        stops: [ 06:15, 06:25 ]
+      - name: 北行 3便
+        stops: [ 06:45, 06:55 ]
+      - name: 北行 4便
+        stops: [ 07:15, 07:25 ]
+      - name: 北行 5便
+        stops: [ 07:45, 07:55 ]
+      - name: 北行 6便
+        stops: [ 08:15, 08:25 ]
+      - name: 北行 7便
+        stops: [ 09:15, 09:25 ]
+      - name: 北行 8便
+        stops: [ 10:15, 10:25 ]
+      - name: 北行 9便
+        stops: [ 11:15, 11:25 ]
+      - name: 北行 10便
+        stops: [ 12:15, 12:25 ]
+      - name: 北行 11便
+        stops: [ 13:15, 13:25 ]
+      - name: 北行 12便
+        stops: [ 14:15, 14:25 ]
+      - name: 北行 13便
+        stops: [ 15:15, 15:25 ]
+      - name: 北行 14便
+        stops: [ 16:15, 16:25 ]
+      - name: 北行 15便
+        stops: [ 17:15, 17:25 ]
+      - name: 北行 16便
+        stops: [ 17:45, 17:55 ]
+      - name: 北行 17便
+        stops: [ 18:15, 18:25 ]
+      - name: 北行 18便
+        stops: [ 18:45, 18:55 ]
+      - name: 北行 19便
+        stops: [ 19:45, 19:55 ]
+      - name: 北行 20便
+        stops: [ 20:30, 20:40 ]
+      - name: 北行 21便
+        stops: [ 21:00, 21:10 ]
+      - name: 北行 22便
+        stops: [ 22:00, 22:10 ]
+      - name: 北行 23便
+        stops: [ 23:00, 23:10 ]
+        schedule:
+          isHoliday: false
+          isSunday: false
+          "*": true
+        note: 日曜・祝日運休
+      - name: 南行 1便
+        stops: [ 05:10, 05:00 ]
+        schedule:
+          isHoliday: false
+          isSunday: false
+          "*": true
+        note: 日曜・祝日運休
+      - name: 南行 2便
+        stops: [ 06:10, 06:00 ]
+      - name: 南行 3便
+        stops: [ 06:40, 06:30 ]
+      - name: 南行 4便
+        stops: [ 07:10, 07:00 ]
+      - name: 南行 5便
+        stops: [ 07:40, 07:30 ]
+      - name: 南行 6便
+        stops: [ 08:10, 08:00 ]
+      - name: 南行 7便
+        stops: [ 09:10, 09:00 ]
+      - name: 南行 8便
+        stops: [ 10:10, 10:00 ]
+      - name: 南行 9便
+        stops: [ 11:10, 11:00 ]
+      - name: 南行 10便
+        stops: [ 12:10, 12:00 ]
+      - name: 南行 11便
+        stops: [ 13:10, 13:00 ]
+      - name: 南行 12便
+        stops: [ 14:10, 14:00 ]
+      - name: 南行 13便
+        stops: [ 15:10, 15:00 ]
+      - name: 南行 14便
+        stops: [ 16:10, 16:00 ]
+      - name: 南行 15便
+        stops: [ 17:10, 17:00 ]
+      - name: 南行 16便
+        stops: [ 17:40, 17:30 ]
+      - name: 南行 17便
+        stops: [ 18:10, 18:00 ]
+      - name: 南行 18便
+        stops: [ 18:40, 18:30 ]
+      - name: 南行 19便
+        stops: [ 19:40, 19:30 ]
+      - name: 南行 20便
+        stops: [ 20:25, 20:15 ]
+      - name: 南行 21便
+        stops: [ 20:55, 20:45 ]
+      - name: 南行 22便
+        stops: [ 21:55, 21:45 ]
+      - name: 南行 23便
+        stops: [ 22:55, 22:45 ]
+        schedule:
+          isHoliday: false
+          isSunday: false
+          "*": true
+        note: 日曜・祝日運休
+flags: [ regional ]

@@ -1,0 +1,46 @@
+name: 静岡市（井川森林組合）
+route: 井川本村〜井川ダム
+color: "#d9263a"
+source:
+  - https://www.city.shizuoka.lg.jp/032_000005.html
+  - https://www.city.shizuoka.lg.jp/s5796/s006226.html
+notes:
+  - 運航期間：4月27日〜12月22日（12月2日〜12月22日は土日のみ）
+  - 乗船無料
+  - 所要時間約15分
+  - 大雨・強風等の悪天候、ダム湖の水位状況により運休あり
+  - 井川湖渡船待合所：054-260-2505（8:30〜17:00）
+  - 遊覧船（井川本村〜井川大橋周回・予約制）および宮向航路（予約制）は別便
+fare:
+  - 無料
+ships:
+  - 赤石丸
+  - 令和聖
+ports:
+  ikawa-dam: [ 138.2244, 35.2111 ]
+  ikawa-honson: [ 138.2403, 35.2209 ]
+coords:
+  - - [ 138.2403, 35.2209 ]
+    - [ 138.2244, 35.2111 ]
+stops: [ ikawa-honson, ikawa-dam ]
+timetables:
+  regular:
+    name: 定期便
+    voyages:
+      - name: 本村発1便
+        stops: [ "10:55", null ]
+      - name: ダム発1便
+        stops: [ null, "11:35" ]
+      - name: 本村発2便
+        stops: [ "12:10", null ]
+      - name: ダム発2便
+        stops: [ null, "12:45" ]
+      - name: 本村発3便
+        stops: [ "13:20", null ]
+      - name: ダム発3便
+        stops: [ null, "13:55" ]
+      - name: 本村発4便
+        stops: [ "14:30", null ]
+      - name: ダム発4便
+        stops: [ null, "15:05" ]
+flags: [ regional ]

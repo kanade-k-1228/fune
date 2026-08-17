@@ -1,0 +1,48 @@
+name: 獅子島汽船
+route: 幣串〜水俣
+color: "#26d96a"
+source:
+  - https://peraichi.com/landing_pages/view/shishijimakisen/
+  - https://www.town.nagashima.lg.jp/shishijima/access/
+ships:
+  - ししじま
+fare:
+  - 大人（片道）1,330円
+  - 学生（片道）1,020円
+  - 小学生（片道）660円
+notes:
+  - TEL 0966-63-2248（水俣港代理店）
+  - TEL 090-4987-7202
+  - 所要時間 約30分
+  - 旅客船のため車両積載不可
+  - 旅客定員 42名（2025年8月就航の新造船「ししじま」）
+ports:
+  nusa-kushi: [ 130.22586, 32.261809 ]
+  minamata: [ 130.378981, 32.195036 ]
+coords:
+  - - [ 130.22586, 32.261809 ]
+    - [ 130.22617, 32.26147 ]
+    - [ 130.22672, 32.26015 ]
+    - [ 130.2299, 32.25644 ]
+    - [ 130.36362, 32.1913 ]
+    - [ 130.37773, 32.19413 ]
+    - [ 130.37876, 32.1946 ]
+    - [ 130.378954, 32.195045 ]
+stops: [ nusa-kushi, minamata ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 東行 1便
+        stops: [ 07:20, 07:50 ]
+      - name: 東行 2便
+        stops: [ 10:10, 10:40 ]
+      - name: 東行 3便
+        stops: [ 16:30, 17:00 ]
+      - name: 西行 1便
+        stops: [ 08:40, 08:10 ]
+      - name: 西行 2便
+        stops: [ 14:30, 14:00 ]
+      - name: 西行 3便
+        stops: [ 17:40, 17:10 ]
+flags: [ regional ]

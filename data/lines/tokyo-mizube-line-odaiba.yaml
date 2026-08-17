@@ -1,0 +1,46 @@
+name: 東京水辺ライン 浅草・お台場クルーズ
+color: "#d926aa"
+route: 浅草二天門〜お台場海浜公園
+source:
+  - https://www.tokyo-park.or.jp/water/waterbus/
+  - https://www.tokyo-odaiba.net/event_tourism/waterbus_202512/
+fare:
+  - 大人（中学生以上）当日 1,400円 / 前売 1,120円
+  - 小児（小学生）当日 700円 / 前売 560円
+  - 未就学児は大人1名につき1名無料（2人目から小児料金）
+notes:
+  - 運航事業者は東京都公園協会
+  - 現在運航休止中（2026年1月19日〜）。船舶老朽化に伴う後継船への置き換えのため、2026年夏頃再開予定。
+  - 電話 03-5608-8869（9:00〜17:00、月曜定休。2026年2月1日より電話受付も休止）
+  - 所要時間は約50分
+  - 天候・潮位により欠航または内容変更の場合あり
+ships:
+  - さくら
+  - あじさい
+  - こすもす
+ports:
+  asakusa-pier: [ 139.800521, 35.711306 ]
+  odaiba-seaside: [ 139.774511, 35.629627 ]
+coords:
+  - - [ 139.800521, 35.711306 ]
+    - [ 139.774511, 35.629627 ]
+stops: [ asakusa-pier, odaiba-seaside ]
+timetables:
+  normal:
+    name: 土日ダイヤ
+    voyages:
+      - name: 南行 1便
+        stops: [ "10:30", "11:20" ]
+      - name: 南行 2便
+        stops: [ "14:25", "15:15" ]
+      - name: 北行 1便
+        stops: [ "12:00", "12:50" ]
+      - name: 北行 2便
+        stops: [ "15:55", "16:45" ]
+  closed:
+    name: 平日運休
+    voyages: []
+schedule:
+  isWeekend: normal
+  "*": closed
+flags: [ regional ]

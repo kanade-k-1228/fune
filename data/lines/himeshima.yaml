@@ -1,0 +1,96 @@
+name: 姫島村営
+route: 伊美〜姫島
+color: "#26d9cc"
+source:
+  - https://www.himeshima.jp/access/
+fare:
+  - 大人（中学生以上）片道 580円
+  - 小人（小学生）片道 290円
+  - 幼児 無料（大人1人につき1人）
+  - 車両 3m未満 2,180円（1m増すごとに1,250円増）
+  - 自転車 150円〜二輪750cc以上 630円
+notes:
+  - 所要時間約20分
+  - 姫島村役場 船舶課 0978-87-2012 / 0978-87-2021
+  - 第12便は12月1日〜翌年3月31日運休
+  - 盆踊期間中（8月14日・15日）は伊美港より車の航送不可
+ships:
+  - 第一姫島丸
+  - 第二姫島丸
+ports:
+  imi: [ 131.600141, 33.687187 ]
+  himeshima: [ 131.648508, 33.722014 ]
+coords:
+  - - [ 131.600141, 33.687187 ]
+    - [ 131.60028, 33.6874 ]
+    - [ 131.60286, 33.68841 ]
+    - [ 131.60416, 33.69104 ]
+    - [ 131.64815, 33.7179 ]
+    - [ 131.64855, 33.72187 ]
+    - [ 131.648508, 33.722014 ]
+stops: [ imi, himeshima ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 北行 1便
+        stops: [ 06:20, 06:40 ]
+      - name: 北行 2便
+        stops: [ 07:30, 07:50 ]
+      - name: 北行 3便
+        stops: [ 08:40, 09:00 ]
+      - name: 北行 4便
+        stops: [ 09:50, 10:10 ]
+      - name: 北行 5便
+        stops: [ 11:00, 11:20 ]
+      - name: 北行 6便
+        stops: [ 12:10, 12:30 ]
+      - name: 北行 7便
+        stops: [ 13:35, 13:55 ]
+      - name: 北行 8便
+        stops: [ 14:45, 15:05 ]
+      - name: 北行 9便
+        stops: [ 15:55, 16:15 ]
+      - name: 北行 10便
+        stops: [ 17:25, 17:45 ]
+      - name: 北行 11便
+        stops: [ 18:45, 19:05 ]
+      - name: 南行 1便
+        stops: [ 06:10, 05:50 ]
+      - name: 南行 2便
+        stops: [ 07:15, 06:55 ]
+      - name: 南行 3便
+        stops: [ 08:20, 08:00 ]
+      - name: 南行 4便
+        stops: [ 09:35, 09:15 ]
+      - name: 南行 5便
+        stops: [ 10:45, 10:25 ]
+      - name: 南行 6便
+        stops: [ 11:55, 11:35 ]
+      - name: 南行 7便
+        stops: [ 13:20, 13:00 ]
+      - name: 南行 8便
+        stops: [ 14:30, 14:10 ]
+      - name: 南行 9便
+        stops: [ 15:40, 15:20 ]
+      - name: 南行 10便
+        stops: [ 16:50, 16:30 ]
+      - name: 南行 11便
+        stops: [ 18:20, 18:00 ]
+      - name: 北行 12便
+        stops: [ 19:45, 20:05 ]
+        schedule:
+          nthMonth(12): false
+          nthMonth(1): false
+          nthMonth(2): false
+          nthMonth(3): false
+          "*": true
+      - name: 南行 12便
+        stops: [ 19:35, 19:15 ]
+        schedule:
+          nthMonth(12): false
+          nthMonth(1): false
+          nthMonth(2): false
+          nthMonth(3): false
+          "*": true
+flags: [ regional ]

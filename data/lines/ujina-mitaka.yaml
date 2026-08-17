@@ -1,0 +1,122 @@
+name: 瀬戸内海汽船
+route: 宇品〜三高
+color: "#d9b626"
+source:
+  - https://setonaikaikisen.co.jp/kouro/ferry/
+  - https://setonaikaikisen.co.jp/sealine/
+fare:
+  - 大人 片道 690円
+  - 小児 片道 350円
+  - 回数券（大人11枚綴り） 6,900円
+  - 自転車 220円
+  - 自動二輪車 125cc未満 430円 / 125cc以上 640円
+  - 軽自動車（3.4m未満） 2,140円
+  - 普通車（6m未満） 2,500円
+  - 中型車（9m未満） 5,100円
+  - 大型車（12m未満） 7,640円
+notes:
+  - 運航：瀬戸内シーライン株式会社（瀬戸内海汽船グループ）
+  - 予約センター 082-254-1701（平日 9:00〜17:30 / 土日祝 9:00〜12:00, 13:00〜17:30）
+  - 営業距離 12.0km、所要時間 約40分
+  - 早朝・夜間の一部便（南行1便 06:53 / 14便 21:00、北行1便 06:05 / 14便 20:15）は日曜・祝日・休日運休
+  - カーフェリーで運航。車両乗船可
+ships:
+  - 古鷹
+  - 入船
+ports:
+  hiroshima: [ 132.453564, 34.35203 ]
+  sanko-minato: [ 132.407662, 34.259951 ]
+coords:
+  - - [ 132.453564, 34.35203 ]
+    - [ 132.45358, 34.35197 ]
+    - [ 132.45283, 34.34827 ]
+    - [ 132.45399, 34.34442 ]
+    - [ 132.45056, 34.33866 ]
+    - [ 132.43083, 34.32793 ]
+    - [ 132.41772, 34.31852 ]
+    - [ 132.40913, 34.30171 ]
+    - [ 132.40934, 34.26805 ]
+    - [ 132.40766, 34.25998 ]
+    - [ 132.407662, 34.259951 ]
+stops: [ hiroshima, sanko-minato ]
+timetables:
+  normal:
+    name: 通常ダイヤ
+    voyages:
+      - name: 南行 1便
+        stops: [ 06:53, 07:33 ]
+        schedule:
+          isHoliday: false
+          isSunday: false
+          "*": true
+        note: 日曜・祝日・休日運休
+      - name: 南行 2便
+        stops: [ 07:30, 08:10 ]
+      - name: 南行 3便
+        stops: [ 08:30, 09:10 ]
+      - name: 南行 4便
+        stops: [ 09:00, 09:40 ]
+      - name: 南行 5便
+        stops: [ 10:55, 11:35 ]
+      - name: 南行 6便
+        stops: [ 12:25, 13:05 ]
+      - name: 南行 7便
+        stops: [ 13:55, 14:35 ]
+      - name: 南行 8便
+        stops: [ 15:25, 16:05 ]
+      - name: 南行 9便
+        stops: [ 16:30, 17:10 ]
+      - name: 南行 10便
+        stops: [ 17:25, 18:05 ]
+      - name: 南行 11便
+        stops: [ 18:25, 19:05 ]
+      - name: 南行 12便
+        stops: [ 18:55, 19:35 ]
+      - name: 南行 13便
+        stops: [ 19:55, 20:35 ]
+      - name: 南行 14便
+        stops: [ 21:00, 21:40 ]
+        schedule:
+          isHoliday: false
+          isSunday: false
+          "*": true
+        note: 日曜・祝日・休日運休
+      - name: 北行 1便
+        stops: [ 06:45, 06:05 ]
+        schedule:
+          isHoliday: false
+          isSunday: false
+          "*": true
+        note: 日曜・祝日・休日運休
+      - name: 北行 2便
+        stops: [ 07:25, 06:45 ]
+      - name: 北行 3便
+        stops: [ 08:25, 07:45 ]
+      - name: 北行 4便
+        stops: [ 08:55, 08:15 ]
+      - name: 北行 5便
+        stops: [ 09:55, 09:15 ]
+      - name: 北行 6便
+        stops: [ 10:50, 10:10 ]
+      - name: 北行 7便
+        stops: [ 12:20, 11:40 ]
+      - name: 北行 8便
+        stops: [ 13:50, 13:10 ]
+      - name: 北行 9便
+        stops: [ 15:20, 14:40 ]
+      - name: 北行 10便
+        stops: [ 16:50, 16:10 ]
+      - name: 北行 11便
+        stops: [ 17:55, 17:15 ]
+      - name: 北行 12便
+        stops: [ 18:50, 18:10 ]
+      - name: 北行 13便
+        stops: [ 19:50, 19:10 ]
+      - name: 北行 14便
+        stops: [ 20:55, 20:15 ]
+        schedule:
+          isHoliday: false
+          isSunday: false
+          "*": true
+        note: 日曜・祝日・休日運休
+flags: [ regional ]
