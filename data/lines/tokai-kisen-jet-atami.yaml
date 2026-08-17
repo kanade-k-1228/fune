@@ -10,7 +10,6 @@ fare:
   - 伊東～大島 大人片道 5,360円
   - 小児は大人運賃の半額
 notes:
-  - seasonal
   - 季節運航（春季 4/6～6/30、5/2～5/6 除く）
   - お客様センター 03-5472-9999 / 0570-005710（毎日 9:30～18:00）
 ships:
@@ -61,4 +60,4 @@ schedule:
   isWeekend: weekend
   isHoliday: weekend
   "*": weekday
-flags: [ regional ]
+flags: [ regional, seasonal, jetfoil ]

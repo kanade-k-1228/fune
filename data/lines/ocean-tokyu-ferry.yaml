@@ -84,5 +84,5 @@ timetables:
     name: 通常ダイヤ
     voyages:
       - name: "1"
-        stops: [ 2:05:30, [ 1:09:20, 11:20 ], 19:00 ]
+        stops: [ 2:05:30, [ 1:09:20, 1:11:20 ], 19:00 ]
 flags: [ national, ferry ]

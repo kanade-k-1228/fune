@@ -2,6 +2,8 @@ name: 安栄観光
 route: 石垣〜小浜
 color: "#d9264b"
 source:
+  - https://aneikankou.co.jp/files/manager/pdf/price/price20260401.pdf
+  - https://aneikankou.co.jp/info/detail/495
   - https://aneikankou.co.jp/timetable/detail/2
   - https://aneikankou.co.jp/files/manager/pdf/timetable/timetable4.1-9.30.pdf
 fare:
@@ -20,6 +22,7 @@ notes:
   - 往復・団体・障がい者・WEB事前予約等の割引乗船券あり
   - 未就学児は大人1名につき1名まで膝上無料（座席不要時）
   - 2020年10月1日より八重山観光フェリーとの共同運航を解消
+  - 2026年4月1日より燃料油価格変動調整金を第2段階から第4段階に引き上げ（上記運賃が改定後の額かは要確認）
 ships:
   - 第8 あんえい号
   - 第12 あんえい号
