@@ -3,7 +3,6 @@ route: 広島〜呉〜松山（クルーズフェリー）
 color: "#96d926"
 source:
   - https://setonaikaikisen.co.jp/kouro/cruise/
-  - https://setonaikaikisen.co.jp/kouro/highspeedship5/
 fare:
   - "広島〜松山 大人 5,800円 / 小児 2,900円"
   - "呉〜松山 大人 4,700円 / 小児 2,350円"
@@ -19,6 +18,7 @@ notes:
   - 2026年6月22日〜9月30日の平日は減便ダイヤ（8月および一部除外日を除く）
   - 徒歩客および二輪車は事前予約不可
   - 運賃は2025年8月1日改定
+  - 2026年9月1日運賃改定予定（広島〜松山 大人6,000円/小児3,000円、呉〜松山 大人4,900円/小児2,450円、広島〜呉 大人1,200円/小児600円）
 ships:
   - シーパセオ
   - シーパセオ2
@@ -114,8 +114,8 @@ timetables:
         stops: [ 05:45, null, 08:12 ]
       - name: 東行 2便
         stops: [ 06:45, 07:30, 09:27 ]
-      - name: 東行 3便
-        stops: [ 08:05, 08:50, 10:47 ]
+      - name: 東行 4便
+        stops: [ 09:15, 10:00, 11:57 ]
       - name: 東行 5便
         stops: [ 11:20, 12:05, 14:02 ]
       - name: 東行 6便
@@ -136,8 +136,8 @@ timetables:
         stops: [ 14:52, 14:07, 12:10 ]
       - name: 西行 6便
         stops: [ 16:57, 16:12, 14:15 ]
-      - name: 西行 7便
-        stops: [ 18:12, 17:27, 15:30 ]
+      - name: 西行 8便
+        stops: [ 19:17, 18:32, 16:35 ]
       - name: 西行 9便
         stops: [ 20:42, 19:57, 18:00 ]
       - name: 西行 10便
@@ -148,6 +148,11 @@ schedule:
     isHoliday: normal
     "*": reduced
   "2026-09-01..2026-09-30":
+    "2026-09-10": normal
+    "2026-09-16": normal
+    "2026-09-17": normal
+    "2026-09-22": normal
+    "2026-09-30": normal
     isWeekend: normal
     isHoliday: normal
     "*": reduced

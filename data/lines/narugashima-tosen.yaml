@@ -4,12 +4,17 @@ route: 生石〜由良支所北〜成ヶ島
 source:
   - https://www.city.sumoto.lg.jp/soshiki/19/10513.html
 fare:
-  - 由良支所北⇔成ヶ島 往復300円、生石⇔成ヶ島 往復500円
+  - 大人（中学生以上）：生石⇔由良支所北 片道150円・由良支所北⇔成ヶ島 片道150円（各区間往復300円）
+  - 小人（小学生以下）：生石⇔由良支所北 片道100円・由良支所北⇔成ヶ島 片道100円（各区間往復200円）
+  - 生石⇔成ヶ島（由良支所北経由）通し往復：大人500円・小人300円
+  - 小学校就学前の幼児（親族同伴）は無料
+  - 団体割引（10人以上）1割引・障がい者割引5割引
 notes:
   - 金・土・日・月・祝日のみ運航（火・水・木・年末年始・お盆は休航）
-  - 夏季（4/1〜10/31）9:00〜17:30、冬季（11/1〜3/31）9:00〜16:30
+  - 公式発表の運航時間は夏季（4/1〜10/31）9:00〜17:00、冬季（11/1〜3/31）9:00〜16:00（洲本市サイト・パンフレットで確認）。ただし時刻表上の最終便は夏季17:30発・冬季16:30発で、公式運航時間の記載と食い違いがあり要確認
   - 13時台は運休
   - 生石桟橋からの乗船は乗船時刻15分前までに要連絡（成ヶ島渡船事務所 0799-27-0691）
+  - 混雑時は生石桟橋からの乗船を制限する場合あり
 ships:
   - 中央丸
 ports:
@@ -180,7 +185,55 @@ timetables:
         stops: [ null, null, "16:23" ]
       - name: 由良支所北 16:30発（生石行）
         stops: [ null, "16:30", null ]
+  closed:
+    name: 運休（火・水・木、年末年始、お盆）
+    voyages: []
 schedule:
-  "2026-04-01..2026-10-31": dia0
+  nthMonth(4):
+    isHoliday: dia0
+    isTuesday: closed
+    isWednesday: closed
+    isThursday: closed
+    "*": dia0
+  nthMonth(5):
+    isHoliday: dia0
+    isTuesday: closed
+    isWednesday: closed
+    isThursday: closed
+    "*": dia0
+  nthMonth(6):
+    isHoliday: dia0
+    isTuesday: closed
+    isWednesday: closed
+    isThursday: closed
+    "*": dia0
+  nthMonth(7):
+    isHoliday: dia0
+    isTuesday: closed
+    isWednesday: closed
+    isThursday: closed
+    "*": dia0
+  nthMonth(8):
+    isHoliday: dia0
+    isTuesday: closed
+    isWednesday: closed
+    isThursday: closed
+    "*": dia0
+  nthMonth(9):
+    isHoliday: dia0
+    isTuesday: closed
+    isWednesday: closed
+    isThursday: closed
+    "*": dia0
+  nthMonth(10):
+    isHoliday: dia0
+    isTuesday: closed
+    isWednesday: closed
+    isThursday: closed
+    "*": dia0
+  isHoliday: dia1
+  isTuesday: closed
+  isWednesday: closed
+  isThursday: closed
   "*": dia1
 flags: [ regional ]

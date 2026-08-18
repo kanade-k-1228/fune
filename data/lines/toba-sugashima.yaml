@@ -7,10 +7,14 @@ source:
   - https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/3164.html
   - https://www.city.toba.mie.jp/material/files/group/45/20191001unchinhyo.pdf
 fare:
-  - 大人 510円 / 小人 260円（佐田浜〜菅島・普通乗船券）
-  - 大人 280円 / 小人 140円（坂手〜菅島・普通乗船券）
-  - 回数券（大人 5,100円 / 小人 2,600円、佐田浜〜菅島・有効期限6ヶ月）
-  - 1日フリー乗船券（大人 1,480円 / 小人 740円、全航路乗船可）
+  - adult::oneway::510円（佐田浜〜菅島・普通乗船券）
+  - child::oneway::260円（佐田浜〜菅島・普通乗船券）
+  - adult::oneway::280円（坂手〜菅島・普通乗船券）
+  - child::oneway::140円（坂手〜菅島・普通乗船券）
+  - adult::oneway::5,100円（回数券・佐田浜〜菅島・有効期限6ヶ月）
+  - child::oneway::2,600円（回数券・佐田浜〜菅島・有効期限6ヶ月）
+  - adult::oneway::1,480円（1日フリー乗船券・全航路乗船可）
+  - child::oneway::740円（1日フリー乗船券・全航路乗船可）
   - 一般団体（15名以上）は普通運賃の1割引、学生団体は大人3割引・小人1割引
 notes:
   - 問い合わせ：鳥羽市定期船課 管理係 0599-25-4776

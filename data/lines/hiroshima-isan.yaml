@@ -4,6 +4,7 @@ color: "#26d96c"
 source:
   - https://www.aqua-net-h.co.jp/en/heritage/
   - https://www.aqua-net-h.co.jp/en/heritage/schedule.html
+  - https://www.aqua-net-h.co.jp/lineup/
 fare:
   - 大人片道 2,400円 / 往復 4,400円
   - 小人(6-11歳)片道 1,200円 / 往復 2,200円
@@ -17,6 +18,7 @@ notes:
   - 潮位により欠航や元安川ルートへの変更あり
   - 支払いは現金またはクレジットカード (交通系IC・QR不可)
 ships:
+  - せいら
   - れいら
   - しえら
   - かぐら
@@ -25,7 +27,6 @@ ships:
   - うらら
   - きらら
   - りうぐう
-  - RUNRUN II
 ports:
   moto-yasu-sambashi: [ 132.454183, 34.39379 ]
   miyajima-sambashi: [ 132.322424, 34.304045 ]

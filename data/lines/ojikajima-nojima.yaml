@@ -3,12 +3,12 @@ route: 小値賀島〜納島
 color: "#26a6d9"
 source:
   - https://ojikajima.jp/access
+  - https://ojikajima.jp/wp/wp-content/uploads/2026/03/2026saikai.pdf
 fare:
   - 片道 大人220円、小人（小学生以下）110円
 notes:
-  - 1日5便。1便・4便・5便は日曜日運休
-  - 基本的に第1・第3日曜日と1月1日、3月は全便運休
-  - 5月は第2・第4日曜日、7月は第1・第2日曜日、8月は第3・第4日曜日が全便運休
+  - 1日5便。1便・4便・5便は毎週日曜運休（2便・3便は通常運航）
+  - 加えて特定の日曜日（月により第1・3、第2・4等が異なる）と1月1日・3日は2便・3便含む全便運休。2026年は 1/1,1/3,1/4,1/18, 2/1,2/15, 3/8,3/22, 4/5,4/19, 5/10,5/24, 6/7,6/21, 7/5,7/12, 8/16,8/23, 9/13,9/27, 10/4,10/18, 11/1,11/15, 12/6,12/20 が該当（公式サイト「2026さいかい運休日カレンダー」より）
   - 5便のみ冬季ダイヤ（11月1日〜2月末日）あり。通常ダイヤより10分早まる
   - 問合せ先：小値賀町役場（未来創造課）0959-56-3111
 ships:
@@ -33,8 +33,14 @@ timetables:
     voyages:
       - name: 1便 小値賀発
         stops: [ "06:57", "06:50" ]
+        schedule:
+          isSunday: false
+          "*": true
       - name: 1便 納島発
         stops: [ "07:05", "07:12" ]
+        schedule:
+          isSunday: false
+          "*": true
       - name: 2便 小値賀発
         stops: [ "08:22", "08:15" ]
       - name: 2便 納島発
@@ -45,19 +51,37 @@ timetables:
         stops: [ "12:30", "12:37" ]
       - name: 4便 小値賀発
         stops: [ "15:07", "15:00" ]
+        schedule:
+          isSunday: false
+          "*": true
       - name: 4便 納島発
         stops: [ "16:00", "16:07" ]
+        schedule:
+          isSunday: false
+          "*": true
       - name: 5便 小値賀発
         stops: [ "17:57", "17:50" ]
+        schedule:
+          isSunday: false
+          "*": true
       - name: 5便 納島発
         stops: [ "18:05", "18:12" ]
+        schedule:
+          isSunday: false
+          "*": true
   winter:
     name: 冬季ダイヤ（11月1日〜2月末日）
     voyages:
       - name: 1便 小値賀発
         stops: [ "06:57", "06:50" ]
+        schedule:
+          isSunday: false
+          "*": true
       - name: 1便 納島発
         stops: [ "07:05", "07:12" ]
+        schedule:
+          isSunday: false
+          "*": true
       - name: 2便 小値賀発
         stops: [ "08:22", "08:15" ]
       - name: 2便 納島発
@@ -68,12 +92,24 @@ timetables:
         stops: [ "12:30", "12:37" ]
       - name: 4便 小値賀発
         stops: [ "15:07", "15:00" ]
+        schedule:
+          isSunday: false
+          "*": true
       - name: 4便 納島発
         stops: [ "16:00", "16:07" ]
+        schedule:
+          isSunday: false
+          "*": true
       - name: 5便 小値賀発
         stops: [ "17:47", "17:40" ]
+        schedule:
+          isSunday: false
+          "*": true
       - name: 5便 納島発
         stops: [ "17:55", "18:02" ]
+        schedule:
+          isSunday: false
+          "*": true
 schedule:
   "2026-11-01..2027-02-28": winter
   "2025-11-01..2026-02-28": winter

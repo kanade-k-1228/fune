@@ -47,26 +47,23 @@ coords:
     - [ 129.738696, 31.702545 ]
 stops: [ kawauchi, sato, nagahama ]
 timetables:
-  dia0:
-    name: 通常ダイヤ（高速船 甑島）
+  normal:
+    name: 通常ダイヤ
     voyages:
-      - name: １便下り
+      - name: 高速船 甑島 下り1便
         stops: [ 08:50, [ 09:40, 09:45 ], 10:25 ]
-      - name: ２便上り
+      - name: 高速船 甑島 上り1便
         stops: [ 11:40, null, 10:30 ]
-      - name: ２便下り
+      - name: 高速船 甑島 下り2便
         stops: [ 14:30, null, 15:40 ]
-      - name: １便上り
+      - name: 高速船 甑島 上り2便
         stops: [ 17:20, [ 16:25, 16:30 ], 15:45 ]
-  dia1:
-    name: 通常ダイヤ（結 Line こしき）
-    voyages:
-      - name: １便上り
+      - name: 結Lineこしき 上り1便
         stops: [ null, [ 08:45, 09:05 ], 07:45 ]
-      - name: １便下り
+      - name: 結Lineこしき 下り1便
         stops: [ null, [ 12:30, 12:50 ], 13:50 ]
-      - name: ２便上り
-        stops: [ null, [ 17:45, 17:50 ], 14:20 ]
-      - name: ２便下り
-        stops: [ null, [ 16:05, 16:30 ], 18:50 ]
+      - name: 結Lineこしき 上り2便
+        stops: [ null, null, 14:20 ]
+      - name: 結Lineこしき 下り2便
+        stops: [ null, [ 17:45, 17:50 ], 18:50 ]
 flags: [ regional ]

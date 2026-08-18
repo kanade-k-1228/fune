@@ -1,9 +1,12 @@
-name: 瀬戸内海汽船
+name: 瀬戸内シーライン
 route: 宇品〜三高
 color: "#d9b626"
 source:
   - https://setonaikaikisen.co.jp/kouro/ferry/
   - https://setonaikaikisen.co.jp/sealine/
+  - https://setonaikaikisen.co.jp/sealine/company/
+  - https://setonaikaikisen.co.jp/ferry/wp-content/uploads/sites/9/2022/08/202608_mitakadock.pdf
+  - https://setonaikaikisen.co.jp/ferry/wp-content/uploads/sites/9/2022/08/20260901_mitaka_unchin.pdf
 fare:
   - 大人 片道 690円
   - 小児 片道 350円
@@ -15,11 +18,12 @@ fare:
   - 中型車（9m未満） 5,100円
   - 大型車（12m未満） 7,640円
 notes:
-  - 運航：瀬戸内シーライン株式会社（瀬戸内海汽船グループ）
   - 予約センター 082-254-1701（平日 9:00〜17:30 / 土日祝 9:00〜12:00, 13:00〜17:30）
   - 営業距離 12.0km、所要時間 約40分
   - 早朝・夜間の一部便（南行1便 06:53 / 14便 21:00、北行1便 06:05 / 14便 20:15）は日曜・祝日・休日運休
   - カーフェリーで運航。車両乗船可
+  - 2026年9月1日より運賃改定予定：大人片道710円、小人片道360円、回数券(11枚綴り)7,100円、軽自動車(4m未満)2,240円、普通車(4m以上6m未満)2,650円、中型車(6m以上9m未満)5,250円、大型車(9m以上12m未満)7,860円（自転車・二輪車は据え置き）
+  - 2026年8月26日〜9月4日はドックダイヤ期間のため一部便が高速船で代替運航（到着時刻が通常と異なる場合あり）。詳細は公式サイトのPDF運航計画表を要確認
 ships:
   - 古鷹
   - 入船

@@ -2,13 +2,15 @@ name: 辰の島観光船
 route: 壱岐島〜辰の島
 color: "#d92648"
 source:
-  - https://www.kankai.net/jf-k/
   - https://iki-tatsunoshima.com/
   - https://www.ikikankou.com/spot/10277
 fare:
-  - 渡船（往復）：大人 1,000円／小人 500円
-  - 遊覧クルージング：大人 2,000円／小人 1,000円
-  - 遊覧＋上陸：大人 2,500円／小人 1,250円
+  - adult::round::1,000円（渡船のみ）
+  - child::round::500円（渡船のみ）
+  - adult::2,000円（遊覧クルージング）
+  - child::1,000円（遊覧クルージング）
+  - adult::2,500円（遊覧＋上陸）
+  - child::1,250円（遊覧＋上陸）
   - 未就学児は大人1名につき1名無料
 notes:
   - 運航：勝本町漁業協同組合（JF勝本町観光案内所）
@@ -16,6 +18,7 @@ notes:
   - 所要時間：遊覧 約40分
   - 定員 60名／最少運行人員 3名
   - 冬期（12月〜3月）運休
+  - 勝本港発 3便・7便は「迎えのみ」につき勝本港からの乗船不可（辰の島発のみ運航）
   - 夏休み期間（7/20〜8/31）はシャトル便追加で30分おき発着
   - 天候不良時は欠航あり、団体予約や連休は事前予約推奨
 ports:
@@ -37,17 +40,13 @@ timetables:
     name: 通常ダイヤ
     voyages:
       - name: 勝本港発 1便
-        stops: [ 09:00, null ]
-      - name: 勝本港発 2便
         stops: [ 10:00, null ]
-      - name: 勝本港発 3便
+      - name: 勝本港発 2便
         stops: [ 11:00, null ]
       - name: 勝本港発 4便
         stops: [ 13:30, null ]
-      - name: 勝本港発 5便
-        stops: [ 14:30, null ]
       - name: 勝本港発 6便
-        stops: [ 15:30, null ]
+        stops: [ 14:30, null ]
       - name: 辰の島発 1便
         stops: [ null, 10:40 ]
       - name: 辰の島発 2便
@@ -56,16 +55,17 @@ timetables:
         stops: [ null, 13:00 ]
       - name: 辰の島発 4便
         stops: [ null, 14:10 ]
-      - name: 辰の島発 5便
-        stops: [ null, 15:10 ]
       - name: 辰の島発 6便
+        stops: [ null, 15:10 ]
+      - name: 辰の島発 7便
         stops: [ null, 16:10 ]
-      - name: 辰の島発 最終便
-        stops: [ null, 16:40 ]
   closed:
     name: 冬期運休（12/1〜3/31）
     voyages: []
 schedule:
-  "2026-04-01..2026-11-30": normal
-  "*": closed
+  nthMonth(12): closed
+  nthMonth(1): closed
+  nthMonth(2): closed
+  nthMonth(3): closed
+  "*": normal
 flags: [ regional ]

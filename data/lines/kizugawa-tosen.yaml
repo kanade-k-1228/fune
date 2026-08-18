@@ -28,8 +28,6 @@ timetables:
   dia0:
     name: 平日ダイヤ
     voyages:
-      - name: 6:00発
-        stops: [ 06:00, 06:03 ]
       - name: 6:30発
         stops: [ 06:30, 06:33 ]
       - name: 6:40発
@@ -60,6 +58,9 @@ timetables:
         stops: [ 09:00, 09:03 ]
       - name: 9:45発
         stops: [ 09:45, 09:48 ]
+        schedule:
+          isTuesday: false
+          "*": true
       - name: 10:30発
         stops: [ 10:30, 10:33 ]
       - name: 11:15発
@@ -78,8 +79,8 @@ timetables:
         stops: [ 15:45, 15:48 ]
       - name: 16:30発
         stops: [ 16:30, 16:33 ]
-      - name: 16:40発
-        stops: [ 16:40, 16:43 ]
+      - name: 16:45発
+        stops: [ 16:45, 16:48 ]
       - name: 17:00発
         stops: [ 17:00, 17:03 ]
       - name: 17:10発
@@ -109,8 +110,6 @@ timetables:
   dia1:
     name: 土日祝ダイヤ
     voyages:
-      - name: 6:00発
-        stops: [ 06:00, 06:03 ]
       - name: 6:30発
         stops: [ 06:30, 06:33 ]
       - name: 6:45発

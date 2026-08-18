@@ -4,6 +4,7 @@ color: "#c526d9"
 source:
   - https://www.han9f.co.jp/kobe/timetable/
   - https://www.han9f.co.jp/kobe/fare-downline/
+  - https://www.han9f.co.jp/kobe/fare/discount/
 fare:
   - 旅客（大人 スタンダード和室）期間A 8,030円 / 期間B 9,350円 / 期間C 11,990円 / 期間D 13,310円
   - 旅客（大人 スタンダード洋室）期間A 9,130円 / 期間B 10,450円 / 期間C 13,090円 / 期間D 14,410円
@@ -15,7 +16,7 @@ notes:
   - 1日1便（夜行）
   - 所要時間 約12時間30分
   - 予約・問い合わせ 0570-01-8989（9:00〜18:00 年中無休）
-  - インターネット予約は20%割引
+  - インターネット予約は運賃20%割引（期間C・D、小児運賃、トラックは対象外）
 ships:
   - せっつ
   - やまと

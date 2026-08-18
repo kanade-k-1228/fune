@@ -5,6 +5,7 @@ source:
   - https://www.saryokyo.com/member/member-01.html
   - https://www.city.saikai.nagasaki.jp/kurashi/kotsu/2/3947.html
   - https://www.city.nagasaki.lg.jp/uploaded/attachment/9977.pdf
+  - https://www.saryokyo.com/dcms_media/other/timeses.pdf
 ships:
   - Rapid Lily
   - れぴーど
@@ -35,6 +36,7 @@ notes:
   - "フェリーは松島〜瀬戸〜池島〜神浦の各区間で月間15往復まで臨時運航することがある"
   - "高速船時刻表は令和6年4月1日施行版"
   - "佐世保港内は航路設定区間で原則追い越し禁止のため発着時刻が遅延する場合あり"
+  - "令和8年10月1日より瀬戸〜松島間の運航を停止予定（フェリーは松島に寄港しなくなる見込み）"
 ports:
   sasebo: [ 129.72364, 33.16293 ]
   oshima-saikai: [ 129.626711, 33.03867 ]
@@ -107,7 +109,7 @@ coords:
 stops: [ sasebo, oshima-saikai, matsushima, seto, ikeshima, konoura-saikai ]
 timetables:
   normal:
-    name: 通常ダイヤ
+    name: 通常ダイヤ（〜令和8年9月30日）
     voyages:
       - name: 南行 高速船1便
         stops: [ 06:20, 06:46, null, null, null, null ]
@@ -117,12 +119,20 @@ timetables:
         stops: [ 08:24, 08:50, null, null, null, null ]
       - name: 南行 高速船4便
         stops: [ 09:27, 09:53, null, null, null, null ]
+        schedule:
+          isTuesday: false
+          isFriday: false
+          "*": true
       - name: 南行 高速船5便
         stops: [ 12:25, 12:55, null, null, null, null ]
       - name: 南行 高速船6便
         stops: [ 13:35, 14:05, null, null, null, null ]
       - name: 南行 高速船7便
         stops: [ 16:25, 16:51, null, null, null, null ]
+        schedule:
+          isTuesday: false
+          isFriday: false
+          "*": true
       - name: 南行 高速船8便
         stops: [ 17:27, 17:53, null, null, null, null ]
       - name: 南行 高速船9便
@@ -135,6 +145,10 @@ timetables:
         stops: [ 08:19, 07:53, null, null, null, null ]
       - name: 北行 高速船3便
         stops: [ 09:21, 08:55, null, null, null, null ]
+        schedule:
+          isTuesday: false
+          isFriday: false
+          "*": true
       - name: 北行 高速船4便
         stops: [ 10:24, 09:58, null, null, null, null ]
       - name: 北行 高速船5便
@@ -150,7 +164,7 @@ timetables:
       - name: 北行 高速船10便
         stops: [ 20:30, 20:04, null, null, null, null ]
       - name: フェリー 南行1便
-        stops: [ null, null, null, 07:05, [ 07:33, 07:35 ], 08:20 ]
+        stops: [ null, null, null, 07:05, 07:33, null ]
       - name: フェリー 南行2便
         stops: [ null, null, 08:40, [ 08:50, 09:10 ], [ 09:38, 09:45 ], 10:11 ]
       - name: フェリー 南行3便
@@ -158,7 +172,7 @@ timetables:
       - name: フェリー 南行4便
         stops: [ null, null, 15:00, [ 15:10, 16:27 ], 16:55, null ]
       - name: フェリー 南行5便
-        stops: [ null, null, 17:55, [ 18:05, 18:08 ], 18:36, null ]
+        stops: [ null, null, 17:55, [ 18:05, 18:08 ], 18:35, null ]
       - name: フェリー 北行1便
         stops: [ null, null, 08:35, [ 08:03, 08:20 ], 07:35, null ]
       - name: フェリー 北行2便
@@ -169,4 +183,82 @@ timetables:
         stops: [ null, null, 17:50, [ 17:28, 17:40 ], 17:00, null ]
       - name: フェリー 北行5便
         stops: [ null, null, null, 19:08, 18:40, null ]
+  dia2026-10:
+    name: 通常ダイヤ（令和8年10月1日〜・瀬戸〜松島間運航停止）
+    voyages:
+      - name: 南行 高速船1便
+        stops: [ 06:20, 06:46, null, null, null, null ]
+      - name: 南行 高速船2便
+        stops: [ 07:22, 07:48, null, null, null, null ]
+      - name: 南行 高速船3便
+        stops: [ 08:24, 08:50, null, null, null, null ]
+      - name: 南行 高速船4便
+        stops: [ 09:27, 09:53, null, null, null, null ]
+        schedule:
+          isTuesday: false
+          isFriday: false
+          "*": true
+      - name: 南行 高速船5便
+        stops: [ 12:25, 12:55, null, null, null, null ]
+      - name: 南行 高速船6便
+        stops: [ 13:35, 14:05, null, null, null, null ]
+      - name: 南行 高速船7便
+        stops: [ 16:25, 16:51, null, null, null, null ]
+        schedule:
+          isTuesday: false
+          isFriday: false
+          "*": true
+      - name: 南行 高速船8便
+        stops: [ 17:27, 17:53, null, null, null, null ]
+      - name: 南行 高速船9便
+        stops: [ 18:31, 18:57, null, null, null, null ]
+      - name: 南行 高速船10便
+        stops: [ 19:33, 19:59, null, null, null, null ]
+      - name: 北行 高速船1便
+        stops: [ 07:17, 06:51, null, null, null, null ]
+      - name: 北行 高速船2便
+        stops: [ 08:19, 07:53, null, null, null, null ]
+      - name: 北行 高速船3便
+        stops: [ 09:21, 08:55, null, null, null, null ]
+        schedule:
+          isTuesday: false
+          isFriday: false
+          "*": true
+      - name: 北行 高速船4便
+        stops: [ 10:24, 09:58, null, null, null, null ]
+      - name: 北行 高速船5便
+        stops: [ 13:30, 13:00, null, null, null, null ]
+      - name: 北行 高速船6便
+        stops: [ 14:40, 14:10, null, null, null, null ]
+      - name: 北行 高速船7便
+        stops: [ 17:22, 16:56, null, null, null, null ]
+      - name: 北行 高速船8便
+        stops: [ 18:26, 18:00, null, null, null, null ]
+      - name: 北行 高速船9便
+        stops: [ 19:28, 19:02, null, null, null, null ]
+      - name: 北行 高速船10便
+        stops: [ 20:30, 20:04, null, null, null, null ]
+      - name: フェリー 南行1便
+        stops: [ null, null, null, 07:05, 07:33, null ]
+      - name: フェリー 南行2便
+        stops: [ null, null, null, 09:10, [ 09:38, 09:45 ], 10:11 ]
+      - name: フェリー 南行3便
+        stops: [ null, null, null, 12:44, [ 13:12, 13:17 ], 13:43 ]
+      - name: フェリー 南行4便
+        stops: [ null, null, null, 16:27, 16:55, null ]
+      - name: フェリー 南行5便
+        stops: [ null, null, null, 18:08, 18:36, null ]
+      - name: フェリー 北行1便
+        stops: [ null, null, null, 08:03, 07:35, null ]
+      - name: フェリー 北行2便
+        stops: [ null, null, null, 11:28, [ 10:56, 11:00 ], 10:30 ]
+      - name: フェリー 北行3便
+        stops: [ null, null, null, 14:45, [ 14:12, 14:17 ], 13:46 ]
+      - name: フェリー 北行4便
+        stops: [ null, null, null, 17:28, 17:00, null ]
+      - name: フェリー 北行5便
+        stops: [ null, null, null, 19:08, 18:40, null ]
+schedule:
+  "2026-10-01..2099-12-31": dia2026-10
+  "*": normal
 flags: [ national ]

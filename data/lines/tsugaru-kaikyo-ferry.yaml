@@ -5,6 +5,8 @@ source:
   - https://www.tsugarukaikyo.co.jp/timetable/
   - https://www.tsugarukaikyo.co.jp/service/timetable/hakodate-aomori/
   - https://www.tsugarukaikyo.co.jp/service/fare/hakodate-aomori/
+  - https://www.tsugarukaikyo.co.jp/cms/wp-content/uploads/20260501.pdf
+  - https://www.tsugarukaikyo.co.jp/cms/wp-content/uploads/2026BDOteiki.pdf
 fare:
   - "大人スタンダード: A期間 3,160円 / B期間 3,720円 / C期間 4,150円"
   - "大人ビューシート: A期間 3,700円 / B期間 4,400円 / C期間 4,930円"
@@ -19,7 +21,8 @@ notes:
   - 本州〜北海道最短ルート
   - 青森フェリーターミナル TEL 017-766-4733
   - 函館フェリーターミナル TEL 0138-43-4545
-  - 船舶法定検査期間（4月・9月の特定日）に一部運休あり
+  - 2026年9月3日〜16日はブルードルフィン法定検査のため一部便運休・時刻変更あり（詳細は時刻表参照）
+  - 船舶法定検査・整備等により今後も予告なくダイヤ変更や運休が生じる場合あり
   - 年末年始（12月30日〜1月4日出発分）は一部運休あり
 ships:
   - ブルーハピネス
@@ -100,8 +103,84 @@ timetables:
         stops: [ 1:00:00, 20:15 ]
       - name: 南行 7便
         stops: [ 1:01:25, 21:55 ]
+  dia2:
+    name: 法定検査ダイヤ（9月3日）
+    voyages:
+      - name: 北行 3便
+        stops: [ 02:30, 06:10 ]
+      - name: 北行 7便
+        stops: [ 06:25, 10:05 ]
+      - name: 北行 11便
+        stops: [ 10:15, 13:55 ]
+      - name: 北行 13便
+        stops: [ 14:20, 18:00 ]
+      - name: 北行 17便
+        stops: [ 17:15, 20:45 ]
+      - name: 北行 23便
+        stops: [ 22:25, 1:01:55 ]
+      - name: 南行 4便
+        stops: [ 07:00, 03:20 ]
+      - name: 南行 8便
+        stops: [ 11:20, 07:40 ]
+      - name: 南行 14便
+        stops: [ 16:05, 12:30 ]
+      - name: 南行 18便
+        stops: [ 21:10, 17:30 ]
+      - name: 南行 24便
+        stops: [ 1:01:25, 21:55 ]
+  dia3:
+    name: 法定検査ダイヤ（9月4日〜9月15日）
+    voyages:
+      - name: 北行 3便
+        stops: [ 02:30, 06:10 ]
+      - name: 北行 7便
+        stops: [ 07:50, 11:20 ]
+      - name: 北行 11便
+        stops: [ 12:20, 15:50 ]
+      - name: 北行 17便
+        stops: [ 17:15, 20:45 ]
+      - name: 北行 23便
+        stops: [ 22:25, 1:01:55 ]
+      - name: 南行 4便
+        stops: [ 06:35, 03:05 ]
+      - name: 南行 8便
+        stops: [ 11:10, 07:40 ]
+      - name: 南行 14便
+        stops: [ 16:00, 12:30 ]
+      - name: 南行 18便
+        stops: [ 21:10, 17:30 ]
+      - name: 南行 24便
+        stops: [ 1:01:25, 21:55 ]
+  dia4:
+    name: 法定検査ダイヤ（9月16日）
+    voyages:
+      - name: 北行 3便
+        stops: [ 02:30, 06:10 ]
+      - name: 北行 7便
+        stops: [ 07:50, 11:20 ]
+      - name: 北行 11便
+        stops: [ 12:20, 15:50 ]
+      - name: 北行 17便
+        stops: [ 17:15, 20:50 ]
+      - name: 北行 23便
+        stops: [ 22:25, 1:02:05 ]
+      - name: 南行 4便
+        stops: [ 06:35, 03:05 ]
+      - name: 南行 8便
+        stops: [ 11:10, 07:40 ]
+      - name: 南行 14便
+        stops: [ 16:00, 12:30 ]
+      - name: 南行 18便
+        stops: [ 21:10, 17:30 ]
+      - name: 南行 22便
+        stops: [ 1:00:00, 20:15 ]
+      - name: 南行 24便
+        stops: [ 1:01:45, 22:05 ]
 schedule:
   "2026-08-06..2026-08-17": dia1
+  "2026-09-03": dia2
+  "2026-09-04..2026-09-15": dia3
+  "2026-09-16": dia4
   "*": dia0
 flags:
   - national

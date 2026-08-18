@@ -2,19 +2,66 @@ name: 三光汽船
 route: 洲江〜小漕
 color: "#acd926"
 source:
-  - https://sankohkisen.jp/fare_times/ikuchi/
+  - https://sankohkisen.jp/fare_times/iwagi/
   - https://sankohkisen.jp/pdf/sunoe_okogi_timetable_revision.pdf
 fare:
-  - 旅客 大人 150円 / 小児 80円
-  - 自転車 大人 300円 / 小児 230円
-  - 原付（125cc未満）450円 / 750cc未満 600円 / 750cc以上 740円
-  - 自動車 850円〜5,680円（車長3m〜20mまで段階制）
-  - 土日は軽四・普通車の同乗者無料
+  - adult::oneway::150円
+  - adult::round::290円
+  - child::oneway::80円
+  - child::round::160円
+  - bicycle::adult::oneway::300円（人込み）
+  - bicycle::adult::round::590円（人込み）
+  - bicycle::child::oneway::230円（人込み）
+  - bicycle::child::round::460円（人込み）
+  - moto::oneway::450円（原付125cc未満・人込み）
+  - moto::round::890円（原付125cc未満・人込み）
+  - moto::oneway::600円（二輪750cc未満・人込み）
+  - moto::round::1,190円（二輪750cc未満・人込み）
+  - moto::oneway::740円（二輪750cc以上・人込み）
+  - moto::round::1,470円（二輪750cc以上・人込み）
+  - car::oneway::850円（3mまで）
+  - car::round::1,620円（3mまで）
+  - car::oneway::1,000円（4mまで）
+  - car::round::1,900円（4mまで）
+  - car::oneway::1,280円（5mまで）
+  - car::round::2,440円（5mまで）
+  - car::oneway::1,510円（6mまで）
+  - car::round::2,870円（6mまで）
+  - car::oneway::1,770円（7mまで）
+  - car::round::3,370円（7mまで）
+  - car::oneway::2,070円（8mまで）
+  - car::round::3,940円（8mまで）
+  - car::oneway::2,260円（9mまで）
+  - car::round::4,300円（9mまで）
+  - car::oneway::2,520円（10mまで）
+  - car::round::4,790円（10mまで）
+  - car::oneway::2,710円（11mまで）
+  - car::round::5,150円（11mまで）
+  - car::oneway::2,880円（12mまで）
+  - car::round::5,480円（12mまで）
+  - car::oneway::3,230円（13mまで）
+  - car::round::6,140円（13mまで）
+  - car::oneway::3,580円（14mまで）
+  - car::round::6,810円（14mまで）
+  - car::oneway::3,930円（15mまで）
+  - car::round::7,470円（15mまで）
+  - car::oneway::4,280円（16mまで）
+  - car::round::8,140円（16mまで）
+  - car::oneway::4,630円（17mまで）
+  - car::round::8,800円（17mまで）
+  - car::oneway::4,980円（18mまで）
+  - car::round::9,470円（18mまで）
+  - car::oneway::5,330円（19mまで）
+  - car::round::10,130円（19mまで）
+  - car::oneway::5,680円（20mまで）
+  - car::round::10,800円（20mまで）
+  - 土日は軽四・普通車の同乗者無料（期間限定）
 notes:
   - 所要時間 約5分
   - 電話 0845-28-0035
   - 12月31日・1月1日〜3日は全便運休
   - 南行3便（洲江港7:20発）は旅客専用運行便
+  - 毎週日曜日は最終2往復（洲江発18:45・19:20、小漕発19:00・19:30）が運休
   - 必要に応じて臨時便を運航することがある
 ships:
   - 香川丸
@@ -91,8 +138,14 @@ timetables:
         stops: [ 18:15, 18:20 ]
       - name: 南行 29便
         stops: [ 18:45, 18:50 ]
+        schedule:
+          isSunday: false
+          "*": true
       - name: 南行 30便
         stops: [ 19:20, 19:25 ]
+        schedule:
+          isSunday: false
+          "*": true
       - name: 北行 1便
         stops: [ 06:35, 06:30 ]
       - name: 北行 2便
@@ -153,6 +206,12 @@ timetables:
         stops: [ 18:35, 18:30 ]
       - name: 北行 30便
         stops: [ 19:05, 19:00 ]
+        schedule:
+          isSunday: false
+          "*": true
       - name: 北行 31便
         stops: [ 19:35, 19:30 ]
+        schedule:
+          isSunday: false
+          "*": true
 flags: [ regional ]

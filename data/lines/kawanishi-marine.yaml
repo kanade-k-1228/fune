@@ -3,10 +3,11 @@ route: 宇野〜石島
 color: "#6d26d9"
 source:
   - https://www.kawanishi-marine.com/blog/494/
+  - https://www.city.tamano.lg.jp/site/timetable/1520.html
 fare:
   - 運賃：片道800円（65歳以上・障害者・付添人・16歳未満・高校生は400円）。現金払いのみ。
 notes:
-  - 祝日は要確認
+  - 土曜日・日曜日・祝日は運休
   - デマンド型定期航路。予約がない便は運航しない。
   - 予約はシータクコールセンター（0863-31-1411）へ、利用希望日の前日17時までに（1週間前から受付）。
   - 乗降場所：宇野港旅客船のりば（直島行き小型旅客船と同じ桟橋）。
@@ -56,5 +57,6 @@ timetables:
     voyages: []
 schedule:
   isWeekend: closed
+  isHoliday: closed
   "*": normal
 flags: [ regional ]

@@ -2,7 +2,7 @@ name: 弓場汽船ラビットライン
 route: 三原〜大久野島
 color: "#9926d9"
 source:
-  - https://habushosen.jp/timetable/timetable08
+  - https://habushosen.jp/
   - https://www.city.mihara.hiroshima.jp/soshiki/30/114461.html
 fare:
   - 片道 大人 1,600円 / 小人 800円

@@ -16,6 +16,8 @@ notes:
   - 唐笠港からのシャトルバス（通常シーズン）またはJR飯田線（冬季）で起点に戻る
   - TEL 0265-27-2247（天龍ライン遊舟）
   - 増水・天候により運休または運航コース変更の場合あり
+  - 水位低下時は安全確保のため「天龍峡めぐり」コース（折り返し運航）に変更されることがある
+  - 人員不足等により不定期に臨時休業あり。最新の運休日は公式サイトのお知らせを確認
   - 当日窓口は現金のみ対応
 ports:
   tenryukyo-onsen: [ 137.8173, 35.4409 ]
@@ -86,12 +88,48 @@ timetables:
     voyages:
       - name: 1便
         stops: [ "09:20", null ]
+        schedule:
+          "2026-08-04": false
+          "2026-08-07": false
+          "2026-08-12": false
+          "2026-08-18": false
+          "2026-08-19": false
+          "2026-08-25": false
+          "2026-08-28": false
+          "*": true
       - name: 2便
         stops: [ "11:45", null ]
+        schedule:
+          "2026-08-04": false
+          "2026-08-07": false
+          "2026-08-12": false
+          "2026-08-18": false
+          "2026-08-19": false
+          "2026-08-25": false
+          "2026-08-28": false
+          "*": true
       - name: 3便
         stops: [ "14:10", null ]
+        schedule:
+          "2026-08-04": false
+          "2026-08-07": false
+          "2026-08-12": false
+          "2026-08-18": false
+          "2026-08-19": false
+          "2026-08-25": false
+          "2026-08-28": false
+          "*": true
       - name: 4便
         stops: [ "15:20", null ]
+        schedule:
+          "2026-08-04": false
+          "2026-08-07": false
+          "2026-08-12": false
+          "2026-08-18": false
+          "2026-08-19": false
+          "2026-08-25": false
+          "2026-08-28": false
+          "*": true
   dia1:
     name: 冬季ダイヤ（12月1日〜3月31日）
     voyages:
@@ -100,6 +138,13 @@ timetables:
       - name: 2便
         stops: [ "14:10", null ]
 schedule:
-  "2026-04-01..2026-11-30": dia0
+  nthMonth(4): dia0
+  nthMonth(5): dia0
+  nthMonth(6): dia0
+  nthMonth(7): dia0
+  nthMonth(8): dia0
+  nthMonth(9): dia0
+  nthMonth(10): dia0
+  nthMonth(11): dia0
   "*": dia1
 flags: [ regional ]

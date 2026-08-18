@@ -5,6 +5,7 @@ source:
   - https://www.snf.jp/guide/time_schedule/
   - https://www.snf.jp/guide/fare/
   - https://www.snf.jp/ship/
+  - https://www.snf.jp/timetable1001/
 ships:
   - らいらっく
   - ゆうかり
@@ -22,9 +23,11 @@ fare:
   - 2026年6月1日ご乗船分より運賃改定
 notes:
   - 予約センター 0570-002-921（9:00〜17:45、土日祝を除く）
-  - 北行（敦賀発）は毎週月曜日運航
-  - 南行（苫小牧東港発）は毎週土曜日運航
-  - 所要時間 約31時間15分（敦賀→苫小牧東港、新潟・秋田経由）
+  - 2026年9月30日出港便まで：北行（敦賀発）は毎週月曜日運航、南行（苫小牧東港発）は毎週土曜日運航、所要時間 約31時間15分
+  - 2026年10月1日出港便より：北行（敦賀発）は火・木・日曜日運航、南行（苫小牧東港発）は火・木・土曜日運航、所要時間 約46時間15分
+  - 2026年10月1日ダイヤ改正後、敦賀→秋田・苫小牧東港まで乗船の場合は新潟で一時下船可（新潟停泊 約16時間半）
+  - 2026年10月1日出港の北行き便は、船舶繰りのため新潟発着で運航（敦賀発なし）
+  - 2026年10月1日より敦賀発着の連絡バス運航開始：乗船時 JR敦賀駅16:00発→敦賀フェリーターミナル（18:30出港日のみ）、下船後 敦賀フェリーターミナル6:20発→JR敦賀駅（6:00入港日のみ）
   - 使用船舶 らいらっく / ゆうかり（旅客定員846名、18,229トン）
 ports:
   tsuruga: [ 136.073, 35.678 ]
@@ -77,19 +80,39 @@ coords:
     - [ 141.79951, 42.59158 ]
     - [ 141.81979, 42.61135 ]
     - [ 141.819, 42.61 ]
-stops: [ tsuruga, nigatako, akitako, tomakomai-higashi ]
+stops: [tsuruga, nigatako, akitako, tomakomai-higashi]
 timetables:
   normal:
-    name: 通常ダイヤ
+    name: 通常ダイヤ（〜2026年9月30日出港便）
     voyages:
       - name: 北行
-        stops: [ 09:30, [ 21:30, 22:30 ], [ 1:05:05, 1:06:15 ], 1:16:45 ]
+        stops: [09:30, [21:30, 22:30], [1:05:05, 1:06:15], 1:16:45]
         schedule:
           isMonday: true
           "*": false
       - name: 南行
-        stops: [ 2:05:30, [ 1:15:30, 1:16:30 ], [ 1:07:35, 1:08:35 ], 19:30 ]
+        stops: [2:05:30, [1:15:30, 1:16:30], [1:07:35, 1:08:35], 19:30]
         schedule:
           isSaturday: true
           "*": false
-flags: [ national ]
+  dia2026-10:
+    name: 新ダイヤ（2026年10月1日出港便〜）
+    voyages:
+      - name: 北行
+        stops: [18:30, [1:06:00, 1:22:30], [2:05:05, 2:06:15], 2:16:45]
+        schedule:
+          isTuesday: true
+          isThursday: true
+          isSunday: true
+          "*": false
+      - name: 南行
+        stops: [2:06:00, [1:15:30, 1:17:30], [1:07:35, 1:08:35], 19:30]
+        schedule:
+          isTuesday: true
+          isThursday: true
+          isSaturday: true
+          "*": false
+schedule:
+  "2026-10-01..2099-12-31": dia2026-10
+  "*": normal
+flags: [national]

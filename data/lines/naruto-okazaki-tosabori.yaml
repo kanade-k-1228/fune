@@ -2,7 +2,7 @@ name: 岡崎渡船（岡崎〜土佐泊）
 color: "#26d9b9"
 route: 岡崎〜土佐泊
 source:
-  - https://www.city.naruto.lg.jp/kurashi/sumai/kotsu/tosen/okazaki.html
+  - https://www.city.naruto.lg.jp/docs/2025070100021/
   - https://www.east-tokushima.jp/feature/detail.php?id=201
 fare:
   - 無料
@@ -25,106 +25,103 @@ coords:
     - [ 134.620625133, 34.1879314851 ]
 stops: [ okazaki-naruto, tosabori ]
 timetables:
-  dia0:
-    name: 通常ダイヤ（岡崎発）
+  normal:
+    name: 通常ダイヤ
     voyages:
-      - name: 1便
+      - name: 岡崎発 1便
         stops: [ "06:40", "06:43" ]
-      - name: 2便
+      - name: 岡崎発 2便
         stops: [ "07:00", "07:03" ]
-      - name: 3便
+      - name: 岡崎発 3便
         stops: [ "07:20", "07:23" ]
-      - name: 4便
+      - name: 岡崎発 4便
         stops: [ "07:40", "07:43" ]
-      - name: 5便
+      - name: 岡崎発 5便
         stops: [ "08:00", "08:03" ]
-      - name: 6便
+      - name: 岡崎発 6便
         stops: [ "08:20", "08:23" ]
-      - name: 7便
+      - name: 岡崎発 7便
         stops: [ "08:40", "08:43" ]
-      - name: 8便
+      - name: 岡崎発 8便
         stops: [ "09:00", "09:03" ]
-      - name: 9便
+      - name: 岡崎発 9便
         stops: [ "09:30", "09:33" ]
-      - name: 10便
+      - name: 岡崎発 10便
         stops: [ "10:00", "10:03" ]
-      - name: 11便
+      - name: 岡崎発 11便
         stops: [ "11:00", "11:03" ]
-      - name: 12便
+      - name: 岡崎発 12便
         stops: [ "12:30", "12:33" ]
-      - name: 13便
+      - name: 岡崎発 13便
         stops: [ "13:00", "13:03" ]
-      - name: 14便
+      - name: 岡崎発 14便
         stops: [ "14:30", "14:33" ]
-      - name: 15便
+      - name: 岡崎発 15便
         stops: [ "15:30", "15:33" ]
-      - name: 16便
+      - name: 岡崎発 16便
         stops: [ "16:00", "16:03" ]
-      - name: 17便
+      - name: 岡崎発 17便
         stops: [ "16:30", "16:33" ]
-      - name: 18便
+      - name: 岡崎発 18便
         stops: [ "17:00", "17:03" ]
-      - name: 19便
+      - name: 岡崎発 19便
         stops: [ "17:30", "17:33" ]
-      - name: 20便
+      - name: 岡崎発 20便
         stops: [ "18:00", "18:03" ]
-      - name: 21便
+      - name: 岡崎発 21便
         stops: [ "18:30", "18:33" ]
-      - name: 22便
+      - name: 岡崎発 22便
         stops: [ "19:00", "19:03" ]
-      - name: 23便
+      - name: 岡崎発 23便
         stops: [ "19:30", "19:33" ]
-      - name: 24便
+      - name: 岡崎発 24便
         stops: [ "19:50", "19:53" ]
-  dia1:
-    name: 通常ダイヤ（土佐泊発）
-    voyages:
-      - name: 1便
-        stops: [ "06:46", "06:49" ]
-      - name: 2便
-        stops: [ "07:06", "07:09" ]
-      - name: 3便
-        stops: [ "07:26", "07:29" ]
-      - name: 4便
-        stops: [ "07:46", "07:49" ]
-      - name: 5便
-        stops: [ "08:06", "08:09" ]
-      - name: 6便
-        stops: [ "08:26", "08:29" ]
-      - name: 7便
-        stops: [ "08:46", "08:49" ]
-      - name: 8便
-        stops: [ "09:06", "09:09" ]
-      - name: 9便
-        stops: [ "09:36", "09:39" ]
-      - name: 10便
-        stops: [ "10:06", "10:09" ]
-      - name: 11便
-        stops: [ "11:06", "11:09" ]
-      - name: 12便
-        stops: [ "12:36", "12:39" ]
-      - name: 13便
-        stops: [ "13:06", "13:09" ]
-      - name: 14便
-        stops: [ "14:36", "14:39" ]
-      - name: 15便
-        stops: [ "15:36", "15:39" ]
-      - name: 16便
-        stops: [ "16:06", "16:09" ]
-      - name: 17便
-        stops: [ "16:36", "16:39" ]
-      - name: 18便
-        stops: [ "17:06", "17:09" ]
-      - name: 19便
-        stops: [ "17:36", "17:39" ]
-      - name: 20便
-        stops: [ "18:06", "18:09" ]
-      - name: 21便
-        stops: [ "18:36", "18:39" ]
-      - name: 22便
-        stops: [ "19:06", "19:09" ]
-      - name: 23便
-        stops: [ "19:36", "19:39" ]
-      - name: 24便
-        stops: [ "19:56", "19:59" ]
+      - name: 土佐泊発 1便
+        stops: [ "06:47", "06:44" ]
+      - name: 土佐泊発 2便
+        stops: [ "07:07", "07:04" ]
+      - name: 土佐泊発 3便
+        stops: [ "07:27", "07:24" ]
+      - name: 土佐泊発 4便
+        stops: [ "07:47", "07:44" ]
+      - name: 土佐泊発 5便
+        stops: [ "08:07", "08:04" ]
+      - name: 土佐泊発 6便
+        stops: [ "08:27", "08:24" ]
+      - name: 土佐泊発 7便
+        stops: [ "08:47", "08:44" ]
+      - name: 土佐泊発 8便
+        stops: [ "09:07", "09:04" ]
+      - name: 土佐泊発 9便
+        stops: [ "09:37", "09:34" ]
+      - name: 土佐泊発 10便
+        stops: [ "10:07", "10:04" ]
+      - name: 土佐泊発 11便
+        stops: [ "11:07", "11:04" ]
+      - name: 土佐泊発 12便
+        stops: [ "12:37", "12:34" ]
+      - name: 土佐泊発 13便
+        stops: [ "13:07", "13:04" ]
+      - name: 土佐泊発 14便
+        stops: [ "14:37", "14:34" ]
+      - name: 土佐泊発 15便
+        stops: [ "15:37", "15:34" ]
+      - name: 土佐泊発 16便
+        stops: [ "16:07", "16:04" ]
+      - name: 土佐泊発 17便
+        stops: [ "16:37", "16:34" ]
+      - name: 土佐泊発 18便
+        stops: [ "17:07", "17:04" ]
+      - name: 土佐泊発 19便
+        stops: [ "17:37", "17:34" ]
+      - name: 土佐泊発 20便
+        stops: [ "18:07", "18:04" ]
+      - name: 土佐泊発 21便
+        stops: [ "18:37", "18:34" ]
+      - name: 土佐泊発 22便
+        stops: [ "19:07", "19:04" ]
+      - name: 土佐泊発 23便
+        stops: [ "19:37", "19:34" ]
+      - name: 土佐泊発 24便
+        stops: [ "19:57", "19:54" ]
 flags: [ regional ]

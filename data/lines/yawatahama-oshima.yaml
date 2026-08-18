@@ -5,6 +5,7 @@ source:
   - https://tanakayuso.co.jp/timetable-fares/
 fare:
   - "旅客運賃: 大人 片道710円・往復1,350円、子ども 片道360円・往復690円"
+  - "周遊きっぷ（みなっとクルージング）: 大人800円、子ども400円（大島に上陸不可・発売日当日限り有効）"
 notes:
   - 毎月第2・第4日曜日の第3便は休航
   - 乗船は出港20分前より開始
@@ -45,4 +46,13 @@ timetables:
         stops: [ 14:25, 14:00 ]
       - name: 北行 3便
         stops: [ 17:05, 16:40 ]
+  closed:
+    name: 運休（1月1日・2日）
+    voyages: []
+schedule:
+  nthMonth(1):
+    nthDay(1): closed
+    nthDay(2): closed
+    "*": normal
+  "*": normal
 flags: [ regional ]

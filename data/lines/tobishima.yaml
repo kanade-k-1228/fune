@@ -5,6 +5,9 @@ source:
   - https://www.city.sakata.lg.jp/sangyo/kotsu/teikisen/index.html
   - https://www.city.sakata.lg.jp/sangyo/kotsu/teikisen/josenannai/teiki0220220214.html
   - https://www.city.sakata.lg.jp/sangyo/kotsu/teikisen/josenannai/teikiunkounittei.html
+  - https://www.city.sakata.lg.jp/sangyo/kotsu/teikisen/index.files/R8_1_Schedule.pdf
+  - https://www.city.sakata.lg.jp/sangyo/kotsu/teikisen/teikisenoshirase/teiki20260326-016.html
+  - https://www.city.sakata.lg.jp/sangyo/kotsu/teikisen/teikisenoshirase/teiki20260326-001.html
 fare:
   - 大人(中学生以上) 片道 2,140円 / 往復 4,280円
   - 子ども(小学生・幼児) 片道 1,070円 / 往復 2,140円
@@ -18,9 +21,11 @@ notes:
   - 受付時間 10:00〜17:00
   - 酒田〜飛島約39km、所要時間 約75分
   - 事前予約が必要(出発1ヶ月前〜1日前まで電話またはインターネットで)
-  - 11月〜3月は毎日1航海、4〜10月は時期により2〜3航海
+  - 10月〜3月は毎日1航海、4〜9月は時期により2航海（8月は毎日2航海）
   - 出欠航は出航1時間前に決定し、公式サイトに掲載
-  - 2〜3航海の場合は事前に電話予約が必要
+  - 2航海の場合は事前に電話予約が必要
+  - 定期船「とびしま」は2026年3月26日発生のエンジントラブル（左舷エンジンの重要部品破損）により長期休航中。代船「シープリンセス」が運航（2026年7月22日〜8月31日予定、以降の運航体制は調整中）。時刻は通常ダイヤに準じる
+  - 代船運航中は船内の安全確保のため手荷物制限あり（重量30kg以内・長さ2m以内）
 ships:
   - とびしま
 ports:
@@ -48,6 +53,20 @@ timetables:
       - name: 北行 1便
         stops: [ 09:30, 10:45 ]
       - name: 南行 1便
-        stops: [ 14:45, 13:30 ]
+        stops: [ 15:00, 13:45 ]
+  double:
+    name: 2航海ダイヤ
+    voyages:
+      - name: 北行 1便
+        stops: [ 09:30, 10:45 ]
+      - name: 南行 1便
+        stops: [ 12:45, 11:30 ]
+      - name: 北行 2便
+        stops: [ 13:45, 15:00 ]
+      - name: 南行 2便
+        stops: [ 17:00, 15:45 ]
+schedule:
+  "2026-08-01..2026-08-31": double
+  "*": normal
 flags:
   - regional

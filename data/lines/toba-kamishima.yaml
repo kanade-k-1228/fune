@@ -3,7 +3,7 @@ route: 鳥羽〜神島
 color: "#d9c426"
 source:
   - https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/3151.html
-  - https://www.city.toba.mie.jp/material/files/group/45/teikisendaiya.pdf
+  - https://www.city.toba.mie.jp/material/files/group/45/teikisendaiya260401.pdf
   - https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/3163.html
   - https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/3164.html
 fare:
@@ -13,7 +13,7 @@ fare:
   - 回数券 大人 7,400円 / 小人 3,700円
   - 1日フリー乗船券 大人 1,480円 / 子ども 740円（全航路有効・佐田浜窓口で販売）
   - 1歳未満無料、1歳以上は大人1名につき幼児1名無料、小学生は小人運賃
-  - 団体割引 15人以上で普通運賃の1割引
+  - 団体割引（15人以上） 一般団体は普通運賃の1割引、学生団体は小人運賃の1割引・大人運賃の3割引（学校行事に限る）
 notes:
   - 鳥羽市定期船課 電話 0599-25-4776
   - 令和8年4月1日より深刻な船員不足に伴い5隻から4隻に減船し全航路のダイヤを改正

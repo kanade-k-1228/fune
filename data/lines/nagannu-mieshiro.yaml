@@ -3,12 +3,15 @@ route: 三重城〜ナガンヌ島
 color: "#2637d9"
 source:
   - https://www.nagannu.com/?men=6
+  - https://nagannu.com/timetable
+  - https://nagannu.com/plan/free-summer/
   - https://nagannu.com/company/
 fare:
   - 完全予約制。往復セット料金で復路便指定不可
   - フリープラン (4〜6月・10〜11月) 大人 9,500円 / 小人(4〜11歳) 8,500円 / 幼児(0〜3歳) 1,500円
   - フリープラン (7〜9月) 大人 10,500円 / 小人(4〜11歳) 9,500円 / 幼児(0〜3歳) 2,500円
   - 料金には三重城港〜ナガンヌ島往復乗船料・軽食(カレー)・施設利用料・消費税を含む
+  - 別途「環境協力税」100円が必要 (中学生以下・障がい者手帳等をお持ちの方は対象外)
 notes:
   - 日帰り観光ツアー（フリー / シュノーケリング / BBQ 等プラン）として販売
   - "株式会社とかしき (那覇営業所: 那覇市泊3-14-2) TEL 098-860-5860 (受付 8:00〜17:00)"
@@ -71,8 +74,13 @@ timetables:
       - name: 臨時便 復路
         stops: [ "15:00", "15:30" ]
 schedule:
-  "2026-04-01..2026-06-30": dia0
-  "2026-07-01..2026-09-30": dia1
-  "2026-10-01..2026-11-30": dia0
+  nthMonth(4): dia0
+  nthMonth(5): dia0
+  nthMonth(6): dia0
+  nthMonth(7): dia1
+  nthMonth(8): dia1
+  nthMonth(9): dia1
+  nthMonth(10): dia0
+  nthMonth(11): dia0
   "*": dia2
 flags: [ regional ]

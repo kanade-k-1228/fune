@@ -4,6 +4,7 @@ color: "#8dd926"
 source:
   - https://www.iwasaki-corp.com/marinetp/tarumizuferry/t-timetable/
   - https://www.iwasaki-corp.com/kagoshima_kotsu/tarumizuferry/t-fare/
+  - https://www.iwasaki-corp.com/post-12690/
 fare:
   - 旅客 大人 550円 / 小人 280円（片道）
   - 車両 3m未満 1,550円〜12m未満 8,600円（1m増すごとに+950円、運転手1名分の旅客運賃を含む）
@@ -16,6 +17,8 @@ notes:
   - 鴨池営業所 099-256-1761
   - 垂水営業所 0994-32-0001
   - 平日と土日祝でダイヤが異なる
+  - 週末ダイヤ（土・日・祝、および土日前後の祝日・振替休日）は2026年7月18日改正
+  - 着時刻は公式非公表のため、所要時間約40分からの算出値
 ships:
   - フェリー第八おおすみ
   - フェリー第十一おおすみ
@@ -119,53 +122,47 @@ timetables:
       - name: 東行 2便
         stops: [ 06:50, 07:30 ]
       - name: 東行 3便
-        stops: [ 07:20, 08:00 ]
+        stops: [ 07:40, 08:20 ]
       - name: 東行 4便
-        stops: [ 07:55, 08:35 ]
-      - name: 東行 5便
         stops: [ 08:30, 09:10 ]
-      - name: 東行 6便
+      - name: 東行 5便
         stops: [ 09:00, 09:40 ]
+      - name: 東行 6便
+        stops: [ 09:30, 10:10 ]
       - name: 東行 7便
-        stops: [ 09:35, 10:15 ]
-      - name: 東行 8便
         stops: [ 10:10, 10:50 ]
-      - name: 東行 9便
+      - name: 東行 8便
         stops: [ 10:40, 11:20 ]
+      - name: 東行 9便
+        stops: [ 11:10, 11:50 ]
       - name: 東行 10便
-        stops: [ 11:15, 11:55 ]
-      - name: 東行 11便
         stops: [ 11:50, 12:30 ]
+      - name: 東行 11便
+        stops: [ 12:50, 13:30 ]
       - name: 東行 12便
-        stops: [ 12:20, 13:00 ]
+        stops: [ 13:50, 14:30 ]
       - name: 東行 13便
-        stops: [ 12:55, 13:35 ]
+        stops: [ 14:30, 15:10 ]
       - name: 東行 14便
-        stops: [ 13:30, 14:10 ]
+        stops: [ 15:00, 15:40 ]
       - name: 東行 15便
-        stops: [ 14:00, 14:40 ]
+        stops: [ 15:30, 16:10 ]
       - name: 東行 16便
-        stops: [ 14:35, 15:15 ]
+        stops: [ 16:10, 16:50 ]
       - name: 東行 17便
-        stops: [ 15:10, 15:50 ]
+        stops: [ 16:40, 17:20 ]
       - name: 東行 18便
-        stops: [ 15:40, 16:20 ]
+        stops: [ 17:10, 17:50 ]
       - name: 東行 19便
-        stops: [ 16:15, 16:55 ]
+        stops: [ 17:50, 18:30 ]
       - name: 東行 20便
-        stops: [ 16:50, 17:30 ]
+        stops: [ 18:50, 19:30 ]
       - name: 東行 21便
-        stops: [ 17:20, 18:00 ]
+        stops: [ 19:40, 20:20 ]
       - name: 東行 22便
-        stops: [ 17:55, 18:35 ]
+        stops: [ 20:30, 21:10 ]
       - name: 東行 23便
-        stops: [ 18:30, 19:10 ]
-      - name: 東行 24便
-        stops: [ 19:00, 19:40 ]
-      - name: 東行 25便
-        stops: [ 20:00, 20:40 ]
-      - name: 東行 26便
-        stops: [ 21:00, 21:40 ]
+        stops: [ 21:20, 22:00 ]
       - name: 西行 1便
         stops: [ 06:40, 06:00 ]
       - name: 西行 2便
@@ -173,51 +170,45 @@ timetables:
       - name: 西行 3便
         stops: [ 08:20, 07:40 ]
       - name: 西行 4便
-        stops: [ 08:50, 08:10 ]
+        stops: [ 09:10, 08:30 ]
       - name: 西行 5便
-        stops: [ 09:25, 08:45 ]
-      - name: 西行 6便
         stops: [ 10:00, 09:20 ]
-      - name: 西行 7便
+      - name: 西行 6便
         stops: [ 10:30, 09:50 ]
+      - name: 西行 7便
+        stops: [ 11:00, 10:20 ]
       - name: 西行 8便
-        stops: [ 11:05, 10:25 ]
-      - name: 西行 9便
         stops: [ 11:40, 11:00 ]
+      - name: 西行 9便
+        stops: [ 12:40, 12:00 ]
       - name: 西行 10便
-        stops: [ 12:10, 11:30 ]
+        stops: [ 13:40, 13:00 ]
       - name: 西行 11便
-        stops: [ 12:45, 12:05 ]
+        stops: [ 14:20, 13:40 ]
       - name: 西行 12便
-        stops: [ 13:20, 12:40 ]
+        stops: [ 14:50, 14:10 ]
       - name: 西行 13便
-        stops: [ 13:50, 13:10 ]
+        stops: [ 15:20, 14:40 ]
       - name: 西行 14便
-        stops: [ 14:25, 13:45 ]
+        stops: [ 16:00, 15:20 ]
       - name: 西行 15便
-        stops: [ 15:00, 14:20 ]
+        stops: [ 16:30, 15:50 ]
       - name: 西行 16便
-        stops: [ 15:30, 14:50 ]
+        stops: [ 17:00, 16:20 ]
       - name: 西行 17便
-        stops: [ 16:05, 15:25 ]
+        stops: [ 17:40, 17:00 ]
       - name: 西行 18便
-        stops: [ 16:40, 16:00 ]
+        stops: [ 18:10, 17:30 ]
       - name: 西行 19便
-        stops: [ 17:10, 16:30 ]
+        stops: [ 18:40, 18:00 ]
       - name: 西行 20便
-        stops: [ 17:45, 17:05 ]
+        stops: [ 19:30, 18:50 ]
       - name: 西行 21便
-        stops: [ 18:20, 17:40 ]
+        stops: [ 20:20, 19:40 ]
       - name: 西行 22便
-        stops: [ 18:50, 18:10 ]
+        stops: [ 21:10, 20:30 ]
       - name: 西行 23便
-        stops: [ 19:25, 18:45 ]
-      - name: 西行 24便
-        stops: [ 20:00, 19:20 ]
-      - name: 西行 25便
-        stops: [ 20:50, 20:10 ]
-      - name: 西行 26便
-        stops: [ 21:40, 21:00 ]
+        stops: [ 22:00, 21:20 ]
 schedule:
   isHoliday: weekend
   isWeekend: weekend

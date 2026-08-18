@@ -53,7 +53,7 @@ timetables:
     name: 通常ダイヤ
     voyages:
       - name: 下り 1便
-        stops: [ 07:15, 08:02, null, 08:12 ]
+        stops: [ 07:15, null, [ 08:02, 08:05 ], 08:12 ]
       - name: 下り 2便
         stops: [ 09:25, 10:05, 10:25, 10:35 ]
       - name: 下り 3便

@@ -71,7 +71,11 @@ timetables:
     name: 通常ダイヤ
     voyages:
       - name: "1"
+        stops: [ 07:00, null, null, 07:50 ]
+      - name: "1 復路"
         stops: [ 09:25, 08:35, 08:20, 07:50 ]
       - name: "2"
+        stops: [ 14:30, 15:20, 15:35, 16:05 ]
+      - name: "2 復路"
         stops: [ 16:55, null, null, 16:05 ]
 flags: [ regional ]

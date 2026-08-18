@@ -3,8 +3,6 @@ color: "#d9c626"
 route: 平の小屋～針ノ木谷
 source:
   - https://kanko-omachi.gr.jp/faq/
-  - https://yamagoya.info/hirano-koya/
-  - https://tabi-mag.jp/ty0320/
 fare:
   - 無料
 notes:
@@ -84,8 +82,12 @@ timetables:
         stops: [ "12:20", "12:00" ]
       - name: 4便（針ノ木谷発）
         stops: [ "16:20", "16:00" ]
+  closed:
+    name: 運休期間
+    voyages: []
 schedule:
   "2026-06-20..2026-06-30": dia0
   "2026-07-01..2026-09-30": dia1
   "2026-10-01..2026-10-31": dia2
-flags: [ regional ]
+  "*": closed
+flags: [ regional, seasonal ]

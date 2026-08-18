@@ -14,6 +14,7 @@ fare:
   - 大人片道 500円 / 小児片道 250円
   - 障害者：大人 250円 / 小児 130円
   - 島民割引：大人 150円 / 小児 80円（75歳以上無料）
+  - 島民割引＋障害者：大人 80円 / 小児 40円
 ships:
   - みつしま
 ports:
@@ -30,32 +31,34 @@ coords:
     - [ 127.28603, 26.19016 ]
     - [ 127.28539, 26.18979 ]
     - [ 127.34795, 26.165999 ]
-stops: [ zamami, aka ]
+stops: [ zamami, aka, zamami ]
 timetables:
   summer:
     name: 夏期ダイヤ（3月〜10月）
     voyages:
       - name: 1便
-        stops: [ 7:45, 8:00 ]
+        stops: [ 7:45, 8:00, 8:15 ]
       - name: 2便
-        stops: [ 11:45, 12:00 ]
+        stops: [ 11:45, [ 12:00, 12:15 ], 12:30 ]
       - name: 3便
-        stops: [ 14:30, 14:45 ]
+        stops: [ 14:30, 14:45, 15:00 ]
       - name: 4便
-        stops: [ 17:30, 17:45 ]
+        stops: [ 17:30, 17:45, 18:00 ]
   winter:
     name: 冬期ダイヤ（11月〜2月）
     voyages:
       - name: 1便
-        stops: [ 7:45, 8:00 ]
+        stops: [ 7:45, 8:00, 8:15 ]
       - name: 2便
-        stops: [ 11:45, 12:00 ]
+        stops: [ 11:45, [ 12:00, 12:15 ], 12:30 ]
       - name: 3便
-        stops: [ 14:30, 14:45 ]
+        stops: [ 14:30, 14:45, 15:00 ]
       - name: 4便
-        stops: [ 17:20, 17:35 ]
+        stops: [ 17:20, 17:35, 17:50 ]
 schedule:
-  "2025-11-01..2026-02-28": winter
-  "2026-11-01..2027-02-28": winter
+  nthMonth(11): winter
+  nthMonth(12): winter
+  nthMonth(1): winter
+  nthMonth(2): winter
   "*": summer
 flags: [ regional ]

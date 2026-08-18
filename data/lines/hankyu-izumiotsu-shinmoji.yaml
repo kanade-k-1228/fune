@@ -2,7 +2,6 @@ name: 阪九フェリー
 route: 泉大津〜新門司
 color: "#26d991"
 source:
-  - https://www.han9f.co.jp/timetable/
   - https://www.han9f.co.jp/izumiotsu/timetable/
   - https://www.han9f.co.jp/izumiotsu/fare/
   - https://www.han9f.co.jp/izumiotsu/ships/
@@ -15,10 +14,10 @@ fare:
   - 小児 大人運賃の半額（10円未満切上げ）
   - 乗用車 5m未満 25,520円〜33,440円（季節A〜D、運転者1名分の旅客運賃含む）
   - ロイヤル 26,950円〜35,750円
-  - インターネット予約割引 20%OFF（C・D期間を除く）
+  - インターネット予約割引 20%OFF（C・D期間・小人を除く）
 ships:
-  - フェリーいずみ
-  - フェリーひびき
+  - いずみ
+  - ひびき
 ports:
   izumiotsu: [ 135.396197, 34.517877 ]
   shimmoji: [ 130.990528, 33.874375 ]

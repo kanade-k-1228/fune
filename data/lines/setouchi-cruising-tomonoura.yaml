@@ -37,44 +37,16 @@ timetables:
         stops: [ 10:00, 10:55 ]
       - name: 尾道発 2便
         stops: [ 13:00, 13:55 ]
+      - name: 鞆の浦発 1便
+        stops: [ 12:00, 11:00 ]
+      - name: 鞆の浦発 2便
+        stops: [ 15:00, 14:00 ]
   closed:
     name: 運休
     voyages: []
 schedule:
   "2026-10-25": closed
-  nthMonth(3):
-    isHoliday: normal
-    isWeekend: normal
-    "*": closed
-  nthMonth(4):
-    isHoliday: normal
-    isWeekend: normal
-    "*": closed
-  nthMonth(5):
-    isHoliday: normal
-    isWeekend: normal
-    "*": closed
-  nthMonth(6):
-    isHoliday: normal
-    isWeekend: normal
-    "*": closed
-  nthMonth(7):
-    isHoliday: normal
-    isWeekend: normal
-    "*": closed
-  nthMonth(8):
-    isHoliday: normal
-    isWeekend: normal
-    "*": closed
-  nthMonth(9):
-    isHoliday: normal
-    isWeekend: normal
-    "*": closed
-  nthMonth(10):
-    isHoliday: normal
-    isWeekend: normal
-    "*": closed
-  nthMonth(11):
+  "2026-03-14..2026-11-15":
     isHoliday: normal
     isWeekend: normal
     "*": closed

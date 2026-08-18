@@ -74,7 +74,12 @@ timetables:
         stops: [ 15:55, 15:30 ]
       - name: 上り 4便
         stops: [ 17:55, 17:30 ]
+  closed:
+    name: 1/1 全便運休
+    voyages: []
 schedule:
+  nthMonth(1):
+    nthDay(1): closed
   isHoliday: dia1
   isSunday: dia1
   "*": dia0

@@ -116,6 +116,7 @@ timetables:
         stops: [ 17:59, [ 17:50, 17:51 ], [ 17:38, 17:39 ], 17:30 ]
 schedule:
   "2026-07-20..2026-08-20":
+    "2026-08-13..2026-08-15": dia1
     isWeekend: dia1
     isHoliday: dia1
     "*": dia0

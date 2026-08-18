@@ -21,50 +21,47 @@ coords:
     - [ 134.593058, 34.225416 ]
 stops: [ donoura-shimada, shimada-tosen ]
 timetables:
-  dia0:
-    name: 通常ダイヤ（島田発）
+  normal:
+    name: 通常ダイヤ
     voyages:
-      - name: 1便
-        stops: [ "07:50", "07:54" ]
-      - name: 2便
-        stops: [ "08:10", "08:14" ]
-      - name: 3便
-        stops: [ "08:30", "08:34" ]
-      - name: 4便
-        stops: [ "09:10", "09:14" ]
-      - name: 5便
-        stops: [ "10:10", "10:14" ]
-      - name: 6便
-        stops: [ "11:20", "11:24" ]
-      - name: 7便
-        stops: [ "12:30", "12:34" ]
-      - name: 8便
-        stops: [ "14:00", "14:04" ]
-      - name: 9便
-        stops: [ "15:00", "15:04" ]
-      - name: 10便
-        stops: [ "15:20", "15:24" ]
-  dia1:
-    name: 通常ダイヤ（堂浦発）
-    voyages:
-      - name: 1便
+      - name: 島田発 1便
+        stops: [ "07:54", "07:50" ]
+      - name: 島田発 2便
+        stops: [ "08:14", "08:10" ]
+      - name: 島田発 3便
+        stops: [ "08:34", "08:30" ]
+      - name: 島田発 4便
+        stops: [ "09:14", "09:10" ]
+      - name: 島田発 5便
+        stops: [ "10:14", "10:10" ]
+      - name: 島田発 6便
+        stops: [ "11:24", "11:20" ]
+      - name: 島田発 7便
+        stops: [ "12:34", "12:30" ]
+      - name: 島田発 8便
+        stops: [ "14:04", "14:00" ]
+      - name: 島田発 9便
+        stops: [ "15:04", "15:00" ]
+      - name: 島田発 10便
+        stops: [ "15:24", "15:20" ]
+      - name: 堂浦発 1便
         stops: [ "07:55", "08:00" ]
-      - name: 2便
+      - name: 堂浦発 2便
         stops: [ "08:15", "08:20" ]
-      - name: 3便
+      - name: 堂浦発 3便
         stops: [ "08:35", "08:40" ]
-      - name: 4便
+      - name: 堂浦発 4便
         stops: [ "09:15", "09:20" ]
-      - name: 5便
+      - name: 堂浦発 5便
         stops: [ "10:15", "10:20" ]
-      - name: 6便
+      - name: 堂浦発 6便
         stops: [ "11:25", "11:30" ]
-      - name: 7便
+      - name: 堂浦発 7便
         stops: [ "12:35", "12:40" ]
-      - name: 8便
+      - name: 堂浦発 8便
         stops: [ "14:05", "14:10" ]
-      - name: 9便
+      - name: 堂浦発 9便
         stops: [ "15:05", "15:10" ]
-      - name: 10便
+      - name: 堂浦発 10便
         stops: [ "15:25", "15:30" ]
 flags: [ regional ]

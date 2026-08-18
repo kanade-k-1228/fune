@@ -6,10 +6,8 @@ source:
   - https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/3163.html
   - https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/3164.html
 fare:
-  - 大人 550円（鳥羽〜答志）
-  - 小児 280円（鳥羽〜答志）
-  - 大人 510円（鳥羽〜和具）
-  - 小児 260円（鳥羽〜和具）
+  - 大人 550円（鳥羽〜答志・和具、同一運賃区分）
+  - 小児 280円（鳥羽〜答志・和具、同一運賃区分）
   - 1日フリー乗船券 大人1,480円 / 子ども740円（全航路）
   - 回数券（大人 11枚綴 5,500円、小児 11枚綴 2,800円）等あり
 notes:

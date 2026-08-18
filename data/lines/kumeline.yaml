@@ -5,6 +5,9 @@ source:
   - http://www.kumeline.com/route/
   - http://www.kumeline.com/fare_ticket/
   - http://www.vill.tonaki.okinawa.jp/sp/detail.jsp?id=57542&menuid=12311&funcid=1
+  - http://www.kumeline.com/topics/1772527552/
+  - http://www.kumeline.com/topics/1652405560/
+  - http://www.kumeline.com/topics/1786581322/
 fare:
   - 那覇〜久米島 大人片道 3,450円 / 小人 1,730円
   - 那覇〜久米島 大人往復 6,560円（復路割引 3,110円・有効31日間）
@@ -16,7 +19,10 @@ fare:
 notes:
   - 1日2便（1便は渡名喜経由）。所要時間 直行 約3時間／渡名喜経由 約3時間30分
   - 月曜日は1便のみ（午前便）の運航
-  - 東行2便：1〜3月・11〜12月は月曜運休の直行、4〜10月は月・金を除く直行／金曜は渡名喜経由
+  - 東行2便：1〜3月・11〜12月は月曜運休の直行、4〜10月は月・金・土を除く直行／金・土曜は渡名喜経由
+  - 土曜日の渡名喜島経由運航は令和8年（2026年）4〜10月の実証実験（例年は金曜日のみ）
+  - 2026年8月31日〜9月15日：フェリー海邦ドック入りのため1日1往復（往復とも渡名喜島経由）に変更、フェリー琉球のみ運航
+  - "2026年10月1日より運賃を約15%改定予定（例: 那覇〜久米島 大人片道 3,450円→3,970円）"
   - 2隻のうちいずれか1隻が運航。出港15分前までに乗船
   - 乗船券の販売・予約は出発日の1ヶ月前から
   - 久米商船（株）とまりん１階 TEL 098-868-2686
@@ -58,29 +64,63 @@ coords:
     - [ 126.753821, 26.340395 ]
 stops: [ naha-tomari, tonaki, kanegusuku ]
 timetables:
-  dia0:
-    name: 通常ダイヤ（西行）
+  winter:
+    name: 通常ダイヤ（冬季 1〜3月・11〜12月）
     voyages:
-      - name: 1便 渡名喜経由
+      - name: 西行 1便 渡名喜経由
         stops: [ 09:00, [ 10:55, 11:10 ], 12:30 ]
-      - name: 2便 直行（月曜運休）
+      - name: 西行 2便 直行
         stops: [ 14:00, null, 17:00 ]
-  dia1:
-    name: 通常ダイヤ（東行・冬季 1〜3月・11〜12月）
-    voyages:
-      - name: 1便 渡名喜経由
+        schedule:
+          isMonday: false
+          "*": true
+      - name: 東行 1便 渡名喜経由
         stops: [ 12:30, [ 10:20, 10:35 ], 09:00 ]
-      - name: 2便 直行（月曜運休）
+      - name: 東行 2便 直行
         stops: [ 17:00, null, 14:00 ]
-  dia2:
-    name: 通常ダイヤ（東行・夏季 4〜10月）
+        schedule:
+          isMonday: false
+          "*": true
+  summer:
+    name: 通常ダイヤ（夏季 4〜10月）
     voyages:
-      - name: 1便 渡名喜経由
+      - name: 西行 1便 渡名喜経由
+        stops: [ 09:00, [ 10:55, 11:10 ], 12:30 ]
+      - name: 西行 2便 直行
+        stops: [ 14:00, null, 17:00 ]
+        schedule:
+          isMonday: false
+          "*": true
+      - name: 東行 1便 渡名喜経由
         stops: [ 12:30, [ 10:20, 10:35 ], 09:00 ]
-      - name: 2便 直行（月・金を除く）
+      - name: 東行 2便 直行
         stops: [ 17:00, null, 14:00 ]
-      - name: 2便 渡名喜経由（金曜のみ）
+        schedule:
+          isMonday: false
+          isFriday: false
+          isSaturday: false
+          "*": true
+      - name: 東行 2便 渡名喜経由
+        stops: [ 17:30, [ 15:20, 15:35 ], 14:00 ]
+        schedule:
+          isFriday: true
+          isSaturday: true
+          "*": false
+  dock2026:
+    name: 臨時ダイヤ（フェリー海邦ドック入り 2026/8/31〜9/15）
+    voyages:
+      - name: 1便 渡名喜経由（西行）
+        stops: [ 09:00, [ 10:55, 11:10 ], 12:30 ]
+      - name: 1便 渡名喜経由（東行）
         stops: [ 17:30, [ 15:20, 15:35 ], 14:00 ]
 schedule:
-  "*": dia0
+  "2026-08-31..2026-09-15": dock2026
+  nthMonth(4): summer
+  nthMonth(5): summer
+  nthMonth(6): summer
+  nthMonth(7): summer
+  nthMonth(8): summer
+  nthMonth(9): summer
+  nthMonth(10): summer
+  "*": winter
 flags: [ national ]

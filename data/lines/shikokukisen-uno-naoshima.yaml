@@ -2,14 +2,16 @@ name: 四国汽船
 route: 宇野〜直島宮浦
 color: "#c326d9"
 source:
+  - https://shikokukisen.com/uno-miyanoura/
   - https://www.shikokukisen.com/instant/#route02
   - https://www.shikokukisen.com/fare/
   - https://www.shikokukisen.com/about_ship/
 fare:
   - 旅客 大人 片道 370円 / 小児 190円
   - 深夜便（◎印）旅客 大人 730円 / 小児 370円
-  - 自動車航送（運転手 1 名込）3m未満 1,860円 / 3〜4m 2,390円 / 4〜5m 3,070円
+  - 自動車航送 3m未満 1,860円 / 3〜4m 2,390円 / 4〜5m 3,070円
   - 車両幅 2.51m 超は 25cm 単位で超過料金あり
+  - 特殊手荷物 自転車 330円 / バイク（125cc以下）680円 / バイク（125cc超過）1,030円（旅客運賃別途）
 notes:
   - 所要時間 フェリー約 20 分 / 旅客船約 15 分
   - 宇野支店 TEL 0863-31-1641

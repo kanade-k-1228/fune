@@ -4,7 +4,7 @@ color: "#2670d9"
 source:
   - https://www.snf.jp/guide/time_schedule/
   - https://www.snf.jp/fare/tsuruga-tomakomai/
-  - https://www.snf.jp/guide/embark/turuga/
+  - https://www.snf.jp/guide/embark/tsuruga/
   - https://www.snf.jp/guide/embark/tomakomai/
 ships:
   - すずらん
@@ -45,13 +45,13 @@ coords:
     - [ 141.7984, 42.59374 ]
     - [ 141.81949, 42.61154 ]
     - [ 141.819, 42.61 ]
-stops: [ tsuruga, tomakomai-higashi ]
+stops: [tsuruga, tomakomai-higashi]
 timetables:
   normal:
     name: 通常ダイヤ
     voyages:
       - name: 北行
-        stops: [ 23:55, 1:20:30 ]
+        stops: [23:55, 1:20:30]
       - name: 南行
-        stops: [ 1:20:30, 23:30 ]
-flags: [ national ]
+        stops: [1:20:30, 23:30]
+flags: [national]

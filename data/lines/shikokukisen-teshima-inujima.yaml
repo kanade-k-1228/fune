@@ -76,4 +76,19 @@ timetables:
         stops: [ 14:02, [ 13:35, 13:40 ], 13:10 ]
       - name: 第3便
         stops: [ 16:39, [ 16:12, 16:17 ], 15:47 ]
+  closed:
+    name: 運休（美術館休館日）
+    voyages: []
+schedule:
+  isHoliday: dia0
+  isTuesday: closed
+  2026-01-01..2026-02-28:
+    isWednesday: closed
+    isThursday: closed
+    "*": dia0
+  2026-12-01..2027-02-28:
+    isWednesday: closed
+    isThursday: closed
+    "*": dia0
+  "*": dia0
 flags: [ regional ]

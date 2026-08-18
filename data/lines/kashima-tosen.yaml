@@ -5,15 +5,20 @@ source:
   - https://www.city.matsuyama.ehime.jp/kanko/kankoguide/shitestukoen/kashima/tosen.html
   - https://www.city.matsuyama.ehime.jp/kanko/kankoguide/shitestukoen/kashima/kashima.html
 fare:
-  - 大人 往復 230円
-  - 小児 往復 120円
+  - adult::round::230円
+  - child::round::120円
+  - disabled::round::120円（大人）
+  - disabled::round::60円（小児）
+  - group::round::160円（大人、15人以上）
+  - group::round::80円（小児、15人以上）
+  - 高齢者（65歳以上）往復120円
   - 荷物 1個10kgごと 20円
   - 自転車持込不可（輪行袋は可）
   - キャッシュレス決済対応
 notes:
   - 毎日運航
   - 約20分間隔・所要約3分
-  - 夏期ダイヤ（4〜11月）の14:15に鹿島発の周遊航路あり（鹿島発着・所要約30分）
+  - 夏期ダイヤ（4〜11月）は14:15鹿島発の周遊航路「愛の航路」あり（鹿島発着・所要約30分・予約不要・2名から運航）。12〜3月は運休
   - 島内店舗利用客には最終便以降の臨時運航あり（要事前申込）
   - 強風・高波により臨時運休の場合あり
   - 鹿島公園渡船待合所 TEL 089-992-1375（7:00〜21:00）
@@ -277,6 +282,13 @@ timetables:
       - name: 鹿島発 19:00
         stops: [ 19:03, 19:00 ]
 schedule:
-  "2026-04-01..2026-11-30": dia0
+  nthMonth(4): dia0
+  nthMonth(5): dia0
+  nthMonth(6): dia0
+  nthMonth(7): dia0
+  nthMonth(8): dia0
+  nthMonth(9): dia0
+  nthMonth(10): dia0
+  nthMonth(11): dia0
   "*": dia1
 flags: [ regional ]

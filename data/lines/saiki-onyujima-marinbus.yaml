@@ -2,9 +2,14 @@ name: マリンバス1
 route: 佐伯〜堀切・片神
 color: "#d92680"
 source:
-  - https://www.city.saiki.oita.jp/kiji0033261/index.html
+  - https://www.city.saiki.oita.jp/kiji0037966/index.html
   - http://www.oitasima.net/ohnyujima/access.html
-  - https://www.visit-saiki.jp/spots/detail/1afde1a3-7f73-411f-99f9-e13869090859
+  - https://www.visit-saiki.jp/spots/detail/9ac23c50-7734-4577-950f-5de0feda6f1b
+fare:
+  - oneway::守後 150円
+  - oneway::久保浦 200円
+  - oneway::堀切 200円
+  - oneway::片神 200円
 notes:
   - 運航：豊海運株式会社
   - TEL 0972-22-2356
@@ -64,39 +69,39 @@ timetables:
     name: 標準
     voyages:
       - name: 1便（佐伯→片神→佐伯）
-        stops: [ 07:25, 07:37, 07:42, 07:47, 07:52, null ]
-      - name: 2便（堀切→佐伯）
-        stops: [ null, 07:13, 07:08, 07:03, null, 07:25 ]
+        stops: [ 07:25, 07:30, null, 07:37, 07:40, null ]
+      - name: 2便（片神→佐伯）
+        stops: [ null, 07:10, 07:05, 07:03, 07:00, 07:15 ]
       - name: 3便（佐伯→片神→佐伯）
-        stops: [ 08:00, 08:12, 08:17, 08:22, 08:27, null ]
+        stops: [ 08:00, 08:05, null, 08:12, 08:15, null ]
       - name: 4便（堀切→佐伯）
-        stops: [ null, 07:47, 07:42, 07:37, null, 08:00 ]
+        stops: [ null, 07:50, 07:45, 07:37, 07:40, 07:55 ]
       - name: 5便（佐伯→片神→佐伯）
-        stops: [ 09:30, 09:42, 09:47, 09:52, 09:57, null ]
+        stops: [ 09:30, 09:35, 09:40, 09:42, 09:45, null ]
       - name: 6便（堀切→佐伯）
-        stops: [ null, 08:22, 08:17, 08:12, null, 08:35 ]
+        stops: [ null, 08:25, 08:20, 08:12, 08:15, 08:30 ]
       - name: 7便（佐伯→片神→佐伯）
-        stops: [ 11:00, 11:12, 11:17, 11:22, 11:27, null ]
+        stops: [ 11:00, 11:05, 11:10, 11:12, 11:15, null ]
       - name: 8便（堀切→佐伯）
-        stops: [ null, 09:52, 09:47, 09:42, null, 10:05 ]
+        stops: [ null, 09:55, null, 09:42, 09:45, 10:00 ]
       - name: 9便（佐伯→片神→佐伯）
-        stops: [ 12:30, 12:42, 12:47, 12:52, 12:57, null ]
+        stops: [ 12:30, 12:35, 12:40, 12:42, 12:45, null ]
       - name: 10便（堀切→佐伯）
-        stops: [ null, 11:22, 11:17, 11:12, null, 11:35 ]
+        stops: [ null, 11:25, null, 11:12, 11:15, 11:30 ]
       - name: 11便（佐伯→片神→佐伯）
-        stops: [ 14:00, 14:12, 14:17, 14:22, 14:27, null ]
+        stops: [ 14:00, 14:05, 14:10, 14:12, 14:15, null ]
       - name: 12便（堀切→佐伯）
-        stops: [ null, 12:52, 12:47, 12:42, null, 13:05 ]
+        stops: [ null, 12:55, null, 12:42, 12:45, 13:00 ]
       - name: 13便（佐伯→片神→佐伯）
-        stops: [ 16:00, 16:12, 16:17, 16:22, 16:27, null ]
+        stops: [ 16:00, 16:05, 16:10, 16:12, 16:15, null ]
       - name: 14便（堀切→佐伯）
-        stops: [ null, 14:22, 14:17, 14:12, null, 14:35 ]
+        stops: [ null, 14:25, null, 14:12, 14:15, 14:30 ]
       - name: 15便（佐伯→片神→佐伯）
-        stops: [ 17:30, 17:42, 17:47, 17:52, 17:57, null ]
+        stops: [ 17:30, 17:35, 17:40, 17:42, 17:45, null ]
       - name: 16便（堀切→佐伯）
-        stops: [ null, 16:22, 16:17, 16:12, null, 16:35 ]
+        stops: [ null, 16:25, null, 16:12, 16:15, 16:30 ]
       - name: 17便（佐伯→守後）
-        stops: [ 18:30, 18:42, null, null, null, null ]
+        stops: [ 18:30, 18:35, null, null, null, null ]
       - name: 18便（堀切→佐伯）
-        stops: [ null, 17:52, 17:47, 17:42, null, 18:05 ]
+        stops: [ null, 17:55, null, 17:42, 17:45, 18:00 ]
 flags: [ regional ]

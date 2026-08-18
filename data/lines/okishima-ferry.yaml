@@ -5,6 +5,7 @@ source:
   - https://www.city.omihachiman.lg.jp/
   - https://www.omi8.com/city-transport/okishima
   - https://montekite.com/ferry/
+  - http://www.biwako-okishima.com/sin-access.html
 fare:
   - 大人 片道 500円 / 往復 1,000円
   - 小学生 片道 250円 / 往復 500円
@@ -13,9 +14,7 @@ fare:
 notes:
   - 所要時間 約10分
   - 運営：沖島町内会
-  - 一部便は日曜・祝日運休（堀切発 9:15・10:15・12:15・16:15 等）
-  - 1月4日〜3月31日は最終便（沖島発20:45 / 堀切発21:00）運休
-  - 年末年始は特別ダイヤ（12月31日減便、1月1日全便運休、1月2日・3日減便）
+  - 年末年始は特別ダイヤ（12月31日減便、1月2日・3日減便）
   - チャーター便 第二善通丸 連絡先：井上さん 090-5258-0277
   - 運休情報は沖島通船公式LINEで案内
 ships:
@@ -37,23 +36,142 @@ timetables:
     name: 通常ダイヤ
     voyages:
       - name: 東行 1便
-        stops: [ 07:45, 07:55 ]
+        stops: [ 07:15, 07:25 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
       - name: 東行 2便
-        stops: [ 09:15, 09:25 ]
+        stops: [ 07:45, 07:55 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
       - name: 東行 3便
-        stops: [ 12:45, 12:55 ]
+        stops: [ 08:15, 08:25 ]
       - name: 東行 4便
-        stops: [ 15:10, 15:20 ]
+        stops: [ 09:15, 09:25 ]
       - name: 東行 5便
-        stops: [ 17:30, 17:40 ]
+        stops: [ 10:15, 10:25 ]
+      - name: 東行 6便
+        stops: [ 12:15, 12:25 ]
+      - name: 東行 7便
+        stops: [ 14:15, 14:25 ]
+      - name: 東行 8便
+        stops: [ 16:15, 16:25 ]
+      - name: 東行 9便
+        stops: [ 17:15, 17:25 ]
+      - name: 東行 10便
+        stops: [ 18:30, 18:40 ]
+      - name: 東行 11便
+        stops: [ 19:45, 19:55 ]
+      - name: 東行 12便
+        stops: [ 21:00, 21:10 ]
       - name: 西行 1便
         stops: [ 07:10, 07:00 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
       - name: 西行 2便
-        stops: [ 08:10, 08:00 ]
+        stops: [ 07:40, 07:30 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
       - name: 西行 3便
-        stops: [ 11:10, 11:00 ]
+        stops: [ 08:10, 08:00 ]
       - name: 西行 4便
-        stops: [ 14:10, 14:00 ]
+        stops: [ 09:10, 09:00 ]
       - name: 西行 5便
+        stops: [ 10:10, 10:00 ]
+      - name: 西行 6便
+        stops: [ 12:10, 12:00 ]
+      - name: 西行 7便
+        stops: [ 14:10, 14:00 ]
+      - name: 西行 8便
         stops: [ 16:10, 16:00 ]
+      - name: 西行 9便
+        stops: [ 17:10, 17:00 ]
+      - name: 西行 10便
+        stops: [ 18:20, 18:10 ]
+      - name: 西行 11便
+        stops: [ 19:40, 19:30 ]
+      - name: 西行 12便
+        stops: [ 20:55, 20:45 ]
+  winter:
+    name: 冬季ダイヤ（最終便運休）
+    voyages:
+      - name: 東行 1便
+        stops: [ 07:15, 07:25 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 東行 2便
+        stops: [ 07:45, 07:55 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 東行 3便
+        stops: [ 08:15, 08:25 ]
+      - name: 東行 4便
+        stops: [ 09:15, 09:25 ]
+      - name: 東行 5便
+        stops: [ 10:15, 10:25 ]
+      - name: 東行 6便
+        stops: [ 12:15, 12:25 ]
+      - name: 東行 7便
+        stops: [ 14:15, 14:25 ]
+      - name: 東行 8便
+        stops: [ 16:15, 16:25 ]
+      - name: 東行 9便
+        stops: [ 17:15, 17:25 ]
+      - name: 東行 10便
+        stops: [ 18:30, 18:40 ]
+      - name: 東行 11便
+        stops: [ 19:45, 19:55 ]
+      - name: 西行 1便
+        stops: [ 07:10, 07:00 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 西行 2便
+        stops: [ 07:40, 07:30 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 西行 3便
+        stops: [ 08:10, 08:00 ]
+      - name: 西行 4便
+        stops: [ 09:10, 09:00 ]
+      - name: 西行 5便
+        stops: [ 10:10, 10:00 ]
+      - name: 西行 6便
+        stops: [ 12:10, 12:00 ]
+      - name: 西行 7便
+        stops: [ 14:10, 14:00 ]
+      - name: 西行 8便
+        stops: [ 16:10, 16:00 ]
+      - name: 西行 9便
+        stops: [ 17:10, 17:00 ]
+      - name: 西行 10便
+        stops: [ 18:20, 18:10 ]
+      - name: 西行 11便
+        stops: [ 19:40, 19:30 ]
+  closed:
+    name: 運休（元日）
+    voyages: []
+schedule:
+  nthMonth(1):
+    nthDay(1): closed
+    nthDay(2): normal
+    nthDay(3): normal
+    "*": winter
+  nthMonth(2): winter
+  nthMonth(3): winter
+  "*": normal
 flags: [ regional ]

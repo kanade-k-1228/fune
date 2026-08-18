@@ -67,7 +67,15 @@ timetables:
         stops: [ "13:00", null ]
       - name: 4便
         stops: [ "15:00", null ]
+  closed:
+    name: 冬季運休（12月1日〜4月14日）
+    voyages: []
 schedule:
+  nthMonth(12): closed
+  nthMonth(1): closed
+  nthMonth(2): closed
+  nthMonth(3): closed
+  "2027-04-01..2027-04-14": closed
   "2026-10-21..2026-11-10": dia1
   "2026-11-11..2026-11-30": dia2
   "*": dia0

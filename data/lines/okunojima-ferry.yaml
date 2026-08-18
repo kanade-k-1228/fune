@@ -8,8 +8,10 @@ ships:
   - ラピーナ
   - マリンラビット2
 fare:
-  - 大人 片道 360円 / 往復 720円
-  - 小学生 片道 180円 / 往復 360円
+  - adult::oneway::360円
+  - adult::round::720円
+  - child::oneway::180円
+  - child::round::360円
 notes:
   - 所要時間 約15分
   - 休暇村大久野島 0846-26-0321
@@ -93,12 +95,14 @@ timetables:
       - name: 北行 4便
         stops: [ 12:40, 12:30 ]
       - name: 北行 5便
-        stops: [ 15:45, 15:35 ]
+        stops: [ 13:30, 13:20 ]
       - name: 北行 6便
-        stops: [ 16:45, 16:35 ]
+        stops: [ 15:45, 15:35 ]
       - name: 北行 7便
-        stops: [ 18:35, 18:20 ]
+        stops: [ 16:45, 16:35 ]
       - name: 北行 8便
+        stops: [ 18:35, 18:20 ]
+      - name: 北行 9便
         stops: [ 19:30, 19:15 ]
 schedule:
   "2026-12-30..2027-01-02": holiday

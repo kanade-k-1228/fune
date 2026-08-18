@@ -2,7 +2,6 @@ name: 獅子島汽船
 route: 幣串〜水俣
 color: "#26d96a"
 source:
-  - https://peraichi.com/landing_pages/view/shishijimakisen/
   - https://www.town.nagashima.lg.jp/shishijima/access/
 ships:
   - ししじま

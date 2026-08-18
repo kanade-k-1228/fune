@@ -121,7 +121,7 @@ timetables:
       - name: 南行 32便
         stops: [ 21:30, null, 22:00 ]
       - name: 北行 1便
-        stops: [ 06:30, 06:00, null ]
+        stops: [ 06:30, null, 06:00 ]
       - name: 北行 2便
         stops: [ 06:50, 06:30, null ]
       - name: 北行 3便

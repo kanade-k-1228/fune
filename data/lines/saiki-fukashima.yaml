@@ -2,9 +2,9 @@ name: 佐伯市営定期船
 route: 蒲江〜屋形島～深島
 color: "#d9c926"
 source:
-  - https://www.city.saiki.oita.jp/kiji0033261/index.html
+  - https://www.city.saiki.oita.jp/kiji0037966/index.html
+  - https://www.city.saiki.oita.jp/kiji0037966/3_7966_up_py38nrxz.pdf
   - http://www.oitasima.net/yakatajima/images/20230401_yakatajimakourojikokuhyou.pdf
-  - https://sites.google.com/view/kamaekotu/
 fare:
   - 蒲江〜屋形島 大人片道 310円 / 小児 160円
   - 蒲江〜屋形島 大人往復 590円 / 小児 310円
@@ -17,11 +17,11 @@ fare:
   - 回数乗船券（片道10枚分の料金で11枚、有効期間6ヶ月）あり
   - 1・3・6ヶ月の定期乗船券あり（通勤・通学等で割引率が異なる）
 notes:
-  - 運航：蒲江交通有限会社 TEL 0972-43-3971
+  - 令和4年10月から佐伯市直営（旧運航会社の蒲江交通有限会社は定期航路事業から撤退）
   - 蒲江・深島航路事務所 TEL 0972-42-1188
   - 佐伯市役所 地域振興課 TEL 0972-22-3005
   - 第1便はスクールボート便（学校休校日は運休）、深島発
-  - 元日（1月1日）は運休
+  - 1月1日・1月2日は運休
   - ドック上架時は運休（年2回：6月下旬〜7月上旬、11月下旬〜12月上旬、それぞれ約1週間）
   - 気象・海象等により欠航する場合あり
   - 時刻を定めない臨時便を年60便に限り運行する場合あり

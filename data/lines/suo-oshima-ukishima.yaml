@@ -3,15 +3,27 @@ route: 周防大島（日前）〜浮島
 color: "#68d926"
 source:
   - https://www.town.suo-oshima.lg.jp/soshiki/38/11883.html
+  - https://www.town.suo-oshima.lg.jp/uploaded/attachment/11525.pdf
   - https://www.town.suo-oshima.lg.jp/uploaded/attachment/11526.pdf
   - https://www.town.suo-oshima.lg.jp/soshiki/38/11897.html
 fare:
-  - 大人：日前〜樽見/楽ノ江/江ノ浦 各330円
-  - 小児：日前〜樽見/楽ノ江/江ノ浦 各170円
-  - 大人：樽見〜楽ノ江 70円 / 樽見〜江ノ浦 130円 / 楽ノ江〜江ノ浦 70円
-  - 小児：樽見〜楽ノ江 40円 / 樽見〜江ノ浦 70円 / 楽ノ江〜江ノ浦 40円
-  - 回数券 大人11枚綴り 3,300円 / 小児11枚綴り 1,700円
-  - 自転車・荷車等 1台240円 / 原動機付自転車 1台460円 / 二輪(0.75L未満) 1台690円
+  - adult::oneway::330円（日前〜樽見）
+  - adult::oneway::330円（日前〜楽ノ江）
+  - adult::oneway::330円（日前〜江ノ浦）
+  - child::oneway::170円（日前〜樽見）
+  - child::oneway::170円（日前〜楽ノ江）
+  - child::oneway::170円（日前〜江ノ浦）
+  - adult::oneway::130円（樽見〜江ノ浦）
+  - adult::oneway::70円（樽見〜楽ノ江）
+  - adult::oneway::70円（楽ノ江〜江ノ浦）
+  - child::oneway::70円（樽見〜江ノ浦）
+  - child::oneway::40円（樽見〜楽ノ江）
+  - child::oneway::40円（楽ノ江〜江ノ浦）
+  - adult::回数券11枚綴り 3,300円
+  - child::回数券11枚綴り 1,700円
+  - bicycle::240円（自転車・荷車等 1台）
+  - moto::460円（原動機付自転車 1台）
+  - moto::690円（二輪 0.75L未満 1台）
   - 受託手荷物 1個170円
   - 小児は小学生以下。大人1人につき1名の未就学児及び1歳未満児は無料
   - 令和元年10月1日改定
@@ -20,6 +32,8 @@ notes:
   - 片道所要時間 約30分 / 航路距離 10.1km
   - ひらい丸：旅客定員62人、19トン、全長18.50m
   - 障害者等の割引運賃あり
+  - 1月1日（元旦）は休航
+  - 必要に応じて臨時便を運航することがある（貸切運航の場合あり）
 ships:
   - ひらい丸
 ports:

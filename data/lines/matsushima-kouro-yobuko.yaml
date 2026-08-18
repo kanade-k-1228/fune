@@ -3,7 +3,6 @@ route: 呼子〜松島
 color: "#d926b6"
 source:
   - https://www.city.karatsu.lg.jp/page/1539.html
-  - https://www.city.karatsu.lg.jp/koutsuu/machi/kotsu/koro/jikokuhyo.html
   - http://web.people-i.ne.jp/~koujin-maru/7tou_jikoku.pdf
 fare:
   - "運賃: 大人片道460円、小児片道230円"

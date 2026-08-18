@@ -53,26 +53,24 @@ timetables:
       - name: 南行 6便
         stops: [ 10:40, 10:45 ]
       - name: 南行 7便
-        stops: [ 11:00, 11:05 ]
-      - name: 南行 8便
         stops: [ 12:00, 12:05 ]
-      - name: 南行 9便
+      - name: 南行 8便
         stops: [ 13:00, 13:05 ]
-      - name: 南行 10便
+      - name: 南行 9便
         stops: [ 14:00, 14:05 ]
-      - name: 南行 11便
+      - name: 南行 10便
         stops: [ 14:50, 14:55 ]
-      - name: 南行 12便
+      - name: 南行 11便
         stops: [ 15:30, 15:35 ]
-      - name: 南行 13便
+      - name: 南行 12便
         stops: [ 16:50, 16:55 ]
-      - name: 南行 14便
+      - name: 南行 13便
         stops: [ 17:30, 17:35 ]
-      - name: 南行 15便
+      - name: 南行 14便
         stops: [ 18:10, 18:15 ]
-      - name: 南行 16便
+      - name: 南行 15便
         stops: [ 19:10, 19:15 ]
-      - name: 南行 17便
+      - name: 南行 16便
         stops: [ 20:10, 20:15 ]
       - name: 北行 1便
         stops: [ 06:50, 06:45 ]

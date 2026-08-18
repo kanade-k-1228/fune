@@ -5,23 +5,27 @@ source:
   - https://tomogashimakisen.com/main/
   - https://www.city.wakayama.wakayama.jp/kankou/kankouspot/1027585/1027593.html
 fare:
-  - 大人 往復 2,500円（片道 1,250円）
-  - 小児 往復 1,250円（片道 620円）
-  - 2026年7月1日より大人 往復 2,800円に改定
-  - 荷物 400円〜800円（サイズ別）
-  - 団体割引（15名以上、要問合せ）・障がい者割引あり
+  - adult::round::2,800円
+  - adult::oneway::1,400円
+  - child::round::1,250円
+  - child::oneway::620円
+  - 障がい者割引 往復 大人1,250円／こども620円（障がい者手帳等提示。同行介護人1名まで同額）
+  - 小荷物 300円（10kg未満）／500円（10〜20kg未満）／700円（10〜30kg未満）
+  - 特殊小荷物（自転車等）1,000円
+  - 団体割引（15名以上、要問合せ）
 notes:
   - TEL 073-459-1333 / FAX 073-488-1166
   - 加太港〜友ヶ島 所要時間 約20分
-  - 水曜定休（GW・夏季繁忙期は運航）
-  - 冬期（1月4日〜2月末日）は土日祝のみ往復2便で運航
-  - GW・夏季は臨時便を増便
-  - 1月1日運休
+  - 水曜運休（祝日・繁忙期は運航）
+  - 12月29日〜1月3日は運休
+  - 1月1日〜2月末日は土曜・日曜・祝日のみ運航（時刻は通常期と同じ）
+  - GW（4/29〜5/5）・夏季（7/20〜8/31）は臨時便（臨1・臨2）を増便
+  - 2026年7月1日、大人往復運賃を2,500円→2,800円に改定（こども運賃は据え置き）
   - 当日乗船整理券制（前日予約不可）
   - 気象状況により欠航の場合あり
 ships:
   - ともがしま
-  - らぴゅた
+  - 友ヶ島V
 ports:
   kabuto: [ 135.070454, 34.275751 ]
   tomogashima: [ 135.008882, 34.283845 ]
@@ -45,18 +49,72 @@ timetables:
     voyages:
       - name: 西行 1便
         stops: [ 09:00, 09:20 ]
+      - name: 西行 臨1便
+        stops: [ 10:00, 10:20 ]
+        schedule:
+          "2026-04-29..2026-05-05": true
+          "2026-07-20..2026-08-31": true
+          "*": false
       - name: 西行 2便
         stops: [ 11:00, 11:20 ]
       - name: 西行 3便
         stops: [ 13:00, 13:20 ]
+      - name: 西行 臨2便
+        note: お迎え専用（日帰り利用不可）
+        stops: [ 15:00, 15:20 ]
+        schedule:
+          "2026-04-29..2026-05-05": true
+          "2026-07-20..2026-08-31": true
+          "*": false
       - name: 西行 4便
         stops: [ 16:00, 16:20 ]
       - name: 東行 1便
         stops: [ 09:50, 09:30 ]
+      - name: 東行 臨1便
+        stops: [ 10:50, 10:30 ]
+        schedule:
+          "2026-04-29..2026-05-05": true
+          "2026-07-20..2026-08-31": true
+          "*": false
       - name: 東行 2便
         stops: [ 11:50, 11:30 ]
       - name: 東行 3便
-        stops: [ 14:50, 14:30 ]
+        stops: [ 13:50, 13:30 ]
+      - name: 東行 臨2便
+        stops: [ 15:50, 15:30 ]
+        schedule:
+          "2026-04-29..2026-05-05": true
+          "2026-07-20..2026-08-31": true
+          "*": false
       - name: 東行 4便
         stops: [ 16:50, 16:30 ]
+  closed:
+    name: 運休日
+    voyages: []
+schedule:
+  nthMonth(1):
+    nthDay(1): closed
+    nthDay(2): closed
+    nthDay(3): closed
+    isHoliday: normal
+    isWeekend: normal
+    "*": closed
+  nthMonth(2):
+    isHoliday: normal
+    isWeekend: normal
+    "*": closed
+  nthMonth(12):
+    nthDay(29): closed
+    nthDay(30): closed
+    nthDay(31): closed
+    isWednesday:
+      "!isHoliday": closed
+      "*": normal
+    "*": normal
+  "2026-04-29..2026-05-05": normal
+  "2026-07-20..2026-08-31": normal
+  isWednesday:
+    "!isHoliday": closed
+    "*": normal
+  "*": normal
 flags: [ regional ]

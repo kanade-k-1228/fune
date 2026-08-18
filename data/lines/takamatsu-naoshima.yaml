@@ -2,18 +2,35 @@ name: 四国汽船
 route: 高松〜直島宮浦
 color: "#d92660"
 source:
-  - https://www.shikokukisen.com/instant/#route01
-  - https://www.shikokukisen.com/fare/
+  - https://shikokukisen.com/takamatsu-miyanoura/
 fare:
-  - 大人 片道 680円
-  - 小人(6-12歳) 片道 340円
-  - 自動車航送(ドライバー込)：〜3m 4,280円 / 3〜4m 5,720円 / 4〜5m 7,150円 / 5〜6m 8,130円 / 6〜7m 9,430円
+  - adult::oneway::680円（フェリー）
+  - child::oneway::340円（フェリー、6〜12歳）
+  - adult::oneway::1,590円（高速旅客船）
+  - child::oneway::800円（高速旅客船、6〜12歳）
+  - group::adult::oneway::620円（フェリー、団体15名以上）
+  - group::student::oneway::480円（フェリー、団体学生運賃、中学生以上）
+  - group::child::oneway::310円（フェリー、団体15名以上、6〜12歳）
+  - disabled::oneway::340円（フェリー、障がい者手帳等提示）
+  - disabled::oneway::170円（フェリー、障がい者手帳等提示、6〜12歳）
+  - disabled::oneway::800円（高速旅客船、障がい者手帳等提示）
+  - disabled::oneway::400円（高速旅客船、障がい者手帳等提示、6〜12歳）
+  - car::4,280円（〜3m、運転手込・フェリーのみ）
+  - car::5,720円（3〜4m、運転手込・フェリーのみ）
+  - car::7,150円（4〜5m、運転手込・フェリーのみ）
+  - car::8,130円（5〜6m、運転手込・フェリーのみ）
+  - car::9,430円（6〜7m、運転手込・フェリーのみ）
+  - bicycle::410円（フェリーのみ）
+  - moto::840円（125cc以下・フェリーのみ）
+  - moto::1,270円（125cc超・フェリーのみ）
+  - フェリー回数券 11枚綴り 6,800円
   - 2025年6月1日 運賃改定
 notes:
-  - 所要時間：高松→直島 約50分、直島→高松 約60分
+  - 所要時間：フェリー 高松→直島 約50分、直島→高松 約60分／高速旅客船 約30分
   - 高松事務所 TEL 087-821-5100
   - サンポート高松フェリー発券所 TEL 087-821-6798
-  - フェリーは自転車・自動車積載可
+  - フェリーは自転車・自動車積載可、高速旅客船は自転車・自動車不可
+  - 高速旅客船の乗船券は窓口のみ販売（現金のみ、片道切符のみ）
 ships:
   - なおしま
   - あさひ
@@ -35,29 +52,41 @@ coords:
     - [ 134.05043, 34.35506 ]
     - [ 134.04925, 34.35399 ]
     - [ 133.973944, 34.456757 ]
-stops: [ takamatsu, miyanoura-2 ]
+stops: [takamatsu, miyanoura-2]
 timetables:
   normal:
     name: 通常ダイヤ
     voyages:
       - name: 北行 1便
-        stops: [ 08:12, 09:02 ]
+        stops: [08:12, 09:02]
       - name: 北行 2便
-        stops: [ 10:14, 11:04 ]
+        stops: [10:14, 11:04]
       - name: 北行 3便
-        stops: [ 12:40, 13:30 ]
+        stops: [12:40, 13:30]
       - name: 北行 4便
-        stops: [ 15:35, 16:25 ]
+        stops: [15:35, 16:25]
       - name: 北行 5便
-        stops: [ 18:05, 18:55 ]
+        stops: [18:05, 18:55]
+      - name: 北行 高速1便
+        stops: [07:20, 07:50]
+      - name: 北行 高速2便
+        stops: [09:20, 09:50]
+      - name: 北行 高速3便
+        stops: [20:30, 21:00]
       - name: 南行 1便
-        stops: [ 08:00, 07:00 ]
+        stops: [08:00, 07:00]
       - name: 南行 2便
-        stops: [ 10:07, 09:07 ]
+        stops: [10:07, 09:07]
       - name: 南行 3便
-        stops: [ 12:30, 11:30 ]
+        stops: [12:30, 11:30]
       - name: 南行 4便
-        stops: [ 15:20, 14:20 ]
+        stops: [15:20, 14:20]
       - name: 南行 5便
-        stops: [ 18:00, 17:00 ]
-flags: [ regional ]
+        stops: [18:00, 17:00]
+      - name: 南行 高速1便
+        stops: [07:15, 06:45]
+      - name: 南行 高速2便
+        stops: [09:10, 08:40]
+      - name: 南行 高速3便
+        stops: [20:15, 19:45]
+flags: [regional, ferry, rapid]

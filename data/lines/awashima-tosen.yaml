@@ -3,6 +3,7 @@ route: 淡島船乗場〜淡島
 color: "#26a4d9"
 source:
   - https://www.marinepark.jp/enjoy/information/
+  - https://www.marinepark.jp/faq/
 fare:
   - 入園料に乗船料含む（年中無休、天候により変動あり）
 notes:

@@ -4,6 +4,7 @@ color: "#2685d9"
 source:
   - https://www.hatsushima.jp/access/
   - https://www.hatsushima.jp/access/ship.php
+  - https://www.hatsushima.jp/access/time2.php
 fare:
   - 大人(中学生以上) 往復 2,900円
   - 小人(小学生) 往復 1,450円
@@ -14,6 +15,7 @@ notes:
   - 所要時間 約30分
   - 熱海港定期船乗り場 TEL 0557-81-0541
   - 強風や海上状況によりダイヤ変更・欠航となる場合あり
+  - ドック期間中は減便ダイヤで運航（時期は公式サイト参照）
 ports:
   netsu-kaiko: [ 139.076231, 35.08984 ]
   hatsushima: [ 139.169936, 35.042723 ]
@@ -43,12 +45,14 @@ timetables:
       - name: 南行 5便
         stops: [ 12:00, 12:30 ]
       - name: 南行 6便
-        stops: [ 14:00, 14:30 ]
+        stops: [ 13:00, 13:30 ]
       - name: 南行 7便
-        stops: [ 14:40, 15:10 ]
+        stops: [ 14:00, 14:30 ]
       - name: 南行 8便
-        stops: [ 16:00, 16:30 ]
+        stops: [ 14:40, 15:10 ]
       - name: 南行 9便
+        stops: [ 16:00, 16:30 ]
+      - name: 南行 10便
         stops: [ 17:20, 17:50 ]
       - name: 北行 1便
         stops: [ 08:30, 08:00 ]

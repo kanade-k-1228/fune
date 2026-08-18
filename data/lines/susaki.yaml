@@ -91,6 +91,7 @@ stops:
     no-ura,
     yokonami,
     na-na,
+    yokonami,
     bannai
   ]
 timetables:
@@ -98,15 +99,31 @@ timetables:
     name: 通常ダイヤ
     voyages:
       - name: 下り 1便
-        stops: [ 07:10, 07:17, 07:25, 07:34, 07:42, 07:53, 08:00, 08:06, 08:11 ]
+        stops: [ 07:10, 07:17, 07:25, 07:34, 07:42, 07:53, 08:00, 08:06, null, 08:11 ]
       - name: 下り 2便
-        stops: [ 10:05, 10:12, 10:20, 10:29, 10:37, 10:48, 11:07, 11:01, null ]
+        stops: [ 10:05, 10:12, 10:20, 10:29, 10:37, 10:48, 10:55, 11:01, 11:07, null ]
       - name: 下り 3便
-        stops: [ 14:50, 14:57, 15:05, 15:14, 15:22, 15:33, 15:40, null, null ]
+        stops: [ 14:50, 14:57, 15:05, 15:14, 15:22, 15:33, 15:40, null, null, null ]
       - name: 上り 1便
-        stops: [ 09:22, 09:15, 09:07, 08:58, 08:50, 08:39, 08:32, 08:26, 08:21 ]
+        stops: [ 09:22, 09:15, 09:07, 08:58, 08:50, 08:39, 08:32, 08:26, null, 08:21 ]
       - name: 上り 2便
-        stops: [ 14:40, 14:33, 14:25, 14:16, 14:08, 13:57, 13:50, 13:44, null ]
+        stops: [ 14:40, 14:33, 14:25, 14:16, 14:08, 13:57, 13:50, 13:44, 13:38, null ]
       - name: 上り 3便
-        stops: [ 17:10, 17:03, 16:55, 16:46, 16:38, 16:27, 16:20, null, null ]
+        stops: [ 17:10, 17:03, 16:55, 16:46, 16:38, 16:27, 16:20, null, null, null ]
+  closed:
+    name: 運休（日曜・祝日・年末年始）
+    voyages: []
+schedule:
+  isSunday: closed
+  isHoliday: closed
+  nthMonth(12):
+    nthDay(29): closed
+    nthDay(30): closed
+    nthDay(31): closed
+    "*": normal
+  nthMonth(1):
+    nthDay(2): closed
+    nthDay(3): closed
+    "*": normal
+  "*": normal
 flags: [ regional ]

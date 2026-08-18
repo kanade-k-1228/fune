@@ -2,16 +2,23 @@ name: 尾道渡船
 route: 兼吉渡し
 color: "#d9b326"
 source:
-  - https://onomichijp.com/shimanami/onomichi_tosen.html
+  - https://www.city.onomichi.hiroshima.jp/soshiki/32/65681.html
+  - https://www.city.onomichi.hiroshima.jp/uploaded/attachment/54618.pdf
+  - https://www.ononavi.jp/playing/cruising/detail.html?detail_id=468
 fare:
-  - 大人100円・小人50円
-  - 自転車・バイク10円追加
-  - 車両運賃：4m未満120円・5m未満130円（運転者1名含む）
+  - adult::oneway::100円
+  - child::oneway::50円
+  - bicycle::oneway::110円（本人の運賃100円を含む）
+  - moto::oneway::110円（本人の運賃100円を含む、排気量問わず）
+  - car::oneway::120円（4m未満・運転者1名分の運賃を含む）
+  - car::oneway::130円（4m以上5m未満・運転者1名分の運賃を含む）
+  - car::oneway::160円（5m以上6m未満・運転者1名分の運賃を含む）
+  - car::oneway::260円（6m以上7m未満・運転者1名分の運賃を含む）
+  - car::oneway::380円（7m以上・運転者1名分の運賃を含む）
 notes:
   - 運航：おのみち渡し船株式会社（広島県尾道市土堂二丁目10番3号 / TEL 0848-38-7761）
   - 区間：尾道（土堂）～向島（兼吉）
-  - 始発6:00～最終 向島発22:25/尾道発22:30
-  - 約10分間隔（ラッシュ時5分間隔）・所要約4分
+  - 運航時間 6:00～22:10、5～11分間隔で運航・所要4分
   - 車両乗船可
   - 時刻表なし（乗客の乗り込みを待って随時出航）
   - 船内現金払いのみ（電子マネー・クレジットカード不可）

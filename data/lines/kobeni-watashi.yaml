@@ -3,7 +3,6 @@ route: 小紅の渡し
 color: "#26a1d9"
 source:
   - https://www.gifucvb.or.jp/sightseeing/detail_kankou.php?eid=00026
-  - https://ja.wikipedia.org/wiki/%E5%B0%8F%E7%B4%85%E3%81%AE%E6%B8%A1%E3%81%97
 fare:
   - 料金：無料
 notes:
@@ -28,23 +27,120 @@ timetables:
     name: 冬ダイヤ（10/1〜3/31 8:00〜16:30 運航）
     voyages: []
   closed:
-    name: 運休（毎週月曜・12/29〜31）
+    name: 運休（毎週月曜・12/29〜31・月曜祝日／21日時の翌火曜）
     voyages: []
 schedule:
-  isMonday: closed
   nthMonth(12):
     nthDay(29): closed
     nthDay(30): closed
     nthDay(31): closed
+    "*":
+      isMonday:
+        isHoliday: winter
+        nthDay(21): winter
+        "*": closed
+      isTuesday:
+        "day(-1).isHoliday": closed
+        "day(-1).nthDay(21)": closed
+        "*": winter
+      "*": winter
+  nthMonth(1):
+    isMonday:
+      isHoliday: winter
+      nthDay(21): winter
+      "*": closed
+    isTuesday:
+      "day(-1).isHoliday": closed
+      "day(-1).nthDay(21)": closed
+      "*": winter
     "*": winter
-  nthMonth(1): winter
-  nthMonth(2): winter
-  nthMonth(3): winter
-  nthMonth(4): spring-autumn
-  nthMonth(5): spring-autumn
-  nthMonth(6): spring-autumn
-  nthMonth(7): spring-autumn
-  nthMonth(8): spring-autumn
-  nthMonth(9): spring-autumn
+  nthMonth(2):
+    isMonday:
+      isHoliday: winter
+      nthDay(21): winter
+      "*": closed
+    isTuesday:
+      "day(-1).isHoliday": closed
+      "day(-1).nthDay(21)": closed
+      "*": winter
+    "*": winter
+  nthMonth(3):
+    isMonday:
+      isHoliday: winter
+      nthDay(21): winter
+      "*": closed
+    isTuesday:
+      "day(-1).isHoliday": closed
+      "day(-1).nthDay(21)": closed
+      "*": winter
+    "*": winter
+  nthMonth(4):
+    isMonday:
+      isHoliday: spring-autumn
+      nthDay(21): spring-autumn
+      "*": closed
+    isTuesday:
+      "day(-1).isHoliday": closed
+      "day(-1).nthDay(21)": closed
+      "*": spring-autumn
+    "*": spring-autumn
+  nthMonth(5):
+    isMonday:
+      isHoliday: spring-autumn
+      nthDay(21): spring-autumn
+      "*": closed
+    isTuesday:
+      "day(-1).isHoliday": closed
+      "day(-1).nthDay(21)": closed
+      "*": spring-autumn
+    "*": spring-autumn
+  nthMonth(6):
+    isMonday:
+      isHoliday: spring-autumn
+      nthDay(21): spring-autumn
+      "*": closed
+    isTuesday:
+      "day(-1).isHoliday": closed
+      "day(-1).nthDay(21)": closed
+      "*": spring-autumn
+    "*": spring-autumn
+  nthMonth(7):
+    isMonday:
+      isHoliday: spring-autumn
+      nthDay(21): spring-autumn
+      "*": closed
+    isTuesday:
+      "day(-1).isHoliday": closed
+      "day(-1).nthDay(21)": closed
+      "*": spring-autumn
+    "*": spring-autumn
+  nthMonth(8):
+    isMonday:
+      isHoliday: spring-autumn
+      nthDay(21): spring-autumn
+      "*": closed
+    isTuesday:
+      "day(-1).isHoliday": closed
+      "day(-1).nthDay(21)": closed
+      "*": spring-autumn
+    "*": spring-autumn
+  nthMonth(9):
+    isMonday:
+      isHoliday: spring-autumn
+      nthDay(21): spring-autumn
+      "*": closed
+    isTuesday:
+      "day(-1).isHoliday": closed
+      "day(-1).nthDay(21)": closed
+      "*": spring-autumn
+    "*": spring-autumn
+  isMonday:
+    isHoliday: winter
+    nthDay(21): winter
+    "*": closed
+  isTuesday:
+    "day(-1).isHoliday": closed
+    "day(-1).nthDay(21)": closed
+    "*": winter
   "*": winter
 flags: [ regional ]

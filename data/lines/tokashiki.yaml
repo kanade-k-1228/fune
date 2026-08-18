@@ -5,6 +5,7 @@ source:
   - https://tokashiki-ferry.jp/Senpaku/portal
   - https://www.vill.tokashiki.okinawa.jp/soshiki/sitekanri/5/2/1365.html
   - https://www.vill.tokashiki.okinawa.jp/soshiki/sitekanri/5/2/53.html
+  - https://www.vill.tokashiki.okinawa.jp/soshiki/sempaku/2/2/826.html
 ships:
   - フェリーとかしき
   - マリンライナーとかしき
@@ -16,6 +17,9 @@ fare:
   - 自動車航送（フェリー） 3〜4m 片道 6,670円 / 往復 13,340円
   - 自動車航送（フェリー） 4〜5m 片道 8,890円 / 往復 17,780円
   - 自動車航送（フェリー） 5〜6m 片道 11,100円 / 往復 22,200円
+  - 自転車 片道 330円 / 往復 660円
+  - 原付 片道 650円 / 往復 1,300円
+  - 自動二輪車 片道 1,030円 / 往復 2,060円
   - 環境協力税 100円（高校生以上、別途）
 notes:
   - 所要時間 フェリー 約70分 / マリンライナー 約40分
@@ -24,8 +28,8 @@ notes:
   - 受付時間 10:00〜17:00
   - 乗船券の発券・購入は乗船当日のみ。出港30分前までに購入要
   - 小学生未満の幼児は大人1名につき1名無料
-  - 夏時間 3/1〜9/30、冬時間 10/1〜2月末で時刻が異なる（冬時間はフェリー渡嘉敷発15:30、マリンライナー泊発16:00）
   - GW・7〜9月の金土日はマリンライナー13:00便を追加運航
+  - 2026年10月1日から運賃改定予定（フェリーとかしき大人片道1,690円→2,200円、マリンライナーとかしき大人片道2,530円→3,300円等）
 ports:
   naha-tomari: [ 127.683024, 26.224634 ]
   tokashiki: [ 127.367969, 26.199266 ]
@@ -46,8 +50,8 @@ coords:
     - [ 127.367969, 26.199266 ]
 stops: [ naha-tomari, tokashiki ]
 timetables:
-  normal:
-    name: 通常ダイヤ
+  summer:
+    name: 夏ダイヤ（3月1日〜9月30日）
     voyages:
       - name: 西行 フェリー
         stops: [ 10:00, 11:10 ]
@@ -61,4 +65,28 @@ timetables:
         stops: [ 16:30, 17:10 ]
       - name: 東行 高速船 2便
         stops: [ 18:10, 17:30 ]
+  winter:
+    name: 冬ダイヤ（10月1日〜2月末日）
+    voyages:
+      - name: 西行 フェリー
+        stops: [ 10:00, 11:10 ]
+      - name: 東行 フェリー
+        stops: [ 16:40, 15:30 ]
+      - name: 西行 高速船 1便
+        stops: [ 09:00, 09:40 ]
+      - name: 東行 高速船 1便
+        stops: [ 10:40, 10:00 ]
+      - name: 西行 高速船 2便
+        stops: [ 16:00, 16:40 ]
+      - name: 東行 高速船 2便
+        stops: [ 17:40, 17:00 ]
+schedule:
+  nthMonth(3): summer
+  nthMonth(4): summer
+  nthMonth(5): summer
+  nthMonth(6): summer
+  nthMonth(7): summer
+  nthMonth(8): summer
+  nthMonth(9): summer
+  "*": winter
 flags: [ regional ]

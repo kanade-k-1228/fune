@@ -4,7 +4,7 @@ route: 小堀～取手緑地運動公園駐車場前～取手ふれあい桟橋
 source:
   - https://www.city.toride.ibaraki.jp/mizutomidori/bunkakatsudo/kanko/kankomesho/ohorinowatashi.html
 fare:
-  - 料金：大人200円（一周400円）・小学生100円（一周200円）・自転車1台目無料
+  - 料金：大人200円（一周400円）・小学生100円（一周200円）・自転車/原付1台目無料（2台目以降は1台につき1運航経路200円）
 notes:
   - 取手市営の渡し船。利根川を挟み市内中心部と小堀（おおほり）地区を結ぶ
   - 河川増水・強風時は欠航
@@ -12,6 +12,7 @@ notes:
   - 定員12名、予約不可
 ships:
   - とりで号
+  - とりで3号
 ports:
   kobori: [ 140.07554, 35.882835 ]
   toride-ryokuchi: [ 140.065781, 35.886811 ]

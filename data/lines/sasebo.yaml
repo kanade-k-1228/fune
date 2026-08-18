@@ -3,16 +3,25 @@ route: 宇久島〜寺島〜小値賀島
 color: "#d926a5"
 source:
   - https://www.city.sasebo.lg.jp/benrimap/shisetsu/sonota/270.html
-  - https://www.city.sasebo.lg.jp/benrimap/shisetsu/sonota/documents/mitsushima_ryoukin_202312.pdf
+  - https://www.city.sasebo.lg.jp/documents/3897/mitsushima_ryoukin_202312.pdf
+  - https://www.city.sasebo.lg.jp/documents/3897/mitsushima_ryoukin_2021.pdf
 fare:
-  - 神浦〜寺島 大人 170円
-  - 神浦〜柳 大人 340円
-  - 寺島〜柳 大人 340円
-  - 5歳以下無料、6歳以上12歳未満は半額
+  - adult::170円（神浦〜寺島）
+  - child::90円（神浦〜寺島）
+  - adult::350円（神浦〜柳）
+  - child::180円（神浦〜柳）
+  - adult::350円（寺島〜柳）
+  - child::180円（寺島〜柳）
+  - 中学生以上は大人運賃、小学生は小人運賃、小学生未満は大人1人につき小児1人無料
+  - 身体障害者手帳・療育手帳・精神障害者保健福祉手帳所持者とその付添人は半額（ミライロID提示可、10円未満切上げ）
   - 受託手荷物 90円
-  - 自転車等軽車両 110円 / 原動機付自転車 220円
-  - 二輪自動車 (750cc未満) 330円 / (750cc以上) 440円
-  - 小荷物 (3辺合計2m以下かつ30kg以下) 10kg以下 120円 / 〜20kg 240円 / 〜30kg 360円
+  - 自転車等軽車両 110円
+  - 原動機付自転車 230円
+  - 二輪自動車 (750cc未満) 340円
+  - 二輪自動車 (750cc以上) 450円
+  - 小荷物 (3辺合計2m以下かつ30kg以下) 10kg以下 120円
+  - 小荷物 (3辺合計2m以下かつ30kg以下) 10kg超〜20kg以下 250円
+  - 小荷物 (3辺合計2m以下かつ30kg以下) 20kg超〜30kg以下 370円
 notes:
   - 悪天候時を除き無休
   - 問合せ 宇久行政センター産業建設課 0959-57-3113

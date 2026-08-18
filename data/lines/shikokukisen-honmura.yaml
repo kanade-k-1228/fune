@@ -2,8 +2,8 @@ name: 四国汽船
 route: 宇野〜直島（本村）
 color: "#d95b26"
 source:
-  - https://www.shikokukisen.com/instant/#route03
-  - https://www.shikokukisen.com/fare/
+  - https://shikokukisen.com/uno-honmura/#jikoku
+  - https://shikokukisen.com/uno-honmura/#ryokin
 fare:
   - 大人 片道 370円
   - 小人（6〜12歳）片道 190円

@@ -8,15 +8,17 @@ ships:
   - たかしま
   - フェリーたかしま2
 fare:
-  - 今福〜殿ノ浦 大人 1,070円 / 小人 540円（離島住民割引 大人 540円 / 小人 270円）
-  - 今福〜飛島 大人 600円 / 小人 300円（参考）
-  - 飛島〜殿ノ浦 大人 340円 / 小人 170円（参考）
-  - 御厨〜阿翁 大人 910円 / 小人 460円
-  - 御厨〜黒島 大人 780円 / 小人 390円
-  - 御厨〜船唐津 大人 590円 / 小人 300円
-  - 御厨〜青島 大人 510円 / 小人 260円
-  - 御厨〜阿翁 自動車航送 3m未満 1,620円 / 3〜4m 2,070円 / 4〜5m 2,530円ほか
-  - 御厨〜阿翁 自転車 220円 / 原付 440円 / 自動二輪 660〜880円
+  - 今福〜殿ノ浦 大人 720円 / 小人 360円（離島住民割引 大人 530円 / 小人 270円）
+  - 今福〜飛島 大人 410円 / 小人 210円（離島住民割引 大人 350円 / 小人 180円）
+  - 飛島〜殿ノ浦 大人 300円 / 小人 150円（離島住民割引 大人 280円 / 小人 140円）
+  - 御厨〜阿翁 大人 1,090円 / 小人 550円（離島住民割引 大人 920円 / 小人 460円）
+  - 御厨〜黒島 大人 940円 / 小人 470円（離島住民割引 大人 800円 / 小人 400円）
+  - 御厨〜飛島 大人 910円 / 小人 460円（離島住民割引 大人 820円 / 小人 410円）
+  - 御厨〜船唐津 大人 710円 / 小人 360円（離島住民割引 大人 570円 / 小人 290円）
+  - 御厨〜青島 大人 610円 / 小人 310円（離島住民割引 大人 390円 / 小人 200円）
+  - 小人運賃は大人運賃の半額（10円未満切り上げ）。就学前は無料、高齢者割引なし
+  - 御厨〜阿翁 自動車航送 3m未満 1,620円 / 3〜4m 2,070円 / 4〜5m 2,530円ほか（12m以上は1mごとに1,550円加算）
+  - 御厨〜阿翁 自転車 220円 / 原付 440円 / 自動二輪 750cc未満660円・750cc以上880円
   - 運賃改定 令和7年10月1日
 notes:
   - 鷹島汽船 本社 (鷹島) TEL 0955-48-2327
@@ -25,8 +27,8 @@ notes:
   - 1月1日は両航路とも運休
   - 今福〜殿ノ浦航路は旅客船「たかしま」で運航（車両航送不可）。所要時間 約20〜25分
   - 御厨〜阿翁航路は「フェリーたかしま2」で運航（車両航送可、定員96名）。運航距離 約19km、所要時間 約1時間15分
-  - 御厨〜阿翁航路は季節により最終便の時刻が変動（夏期=4/1〜9/30 と 冬期=10/1〜3/31）
-  - 御厨〜阿翁航路は毎週水曜・日曜・祝日に飛島へ寄港する変則ダイヤあり
+  - 御厨〜阿翁航路は季節により最終便（御厨発17時台）の時刻が変動（夏期=4/1〜9/30 と 冬期=10/1〜3/31）
+  - 御厨〜阿翁航路のフェリーは週1回（原則水曜日）飛島に寄港。水曜が悪天候・祝祭日等で寄港できない場合は木曜、木曜も不可なら金曜、金曜までに不可なら翌週水曜に順延（時刻詳細は未収録）
 ports:
   imafuku: [ 129.776736, 33.396244 ]
   hishima: [ 129.764244, 33.354326 ]
@@ -117,38 +119,70 @@ timetables:
   normal:
     name: 通常ダイヤ
     voyages:
-      - name: 今福→殿ノ浦 1便
-        stops: [ 07:40, null, 08:15, null, null, null, null, null ]
-      - name: 今福→殿ノ浦 2便
-        stops: [ 10:00, null, 10:35, null, null, null, null, null ]
-      - name: 今福→殿ノ浦 3便
-        stops: [ 13:30, null, 14:05, null, null, null, null, null ]
-      - name: 今福→殿ノ浦 4便
-        stops: [ 16:50, null, 17:25, null, null, null, null, null ]
-      - name: 今福→殿ノ浦 5便
-        stops: [ 18:40, null, 19:15, null, null, null, null, null ]
       - name: 殿ノ浦→今福 1便
-        stops: [ 08:30, null, 07:55, null, null, null, null, null ]
+        stops: [ 06:50, 06:38, 06:25, null, null, null, null, null ]
+      - name: 今福→殿ノ浦 1便
+        stops: [ 07:40, 07:55, 08:05, null, null, null, null, null ]
       - name: 殿ノ浦→今福 2便
-        stops: [ 10:50, null, 10:15, null, null, null, null, null ]
+        stops: [ 08:55, 08:43, 08:30, null, null, null, null, null ]
+      - name: 今福→殿ノ浦 2便
+        stops: [ 10:00, 10:15, 10:25, null, null, null, null, null ]
       - name: 殿ノ浦→今福 3便
-        stops: [ 14:20, null, 13:45, null, null, null, null, null ]
+        stops: [ 12:55, 12:43, 12:30, null, null, null, null, null ]
+      - name: 今福→殿ノ浦 3便
+        stops: [ 13:30, 13:45, 13:55, null, null, null, null, null ]
       - name: 殿ノ浦→今福 4便
-        stops: [ 17:40, null, 17:05, null, null, null, null, null ]
+        stops: [ 16:25, 16:13, 16:00, null, null, null, null, null ]
+      - name: 今福→殿ノ浦 4便
+        stops: [ 16:50, 17:05, 17:15, null, null, null, null, null ]
       - name: 殿ノ浦→今福 5便
-        stops: [ 19:30, null, 18:55, null, null, null, null, null ]
-      - name: 御厨→青島 1便
-        stops: [ null, null, null, 07:50, 08:10, null, null, null ]
-      - name: 御厨→阿翁 2便
-        stops: [ null, null, null, 10:00, null, null, null, 11:15 ]
-      - name: 御厨→阿翁 3便
-        stops: [ null, null, null, 14:00, null, null, null, 15:15 ]
-      - name: 御厨→阿翁 4便
-        stops: [ null, null, null, 17:15, null, null, null, 18:30 ]
+        stops: [ 18:05, 17:53, 17:40, null, null, null, null, null ]
+      - name: 今福→殿ノ浦 5便
+        stops: [ 18:40, 18:55, 19:05, null, null, null, null, null ]
       - name: 阿翁→御厨 1便
-        stops: [ null, null, null, 07:35, null, null, null, 06:20 ]
+        stops: [ null, null, null, 07:35, 07:15, 07:00, 06:35, 06:20 ]
+      - name: 御厨→青島 1便
+        note: 青島止まり（阿翁までは運航しない）
+        stops: [ null, null, null, 07:50, 08:10, null, null, null ]
+      - name: 青島→御厨 1便
+        note: 青島発（阿翁からは運航しない）
+        stops: [ null, null, null, 08:33, 08:13, null, null, null ]
+      - name: 御厨→阿翁 2便
+        stops: [ null, null, null, 10:00, 10:23, 10:38, 11:03, 11:15 ]
       - name: 阿翁→御厨 2便
-        stops: [ null, null, null, 13:25, null, null, null, 12:10 ]
+        stops: [ null, null, null, 13:25, 13:05, 12:50, 12:25, 12:10 ]
+      - name: 御厨→阿翁 3便
+        stops: [ null, null, null, 14:00, 14:23, 14:38, 15:03, 15:15 ]
       - name: 阿翁→御厨 3便
-        stops: [ null, null, null, 16:45, null, null, null, 15:30 ]
+        stops: [ null, null, null, 16:45, 16:25, 16:10, 15:45, 15:30 ]
+      - name: 御厨→阿翁 4便（夏期）
+        note: 夏期（4/1〜9/30）ダイヤ
+        stops: [ null, null, null, 17:30, 17:53, 18:08, 18:33, 18:45 ]
+        schedule:
+          nthMonth(4): true
+          nthMonth(5): true
+          nthMonth(6): true
+          nthMonth(7): true
+          nthMonth(8): true
+          nthMonth(9): true
+          "*": false
+      - name: 御厨→阿翁 4便（冬期）
+        note: 冬期（10/1〜3/31）ダイヤ
+        stops: [ null, null, null, 17:15, 17:38, 17:53, 18:18, 18:30 ]
+        schedule:
+          nthMonth(4): false
+          nthMonth(5): false
+          nthMonth(6): false
+          nthMonth(7): false
+          nthMonth(8): false
+          nthMonth(9): false
+          "*": true
+  closed:
+    name: 運休日（1月1日）
+    voyages: []
+schedule:
+  nthMonth(1):
+    nthDay(1): closed
+    "*": normal
+  "*": normal
 flags: [ regional ]

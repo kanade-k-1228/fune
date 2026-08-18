@@ -74,6 +74,9 @@ timetables:
     voyages:
       - name: 51便
         stops: [ "08:45", null ]
+        schedule:
+          2026-04-24..2026-11-05: true
+          "*": false
       - name: 52便
         stops: [ "10:15", null ]
       - name: 53便
@@ -84,4 +87,14 @@ timetables:
         stops: [ "14:40", null ]
       - name: 56便
         stops: [ "16:00", null ]
+        schedule:
+          2026-04-24..2026-10-15: true
+          "*": false
+  closed:
+    name: 運休（冬期）
+    voyages: []
+schedule:
+  2026-04-24..2026-11-05: dia0
+  2026-11-06..2026-11-16: dia2
+  "*": closed
 flags: [ regional ]

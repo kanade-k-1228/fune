@@ -3,9 +3,8 @@ route: 館山～大島
 color: "#d9264a"
 source:
   - https://www.tokaikisen.co.jp/boarding/timetable/
-  - https://www.tokaikisen.co.jp/news/15144/
   - https://maruchiba.jp/event/detail_13524.html
-  - https://funeco.jp/news/news-28652/
+  - https://www.city.tateyama.chiba.jp/files/300398166.pdf
 notes:
   - 春の季節運航（毎年2月〜4月頃のみ）。2026年は2月7日(土)〜4月5日(日)に毎日運航
   - 多くの日は東京(竹芝)〜館山〜大島〜熱海、3/23〜4/5は東京〜館山〜大島、2/18・3/4・3/11・3/17・3/18は東京〜館山〜大島〜利島〜新島〜式根島〜神津島の各島経由便
@@ -39,9 +38,9 @@ timetables:
     name: 標準
     voyages:
       - name: 下り
-        stops: [ 09:30, 10:30 ]
+        stops: [ [ 09:25, 09:35 ], 10:30 ]
       - name: 上り
-        stops: [ 16:00, 15:00 ]
+        stops: [ [ 16:05, 16:10 ], 15:10 ]
 schedule:
   "2026-02-07..2026-04-05": normal
   "*": normal

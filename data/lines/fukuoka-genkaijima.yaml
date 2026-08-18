@@ -73,4 +73,40 @@ timetables:
         stops: [ 18:10, 17:35 ]
       - name: 東行 7便
         stops: [ 20:20, 19:45 ]
+  winter:
+    name: 冬ダイヤ（12月〜2月）
+    voyages:
+      - name: 西行 1便
+        stops: [ 07:10, 07:45 ]
+      - name: 西行 2便
+        stops: [ 08:50, 09:25 ]
+      - name: 西行 3便
+        stops: [ 11:20, 11:55 ]
+      - name: 西行 4便
+        stops: [ 13:30, 14:05 ]
+      - name: 西行 5便
+        stops: [ 16:45, 17:20 ]
+      - name: 西行 6便
+        stops: [ 18:30, 19:05 ]
+      - name: 西行 7便
+        stops: [ 20:35, 21:10 ]
+      - name: 東行 1便
+        stops: [ 06:55, 06:20 ]
+      - name: 東行 2便
+        stops: [ 08:35, 08:00 ]
+      - name: 東行 3便
+        stops: [ 10:15, 09:40 ]
+      - name: 東行 4便
+        stops: [ 12:45, 12:10 ]
+      - name: 東行 5便
+        stops: [ 15:05, 14:30 ]
+      - name: 東行 6便
+        stops: [ 18:10, 17:35 ]
+      - name: 東行 7便
+        stops: [ 20:20, 19:45 ]
+schedule:
+  nthMonth(12): winter
+  nthMonth(1): winter
+  nthMonth(2): winter
+  "*": normal
 flags: [ regional ]

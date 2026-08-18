@@ -4,7 +4,6 @@ color: "#35d926"
 source:
   - http://www.seiunkisen.co.jp/unkouannai.html
   - http://www.seiunkisen.co.jp/kyakusenshoukai.html
-  - https://seiunkisen.hatenablog.com/
 fare:
   - 大人 2,080円（片道・高速船）
   - 小人 1,040円（片道・高速船）
@@ -19,7 +18,7 @@ notes:
   - 所在地 〒798-0031 愛媛県宇和島市栄町港2丁目600番地15
   - 元日（1月1日）は全便休航
   - 夏期は5月1日〜9月30日、冬期は10月1日〜4月30日（1便のみ夏冬で時刻が異なる）
-  - 天候・貸切・検査（船のドック）等で欠航や時刻変更となる場合あり（公式ブログで案内）
+  - 天候・貸切・検査（船のドック）等で欠航や時刻変更となる場合あり
 ships:
   - しおかぜ
 ports:

@@ -12,7 +12,7 @@ fare:
   - 自転車持込 260円
 notes:
   - 所要時間 約5分
-  - 日・祝日は一部便（06:15、06:40、19:30、20:30、21:50発）が運休
+  - 日・祝日は下関（唐戸）発06:00・06:30、門司港発06:15・06:40が運休
   - 1日乗り放題のフリーパスあり
   - 小型犬のみ同伴可（抱っこして後部デッキ乗船）
   - 門司営業所 093-331-0222
@@ -42,8 +42,16 @@ timetables:
     voyages:
       - name: 東行 1便
         stops: [ 06:00, 06:05 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
       - name: 東行 2便
         stops: [ 06:30, 06:35 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
       - name: 東行 3便
         stops: [ 07:00, 07:05 ]
       - name: 東行 4便
@@ -120,18 +128,10 @@ timetables:
         stops: [ 19:00, 19:05 ]
       - name: 東行 40便
         stops: [ 19:30, 19:35 ]
-        schedule:
-          isSunday: false
-          isHoliday: false
-          "*": true
       - name: 東行 41便
         stops: [ 20:00, 20:05 ]
       - name: 東行 42便
         stops: [ 20:30, 20:35 ]
-        schedule:
-          isSunday: false
-          isHoliday: false
-          "*": true
       - name: 東行 43便
         stops: [ 21:00, 21:05 ]
       - name: 東行 44便
@@ -232,8 +232,4 @@ timetables:
         stops: [ 21:15, 21:10 ]
       - name: 西行 44便
         stops: [ 21:55, 21:50 ]
-        schedule:
-          isSunday: false
-          isHoliday: false
-          "*": true
 flags: [ regional ]

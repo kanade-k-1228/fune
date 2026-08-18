@@ -3,14 +3,22 @@ route: 松島〜瀬戸〜池島〜神浦
 color: "#26d9b4"
 source:
   - https://www.saryokyo.com/member/member-01.html
+  - https://www.saryokyo.com/dcms_media/other/timeses.pdf
 fare:
-  - 2024年10月1日より運賃改定実施
+  - "松島〜瀬戸: 大人240円 / 小人120円"
+  - "松島〜池島: 大人800円 / 小人410円"
+  - "松島〜神浦: 大人960円 / 小人480円"
+  - "瀬戸〜池島: 大人500円 / 小人250円"
+  - "瀬戸〜神浦: 大人720円 / 小人360円"
+  - "池島〜神浦: 大人470円 / 小人240円"
+  - "自動車航送運賃は車両長により異なる（要問い合わせ）"
+  - "第1種身体障害者・知的障害者・第1級精神障害者およびその介護者の旅客運賃は5割引"
+  - "(令和6年10月1日改定)"
 notes:
   - F=フェリー便（フェリーかしま）
+  - "令和8年10月1日より瀬戸〜松島間の運航を停止予定（松島に寄港しなくなる見込み）"
 ships:
   - フェリーかしま
-  - れぴーど
-  - Rapid Lily
 ports:
   matsushima-saikai: [ 129.615156, 32.939997 ]
   seto: [ 129.664352, 33.097283 ]
@@ -53,20 +61,52 @@ coords:
 stops: [ matsushima-saikai, seto, ikeshima, konoura-saikai ]
 timetables:
   normal:
-    name: 通常ダイヤ
+    name: 通常ダイヤ（〜令和8年9月30日）
     voyages:
-      - name: 北行 1便
-        stops: [ 08:40, [ 08:50, 09:10 ], [ 09:38, 09:45 ], 10:11 ]
-      - name: 北行 2便
-        stops: [ null, 07:05, 07:33, null ]
-      - name: 北行 3便
-        stops: [ 15:00, [ 15:10, 16:27 ], 16:55, null ]
-      - name: 北行 4便
-        stops: [ 17:55, [ 18:05, 18:08 ], 18:35, null ]
       - name: 南行 1便
-        stops: [ 09:38, 09:10, null, null ]
+        stops: [ null, 07:05, 07:33, null ]
       - name: 南行 2便
-        stops: [ null, 13:40, 13:12, 12:44 ]
+        stops: [ 08:40, [ 08:50, 09:10 ], [ 09:38, 09:45 ], 10:11 ]
       - name: 南行 3便
-        stops: [ null, 16:55, 16:27, null ]
+        stops: [ null, 12:44, [ 13:12, 13:17 ], 13:43 ]
+      - name: 南行 4便
+        stops: [ 15:00, [ 15:10, 16:27 ], 16:55, null ]
+      - name: 南行 5便
+        stops: [ 17:55, [ 18:05, 18:08 ], 18:35, null ]
+      - name: 北行 1便
+        stops: [ 08:35, [ 08:03, 08:20 ], 07:35, null ]
+      - name: 北行 2便
+        stops: [ null, 11:28, [ 10:56, 11:00 ], 10:30 ]
+      - name: 北行 3便
+        stops: [ 14:57, [ 14:45, 14:47 ], [ 14:12, 14:17 ], 13:46 ]
+      - name: 北行 4便
+        stops: [ 17:50, [ 17:28, 17:40 ], 17:00, null ]
+      - name: 北行 5便
+        stops: [ null, 19:08, 18:40, null ]
+  dia2026-10:
+    name: 通常ダイヤ（令和8年10月1日〜・瀬戸〜松島間運航停止）
+    voyages:
+      - name: 南行 1便
+        stops: [ null, 07:05, 07:33, null ]
+      - name: 南行 2便
+        stops: [ null, 09:10, [ 09:38, 09:45 ], 10:11 ]
+      - name: 南行 3便
+        stops: [ null, 12:44, [ 13:12, 13:17 ], 13:43 ]
+      - name: 南行 4便
+        stops: [ null, 16:27, 16:55, null ]
+      - name: 南行 5便
+        stops: [ null, 18:08, 18:36, null ]
+      - name: 北行 1便
+        stops: [ null, 08:03, 07:35, null ]
+      - name: 北行 2便
+        stops: [ null, 11:28, [ 10:56, 11:00 ], 10:30 ]
+      - name: 北行 3便
+        stops: [ null, 14:45, [ 14:12, 14:17 ], 13:46 ]
+      - name: 北行 4便
+        stops: [ null, 17:28, 17:00, null ]
+      - name: 北行 5便
+        stops: [ null, 19:08, 18:40, null ]
+schedule:
+  "2026-10-01..2099-12-31": dia2026-10
+  "*": normal
 flags: [ regional ]

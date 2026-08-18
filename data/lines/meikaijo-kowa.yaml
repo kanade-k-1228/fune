@@ -56,9 +56,9 @@ timetables:
     name: 通常ダイヤ
     voyages:
       - name: 南行 1便
-        stops: [ 07:30, 07:50, null, null ]
+        stops: [ 07:30, 07:50, null, 08:00 ]
       - name: 南行 2便
-        stops: [ 09:05, null, 09:30, null ]
+        stops: [ 09:05, null, 09:30, 09:40 ]
       - name: 南行 3便
         stops: [ 10:05, 10:25, null, 10:35 ]
       - name: 南行 4便

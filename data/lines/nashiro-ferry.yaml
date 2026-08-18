@@ -5,6 +5,7 @@ source:
   - https://www.town.suo-oshima.lg.jp/soshiki/38/11883.html
   - https://www.town.suo-oshima.lg.jp/uploaded/attachment/11520.pdf
   - https://www.town.suo-oshima.lg.jp/uploaded/attachment/11521.pdf
+  - https://www.town.suo-oshima.lg.jp/uploaded/attachment/11522.pdf
 fare:
   - 大人 片道 290円
   - 小児（小学生以下）片道 150円
@@ -15,6 +16,7 @@ fare:
   - 通勤定期 1箇月 10,440円 / 3箇月 29,760円
   - 自転車・荷車等 110円 / 原動機付自転車 210円
   - 貸切（臨時運航・主船）片道 7,300円 / 予備船 9,500円
+  - 障害者割引あり（身体障害者手帳・療育手帳・精神障害者保健福祉手帳等、区分・乗船方法により割引率や対象が異なる。詳細は地域交通課へ）
 notes:
   - 運航 周防大島町（産業建設環境部 地域交通課 TEL 0820-79-1015）
   - 所要時間 約15分
@@ -45,12 +47,20 @@ timetables:
   normal:
     name: 通常ダイヤ
     voyages:
-      - name: 1便
+      - name: 1便（伊保田発）
+        stops: [ 06:20, 06:35 ]
+      - name: 1便（情島発）
         stops: [ 07:05, [ 06:35, 06:50 ] ]
-      - name: 2便
+      - name: 2便（伊保田発）
+        stops: [ 11:00, 11:15 ]
+      - name: 2便（情島発）
         stops: [ 12:35, [ 11:15, 12:20 ] ]
-      - name: 3便
+      - name: 3便（伊保田発）
+        stops: [ 14:30, 14:45 ]
+      - name: 3便（情島発）
         stops: [ 15:15, [ 14:45, 15:00 ] ]
-      - name: 4便
+      - name: 4便（伊保田発）
+        stops: [ 18:00, 18:15 ]
+      - name: 4便（情島発）
         stops: [ 18:35, [ 18:15, 18:20 ] ]
 flags: [ regional ]

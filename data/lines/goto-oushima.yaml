@@ -50,9 +50,9 @@ timetables:
       - name: 下り 1便
         stops: [ 07:35, null, 08:05 ]
       - name: 上り 1便
-        stops: [ 08:50, 08:25, 08:15 ]
+        stops: [ 08:50, [ 08:22, 08:25 ], 08:15 ]
       - name: 下り 2便
-        stops: [ 14:40, 15:05, 15:17 ]
+        stops: [ 14:40, [ 15:05, 15:10 ], 15:17 ]
       - name: 上り 2便
         stops: [ 16:00, null, 15:30 ]
 flags: [ regional ]

@@ -4,8 +4,10 @@ color: "#26d9d0"
 source:
   - https://oogamikaiun.com/
 fare:
-  - 大人(12歳以上) 片道370円 / 往復710円
-  - 小人(6〜12歳未満) 片道180円 / 往復360円
+  - adult::oneway::370円（12歳以上）
+  - adult::round::710円
+  - child::oneway::180円（6〜12歳未満）
+  - child::round::360円
   - 離島住民往復割引 大人390円 / 小人180円
   - 障がい者割引 290円
 notes:

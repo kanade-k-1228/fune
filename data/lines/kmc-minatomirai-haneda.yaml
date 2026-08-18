@@ -5,8 +5,10 @@ source:
   - https://reservedcruise.com/yokohama-cruise/teikibin/
   - https://www.gotokyo.org/shuun/jp/course/015.html
 fare:
-  - 大人 3,500円
-  - 小学生 2,000円
+  - 大人 片道3,500円
+  - 大人 往復7,000円
+  - 小学生 片道2,000円
+  - 小学生 往復4,000円
   - 未就学児 大人1名につき1名無料（2名以上は小学生料金）
 notes:
   - ケーエムシーコーポレーション運航（MM⇔羽田ジェットライン）

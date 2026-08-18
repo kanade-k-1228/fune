@@ -115,4 +115,5 @@ schedule:
   isFriday: friday
   isSaturday: saturday
   isSunday: sunday
+  "*": monday
 flags: [ regional ]

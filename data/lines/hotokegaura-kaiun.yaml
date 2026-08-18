@@ -5,15 +5,16 @@ source:
   - https://hotokegaura.jp/
   - https://www.t-ryokyakusen.jp/gr/aomori/
 fare:
-  - 片道 大人1,400円 / 小人700円
-  - 往復 大人2,700円 / 小人1,350円
-  - 障がい者手帳持参で本人と同伴者1名半額
-  - 団体割引あり（15名以上）
+  - 片道 大人1,600円 / 小人800円
+  - 往復 大人3,000円 / 小人1,500円
+  - 未就学児（小学生未満）無料
 notes:
   - TEL 0175-38-2244（受付 8:00〜17:00）
   - 多客時は臨時便を随時運航
   - 気象・海象により欠航・上陸中止の場合あり
   - 所要時間 片道約30分（上陸30分含め往復約1時間30分）
+  - 支払いは現金のみ
+  - 車椅子のままでの乗船不可（折りたたんで持込は可）
 ships:
   - ニューしもきた号
 ports:
@@ -56,4 +57,4 @@ schedule:
   nthMonth(9): normal
   nthMonth(10): normal
   "*": closed
-flags: [ regional ]
+flags: [ regional, seasonal ]

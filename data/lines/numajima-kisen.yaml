@@ -2,7 +2,7 @@ name: 沼島汽船「しまかぜ・しまちどり」
 route: 土生〜沼島
 color: "#d9264d"
 source:
-  - https://www.city.minamiawaji.hyogo.jp/soshiki/kyoudou/nusima1.html
+  - https://www.city.minamiawaji.hyogo.jp/soshiki/koutsuu/nusima1.html
 fare:
   - 運賃（灘線 沼島↔土生）：大人片道480円・往復920円、小人片道240円・往復460円、手荷物280円
   - 障がい者運賃（第1種身体・知的・精神1級）：大人片道240円、小人片道120円。介護者1人まで同運賃

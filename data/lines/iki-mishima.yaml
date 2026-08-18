@@ -2,7 +2,7 @@ name: 壱岐市営「フェリーみしま」
 route: 壱岐島〜原島〜長島〜大島
 color: "#26d947"
 source:
-  - https://www.city.iki.nagasaki.jp/soshiki/somuka/mishima/985.html
+  - https://www.city.iki.nagasaki.jp/soshiki/somuka/soumuhan/mishima/985.html
 fare:
   - "旅客運賃（片道・大人）: 三島〜郷ノ浦 440円、三島〜渡良浦 360円、渡良浦〜郷ノ浦 360円、三島相互間 240円"
 notes:

@@ -11,13 +11,14 @@ ships:
   - Sea Friend 8
   - Sea Friend ZERO
 fare:
-  - 往復乗船料 大人(市外) 1,600〜2,000円
-  - 往復乗船料 大人(横須賀市民) 1,050〜1,250円
-  - 往復乗船料 中学生 800〜1,000円
-  - 往復乗船料 小学生(市外) 400〜500円
-  - 往復乗船料 小学生(市民) 100〜500円
+  - adult::round::1,600〜2,000円（横須賀市外）
+  - adult::round::800〜1,000円（横須賀市民）
+  - student::round::1,600〜2,000円（横須賀市外・中学生）
+  - student::round::800〜1,000円（横須賀市民・中学生）
+  - child::round::800〜1,000円（横須賀市外・小学生）
+  - child::round::400〜500円（横須賀市民・小学生）
   - 小学生未満は大人1名につき1名無料
-  - 別途 猿島公園入園料(大人500円/市民250円、小中学生250円/市民130円)
+  - 別途 猿島公園入園料（大人500円/市民250円、中学生・小学生250円/市民は無料）
 notes:
   - 運航 株式会社トライアングル TEL 046-825-7144 (受付 9:00〜17:00)
   - 所要時間 片道約10分
@@ -38,8 +39,8 @@ coords:
     - [ 139.692651, 35.285259 ]
 stops: [ mikasa-sambashi, sashima-sambashi ]
 timetables:
-  normal:
-    name: 通常ダイヤ
+  summer:
+    name: 夏期ダイヤ（3/1〜10/31）
     voyages:
       - name: 東行 1便
         stops: [ 09:30, 09:40 ]
@@ -53,16 +54,61 @@ timetables:
         stops: [ 13:30, 13:40 ]
       - name: 東行 6便
         stops: [ 14:30, 14:40 ]
+      - name: 東行 7便
+        stops: [ 15:30, 15:40 ]
+      - name: 東行 8便
+        stops: [ 16:30, 16:40 ]
       - name: 西行 1便
-        stops: [ 10:10, 10:00 ]
+        stops: [ 09:55, 09:45 ]
       - name: 西行 2便
-        stops: [ 11:10, 11:00 ]
+        stops: [ 10:55, 10:45 ]
       - name: 西行 3便
-        stops: [ 12:10, 12:00 ]
+        stops: [ 11:55, 11:45 ]
       - name: 西行 4便
-        stops: [ 13:10, 13:00 ]
+        stops: [ 12:55, 12:45 ]
       - name: 西行 5便
-        stops: [ 14:10, 14:00 ]
+        stops: [ 13:55, 13:45 ]
       - name: 西行 6便
-        stops: [ 15:10, 15:00 ]
+        stops: [ 14:55, 14:45 ]
+      - name: 西行 7便
+        stops: [ 15:55, 15:45 ]
+      - name: 西行 8便
+        stops: [ 17:10, 17:00 ]
+  winter:
+    name: 冬期ダイヤ（11/1〜2/末）
+    voyages:
+      - name: 東行 1便
+        stops: [ 09:30, 09:40 ]
+      - name: 東行 2便
+        stops: [ 10:30, 10:40 ]
+      - name: 東行 3便
+        stops: [ 11:30, 11:40 ]
+      - name: 東行 4便
+        stops: [ 12:30, 12:40 ]
+      - name: 東行 5便
+        stops: [ 13:30, 13:40 ]
+      - name: 東行 6便
+        stops: [ 14:30, 14:40 ]
+      - name: 東行 7便
+        stops: [ 15:30, 15:40 ]
+      - name: 西行 1便
+        stops: [ 09:55, 09:45 ]
+      - name: 西行 2便
+        stops: [ 10:55, 10:45 ]
+      - name: 西行 3便
+        stops: [ 11:55, 11:45 ]
+      - name: 西行 4便
+        stops: [ 12:55, 12:45 ]
+      - name: 西行 5便
+        stops: [ 13:55, 13:45 ]
+      - name: 西行 6便
+        stops: [ 14:55, 14:45 ]
+      - name: 西行 7便
+        stops: [ 16:10, 16:00 ]
+schedule:
+  nthMonth(11): winter
+  nthMonth(12): winter
+  nthMonth(1): winter
+  nthMonth(2): winter
+  "*": summer
 flags: [ regional ]

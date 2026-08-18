@@ -144,6 +144,9 @@ timetables:
         stops: [ "11:00", null ]
       - name: 帰り最終便（干潮1時間後）
         stops: [ null, "13:00" ]
+  closed:
+    name: 運休（潮干狩りシーズン外・実施日以外）
+    voyages: []
 schedule:
   "2026-03-21": d0321
   "2026-03-22": d0322
@@ -158,4 +161,5 @@ schedule:
   "2026-05-06": d0506
   "2026-05-16": d0516
   "2026-05-17": d0517
+  "*": closed
 flags: [ regional, seasonal ]

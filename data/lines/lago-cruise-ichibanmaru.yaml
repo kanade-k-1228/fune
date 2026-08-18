@@ -6,15 +6,18 @@ source:
   - https://lakewest.jp/lago-cruise/
   - https://otsu.or.jp/thingstodo/experience-activity_spot60
 fare:
-  - 大人（中学生以上）片道 1,000円 / 往復 2,000円
-  - 小人（小学生）片道 500円 / 往復 1,000円
+  - 大人（中学生以上）片道 1,000円 / 往復 2,000円（往復は下船不可・停泊中は船内待機）
+  - 小人（小学生）片道 500円 / 往復 1,000円（往復は下船不可・停泊中は船内待機）
   - 幼児（小学生未満）大人1名につき1名無料
 notes:
   - 土日祝日を中心に運航（詳細は公式運航カレンダー要確認）
   - 8〜10月は6便目（16:20発・16:50発）を運航
   - 所要時間：片道約20分
   - 火曜日定休（レークウエストヨットクラブ）
-  - 2026年4月5日よりキャッシュレス決済のみ（現金不可）
+  - キャッシュレス決済のみ（クレジットカード・QUICPay・QR決済、現金不可）
+  - 身体障がい者割引：手帳提示で本人＋付添人1名 通常料金10%引（貸切利用は対象外）
+  - 団体割引：30名以上で1名あたり通常料金10%引（他の割引との併用不可）
+  - 往復乗船券は におの浜観光桟橋発 11:50便・最終便は販売なし
   - 問い合わせ：レークウエストヨットクラブ TEL 077-572-2114（8:30-17:30）
 ships:
   - 一番丸
@@ -31,65 +34,59 @@ coords:
     - [ 135.8915, 35.005 ]
 stops: [ otsu-ko, nionohama-kanko-sambashi ]
 timetables:
-  dia0:
-    name: 通常ダイヤ（大津港→LAGO大津行）
+  normal:
+    name: 通常ダイヤ
     voyages:
-      - name: 1便
+      - name: 大津港発 1便
         stops: [ "10:20", "10:40" ]
-      - name: 2便
+      - name: 大津港発 2便
         stops: [ "11:20", "11:40" ]
-      - name: 3便
+      - name: 大津港発 3便
         stops: [ "13:20", "13:40" ]
-      - name: 4便
+      - name: 大津港発 4便
         stops: [ "14:20", "14:40" ]
-      - name: 5便
+      - name: 大津港発 5便
         stops: [ "15:20", "15:40" ]
-  dia1:
-    name: 8〜10月ダイヤ（大津港→LAGO大津行）
+      - name: LAGO大津発 1便
+        stops: [ "11:10", "10:50" ]
+      - name: LAGO大津発 2便
+        stops: [ "12:10", "11:50" ]
+      - name: LAGO大津発 3便
+        stops: [ "14:10", "13:50" ]
+      - name: LAGO大津発 4便
+        stops: [ "15:10", "14:50" ]
+      - name: LAGO大津発 5便
+        stops: [ "16:10", "15:50" ]
+  aug-oct:
+    name: 8〜10月ダイヤ
     voyages:
-      - name: 1便
+      - name: 大津港発 1便
         stops: [ "10:20", "10:40" ]
-      - name: 2便
+      - name: 大津港発 2便
         stops: [ "11:20", "11:40" ]
-      - name: 3便
+      - name: 大津港発 3便
         stops: [ "13:20", "13:40" ]
-      - name: 4便
+      - name: 大津港発 4便
         stops: [ "14:20", "14:40" ]
-      - name: 5便
+      - name: 大津港発 5便
         stops: [ "15:20", "15:40" ]
-      - name: 6便
+      - name: 大津港発 6便
         stops: [ "16:20", "16:40" ]
-  dia2:
-    name: 通常ダイヤ（LAGO大津→大津港行）
-    voyages:
-      - name: 1便
-        stops: [ "10:50", "11:10" ]
-      - name: 2便
-        stops: [ "11:50", "12:10" ]
-      - name: 3便
-        stops: [ "13:50", "14:10" ]
-      - name: 4便
-        stops: [ "14:50", "15:10" ]
-      - name: 5便
-        stops: [ "15:50", "16:10" ]
-  dia3:
-    name: 8〜10月ダイヤ（LAGO大津→大津港行）
-    voyages:
-      - name: 1便
-        stops: [ "10:50", "11:10" ]
-      - name: 2便
-        stops: [ "11:50", "12:10" ]
-      - name: 3便
-        stops: [ "13:50", "14:10" ]
-      - name: 4便
-        stops: [ "14:50", "15:10" ]
-      - name: 5便
-        stops: [ "15:50", "16:10" ]
-      - name: 6便
-        stops: [ "16:50", "17:10" ]
+      - name: LAGO大津発 1便
+        stops: [ "11:10", "10:50" ]
+      - name: LAGO大津発 2便
+        stops: [ "12:10", "11:50" ]
+      - name: LAGO大津発 3便
+        stops: [ "14:10", "13:50" ]
+      - name: LAGO大津発 4便
+        stops: [ "15:10", "14:50" ]
+      - name: LAGO大津発 5便
+        stops: [ "16:10", "15:50" ]
+      - name: LAGO大津発 6便
+        stops: [ "17:10", "16:50" ]
 schedule:
-  nthMonth(8): dia1
-  nthMonth(9): dia1
-  nthMonth(10): dia1
-  "*": dia0
+  nthMonth(8): aug-oct
+  nthMonth(9): aug-oct
+  nthMonth(10): aug-oct
+  "*": normal
 flags: [ regional ]

@@ -4,6 +4,7 @@ route: 塚間航路
 source:
   - https://www.shimizu-cruise.co.jp/fare/
   - https://www.shimizu-cruise.co.jp/
+  - https://www.shimizu-cruise.co.jp/news/detail/924
 fare:
   - 大人 400円
   - 小学生 200円
@@ -15,6 +16,7 @@ notes:
   - 土曜・祝日は第4便・第5便を運休
   - 年末年始（12月29日〜1月3日）は全便運休
   - 2026年5月2日(土)〜5月6日(水・祝)は期間運休
+  - 塚間桟橋改修工事のため2026年8月12日(水)〜9月30日(水)は運休（進捗により変更の可能性あり）
   - 2026年4月1日改正ダイヤ
 ships:
   - ベイプロムナード
@@ -36,36 +38,36 @@ timetables:
       - name: 下り 2便
         stops: [ "07:35", "07:45", "07:52" ]
       - name: 下り 3便
-        stops: [ "17:10", "17:30", "17:37" ]
+        stops: [ "17:10", null, "17:30" ]
       - name: 下り 4便
-        stops: [ "17:55", "18:15", "18:22" ]
+        stops: [ "17:55", null, "18:15" ]
         schedule:
           isSunday: false
           isSaturday: false
           isHoliday: false
           "*": true
       - name: 下り 5便
-        stops: [ "18:35", "18:50", "18:56" ]
+        stops: [ "18:35", null, "18:50" ]
         schedule:
           isSunday: false
           isSaturday: false
           isHoliday: false
           "*": true
       - name: 上り 1便
-        stops: [ "07:20", "07:35", "07:45" ]
+        stops: [ "07:35", null, "07:20" ]
       - name: 上り 2便
-        stops: [ "07:52", null, null ]
+        stops: [ null, null, "07:52" ]
       - name: 上り 3便
-        stops: [ "17:30", "17:37", "17:55" ]
+        stops: [ "17:55", "17:37", "17:30" ]
       - name: 上り 4便
-        stops: [ "18:15", "18:22", "18:35" ]
+        stops: [ "18:35", "18:22", "18:15" ]
         schedule:
           isSunday: false
           isSaturday: false
           isHoliday: false
           "*": true
       - name: 上り 5便
-        stops: [ "18:50", "18:56", null ]
+        stops: [ null, "18:56", "18:50" ]
         schedule:
           isSunday: false
           isSaturday: false
@@ -76,6 +78,7 @@ timetables:
     voyages: []
 schedule:
   isSunday: closed
+  "2026-08-12..2026-09-30": closed
   "2026-05-02..2026-05-06": closed
   "2025-12-29..2026-01-03": closed
   "*": normal

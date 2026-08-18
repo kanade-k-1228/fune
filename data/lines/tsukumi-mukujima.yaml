@@ -38,7 +38,7 @@ timetables:
       - name: 1便
         stops: [ 08:00, 07:30 ]
       - name: 2便
-        stops: [ 15:30, 15:00 ]
+        stops: [ 15:00, 15:30 ]
   dia1:
     name: 火曜
     voyages:
@@ -49,7 +49,7 @@ timetables:
       - name: 3便
         stops: [ 12:30, 12:00 ]
       - name: 4便
-        stops: [ 15:30, 15:00 ]
+        stops: [ 15:00, 15:30 ]
   dia2:
     name: 木曜
     voyages:
@@ -60,7 +60,7 @@ timetables:
       - name: 3便
         stops: [ 14:30, 14:00 ]
       - name: 4便
-        stops: [ 15:30, 15:00 ]
+        stops: [ 15:00, 15:30 ]
   dia3:
     name: 日曜・祝日
     voyages:
@@ -72,10 +72,14 @@ timetables:
         stops: [ 15:00, 14:30 ]
       - name: 4便
         stops: [ 15:30, 16:00 ]
+  closed:
+    name: 運休（水曜日）
+    voyages: []
 schedule:
   isHoliday: dia3
   isSunday: dia3
   isTuesday: dia1
   isThursday: dia2
+  isWednesday: closed
   "*": dia0
 flags: [ regional ]

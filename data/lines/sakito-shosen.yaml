@@ -93,6 +93,7 @@ timetables:
     voyages: []
 schedule:
   "2026-01-01": closed
+  "2027-01-01": closed
   "2026-04-01..2026-09-30": dia0
   "*": dia1
 flags: [ regional ]

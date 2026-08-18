@@ -4,6 +4,7 @@ route: 姫路〜坊勢島〜西島
 source:
   - https://www.shizen-ieshima.com/access.html?selectcatno=004
   - http://bouzehikarikisen.moo.jp/
+  - http://bouzehikarikisen.moo.jp/custom.html
 fare:
   - "姫路港〜坊勢島 片道 大人1,300円・小人650円"
   - "坊勢島〜いえしま自然体験センター桟橋 片道 大人500円・小人250円"
@@ -41,7 +42,7 @@ timetables:
       - name: 復路 2便
         stops: [ "12:25", "11:50", "11:15" ]
       - name: 復路 3便
-        stops: [ "15:16", "14:44", "14:15" ]
+        stops: [ "15:19", "14:44", "14:15" ]
       - name: 復路 4便
         stops: [ "17:50", "17:15", "16:55" ]
 flags: [ regional ]

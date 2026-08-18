@@ -6,12 +6,12 @@ source:
   - https://www.tokaikisen.co.jp/boarding/fare/
   - https://www.tokaikisen.co.jp/ourship/jetship/
 fare:
-  - 熱海～大島 大人片道 6,410円
-  - 伊東～大島 大人片道 5,360円
+  - 熱海～大島 大人片道 7,710円（2026年8月時点）
+  - 伊東～大島 大人片道 5,360円（2026年6月時点）
   - 小児は大人運賃の半額
+  - 運賃には燃料油価格変動調整金を含み、毎月変動あり
 notes:
-  - seasonal
-  - 季節運航（春季 4/6～6/30、5/2～5/6 除く）
+  - 季節運航（例年4月頃～9月頃。伊東寄港の有無・時期は季節により変動するため公式サイトの時刻表で要確認。10月～翌4月上旬は運休）
   - お客様センター 03-5472-9999 / 0570-005710（毎日 9:30～18:00）
 ships:
   - セブンアイランド友
@@ -43,22 +43,30 @@ coords:
     - [ 139.352, 34.752 ]
 stops: [ netsu-kaiko, ito-2, izu-motomachi ]
 timetables:
+  summer:
+    name: 夏季（直行・伊東通過）
+    voyages:
+      - name: 下り
+        stops: [ 14:55, null, 15:40 ]
+      - name: 上り
+        stops: [ 11:25, null, 10:40 ]
   weekday:
     name: 平日
     voyages:
       - name: 下り
-        stops: [ 09:10, [ 09:35, 09:40 ], 09:55 ]
+        stops: [ 09:10, null, 09:55 ]
       - name: 上り
-        stops: [ 16:45, [ 16:15, 16:20 ], 16:00 ]
+        stops: [ 16:45, null, 16:00 ]
   weekend:
     name: 土休日
     voyages:
       - name: 下り
         stops: [ 09:10, [ 09:35, 09:40 ], 10:15 ]
       - name: 上り
-        stops: [ 17:05, [ 16:30, 16:35 ], 16:00 ]
+        stops: [ 17:05, [ 16:35, 16:40 ], 16:00 ]
 schedule:
+  "2026-07-18..2026-08-31": summer
   isWeekend: weekend
   isHoliday: weekend
   "*": weekday
-flags: [ regional ]
+flags: [ regional, seasonal ]

@@ -93,4 +93,8 @@ timetables:
         schedule:
           "2026-08-02..2026-08-31": false
           "*": true
+schedule:
+  isHoliday: dia-a
+  isWeekend: dia-a
+  "*": dia-b
 flags: [ regional ]

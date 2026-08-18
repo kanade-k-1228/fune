@@ -43,4 +43,13 @@ timetables:
         stops: [ "14:30", null ]
       - name: ダム発4便
         stops: [ null, "15:05" ]
-flags: [ regional ]
+  closed:
+    name: 運休期間
+    voyages: []
+schedule:
+  "2026-04-27..2026-12-01": regular
+  "2026-12-02..2026-12-22":
+    isWeekend: regular
+    "*": closed
+  "*": closed
+flags: [ regional, seasonal ]

@@ -11,6 +11,8 @@ fare:
   - 小人 40円 (往復 80円)
   - 自転車・その他 60円 (往復 120円)
   - 原付バイク (125cc以下) 100円 (往復 200円)
+  - 二輪自動車 (125cc超750cc未満) 140円 (往復 280円)
+  - 二輪自動車 大型 (750cc以上) 190円 (往復 380円)
   - 車両 3m未満 320円 (往復 600円)
   - 車両 3m以上4m未満 500円 (往復 900円)
   - 車両 4m以上5m未満 630円 (往復 1,150円)
@@ -21,10 +23,11 @@ fare:
   - 車両 9m以上10m未満 2,520円 (往復 4,550円)
   - 車両 10m以上11m未満 2,720円 (往復 4,900円)
   - 車両 11m以上12m未満 2,930円 (往復 5,300円)
+  - 車両 12m超 1mごとに加算 230円 (往復 460円)
 notes:
   - 所要時間 約3分
   - 立石港務所 (上島町生名2111-2) TEL 0897-76-2224
-  - 一部の早朝・夕方便 (◇印) は日曜日・祝日運休
+  - 一部の早朝・夕方便は日曜日・祝日運休
   - 繁忙期には臨時便を運航
 ports:
   tateishi: [ 133.177675, 34.277692 ]
@@ -40,111 +43,283 @@ timetables:
     name: 通常ダイヤ
     voyages:
       - name: 北行 1便
-        stops: [ 06:30, 06:33 ]
+        stops: [ 06:00, 06:03 ]
       - name: 北行 2便
-        stops: [ 07:00, 07:03 ]
+        stops: [ 06:20, 06:23 ]
       - name: 北行 3便
-        stops: [ 07:30, 07:33 ]
+        stops: [ 06:40, 06:43 ]
       - name: 北行 4便
-        stops: [ 08:00, 08:03 ]
+        stops: [ 07:00, 07:03 ]
       - name: 北行 5便
-        stops: [ 08:30, 08:33 ]
+        stops: [ 07:10, 07:13 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
       - name: 北行 6便
-        stops: [ 09:00, 09:03 ]
+        stops: [ 07:20, 07:23 ]
       - name: 北行 7便
-        stops: [ 09:30, 09:33 ]
+        stops: [ 07:30, 07:33 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
       - name: 北行 8便
-        stops: [ 10:00, 10:03 ]
+        stops: [ 07:40, 07:43 ]
       - name: 北行 9便
-        stops: [ 10:30, 10:33 ]
+        stops: [ 08:00, 08:03 ]
       - name: 北行 10便
-        stops: [ 11:00, 11:03 ]
+        stops: [ 08:10, 08:13 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
       - name: 北行 11便
-        stops: [ 11:30, 11:33 ]
+        stops: [ 08:20, 08:23 ]
       - name: 北行 12便
-        stops: [ 12:00, 12:03 ]
+        stops: [ 08:30, 08:33 ]
       - name: 北行 13便
-        stops: [ 12:30, 12:33 ]
+        stops: [ 08:40, 08:43 ]
       - name: 北行 14便
-        stops: [ 13:00, 13:03 ]
+        stops: [ 09:00, 09:03 ]
       - name: 北行 15便
-        stops: [ 13:30, 13:33 ]
+        stops: [ 09:10, 09:13 ]
       - name: 北行 16便
-        stops: [ 14:00, 14:03 ]
+        stops: [ 09:20, 09:23 ]
       - name: 北行 17便
-        stops: [ 14:30, 14:33 ]
+        stops: [ 09:40, 09:43 ]
       - name: 北行 18便
-        stops: [ 15:00, 15:03 ]
+        stops: [ 10:00, 10:03 ]
       - name: 北行 19便
-        stops: [ 15:30, 15:33 ]
+        stops: [ 10:10, 10:13 ]
       - name: 北行 20便
-        stops: [ 16:00, 16:03 ]
+        stops: [ 10:20, 10:23 ]
       - name: 北行 21便
-        stops: [ 16:30, 16:33 ]
+        stops: [ 10:40, 10:43 ]
       - name: 北行 22便
-        stops: [ 17:00, 17:03 ]
+        stops: [ 11:00, 11:03 ]
       - name: 北行 23便
-        stops: [ 17:30, 17:33 ]
+        stops: [ 11:20, 11:23 ]
       - name: 北行 24便
-        stops: [ 18:00, 18:03 ]
+        stops: [ 11:40, 11:43 ]
       - name: 北行 25便
-        stops: [ 18:30, 18:33 ]
+        stops: [ 12:00, 12:03 ]
       - name: 北行 26便
-        stops: [ 19:00, 19:03 ]
+        stops: [ 12:20, 12:23 ]
       - name: 北行 27便
-        stops: [ 19:30, 19:33 ]
+        stops: [ 12:40, 12:43 ]
+      - name: 北行 28便
+        stops: [ 13:00, 13:03 ]
+      - name: 北行 29便
+        stops: [ 13:20, 13:23 ]
+      - name: 北行 30便
+        stops: [ 13:40, 13:43 ]
+      - name: 北行 31便
+        stops: [ 14:00, 14:03 ]
+      - name: 北行 32便
+        stops: [ 14:20, 14:23 ]
+      - name: 北行 33便
+        stops: [ 14:40, 14:43 ]
+      - name: 北行 34便
+        stops: [ 15:00, 15:03 ]
+      - name: 北行 35便
+        stops: [ 15:20, 15:23 ]
+      - name: 北行 36便
+        stops: [ 15:40, 15:43 ]
+      - name: 北行 37便
+        stops: [ 16:00, 16:03 ]
+      - name: 北行 38便
+        stops: [ 16:20, 16:23 ]
+      - name: 北行 39便
+        stops: [ 16:40, 16:43 ]
+      - name: 北行 40便
+        stops: [ 17:00, 17:03 ]
+      - name: 北行 41便
+        stops: [ 17:10, 17:13 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 北行 42便
+        stops: [ 17:20, 17:23 ]
+      - name: 北行 43便
+        stops: [ 17:30, 17:33 ]
+      - name: 北行 44便
+        stops: [ 17:40, 17:43 ]
+      - name: 北行 45便
+        stops: [ 18:00, 18:03 ]
+      - name: 北行 46便
+        stops: [ 18:10, 18:13 ]
+      - name: 北行 47便
+        stops: [ 18:20, 18:23 ]
+      - name: 北行 48便
+        stops: [ 18:30, 18:33 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 北行 49便
+        stops: [ 18:40, 18:43 ]
+      - name: 北行 50便
+        stops: [ 19:00, 19:03 ]
+      - name: 北行 51便
+        stops: [ 19:20, 19:23 ]
+      - name: 北行 52便
+        stops: [ 19:40, 19:43 ]
+      - name: 北行 53便
+        stops: [ 20:00, 20:03 ]
+      - name: 北行 54便
+        stops: [ 20:20, 20:23 ]
+      - name: 北行 55便
+        stops: [ 20:40, 20:43 ]
+      - name: 北行 56便
+        stops: [ 21:00, 21:03 ]
+      - name: 北行 57便
+        stops: [ 21:20, 21:23 ]
+      - name: 北行 58便
+        stops: [ 22:00, 22:03 ]
+      - name: 北行 59便
+        stops: [ 22:20, 22:23 ]
+      - name: 北行 60便
+        stops: [ 23:00, 23:03 ]
       - name: 南行 1便
-        stops: [ 06:48, 06:45 ]
+        stops: [ 06:18, 06:15 ]
       - name: 南行 2便
-        stops: [ 07:18, 07:15 ]
+        stops: [ 06:38, 06:35 ]
       - name: 南行 3便
-        stops: [ 07:48, 07:45 ]
+        stops: [ 06:53, 06:50 ]
       - name: 南行 4便
-        stops: [ 08:18, 08:15 ]
+        stops: [ 07:08, 07:05 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
       - name: 南行 5便
-        stops: [ 08:48, 08:45 ]
+        stops: [ 07:18, 07:15 ]
       - name: 南行 6便
-        stops: [ 09:18, 09:15 ]
+        stops: [ 07:28, 07:25 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
       - name: 南行 7便
-        stops: [ 09:48, 09:45 ]
+        stops: [ 07:38, 07:35 ]
       - name: 南行 8便
-        stops: [ 10:18, 10:15 ]
+        stops: [ 07:53, 07:50 ]
       - name: 南行 9便
-        stops: [ 10:48, 10:45 ]
+        stops: [ 08:08, 08:05 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
       - name: 南行 10便
-        stops: [ 11:18, 11:15 ]
+        stops: [ 08:18, 08:15 ]
       - name: 南行 11便
-        stops: [ 11:48, 11:45 ]
+        stops: [ 08:28, 08:25 ]
       - name: 南行 12便
-        stops: [ 12:18, 12:15 ]
+        stops: [ 08:38, 08:35 ]
       - name: 南行 13便
-        stops: [ 12:48, 12:45 ]
+        stops: [ 08:53, 08:50 ]
       - name: 南行 14便
-        stops: [ 13:18, 13:15 ]
+        stops: [ 09:08, 09:05 ]
       - name: 南行 15便
-        stops: [ 13:48, 13:45 ]
+        stops: [ 09:18, 09:15 ]
       - name: 南行 16便
-        stops: [ 14:18, 14:15 ]
+        stops: [ 09:38, 09:35 ]
       - name: 南行 17便
-        stops: [ 14:48, 14:45 ]
+        stops: [ 09:53, 09:50 ]
       - name: 南行 18便
-        stops: [ 15:18, 15:15 ]
+        stops: [ 10:08, 10:05 ]
       - name: 南行 19便
-        stops: [ 15:48, 15:45 ]
+        stops: [ 10:18, 10:15 ]
       - name: 南行 20便
-        stops: [ 16:18, 16:15 ]
+        stops: [ 10:38, 10:35 ]
       - name: 南行 21便
-        stops: [ 16:48, 16:45 ]
+        stops: [ 10:53, 10:50 ]
       - name: 南行 22便
-        stops: [ 17:18, 17:15 ]
+        stops: [ 11:18, 11:15 ]
       - name: 南行 23便
-        stops: [ 17:48, 17:45 ]
+        stops: [ 11:38, 11:35 ]
       - name: 南行 24便
-        stops: [ 18:18, 18:15 ]
+        stops: [ 11:53, 11:50 ]
       - name: 南行 25便
-        stops: [ 18:48, 18:45 ]
+        stops: [ 12:18, 12:15 ]
       - name: 南行 26便
-        stops: [ 19:18, 19:15 ]
+        stops: [ 12:38, 12:35 ]
       - name: 南行 27便
-        stops: [ 19:48, 19:45 ]
+        stops: [ 12:53, 12:50 ]
+      - name: 南行 28便
+        stops: [ 13:18, 13:15 ]
+      - name: 南行 29便
+        stops: [ 13:38, 13:35 ]
+      - name: 南行 30便
+        stops: [ 13:53, 13:50 ]
+      - name: 南行 31便
+        stops: [ 14:18, 14:15 ]
+      - name: 南行 32便
+        stops: [ 14:38, 14:35 ]
+      - name: 南行 33便
+        stops: [ 14:53, 14:50 ]
+      - name: 南行 34便
+        stops: [ 15:18, 15:15 ]
+      - name: 南行 35便
+        stops: [ 15:38, 15:35 ]
+      - name: 南行 36便
+        stops: [ 15:53, 15:50 ]
+      - name: 南行 37便
+        stops: [ 16:18, 16:15 ]
+      - name: 南行 38便
+        stops: [ 16:38, 16:35 ]
+      - name: 南行 39便
+        stops: [ 16:53, 16:50 ]
+      - name: 南行 40便
+        stops: [ 17:08, 17:05 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 南行 41便
+        stops: [ 17:18, 17:15 ]
+      - name: 南行 42便
+        stops: [ 17:28, 17:25 ]
+      - name: 南行 43便
+        stops: [ 17:38, 17:35 ]
+      - name: 南行 44便
+        stops: [ 17:53, 17:50 ]
+      - name: 南行 45便
+        stops: [ 18:08, 18:05 ]
+      - name: 南行 46便
+        stops: [ 18:18, 18:15 ]
+      - name: 南行 47便
+        stops: [ 18:28, 18:25 ]
+        schedule:
+          isSunday: false
+          isHoliday: false
+          "*": true
+      - name: 南行 48便
+        stops: [ 18:38, 18:35 ]
+      - name: 南行 49便
+        stops: [ 18:53, 18:50 ]
+      - name: 南行 50便
+        stops: [ 19:18, 19:15 ]
+      - name: 南行 51便
+        stops: [ 19:38, 19:35 ]
+      - name: 南行 52便
+        stops: [ 19:53, 19:50 ]
+      - name: 南行 53便
+        stops: [ 20:18, 20:15 ]
+      - name: 南行 54便
+        stops: [ 20:38, 20:35 ]
+      - name: 南行 55便
+        stops: [ 20:53, 20:50 ]
+      - name: 南行 56便
+        stops: [ 21:18, 21:15 ]
+      - name: 南行 57便
+        stops: [ 21:38, 21:35 ]
+      - name: 南行 58便
+        stops: [ 22:18, 22:15 ]
+      - name: 南行 59便
+        stops: [ 22:38, 22:35 ]
+      - name: 南行 60便
+        stops: [ 23:08, 23:05 ]
 flags: [ regional ]

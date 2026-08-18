@@ -12,7 +12,6 @@ fare:
 notes:
   - 人だけ乗船できる小型船（乗客定員12名、車両乗船不可）
   - 神浦港〜池島港 所要時間 約15分
-  - 運休日：毎週日曜日、8月13日〜8月15日、12月31日〜1月3日
   - 船主 090-4513-4983
   - 外海地域センター 0959-24-0211
 ports:
@@ -50,4 +49,23 @@ timetables:
         stops: [ 16:15, 16:00 ]
       - name: 池島発 4便
         stops: [ 17:00, 16:45 ]
+  closed:
+    name: 運休
+    voyages: []
+schedule:
+  isSunday: closed
+  nthMonth(8):
+    nthDay(13): closed
+    nthDay(14): closed
+    nthDay(15): closed
+    "*": normal
+  nthMonth(12):
+    nthDay(31): closed
+    "*": normal
+  nthMonth(1):
+    nthDay(1): closed
+    nthDay(2): closed
+    nthDay(3): closed
+    "*": normal
+  "*": normal
 flags: [ regional ]
