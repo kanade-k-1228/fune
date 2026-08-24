@@ -3,6 +3,7 @@ route: 広島〜松山
 color: "#2662d9"
 source:
   - https://setonaikaikisen.co.jp/kouro/jet/
+  - https://setonaikaikisen.co.jp/jet/wp-content/uploads/sites/2/2022/08/2026_lj_dock.pdf
 fare:
   - 運賃（2025/8/1改定・1名片道・税込、2026/8/31まで）：広島港～松山観光港 大人¥8,800/小人¥4,400、呉港～松山観光港
     大人¥6,900/小人¥3,450、広島港～呉港 大人¥2,800/小人¥1,400
@@ -62,34 +63,82 @@ timetables:
     voyages:
       - name: 西行 1便 直行
         stops: [ 07:30, null, 08:50 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 西行 2便 呉寄港
         stops: [ 09:05, [ 09:30, 09:30 ], 10:35 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 西行 3便 直行
         stops: [ 10:50, null, 12:10 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 西行 4便 呉寄港
         stops: [ 12:25, [ 12:50, 12:50 ], 13:55 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 西行 5便 直行
         stops: [ 15:15, null, 16:35 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 西行 6便 呉寄港
         stops: [ 16:45, [ 17:10, 17:10 ], 18:15 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 西行 7便 直行
         stops: [ 18:30, null, 19:50 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 西行 8便 直行
         stops: [ 20:00, null, 21:20 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 東行 1便 直行
         stops: [ 08:50, null, 07:30 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 東行 2便 呉寄港
         stops: [ 10:35, [ 10:10, 10:10 ], 09:05 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 東行 3便 直行
         stops: [ 12:10, null, 10:50 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 東行 4便 呉寄港
         stops: [ 13:55, [ 13:30, 13:30 ], 12:25 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 東行 5便 直行
         stops: [ 16:35, null, 15:15 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 東行 6便 呉寄港
         stops: [ 18:15, [ 17:50, 17:50 ], 16:45 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 東行 7便 直行
         stops: [ 19:50, null, 18:30 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 東行 8便 直行
         stops: [ 21:20, null, 20:00 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
 flags: [ regional ]

@@ -3,6 +3,7 @@ route: 佐伯〜大入島
 color: "#3f26d9"
 source:
   - http://www.oitasima.net/ohnyujima/access.html
+  - https://www.visit-saiki.jp/spots/detail/9ac23c50-7734-4577-950f-5de0feda6f1b
 fare:
   - "運賃: 守後150円、久保浦200円、堀切200円、片神200円（佐伯港から）"
 notes:

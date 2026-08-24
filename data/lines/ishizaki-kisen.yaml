@@ -6,12 +6,12 @@ source:
   - https://setonaikaikisen.co.jp/kouro/jet/
   - http://www.ishizakikisen.co.jp/contents/timetable.shtml
   - http://www.ishizakikisen.co.jp/contents/price2.html
+  - http://www.ishizakikisen.co.jp/pdf/2026/20260814.pdf
 fare:
   - 運賃（1名片道・税込、2025/8/1改定、2026/8/31まで）：広島港〜松山観光港 大人¥8,800・小人¥4,400、呉港〜松山観光港
     大人¥6,900・小人¥3,450、広島港〜呉港 大人¥2,800・小人¥1,400
   - 運賃改定（2026/9/1改定・1名片道・税込）：広島港〜松山観光港 大人¥9,000・小人¥4,500、呉港〜松山観光港
     大人¥7,100・小人¥3,550、広島港〜呉港 大人¥2,900・小人¥1,450
-  - スーパーシート追加料金：大人¥800・小人¥400（石崎汽船SeaMAXにはスーパーシートなし）
 notes:
   - 旅客専用の高速船。車は乗船できない。
   - 予約：瀬戸内海汽船予約センター 082-253-1212（9:00〜17:30）、石崎汽船予約センター
@@ -65,34 +65,82 @@ timetables:
     voyages:
       - name: 西行 1便
         stops: [ 07:30, null, 08:50 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 西行 2便
         stops: [ 09:05, 09:30, 10:35 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 西行 3便
         stops: [ 10:50, null, 12:10 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 西行 4便
         stops: [ 12:25, 12:50, 13:55 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 西行 5便
         stops: [ 15:15, null, 16:35 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 西行 6便
         stops: [ 16:45, 17:10, 18:15 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 西行 7便
         stops: [ 18:30, null, 19:50 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 西行 8便
         stops: [ 20:00, null, 21:20 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 東行 1便
         stops: [ 08:50, null, 07:30 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 東行 2便
         stops: [ 10:35, 10:10, 09:05 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 東行 3便
         stops: [ 12:10, null, 10:50 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 東行 4便
         stops: [ 13:55, 13:30, 12:25 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 東行 5便
         stops: [ 16:35, null, 15:15 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 東行 6便
         stops: [ 18:15, 17:50, 16:45 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
       - name: 東行 7便
         stops: [ 19:50, null, 18:30 ]
+        schedule:
+          "2026-10-31..2026-11-13": false
+          "*": true
       - name: 東行 8便
         stops: [ 21:20, null, 20:00 ]
+        schedule:
+          "2026-11-16..2026-11-20": false
+          "*": true
 flags: [ regional ]

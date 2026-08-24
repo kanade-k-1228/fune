@@ -216,46 +216,36 @@ timetables:
       - name: 天橋立行 2便
         stops: [ null, 10:27, 10:15 ]
       - name: 天橋立行 3便
-        stops: [ null, 10:42, 10:30 ]
-      - name: 天橋立行 4便
         stops: [ null, 10:57, 10:45 ]
-      - name: 天橋立行 5便
+      - name: 天橋立行 4便
         stops: [ null, 11:27, 11:15 ]
-      - name: 天橋立行 6便
-        stops: [ null, 11:42, 11:30 ]
-      - name: 天橋立行 7便
+      - name: 天橋立行 5便
         stops: [ null, 11:57, 11:45 ]
-      - name: 天橋立行 8便
+      - name: 天橋立行 6便
         stops: [ null, 12:27, 12:15 ]
-      - name: 天橋立行 9便
-        stops: [ null, 12:42, 12:30 ]
-      - name: 天橋立行 10便
+      - name: 天橋立行 7便
         stops: [ null, 12:57, 12:45 ]
-      - name: 天橋立行 11便
+      - name: 天橋立行 8便
         stops: [ null, 13:27, 13:15 ]
-      - name: 天橋立行 12便
-        stops: [ null, 13:42, 13:30 ]
-      - name: 天橋立行 13便
+      - name: 天橋立行 9便
         stops: [ null, 13:57, 13:45 ]
-      - name: 天橋立行 14便
+      - name: 天橋立行 10便
         stops: [ null, 14:27, 14:15 ]
-      - name: 天橋立行 15便
-        stops: [ null, 14:42, 14:30 ]
-      - name: 天橋立行 16便
+      - name: 天橋立行 11便
         stops: [ null, 14:57, 14:45 ]
-      - name: 天橋立行 17便
+      - name: 天橋立行 12便
         stops: [ null, 15:27, 15:15 ]
-      - name: 天橋立行 18便
+      - name: 天橋立行 13便
         stops: [ null, 15:57, 15:45 ]
-      - name: 天橋立行 19便
+      - name: 天橋立行 14便
         stops: [ null, 16:27, 16:15 ]
-      - name: 天橋立行 19便 宮津行（※乗船者がいない場合運航中止）
+      - name: 天橋立行 14便 宮津行（※乗船者がいない場合運航中止）
         stops: [ 16:37, 16:27, 16:15 ]
-      - name: 天橋立行 20便
+      - name: 天橋立行 15便
         stops: [ null, 16:57, 16:45 ]
-      - name: 天橋立行 21便（◎3/1〜10/31）
+      - name: 天橋立行 16便（◎3/1〜10/31）
         stops: [ null, 17:27, 17:15 ]
-      - name: 天橋立行 22便（◇4/1〜9/30）
+      - name: 天橋立行 17便（◇4/1〜9/30）
         stops: [ null, 17:57, 17:45 ]
   dia2:
     name: 夏期平日ダイヤ（増便）

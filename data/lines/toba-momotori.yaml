@@ -3,20 +3,26 @@ route: 鳥羽〜桃取
 color: "#26b9d9"
 source:
   - https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/3151.html
+  - https://www.city.toba.mie.jp/material/files/group/45/teikisendaiya260401.pdf
+  - https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/3163.html
+  - https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/3164.html
 fare:
-  - 運賃：鳥羽〜桃取 220円（大人）
-  - 1日フリー乗船券：1,480円（全航路・当日限り有効）
+  - 大人 450円（鳥羽〜桃取・片道）
+  - 小人 230円（鳥羽〜桃取・片道）
+  - 1日フリー乗船券 大人1,480円 / 子ども740円（全航路）
+  - 回数券（大人 11枚綴 4,500円、小児 11枚綴 2,300円）等あり
 notes:
   - 令和8年4月1日改正ダイヤ（減船により10便→9便に変更）
   - 各港の時刻は出港時間。各港行き最終到達港のみ到着時間
   - 荒天・船舶検査等により運航船舶やダイヤを変更する場合あり
   - 時刻表記載以外に臨時便（増便）を運航する場合あり
+  - 予備船運航期間や小型チャーター船運航便以外はバリアフリー対応
 ships:
+  - はばたき
   - しおさい
   - かがやき
   - きらめき
-  - 第28鳥羽丸
-  - 第25鳥羽丸
+  - 第27鳥羽丸（予備船）
 ports:
   toba-satahama: [ 136.84501, 34.490258 ]
   momotori: [ 136.852616, 34.514062 ]

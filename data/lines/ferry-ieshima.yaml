@@ -73,7 +73,79 @@ timetables:
         stops: [ 15:00, 14:30 ]
       - name: 東行 5便
         stops: [ 17:00, 16:30 ]
+  obon:
+    name: 旧盆ダイヤ
+    voyages:
+      - name: 西行 1便
+        stops: [ 09:00, 09:30 ]
+      - name: 西行 2便
+        stops: [ 10:00, 10:30 ]
+      - name: 西行 3便
+        stops: [ 11:00, 11:30 ]
+      - name: 西行 4便
+        stops: [ 13:00, 13:30 ]
+      - name: 西行 5便
+        stops: [ 14:00, 14:30 ]
+      - name: 西行 6便
+        stops: [ 15:00, 15:30 ]
+      - name: 西行 7便
+        stops: [ 16:15, 16:45 ]
+      - name: 西行 8便
+        stops: [ 17:30, 18:00 ]
+      - name: 東行 1便
+        stops: [ 08:30, 08:00 ]
+      - name: 東行 2便
+        stops: [ 09:30, 09:00 ]
+      - name: 東行 3便
+        stops: [ 10:30, 10:00 ]
+      - name: 東行 4便
+        stops: [ 11:30, 11:00 ]
+      - name: 東行 5便
+        stops: [ 13:30, 13:00 ]
+      - name: 東行 6便
+        stops: [ 14:30, 14:00 ]
+      - name: 東行 7便
+        stops: [ 15:30, 15:00 ]
+      - name: 東行 8便
+        stops: [ 17:00, 16:30 ]
+  new-year:
+    name: 年末年始ダイヤ
+    voyages:
+      - name: 西行 1便
+        stops: [ 09:00, 09:30 ]
+      - name: 西行 2便
+        stops: [ 10:00, 10:30 ]
+      - name: 西行 3便
+        stops: [ 11:00, 11:30 ]
+      - name: 西行 4便
+        stops: [ 13:00, 13:30 ]
+      - name: 西行 5便
+        stops: [ 14:00, 14:30 ]
+      - name: 西行 6便
+        stops: [ 15:00, 15:30 ]
+      - name: 西行 7便
+        stops: [ 16:00, 16:30 ]
+      - name: 西行 8便
+        stops: [ 17:00, 17:30 ]
+      - name: 東行 1便
+        stops: [ 08:30, 08:00 ]
+      - name: 東行 2便
+        stops: [ 09:30, 09:00 ]
+      - name: 東行 3便
+        stops: [ 10:30, 10:00 ]
+      - name: 東行 4便
+        stops: [ 11:30, 11:00 ]
+      - name: 東行 5便
+        stops: [ 13:30, 13:00 ]
+      - name: 東行 6便
+        stops: [ 14:30, 14:00 ]
+      - name: 東行 7便
+        stops: [ 15:30, 15:00 ]
+      - name: 東行 8便
+        stops: [ 16:30, 16:00 ]
 schedule:
+  "2026-08-27..2026-08-28": obon
   "2026-07-21..2026-08-31": summer
+  "2026-12-31..2027-01-03": new-year
   "*": normal
 flags: [ regional ]

@@ -62,4 +62,4 @@ timetables:
         stops: [ 17:05, 16:25 ]
       - name: 北行 4便
         stops: [ 19:40, 19:00 ]
-flags: [ regional ]
+flags: [ regional, seasonal ]

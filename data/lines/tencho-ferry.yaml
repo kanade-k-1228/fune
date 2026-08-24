@@ -43,7 +43,7 @@ timetables:
     name: 通常ダイヤ
     voyages:
       - name: 南行 1便
-        stops: [ 07:05, null, 06:45 ]
+        stops: [ 07:05, 06:45, null ]
       - name: 北行 1便
         stops: [ 07:10, [ 07:30, 07:35 ], 08:05 ]
       - name: 南行 2便
