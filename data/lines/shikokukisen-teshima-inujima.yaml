@@ -2,9 +2,14 @@ name: 四国汽船
 route: 直島（宮浦）〜豊島（家浦）〜犬島
 color: "#26d98f"
 source:
+  - https://shikokukisen.com/miyanoura-ieura-inujima/
+  - https://shikokukisen.com/information/important/post-4288/
+  - https://benesse-artsite.jp/calendar/
   - https://www.shikokukisen.com/instant/#route04
   - https://www.shikokukisen.com/fare/
 notes:
+  - 2026年9月9日は天候悪化のため全便欠航（同日7:45発表）
+  - 2026年9月の寄港日は美術館公式開館カレンダー（9月4日現在）に準拠。犬島休館日は豊島まで、豊島休館日は犬島のみ寄港。変更時は四国汽船の運航情報を確認
   - 高速旅客船のみ運航（自動車・自転車不可）
   - 3月1日〜11月30日：月・水・木・金・土・日曜・祝日は運航
   - 12月1日〜2月末日：月・金・土・日曜・祝日は運航
@@ -59,7 +64,7 @@ coords:
 stops: [ miyanoura-2, ieura, inujima ]
 timetables:
   dia0:
-    name: 通常ダイヤ（宮浦→家浦→犬島）
+    name: 通常ダイヤ（往復）
     voyages:
       - name: 第1便
         stops: [ 09:20, [ 09:42, 09:50 ], 10:15 ]
@@ -67,19 +72,55 @@ timetables:
         stops: [ 12:10, [ 12:32, 12:40 ], 13:05 ]
       - name: 第3便
         stops: [ 14:50, [ 15:12, 15:17 ], 15:42 ]
-  dia1:
-    name: 通常ダイヤ（犬島→家浦→宮浦）
-    voyages:
       - name: 第1便
         stops: [ 11:17, [ 10:50, 10:55 ], 10:25 ]
       - name: 第2便
         stops: [ 14:02, [ 13:35, 13:40 ], 13:10 ]
       - name: 第3便
         stops: [ 16:39, [ 16:12, 16:17 ], 15:47 ]
+  teshima-only:
+    name: 豊島のみ寄港（犬島休館日）
+    voyages:
+      - name: 豊島行1便
+        stops: [ "09:20", "09:42", null ]
+      - name: 豊島行2便
+        stops: [ "12:10", "12:32", null ]
+      - name: 豊島行3便
+        stops: [ "14:50", "15:12", null ]
+      - name: 直島行1便
+        stops: [ "11:17", "10:55", null ]
+      - name: 直島行2便
+        stops: [ "14:02", "13:40", null ]
+      - name: 直島行3便
+        stops: [ "16:39", "16:17", null ]
+  inujima-only:
+    name: 犬島のみ寄港（豊島休館日）
+    voyages:
+      - name: 犬島行1便
+        stops: [ "09:20", null, "10:15" ]
+      - name: 犬島行2便
+        stops: [ "12:10", null, "13:05" ]
+      - name: 犬島行3便
+        stops: [ "14:50", null, "15:42" ]
+      - name: 直島行1便
+        stops: [ "11:17", null, "10:25" ]
+      - name: 直島行2便
+        stops: [ "14:02", null, "13:10" ]
+      - name: 直島行3便
+        stops: [ "16:39", null, "15:47" ]
   closed:
     name: 運休（美術館休館日）
     voyages: []
 schedule:
+  "2026-09-09": closed
+  "2026-09-01..2026-09-30":
+    "2026-09-24": teshima-only
+    "2026-09-25": inujima-only
+    isHoliday: dia0
+    isTuesday: closed
+    isWednesday: teshima-only
+    isThursday: teshima-only
+    "*": dia0
   isHoliday: dia0
   isTuesday: closed
   2026-01-01..2026-02-28:

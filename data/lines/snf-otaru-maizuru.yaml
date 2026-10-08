@@ -5,14 +5,12 @@ source:
   - https://www.snf.jp/guide/time_schedule/
   - https://www.snf.jp/guide/fare/
   - https://www.snf.jp/contact/reserve-car/
-  - https://www.snf.jp/snfinfo0622/
+  - https://www.snf.jp/plan-recommended/recommended/hamanasu/
 ships:
   - けやき
-  - あかしあ
   - はまなす
 fare:
   - adult::oneway::13,500円（ツーリストA）
-  - adult::oneway::20,500円（ツーリストS あかしあ）
   - adult::oneway::22,000円（ツーリストS けやき・はまなす）
   - adult::oneway::25,000円（ステートB）
   - adult::oneway::28,500円（ステートS）
@@ -31,7 +29,7 @@ notes:
   - 予約センター 0570-002-921（9:00〜17:45、土日祝休）
   - 所要時間 舞鶴→小樽 約20時間55分（23:50発→翌20:45着） / 小樽→舞鶴 約21時間45分（23:30発→翌21:15着）
   - 通常はほぼ毎日運航だが、船舶整備等により臨時運休あり（2026年11月は特に運休・不定期便が多い）。最新の運航日は公式サイトの月次配船表（PDF）で要確認
-  - 新造船「はまなす」は建造中の不具合により就航延期中（2026年8月13日発表時点で再開見込み未定）。当面「あかしあ」による代替運航
+  - 新造船「はまなす」は2026年9月1日（火）に就航。実際の配船は公式サイトの月次配船表で要確認
 ports:
   maizuru: [ 135.392735, 35.480852 ]
   otaru: [ 141.002663, 43.200965 ]

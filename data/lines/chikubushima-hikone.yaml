@@ -3,6 +3,8 @@ route: 彦根港〜竹生島
 color: "#bc26d9"
 source:
   - https://www.ohmitetudo.co.jp/marine/time-price/chikubushima/
+  - https://www.ohmitetudo.co.jp/marine/
+  - https://www.ohmitetudo.co.jp/file.jsp?id=20299
 fare:
   - 乗船料（往復）：おとな（中学生以上）3,700円、こども（小学生）1,850円
   - 竹生島では入島料が別途必要：おとな600円、こども300円
@@ -35,44 +37,68 @@ timetables:
   dia0:
     name: 通常ダイヤ
     voyages:
-      - name: 1便
-        stops: [ 11:40, [ 09:40, 11:00 ] ]
-      - name: 2便
-        stops: [ 12:40, [ 10:40, 12:00 ] ]
-      - name: 3便
-        stops: [ 14:40, [ 12:40, 14:00 ] ]
-      - name: 4便
-        stops: [ 16:30, [ 14:40, 15:50 ] ]
+      - name: 1便 彦根発
+        stops: [ "09:00", "09:40" ]
+      - name: 1便 竹生島発
+        stops: [ "11:40", "11:00" ]
+      - name: 2便 彦根発
+        stops: [ "10:00", "10:40" ]
+      - name: 2便 竹生島発
+        stops: [ "12:40", "12:00" ]
+      - name: 3便 彦根発
+        stops: [ "12:00", "12:40" ]
+      - name: 3便 竹生島発
+        stops: [ "14:40", "14:00" ]
+      - name: 4便 彦根発
+        stops: [ "14:00", "14:40" ]
+      - name: 4便 竹生島発
+        stops: [ "16:30", "15:50" ]
   dia1:
     name: 冬季ダイヤ
     voyages:
-      - name: 1便
-        stops: [ 12:40, [ 10:40, 12:00 ] ]
-      - name: 2便
-        stops: [ 15:40, [ 13:45, 15:00 ] ]
+      - name: 1便 彦根発
+        stops: [ "10:00", "10:40" ]
+      - name: 1便 竹生島発
+        stops: [ "12:40", "12:00" ]
+      - name: 2便 彦根発
+        stops: [ "13:00", "13:45" ]
+      - name: 2便 竹生島発
+        stops: [ "15:40", "15:00" ]
   dia2:
     name: お正月ダイヤ
     voyages:
-      - name: 1便
-        stops: [ 11:40, [ 09:40, 11:00 ] ]
-      - name: 2便
-        stops: [ 12:40, [ 10:40, 12:00 ] ]
-      - name: 3便
-        stops: [ 14:40, [ 12:40, 14:00 ] ]
-      - name: 4便
-        stops: [ 16:30, [ 14:40, 15:50 ] ]
+      - name: 1便 彦根発
+        stops: [ "09:00", "09:40" ]
+      - name: 1便 竹生島発
+        stops: [ "11:40", "11:00" ]
+      - name: 2便 彦根発
+        stops: [ "10:00", "10:40" ]
+      - name: 2便 竹生島発
+        stops: [ "12:40", "12:00" ]
+      - name: 3便 彦根発
+        stops: [ "12:00", "12:40" ]
+      - name: 3便 竹生島発
+        stops: [ "14:40", "14:00" ]
+      - name: 4便 彦根発
+        stops: [ "14:00", "14:40" ]
+      - name: 4便 竹生島発
+        stops: [ "16:30", "15:50" ]
   dia3:
     name: 特別ダイヤ（海津大崎桜花見船期間）
     voyages:
-      - name: 1便
-        stops: [ 11:40, [ 09:40, 11:00 ] ]
-      - name: 2便
-        stops: [ 14:40, [ 12:40, 14:00 ] ]
+      - name: 1便 彦根発
+        stops: [ "09:00", "09:40" ]
+      - name: 1便 竹生島発
+        stops: [ "11:40", "11:00" ]
+      - name: 2便 彦根発
+        stops: [ "12:00", "12:40" ]
+      - name: 2便 竹生島発
+        stops: [ "14:40", "14:00" ]
   dia4:
     name: 夏季特別ダイヤ
     voyages:
-      - name: 1便
-        stops: [ 11:40, [ 09:40, 11:00 ] ]
+      - name: 1便 彦根発
+        stops: [ "09:00", "09:40" ]
         schedule:
           "2026-08-12..2026-08-13": true
           isMonday: false
@@ -80,10 +106,8 @@ timetables:
           isWednesday: false
           isThursday: false
           "*": true
-      - name: 2便
-        stops: [ 12:40, [ 10:40, 12:00 ] ]
-      - name: 3便
-        stops: [ 14:40, [ 12:40, 14:00 ] ]
+      - name: 1便 竹生島発
+        stops: [ "11:40", "11:00" ]
         schedule:
           "2026-08-12..2026-08-13": true
           isMonday: false
@@ -91,8 +115,32 @@ timetables:
           isWednesday: false
           isThursday: false
           "*": true
-      - name: 4便
-        stops: [ 16:30, [ 14:40, 15:50 ] ]
+      - name: 2便 彦根発
+        stops: [ "10:00", "10:40" ]
+      - name: 2便 竹生島発
+        stops: [ "12:40", "12:00" ]
+      - name: 3便 彦根発
+        stops: [ "12:00", "12:40" ]
+        schedule:
+          "2026-08-12..2026-08-13": true
+          isMonday: false
+          isTuesday: false
+          isWednesday: false
+          isThursday: false
+          "*": true
+      - name: 3便 竹生島発
+        stops: [ "14:40", "14:00" ]
+        schedule:
+          "2026-08-12..2026-08-13": true
+          isMonday: false
+          isTuesday: false
+          isWednesday: false
+          isThursday: false
+          "*": true
+      - name: 4便 彦根発
+        stops: [ "14:00", "14:40" ]
+      - name: 4便 竹生島発
+        stops: [ "16:30", "15:50" ]
 schedule:
   "2026-07-13..2026-09-03": dia4
   nthMonth(1):

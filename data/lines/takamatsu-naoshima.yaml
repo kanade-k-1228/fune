@@ -3,6 +3,7 @@ route: 高松〜直島宮浦
 color: "#d92660"
 source:
   - https://shikokukisen.com/takamatsu-miyanoura/
+  - https://shikokukisen.com/information/important/post-4288/
 fare:
   - adult::oneway::680円（フェリー）
   - child::oneway::340円（フェリー、6〜12歳）
@@ -26,6 +27,7 @@ fare:
   - フェリー回数券 11枚綴り 6,800円
   - 2025年6月1日 運賃改定
 notes:
+  - 2026年9月9日は天候悪化のため高速旅客船の宮浦6:45・8:40発、高松7:20・9:20発が欠航。以降の高速便は公式運航情報を確認（同日7:45発表）
   - 所要時間：フェリー 高松→直島 約50分、直島→高松 約60分／高速旅客船 約30分
   - 高松事務所 TEL 087-821-5100
   - サンポート高松フェリー発券所 TEL 087-821-6798
@@ -69,8 +71,14 @@ timetables:
         stops: [18:05, 18:55]
       - name: 北行 高速1便
         stops: [07:20, 07:50]
+        schedule:
+          "2026-09-09": false
+          "*": true
       - name: 北行 高速2便
         stops: [09:20, 09:50]
+        schedule:
+          "2026-09-09": false
+          "*": true
       - name: 北行 高速3便
         stops: [20:30, 21:00]
       - name: 南行 1便
@@ -85,8 +93,14 @@ timetables:
         stops: [18:00, 17:00]
       - name: 南行 高速1便
         stops: [07:15, 06:45]
+        schedule:
+          "2026-09-09": false
+          "*": true
       - name: 南行 高速2便
         stops: [09:10, 08:40]
+        schedule:
+          "2026-09-09": false
+          "*": true
       - name: 南行 高速3便
         stops: [20:15, 19:45]
 flags: [regional, ferry, rapid]

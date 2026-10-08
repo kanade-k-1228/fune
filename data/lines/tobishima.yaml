@@ -8,6 +8,8 @@ source:
   - https://www.city.sakata.lg.jp/sangyo/kotsu/teikisen/index.files/R8_1_Schedule.pdf
   - https://www.city.sakata.lg.jp/sangyo/kotsu/teikisen/teikisenoshirase/teiki20260326-016.html
   - https://www.city.sakata.lg.jp/sangyo/kotsu/teikisen/teikisenoshirase/teiki20260326-001.html
+  - https://www.city.sakata.lg.jp/sangyo/kotsu/teikisen/teikisenoshirase/teiki20260326-022.html
+  - https://www.city.sakata.lg.jp/sangyo/kotsu/teikisen/teikisenoshirase/teiki20260326-023.html
 fare:
   - 大人(中学生以上) 片道 2,140円 / 往復 4,280円
   - 子ども(小学生・幼児) 片道 1,070円 / 往復 2,140円
@@ -21,11 +23,11 @@ notes:
   - 受付時間 10:00〜17:00
   - 酒田〜飛島約39km、所要時間 約75分
   - 事前予約が必要(出発1ヶ月前〜1日前まで電話またはインターネットで)
-  - 10月〜3月は毎日1航海、4〜9月は時期により2航海（8月は毎日2航海）
+  - 10月〜3月は毎日1航海、4〜9月は時期により2航海。2026年9月は19〜23日のみ2航海
   - 出欠航は出航1時間前に決定し、公式サイトに掲載
-  - 2航海の場合は事前に電話予約が必要
-  - 定期船「とびしま」は2026年3月26日発生のエンジントラブル（左舷エンジンの重要部品破損）により長期休航中。代船「シープリンセス」が運航（2026年7月22日〜8月31日予定、以降の運航体制は調整中）。時刻は通常ダイヤに準じる
-  - 代船運航中は船内の安全確保のため手荷物制限あり（重量30kg以内・長さ2m以内）
+  - 定期船「とびしま」は2026年3月26日発生のエンジントラブルにより休航中。9月1〜30日は代船「アイランドブリーズ号」の就航が認可済み（各便予約上限40名、インターネット予約可）
+  - 2026年9月3日発表では「とびしま」は9月30日に通常運航へ復帰予定。運輸局の認可前のため日程は変更の場合あり
+  - 代船の客室内持込は膝上で抱えられる小型荷物のみ。30L超のクーラーボックスや釣り具などは別便の貨物船を利用。9月19〜23日の午後便に対応する貨物船は運航しない
 ships:
   - とびしま
 ports:
@@ -67,6 +69,7 @@ timetables:
         stops: [ 17:00, 15:45 ]
 schedule:
   "2026-08-01..2026-08-31": double
+  "2026-09-19..2026-09-23": double
   "*": normal
 flags:
   - regional
