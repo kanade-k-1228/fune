@@ -28,25 +28,25 @@
   ],
   "scripts": {
     "dev": "tsx scripts/server.ts",
-    "build": "tsx scripts/build.ts",
+    "build": "tsc -p tsconfig.build.json && tsx scripts/build.ts",
     "validate": "tsx scripts/validate.ts",
     "update": "tsx --env-file=.env scripts/update.ts",
     "check": "biome check .",
     "fix": "biome check --write ."
   },
   "dependencies": {
-    "@anthropic-ai/claude-agent-sdk": "^0.3.142",
-    "@hono/node-server": "^2.0.5",
-    "hono": "^4.12.25",
-    "zod": "^3.24.1"
+    "@anthropic-ai/claude-agent-sdk": "^0.3.306",
+    "@hono/node-server": "^2.1.5",
+    "hono": "^4.13.13",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.15",
-    "@types/node": "^25.7.0",
+    "@biomejs/biome": "^2.5.15",
+    "@types/node": "^25.9.9",
     "ts-to-zod": "^5.1.0",
-    "tsx": "^4.21.0",
-    "typescript": "^5.7.2",
-    "yaml": "^2.9.0"
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "yaml": "^2.9.1"
   },
   "packageManager": "pnpm@11.1.1",
   "pnpm": {
